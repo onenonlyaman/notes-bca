@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Notes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #24292e; /* GitHub header color */
+        }
+
+        .intro {
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+            grid-gap: 20px;
+        }
+
+        .note-box {
+            background-color: #f6f8fa; /* GitHub sidebar gray */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+            text-align: center; /* Center the content */
+        }
+
+         .note-box:hover {
+            transform: translateY(-5px); /* Subtle hover effect */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        }
+
+
+        .note-box a {
+            text-decoration: none;
+            color: #0366d6; /* GitHub link blue */
+            display: block;  /* Occupy full box width for clicking */
+            height: 100%; /* Occupy full box height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .note-box h3 {
+            margin-bottom: 10px;
+            color: #24292e;
+        }
+
+
+        .footer {
+           margin-top: 30px;
+           text-align: center;
+           font-size: 0.9em;
+           color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bachelor of Computer Applications</h1>
+        <div class="intro">
+            <p>Welcome to the collection of notes for the Bachelor of Computer Applications course. These notes cover a wide range of topics and are designed to be concise and easy to understand.  They're a great resource for studying and reviewing key concepts.  Feel free to explore!</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="note-box">
+                <a href="Semester 1.html"><h3>Semester I</h3></a>
+            </div>
+            <div class="note-box">
+                 <a href="data-structures.html"><h3>Data Structures and Algorithms</h3></a>
+            </div>
+            <div class="note-box">
+                 <a href="database-management.html"><h3>Database Management Systems</h3></a>
+            </div>
+            <div class="note-box">
+                 <a href="web-development.html"><h3>Web Development</h3></a>
+            </div>
+            <div class="note-box">
+                 <a href="computer-networks.html"><h3>Computer Networks</h3></a>
+            </div>
+            <!-- Add more note boxes as needed -->
+        </div>
+
+        <div class="footer">
+            Notes prepared by Aman, refined by AI.
+        </div>
+    </div>
+</body>
+</html>
