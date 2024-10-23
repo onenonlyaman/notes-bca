@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCA Notes</title>
     <style>
-        /* ... (Previous CSS styles) ... */
         body {
             font-family: sans-serif;
             line-height: 1.6;
@@ -89,12 +88,12 @@
         }
 
         body.dark-mode {
-            background-color: #1e1e1e;
+            background-color: #000000;
             color: #ddd;
         }
 
         .dark-mode .container {
-            background-color: #24292e;
+            background-color: #080808;
             /* Darker container background */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             /* More prominent shadow in dark mode */
@@ -109,7 +108,7 @@
         }
 
         .dark-mode .note-box {
-            background-color: #333;
+            background-color: #3d3d3d;
             /* Darker note box background */
         }
 
@@ -141,7 +140,7 @@
 
         .note-box:nth-child(even) {
             /* Delay even boxes for staggered animation */
-            animation-delay: 0.2s;
+            animation-delay: 0.3s;
         }
 
         .dark-mode-button {
@@ -151,41 +150,19 @@
             padding: 10px 20px;
             border: none;
             border-radius: 20px;
-            /* More rounded corners */
-            background: linear-gradient(to right, #3498db, #2980b9);
-            /* Gradient background */
+            background: linear-gradient(to right, #464646, #181818);
             color: white;
             font-weight: 500;
-            /* Slightly bolder text */
             cursor: pointer;
             z-index: 100;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             transition: background 0.3s ease, transform 0.2s ease;
-            /* Smooth transitions */
         }
 
         .dark-mode-button:hover {
             transform: translateY(-2px);
-            /* Subtle lift on hover */
-            background: linear-gradient(to right, #2980b9, #3498db);
-            /* Reverse gradient on hover */
-
+            background: linear-gradient(to right, #181818, #464646);
         }
-
-        .dark-mode .dark-mode-button {
-            background: linear-gradient(to right, #8e44ad, #9b59b6);
-            /* Orange gradient in dark mode */
-            color: rgb(255, 255, 255);
-            /* Changed text color for dark mode */
-        }
-
-        .dark-mode .dark-mode-button:hover {
-            background: linear-gradient(to right, #9b59b6, #8e44ad);
-            /* Reverse gradient on hover in dark mode */
-
-        }
-
-        /* ... other styles ... */
     </style>
 </head>
 

@@ -9,8 +9,8 @@
   <style>
     body {
       transition: background-color 0.3s ease, color 0.3s ease;
-            /* Smooth dark mode transition */
     }
+
     .dark-mode-button {
       position: fixed;
       top: 20px;
@@ -18,7 +18,7 @@
       padding: 10px 20px;
       border: none;
       border-radius: 20px;
-      background: linear-gradient(to right, #3498db, #2980b9);
+      background: linear-gradient(to right, #464646, #181818);
       color: white;
       font-weight: 500;
       cursor: pointer;
@@ -29,22 +29,22 @@
 
     .dark-mode-button:hover {
       transform: translateY(-2px);
-      background: linear-gradient(to right, #2980b9, #3498db);
+      background: linear-gradient(to right, #181818, #464646);
     }
 
     body.dark-mode {
-      background-color: #1e1e1e;
+      background-color: #000000;
       color: #ddd;
     }
 
 
     .dark-mode .dark-mode-button {
-      background: linear-gradient(to right, #8e44ad, #9b59b6);
-      color: white;
+      background: linear-gradient(to right, #ffffff, #b4b4b4);
+      color: rgb(0, 0, 0);
     }
 
     .dark-mode .dark-mode-button:hover {
-      background: linear-gradient(to right, #9b59b6, #8e44ad);
+      background: linear-gradient(to right, #b4b4b4, #ffffff);
     }
 
 
@@ -70,151 +70,190 @@
   <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
   <div class="stackedit__left">
     <div class="stackedit__toc">
-    
-<ul>
-<li>
-<ul>
-<li><a href="#bca-semester-1---ca-101-t-problem-solving-and-programming-in-c">BCA Semester 1 - CA-101-T: Problem Solving and Programming in C</a></li>
-<li><a href="#bca-semester-1---ca-103-t-computer-organization--architecture">BCA Semester 1 - CA-103-T: Computer Organization & Architecture</a></li>
-<li><a href="#bca-semester-1---ca-105-t-discrete-mathematics-and-statistics">BCA Semester 1 - CA-105-T: Discrete Mathematics and Statistics</a></li>
-<li><a href="#bca-semester-1---oe-101-introduction-to-data-science-optional">BCA Semester 1 - OE-101: Introduction to Data Science (Optional)</a></li>
-<li><a href="#bca-semester-1---vsec-101-html-and-web-page-designing">BCA Semester 1 - VSEC-101: HTML and Web Page Designing</a></li>
-<li><a href="#bca-semester-1-conclusion-and-tips-for-success">BCA Semester 1: Conclusion and Tips for Success</a></li>
-</ul>
-</li>
-</ul>
+
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#bca-semester-1---ca-101-t-problem-solving-and-programming-in-c">BCA Semester 1 - CA-101-T:
+                Problem Solving and Programming in C</a></li>
+            <li><a href="#bca-semester-1---ca-103-t-computer-organization--architecture">BCA Semester 1 - CA-103-T:
+                Computer Organization & Architecture</a></li>
+            <li><a href="#bca-semester-1---ca-105-t-discrete-mathematics-and-statistics">BCA Semester 1 - CA-105-T:
+                Discrete Mathematics and Statistics</a></li>
+            <li><a href="#bca-semester-1---oe-101-introduction-to-data-science-optional">BCA Semester 1 - OE-101:
+                Introduction to Data Science (Optional)</a></li>
+            <li><a href="#bca-semester-1---vsec-101-html-and-web-page-designing">BCA Semester 1 - VSEC-101: HTML and Web
+                Page Designing</a></li>
+            <li><a href="#bca-semester-1-conclusion-and-tips-for-success">BCA Semester 1: Conclusion and Tips for
+                Success</a></li>
+          </ul>
+        </li>
+      </ul>
 
     </div>
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
-      <h2 id="bca-semester-1---ca-101-t-problem-solving-and-programming-in-c">BCA Semester 1 - CA-101-T: Problem Solving and Programming in C</h2>
-<h3 id="module-problem-solving-techniques-algorithms-and-flowcharts"><strong>Module: Problem Solving Techniques, Algorithms, and Flowcharts</strong></h3>
-<p><strong>1. Introduction to Problem Solving</strong></p>
-<p>Problem-solving is a crucial skill in computer science. It involves identifying a problem, breaking it down into smaller, manageable steps, and devising a solution. In programming, this translates into writing code that effectively addresses the given problem.</p>
-<p><strong>2. Stages of Problem Solving</strong></p>
-<ul>
-<li><strong>Problem Definition:</strong> Clearly understand the problem requirements, inputs, and expected outputs.  Ask clarifying questions if needed.  This stage avoids wasted effort later.</li>
-<li><strong>Problem Analysis:</strong> Break down the problem into smaller sub-problems. Identify the core logic and relationships between different parts of the problem.</li>
-<li><strong>Algorithm Design:</strong> Develop a step-by-step procedure or algorithm to solve the problem. This algorithm should be clear, concise, and effective.</li>
-<li><strong>Implementation (Coding):</strong> Translate the algorithm into a specific programming language (in this case, C).  Pay attention to syntax, data types, and best practices.</li>
-<li><strong>Testing and Debugging:</strong> Verify that the program produces the correct output for various inputs. Identify and fix any errors or bugs.</li>
-<li><strong>Documentation:</strong>  Explain the code’s purpose, logic, and functionality.  Good documentation is essential for maintainability and collaboration.</li>
-<li><strong>Maintenance:</strong> Update and modify the code as needed to address new requirements or fix issues.</li>
-</ul>
-<p><strong>3. Algorithms</strong></p>
-<p>An algorithm is a finite sequence of well-defined instructions designed to solve a specific problem.  Characteristics of a good algorithm include:</p>
-<ul>
-<li><strong>Finiteness:</strong> The algorithm must terminate after a finite number of steps.</li>
-<li><strong>Definiteness:</strong> Each step must be precisely and unambiguously defined.</li>
-<li><strong>Input:</strong>  The algorithm may accept zero or more inputs.</li>
-<li><strong>Output:</strong> The algorithm must produce one or more outputs.</li>
-<li><strong>Effectiveness:</strong> Each step should be feasible and executable.</li>
-</ul>
-<p><strong>Example Algorithm (Finding the largest of two numbers):</strong></p>
-<pre><code>Input two numbers, A and B.
+      <h2 id="bca-semester-1---ca-101-t-problem-solving-and-programming-in-c">BCA Semester 1 - CA-101-T: Problem Solving
+        and Programming in C</h2>
+      <h3 id="module-problem-solving-techniques-algorithms-and-flowcharts"><strong>Module: Problem Solving Techniques,
+          Algorithms, and Flowcharts</strong></h3>
+      <p><strong>1. Introduction to Problem Solving</strong></p>
+      <p>Problem-solving is a crucial skill in computer science. It involves identifying a problem, breaking it down
+        into smaller, manageable steps, and devising a solution. In programming, this translates into writing code that
+        effectively addresses the given problem.</p>
+      <p><strong>2. Stages of Problem Solving</strong></p>
+      <ul>
+        <li><strong>Problem Definition:</strong> Clearly understand the problem requirements, inputs, and expected
+          outputs. Ask clarifying questions if needed. This stage avoids wasted effort later.</li>
+        <li><strong>Problem Analysis:</strong> Break down the problem into smaller sub-problems. Identify the core logic
+          and relationships between different parts of the problem.</li>
+        <li><strong>Algorithm Design:</strong> Develop a step-by-step procedure or algorithm to solve the problem. This
+          algorithm should be clear, concise, and effective.</li>
+        <li><strong>Implementation (Coding):</strong> Translate the algorithm into a specific programming language (in
+          this case, C). Pay attention to syntax, data types, and best practices.</li>
+        <li><strong>Testing and Debugging:</strong> Verify that the program produces the correct output for various
+          inputs. Identify and fix any errors or bugs.</li>
+        <li><strong>Documentation:</strong> Explain the code’s purpose, logic, and functionality. Good documentation is
+          essential for maintainability and collaboration.</li>
+        <li><strong>Maintenance:</strong> Update and modify the code as needed to address new requirements or fix
+          issues.</li>
+      </ul>
+      <p><strong>3. Algorithms</strong></p>
+      <p>An algorithm is a finite sequence of well-defined instructions designed to solve a specific problem.
+        Characteristics of a good algorithm include:</p>
+      <ul>
+        <li><strong>Finiteness:</strong> The algorithm must terminate after a finite number of steps.</li>
+        <li><strong>Definiteness:</strong> Each step must be precisely and unambiguously defined.</li>
+        <li><strong>Input:</strong> The algorithm may accept zero or more inputs.</li>
+        <li><strong>Output:</strong> The algorithm must produce one or more outputs.</li>
+        <li><strong>Effectiveness:</strong> Each step should be feasible and executable.</li>
+      </ul>
+      <p><strong>Example Algorithm (Finding the largest of two numbers):</strong></p>
+      <pre><code>Input two numbers, A and B.
 If A &gt; B, then output A.
 Else, output B.
 </code></pre>
-<p><strong>4. Flowcharts</strong></p>
-<p>A flowchart is a graphical representation of an algorithm. It uses standardized symbols to depict the flow of logic and control in a program.  Flowcharts enhance understanding and communication of complex algorithms.</p>
-<p><strong>Common Flowchart Symbols:</strong></p>
-<ul>
-<li><strong>Oval:</strong> Start/End</li>
-<li><strong>Rectangle:</strong> Process/Instruction</li>
-<li><strong>Parallelogram:</strong> Input/Output</li>
-<li><strong>Diamond:</strong> Decision/Conditional</li>
-<li><strong>Arrow:</strong> Flow of Control</li>
-</ul>
-<p><strong>(Example Flowchart for finding the largest of two numbers):</strong></p>
-<pre><code>[Start] --&gt; Input A, B --&gt; [A &gt; B?] --Yes--&gt; Output A --&gt; [End]
+      <p><strong>4. Flowcharts</strong></p>
+      <p>A flowchart is a graphical representation of an algorithm. It uses standardized symbols to depict the flow of
+        logic and control in a program. Flowcharts enhance understanding and communication of complex algorithms.</p>
+      <p><strong>Common Flowchart Symbols:</strong></p>
+      <ul>
+        <li><strong>Oval:</strong> Start/End</li>
+        <li><strong>Rectangle:</strong> Process/Instruction</li>
+        <li><strong>Parallelogram:</strong> Input/Output</li>
+        <li><strong>Diamond:</strong> Decision/Conditional</li>
+        <li><strong>Arrow:</strong> Flow of Control</li>
+      </ul>
+      <p><strong>(Example Flowchart for finding the largest of two numbers):</strong></p>
+      <pre><code>[Start] --&gt; Input A, B --&gt; [A &gt; B?] --Yes--&gt; Output A --&gt; [End]
                                    |
                                    No
                                    V
                                  Output B --&gt; [End]
 </code></pre>
-<p><strong>5.  Pseudocode</strong></p>
-<p>Pseudocode is a simplified, informal way of describing an algorithm using a combination of natural language and programming-like constructs. It’s more flexible than flowcharts and focuses on the logic rather than strict syntax.</p>
-<p><strong>Example Pseudocode (Finding the largest of two numbers):</strong></p>
-<pre><code>INPUT A, B
+      <p><strong>5. Pseudocode</strong></p>
+      <p>Pseudocode is a simplified, informal way of describing an algorithm using a combination of natural language and
+        programming-like constructs. It’s more flexible than flowcharts and focuses on the logic rather than strict
+        syntax.</p>
+      <p><strong>Example Pseudocode (Finding the largest of two numbers):</strong></p>
+      <pre><code>INPUT A, B
 IF A &gt; B THEN
   OUTPUT A
 ELSE
   OUTPUT B
 ENDIF
 </code></pre>
-<p><strong>6.  Problem-Solving Strategies</strong></p>
-<ul>
-<li><strong>Divide and Conquer:</strong> Break down a large problem into smaller, easier-to-solve sub-problems.</li>
-<li><strong>Top-Down Design:</strong> Start with the overall problem and progressively refine it into smaller modules.</li>
-<li><strong>Bottom-Up Design:</strong> Start with basic components and combine them to build a solution to the larger problem.</li>
-<li><strong>Iteration:</strong> Repeat a process until a specific condition is met.</li>
-<li><strong>Recursion:</strong>  A function calling itself to solve smaller instances of the same problem.</li>
-</ul>
-<h3 id="module-c-fundamentals-data-types-operators-expressions-inputoutput"><strong>Module: C Fundamentals (Data Types, Operators, Expressions, Input/Output)</strong></h3>
-<p><strong>1. Introduction to C</strong></p>
-<p>C is a powerful, general-purpose programming language known for its efficiency and control over system hardware.  It’s widely used in operating systems, embedded systems, and application development.</p>
-<p><strong>2. Data Types</strong></p>
-<p>Data types define the kind of values a variable can hold. C has several fundamental data types:</p>
-<ul>
-<li><strong><code>int</code> (Integer):</strong>  Whole numbers (e.g., 10, -5, 0).  Typical size: 4 bytes.</li>
-<li><strong><code>float</code> (Floating-point):</strong>  Numbers with decimal points (e.g., 3.14, -2.5). Typical size: 4 bytes.</li>
-<li><strong><code>double</code> (Double-precision floating-point):</strong>  Floating-point numbers with higher precision. Typical size: 8 bytes.</li>
-<li><strong><code>char</code> (Character):</strong> Single characters (e.g., ‘A’, ‘z’, ‘!’, ‘\n’). Typical size: 1 byte.</li>
-<li><strong><code>void</code>:</strong> Represents the absence of a type. Often used for functions that don’t return a value.</li>
-</ul>
-<p><strong>Modifiers:</strong></p>
-<ul>
-<li><strong><code>short</code>:</strong> Reduces the size of an integer type.</li>
-<li><strong><code>long</code>:</strong> Increases the size of an integer type.</li>
-<li><strong><code>unsigned</code>:</strong>  Allows only positive values for integer types.</li>
-<li><strong><code>signed</code>:</strong>  Allows both positive and negative values (default for most integer types).</li>
-</ul>
-<p><strong>3. Variables</strong></p>
-<p>Variables are named storage locations that hold data. They must be declared before use:</p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> age <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+      <p><strong>6. Problem-Solving Strategies</strong></p>
+      <ul>
+        <li><strong>Divide and Conquer:</strong> Break down a large problem into smaller, easier-to-solve sub-problems.
+        </li>
+        <li><strong>Top-Down Design:</strong> Start with the overall problem and progressively refine it into smaller
+          modules.</li>
+        <li><strong>Bottom-Up Design:</strong> Start with basic components and combine them to build a solution to the
+          larger problem.</li>
+        <li><strong>Iteration:</strong> Repeat a process until a specific condition is met.</li>
+        <li><strong>Recursion:</strong> A function calling itself to solve smaller instances of the same problem.</li>
+      </ul>
+      <h3 id="module-c-fundamentals-data-types-operators-expressions-inputoutput"><strong>Module: C Fundamentals (Data
+          Types, Operators, Expressions, Input/Output)</strong></h3>
+      <p><strong>1. Introduction to C</strong></p>
+      <p>C is a powerful, general-purpose programming language known for its efficiency and control over system
+        hardware. It’s widely used in operating systems, embedded systems, and application development.</p>
+      <p><strong>2. Data Types</strong></p>
+      <p>Data types define the kind of values a variable can hold. C has several fundamental data types:</p>
+      <ul>
+        <li><strong><code>int</code> (Integer):</strong> Whole numbers (e.g., 10, -5, 0). Typical size: 4 bytes.</li>
+        <li><strong><code>float</code> (Floating-point):</strong> Numbers with decimal points (e.g., 3.14, -2.5).
+          Typical size: 4 bytes.</li>
+        <li><strong><code>double</code> (Double-precision floating-point):</strong> Floating-point numbers with higher
+          precision. Typical size: 8 bytes.</li>
+        <li><strong><code>char</code> (Character):</strong> Single characters (e.g., ‘A’, ‘z’, ‘!’, ‘\n’). Typical size:
+          1 byte.</li>
+        <li><strong><code>void</code>:</strong> Represents the absence of a type. Often used for functions that don’t
+          return a value.</li>
+      </ul>
+      <p><strong>Modifiers:</strong></p>
+      <ul>
+        <li><strong><code>short</code>:</strong> Reduces the size of an integer type.</li>
+        <li><strong><code>long</code>:</strong> Increases the size of an integer type.</li>
+        <li><strong><code>unsigned</code>:</strong> Allows only positive values for integer types.</li>
+        <li><strong><code>signed</code>:</strong> Allows both positive and negative values (default for most integer
+          types).</li>
+      </ul>
+      <p><strong>3. Variables</strong></p>
+      <p>Variables are named storage locations that hold data. They must be declared before use:</p>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> age <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
 <span class="token keyword">float</span> price <span class="token operator">=</span> <span class="token number">99.99</span><span class="token punctuation">;</span>
 <span class="token keyword">char</span> initial <span class="token operator">=</span> <span class="token string">'J'</span><span class="token punctuation">;</span>
 </code></pre>
-<p><strong>4. Operators</strong></p>
-<p>Operators perform operations on data.</p>
-<ul>
-<li><strong>Arithmetic Operators:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (modulo - remainder)</li>
-<li><strong>Relational Operators:</strong> <code>==</code> (equal to), <code>!=</code> (not equal to), <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></li>
-<li><strong>Logical Operators:</strong> <code>&amp;&amp;</code> (AND), <code>||</code> (OR), <code>!</code> (NOT)</li>
-<li><strong>Assignment Operator:</strong> <code>=</code></li>
-<li><strong>Compound Assignment Operators:</strong> <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code></li>
-<li><strong>Increment/Decrement Operators:</strong> <code>++</code>, <code>--</code></li>
-<li><strong>Bitwise Operators:</strong> <code>&amp;</code>, <code>|</code>, <code>^</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code>, <code>~</code></li>
-<li><strong>Conditional Operator (Ternary Operator):</strong> <code>condition ? expression1 : expression2</code></li>
-</ul>
-<p><strong>5. Expressions</strong></p>
-<p>Expressions combine variables, constants, and operators to produce a value.</p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token punctuation">(</span>x <span class="token operator">+</span> y<span class="token punctuation">)</span> <span class="token operator">*</span> z<span class="token punctuation">;</span>
+      <p><strong>4. Operators</strong></p>
+      <p>Operators perform operations on data.</p>
+      <ul>
+        <li><strong>Arithmetic Operators:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>,
+          <code>%</code> (modulo - remainder)</li>
+        <li><strong>Relational Operators:</strong> <code>==</code> (equal to), <code>!=</code> (not equal to),
+          <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></li>
+        <li><strong>Logical Operators:</strong> <code>&amp;&amp;</code> (AND), <code>||</code> (OR), <code>!</code>
+          (NOT)</li>
+        <li><strong>Assignment Operator:</strong> <code>=</code></li>
+        <li><strong>Compound Assignment Operators:</strong> <code>+=</code>, <code>-=</code>, <code>*=</code>,
+          <code>/=</code>, <code>%=</code></li>
+        <li><strong>Increment/Decrement Operators:</strong> <code>++</code>, <code>--</code></li>
+        <li><strong>Bitwise Operators:</strong> <code>&amp;</code>, <code>|</code>, <code>^</code>,
+          <code>&lt;&lt;</code>, <code>&gt;&gt;</code>, <code>~</code></li>
+        <li><strong>Conditional Operator (Ternary Operator):</strong> <code>condition ? expression1 : expression2</code>
+        </li>
+      </ul>
+      <p><strong>5. Expressions</strong></p>
+      <p>Expressions combine variables, constants, and operators to produce a value.</p>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token punctuation">(</span>x <span class="token operator">+</span> y<span class="token punctuation">)</span> <span class="token operator">*</span> z<span class="token punctuation">;</span>
 </code></pre>
-<p><strong>Operator Precedence:</strong> The order in which operators are evaluated in an expression.  Use parentheses <code>()</code> to control the order of evaluation.</p>
-<p><strong>6. Input/Output</strong></p>
-<ul>
-<li><strong><code>printf()</code>:</strong>  Prints output to the console.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"The value of x is: %d\n"</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// %d is a format specifier for integers</span>
+      <p><strong>Operator Precedence:</strong> The order in which operators are evaluated in an expression. Use
+        parentheses <code>()</code> to control the order of evaluation.</p>
+      <p><strong>6. Input/Output</strong></p>
+      <ul>
+        <li><strong><code>printf()</code>:</strong> Prints output to the console.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"The value of x is: %d\n"</span><span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// %d is a format specifier for integers</span>
 <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"The price is: %.2f\n"</span><span class="token punctuation">,</span> price<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// %.2f prints a float with 2 decimal places</span>
 </code></pre>
-<ul>
-<li><strong><code>scanf()</code>:</strong> Reads input from the console.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> age<span class="token punctuation">;</span>
+      <ul>
+        <li><strong><code>scanf()</code>:</strong> Reads input from the console.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> age<span class="token punctuation">;</span>
 <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Enter your age: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &amp;age provides the memory address of the variable age</span>
 </code></pre>
-<p><strong>Important Notes on <code>scanf()</code>:</strong></p>
-<ul>
-<li>The <code>&amp;</code> operator is crucial when using <code>scanf()</code> to read values into variables.  It tells <code>scanf()</code> where to store the input value.</li>
-<li>Format specifiers in <code>scanf()</code> must match the data type of the corresponding variable.</li>
-<li><code>scanf()</code> can be tricky with whitespace. Be mindful of how it handles spaces and newlines.</li>
-</ul>
-<p><strong>7. Example Program</strong></p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+      <p><strong>Important Notes on <code>scanf()</code>:</strong></p>
+      <ul>
+        <li>The <code>&amp;</code> operator is crucial when using <code>scanf()</code> to read values into variables. It
+          tells <code>scanf()</code> where to store the input value.</li>
+        <li>Format specifiers in <code>scanf()</code> must match the data type of the corresponding variable.</li>
+        <li><code>scanf()</code> can be tricky with whitespace. Be mindful of how it handles spaces and newlines.</li>
+      </ul>
+      <p><strong>7. Example Program</strong></p>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">int</span> num1<span class="token punctuation">,</span> num2<span class="token punctuation">,</span> sum<span class="token punctuation">;</span>
@@ -229,13 +268,14 @@ ENDIF
   <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// Indicates successful program execution</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h3 id="module-control-structures-and-functions"><strong>Module: Control Structures and Functions</strong></h3>
-<p><strong>1. Control Structures</strong></p>
-<p>Control structures dictate the flow of execution in a program.</p>
-<ul>
-<li><strong><code>if-else</code> statement:</strong> Executes different blocks of code based on a condition.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <h3 id="module-control-structures-and-functions"><strong>Module: Control Structures and Functions</strong></h3>
+      <p><strong>1. Control Structures</strong></p>
+      <p>Control structures dictate the flow of execution in a program.</p>
+      <ul>
+        <li><strong><code>if-else</code> statement:</strong> Executes different blocks of code based on a condition.
+        </li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// Code to execute if the condition is true</span>
 <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
   <span class="token comment">// Code to execute if the condition is false</span>
@@ -249,10 +289,12 @@ ENDIF
   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"You are not eligible to vote.\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<ul>
-<li><strong><code>switch</code> statement:</strong>  Selects code blocks to execute based on the value of an expression.  A more efficient alternative to multiple <code>if-else</code> statements when checking against a single variable.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">switch</span> <span class="token punctuation">(</span>expression<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <ul>
+        <li><strong><code>switch</code> statement:</strong> Selects code blocks to execute based on the value of an
+          expression. A more efficient alternative to multiple <code>if-else</code> statements when checking against a
+          single variable.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">switch</span> <span class="token punctuation">(</span>expression<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">case</span> value1<span class="token punctuation">:</span>
     <span class="token comment">// Code to execute if expression equals value1</span>
     <span class="token keyword">break</span><span class="token punctuation">;</span> <span class="token comment">// Important to prevent fallthrough</span>
@@ -276,13 +318,13 @@ ENDIF
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Needs improvement.\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<ul>
-<li>
-<p><strong>Loops:</strong> Repeat a block of code multiple times.</p>
-<ul>
-<li><strong><code>for</code> loop:</strong>  Used when the number of iterations is known beforehand.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">for</span> <span class="token punctuation">(</span>initialization<span class="token punctuation">;</span> condition<span class="token punctuation">;</span> update<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <ul>
+        <li>
+          <p><strong>Loops:</strong> Repeat a block of code multiple times.</p>
+          <ul>
+            <li><strong><code>for</code> loop:</strong> Used when the number of iterations is known beforehand.</li>
+          </ul>
+          <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">for</span> <span class="token punctuation">(</span>initialization<span class="token punctuation">;</span> condition<span class="token punctuation">;</span> update<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// Code to be repeated</span>
 <span class="token punctuation">}</span>
 
@@ -291,10 +333,11 @@ ENDIF
   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d "</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<ul>
-<li><strong><code>while</code> loop:</strong> Used when the number of iterations is not known in advance and depends on a condition.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <ul>
+            <li><strong><code>while</code> loop:</strong> Used when the number of iterations is not known in advance and
+              depends on a condition.</li>
+          </ul>
+          <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// Code to be repeated</span>
 <span class="token punctuation">}</span>
 
@@ -304,10 +347,11 @@ ENDIF
   <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"You entered: %d\n"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<ul>
-<li><strong><code>do-while</code> loop:</strong> Similar to a <code>while</code> loop, but the code block is executed at least once before the condition is checked.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">do</span> <span class="token punctuation">{</span>
+          <ul>
+            <li><strong><code>do-while</code> loop:</strong> Similar to a <code>while</code> loop, but the code block is
+              executed at least once before the condition is checked.</li>
+          </ul>
+          <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">do</span> <span class="token punctuation">{</span>
   <span class="token comment">// Code to be repeated</span>
 <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -318,14 +362,14 @@ ENDIF
   <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>num <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-</li>
-</ul>
-<p><strong>2. Functions</strong></p>
-<p>Functions are reusable blocks of code that perform specific tasks.</p>
-<ul>
-<li><strong>User-defined functions:</strong> Created by the programmer to modularize code.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token comment">// Function definition</span>
+        </li>
+      </ul>
+      <p><strong>2. Functions</strong></p>
+      <p>Functions are reusable blocks of code that perform specific tasks.</p>
+      <ul>
+        <li><strong>User-defined functions:</strong> Created by the programmer to modularize code.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token comment">// Function definition</span>
 return_type <span class="token function">function_name</span><span class="token punctuation">(</span>parameters<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// Function body (code to be executed)</span>
   <span class="token keyword">return</span> value<span class="token punctuation">;</span> <span class="token comment">// Optional return statement</span>
@@ -339,15 +383,19 @@ return_type <span class="token function">function_name</span><span class="token 
 <span class="token comment">// Function call</span>
 <span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// result will be 8</span>
 </code></pre>
-<ul>
-<li>
-<p><strong>Library functions:</strong> Pre-defined functions provided by the C standard library (e.g., <code>printf()</code>, <code>scanf()</code>, <code>sqrt()</code>, <code>strlen()</code>).  Include the relevant header file (e.g., <code>stdio.h</code>, <code>math.h</code>, <code>string.h</code>) to use these functions.</p>
-</li>
-<li>
-<p><strong>Recursion:</strong> A function calling itself directly or indirectly. Requires a base case to stop the recursion.</p>
-</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token comment">// Example: Calculating factorial using recursion</span>
+      <ul>
+        <li>
+          <p><strong>Library functions:</strong> Pre-defined functions provided by the C standard library (e.g.,
+            <code>printf()</code>, <code>scanf()</code>, <code>sqrt()</code>, <code>strlen()</code>). Include the
+            relevant header file (e.g., <code>stdio.h</code>, <code>math.h</code>, <code>string.h</code>) to use these
+            functions.</p>
+        </li>
+        <li>
+          <p><strong>Recursion:</strong> A function calling itself directly or indirectly. Requires a base case to stop
+            the recursion.</p>
+        </li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token comment">// Example: Calculating factorial using recursion</span>
 <span class="token keyword">int</span> <span class="token function">factorial</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// Base case</span>
@@ -358,22 +406,23 @@ return_type <span class="token function">function_name</span><span class="token 
 
 <span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token function">factorial</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// result will be 120</span>
 </code></pre>
-<h3 id="module-arrays"><strong>Module: Arrays</strong></h3>
-<p><strong>1. Introduction to Arrays</strong></p>
-<p>An array is a collection of elements of the same data type stored contiguously in memory. Arrays provide a way to organize and access multiple values using a single variable name and an index.</p>
-<p><strong>2. Fundamentals of Arrays</strong></p>
-<ul>
-<li><strong>Declaration:</strong>  Specify the data type, array name, and size (number of elements).</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c">data_type array_name<span class="token punctuation">[</span>array_size<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <h3 id="module-arrays"><strong>Module: Arrays</strong></h3>
+      <p><strong>1. Introduction to Arrays</strong></p>
+      <p>An array is a collection of elements of the same data type stored contiguously in memory. Arrays provide a way
+        to organize and access multiple values using a single variable name and an index.</p>
+      <p><strong>2. Fundamentals of Arrays</strong></p>
+      <ul>
+        <li><strong>Declaration:</strong> Specify the data type, array name, and size (number of elements).</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c">data_type array_name<span class="token punctuation">[</span>array_size<span class="token punctuation">]</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Example:  An array of 10 integers</span>
 <span class="token keyword">int</span> numbers<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 </code></pre>
-<ul>
-<li><strong>Initialization:</strong> Assign values to array elements.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> numbers<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// Direct initialization</span>
+      <ul>
+        <li><strong>Initialization:</strong> Assign values to array elements.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> numbers<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// Direct initialization</span>
 <span class="token keyword">int</span> numbers<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 numbers<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
 numbers<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
@@ -382,28 +431,32 @@ numbers<span class="token punctuation">[</span><span class="token number">1</spa
 <span class="token comment">// Partial initialization (remaining elements initialized to 0)</span>
 <span class="token keyword">int</span> numbers<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<ul>
-<li><strong>Accessing Elements:</strong> Use the array name and an index (starting from 0) to access individual elements.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> x <span class="token operator">=</span> numbers<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// Accessing the 3rd element (index 2)</span>
+      <ul>
+        <li><strong>Accessing Elements:</strong> Use the array name and an index (starting from 0) to access individual
+          elements.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> x <span class="token operator">=</span> numbers<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// Accessing the 3rd element (index 2)</span>
 numbers<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>    <span class="token comment">// Modifying the 1st element</span>
 </code></pre>
-<ul>
-<li>
-<p><strong>Size:</strong> The size of an array is fixed at compile time.  <code>sizeof(array_name)</code> returns the total size in bytes, while <code>sizeof(array_name) / sizeof(array_name[0])</code> calculates the number of elements.</p>
-</li>
-<li>
-<p><strong>Iterating through an array:</strong> Loops (especially <code>for</code> loops) are commonly used to access and process array elements.</p>
-</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <ul>
+        <li>
+          <p><strong>Size:</strong> The size of an array is fixed at compile time. <code>sizeof(array_name)</code>
+            returns the total size in bytes, while <code>sizeof(array_name) / sizeof(array_name[0])</code> calculates
+            the number of elements.</p>
+        </li>
+        <li>
+          <p><strong>Iterating through an array:</strong> Loops (especially <code>for</code> loops) are commonly used to
+            access and process array elements.</p>
+        </li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d "</span><span class="token punctuation">,</span> numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><strong>3. Single-Dimensional Arrays</strong></p>
-<p>A single-dimensional array is a linear sequence of elements.  It’s like a list or vector.</p>
-<p><strong>Example: Storing and processing student scores:</strong></p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+      <p><strong>3. Single-Dimensional Arrays</strong></p>
+      <p>A single-dimensional array is a linear sequence of elements. It’s like a list or vector.</p>
+      <p><strong>Example: Storing and processing student scores:</strong></p>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">int</span> scores<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -421,30 +474,32 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><strong>4. Multi-Dimensional Arrays</strong></p>
-<p>Multi-dimensional arrays represent data in a grid-like or matrix format.  The most common are two-dimensional arrays (matrices).</p>
-<ul>
-<li><strong>Declaration:</strong></li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c">data_type array_name<span class="token punctuation">[</span>rows<span class="token punctuation">]</span><span class="token punctuation">[</span>columns<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <p><strong>4. Multi-Dimensional Arrays</strong></p>
+      <p>Multi-dimensional arrays represent data in a grid-like or matrix format. The most common are two-dimensional
+        arrays (matrices).</p>
+      <ul>
+        <li><strong>Declaration:</strong></li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c">data_type array_name<span class="token punctuation">[</span>rows<span class="token punctuation">]</span><span class="token punctuation">[</span>columns<span class="token punctuation">]</span><span class="token punctuation">;</span>
 
 <span class="token comment">// Example: A 2x3 matrix (2 rows, 3 columns)</span>
 <span class="token keyword">int</span> matrix<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 </code></pre>
-<ul>
-<li><strong>Initialization:</strong></li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> matrix<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <ul>
+        <li><strong>Initialization:</strong></li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> matrix<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<ul>
-<li><strong>Accessing Elements:</strong></li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> x <span class="token operator">=</span> matrix<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// Accessing the element at row 1, column 0 (value 4)</span>
+      <ul>
+        <li><strong>Accessing Elements:</strong></li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> x <span class="token operator">=</span> matrix<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// Accessing the element at row 1, column 0 (value 4)</span>
 </code></pre>
-<ul>
-<li><strong>Iterating through a multi-dimensional array:</strong> Nested loops are used to access all elements.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+      <ul>
+        <li><strong>Iterating through a multi-dimensional array:</strong> Nested loops are used to access all elements.
+        </li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">int</span> matrix<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
@@ -459,716 +514,891 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><strong>5. Key Considerations</strong></p>
-<ul>
-<li><strong>Array Bounds:</strong>  Be careful not to access elements outside the defined array bounds (e.g., <code>numbers[10]</code> in an array of size 5). This can lead to program crashes or unpredictable behavior.</li>
-<li><strong>Memory Management:</strong> Arrays consume memory.  Declare arrays only with the necessary size to avoid wasting memory.</li>
-</ul>
-<h2 id="bca-semester-1---ca-103-t-computer-organization--architecture">BCA Semester 1 - CA-103-T: Computer Organization &amp; Architecture</h2>
-<h3 id="module-number-systems-and-boolean-algebra"><strong>Module: Number Systems and Boolean Algebra</strong></h3>
-<p><strong>1. Number Systems</strong></p>
-<p>Computers represent data using numbers. Different number systems provide different ways to express these numbers.</p>
-<ul>
-<li><strong>Decimal (Base-10):</strong>  The familiar number system we use daily, with digits 0-9.</li>
-<li><strong>Binary (Base-2):</strong>  Fundamental to computers, using only 0 and 1 (bits).</li>
-<li><strong>Octal (Base-8):</strong> Uses digits 0-7.  Often used as a shorthand for binary.</li>
-<li><strong>Hexadecimal (Base-16):</strong> Uses digits 0-9 and A-F (representing 10-15). Another shorthand for binary, commonly used in memory addresses and color codes.</li>
-</ul>
-<p><strong>Conversion between Number Systems:</strong></p>
-<ul>
-<li><strong>Decimal to Binary:</strong> Repeatedly divide the decimal number by 2, recording the remainders.  The remainders, read in reverse order, form the binary equivalent.</li>
-<li><strong>Binary to Decimal:</strong>  Multiply each binary digit by the corresponding power of 2 (starting from 2^0 from the rightmost digit) and sum the results.</li>
-<li><strong>Decimal to Octal:</strong> Repeatedly divide by 8 and record the remainders.</li>
-<li><strong>Decimal to Hexadecimal:</strong> Repeatedly divide by 16 and record the remainders.</li>
-<li><strong>Binary to Octal/Hexadecimal:</strong> Group binary digits into groups of 3 (for octal) or 4 (for hexadecimal) and convert each group directly.</li>
-<li><strong>Octal/Hexadecimal to Binary:</strong> Convert each octal/hexadecimal digit to its 3-bit/4-bit binary equivalent.</li>
-</ul>
-<p><strong>Example:</strong></p>
-<ul>
-<li>Decimal 25 to Binary: 25/2 = 12 remainder 1, 12/2 = 6 remainder 0, 6/2 = 3 remainder 0, 3/2 = 1 remainder 1, 1/2 = 0 remainder 1.  Binary: 11001</li>
-<li>Binary 11001 to Decimal: (1 * 2^4) + (1 * 2^3) + (0 * 2^2) + (0 * 2^1) + (1 * 2^0) = 16 + 8 + 0 + 0 + 1 = 25</li>
-</ul>
-<p><strong>2. Boolean Algebra</strong></p>
-<p>Boolean algebra deals with logical operations on binary variables (0 and 1). It’s the foundation of digital circuit design.</p>
-<ul>
-<li>
-<p><strong>Basic Operations:</strong></p>
-<ul>
-<li><strong>AND (·):</strong>  Output is 1 only if both inputs are 1.</li>
-<li><strong>OR (+):</strong> Output is 1 if at least one input is 1.</li>
-<li><strong>NOT (¬ or '):</strong> Inverts the input (0 becomes 1, 1 becomes 0).</li>
-</ul>
-</li>
-<li>
-<p><strong>Truth Tables:</strong>  Tables that show the output of a Boolean operation for all possible input combinations.</p>
-</li>
-</ul>
+      <p><strong>5. Key Considerations</strong></p>
+      <ul>
+        <li><strong>Array Bounds:</strong> Be careful not to access elements outside the defined array bounds (e.g.,
+          <code>numbers[10]</code> in an array of size 5). This can lead to program crashes or unpredictable behavior.
+        </li>
+        <li><strong>Memory Management:</strong> Arrays consume memory. Declare arrays only with the necessary size to
+          avoid wasting memory.</li>
+      </ul>
+      <h2 id="bca-semester-1---ca-103-t-computer-organization--architecture">BCA Semester 1 - CA-103-T: Computer
+        Organization &amp; Architecture</h2>
+      <h3 id="module-number-systems-and-boolean-algebra"><strong>Module: Number Systems and Boolean Algebra</strong>
+      </h3>
+      <p><strong>1. Number Systems</strong></p>
+      <p>Computers represent data using numbers. Different number systems provide different ways to express these
+        numbers.</p>
+      <ul>
+        <li><strong>Decimal (Base-10):</strong> The familiar number system we use daily, with digits 0-9.</li>
+        <li><strong>Binary (Base-2):</strong> Fundamental to computers, using only 0 and 1 (bits).</li>
+        <li><strong>Octal (Base-8):</strong> Uses digits 0-7. Often used as a shorthand for binary.</li>
+        <li><strong>Hexadecimal (Base-16):</strong> Uses digits 0-9 and A-F (representing 10-15). Another shorthand for
+          binary, commonly used in memory addresses and color codes.</li>
+      </ul>
+      <p><strong>Conversion between Number Systems:</strong></p>
+      <ul>
+        <li><strong>Decimal to Binary:</strong> Repeatedly divide the decimal number by 2, recording the remainders. The
+          remainders, read in reverse order, form the binary equivalent.</li>
+        <li><strong>Binary to Decimal:</strong> Multiply each binary digit by the corresponding power of 2 (starting
+          from 2^0 from the rightmost digit) and sum the results.</li>
+        <li><strong>Decimal to Octal:</strong> Repeatedly divide by 8 and record the remainders.</li>
+        <li><strong>Decimal to Hexadecimal:</strong> Repeatedly divide by 16 and record the remainders.</li>
+        <li><strong>Binary to Octal/Hexadecimal:</strong> Group binary digits into groups of 3 (for octal) or 4 (for
+          hexadecimal) and convert each group directly.</li>
+        <li><strong>Octal/Hexadecimal to Binary:</strong> Convert each octal/hexadecimal digit to its 3-bit/4-bit binary
+          equivalent.</li>
+      </ul>
+      <p><strong>Example:</strong></p>
+      <ul>
+        <li>Decimal 25 to Binary: 25/2 = 12 remainder 1, 12/2 = 6 remainder 0, 6/2 = 3 remainder 0, 3/2 = 1 remainder 1,
+          1/2 = 0 remainder 1. Binary: 11001</li>
+        <li>Binary 11001 to Decimal: (1 * 2^4) + (1 * 2^3) + (0 * 2^2) + (0 * 2^1) + (1 * 2^0) = 16 + 8 + 0 + 0 + 1 = 25
+        </li>
+      </ul>
+      <p><strong>2. Boolean Algebra</strong></p>
+      <p>Boolean algebra deals with logical operations on binary variables (0 and 1). It’s the foundation of digital
+        circuit design.</p>
+      <ul>
+        <li>
+          <p><strong>Basic Operations:</strong></p>
+          <ul>
+            <li><strong>AND (·):</strong> Output is 1 only if both inputs are 1.</li>
+            <li><strong>OR (+):</strong> Output is 1 if at least one input is 1.</li>
+            <li><strong>NOT (¬ or '):</strong> Inverts the input (0 becomes 1, 1 becomes 0).</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Truth Tables:</strong> Tables that show the output of a Boolean operation for all possible input
+            combinations.</p>
+        </li>
+      </ul>
 
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-<th>A AND B</th>
-<th>A OR B</th>
-<th>NOT A</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-</tbody>
-</table><ul>
-<li>
-<p><strong>Boolean Laws and Identities:</strong>  Important rules that govern Boolean algebra (e.g., commutative, associative, distributive, De Morgan’s laws).  These laws are used to simplify Boolean expressions.</p>
-<ul>
-<li><strong>Commutative:</strong>  A + B = B + A, A · B = B · A</li>
-<li><strong>Associative:</strong>  (A + B) + C = A + (B + C), (A · B) · C = A · (B · C)</li>
-<li><strong>Distributive:</strong>  A · (B + C) = (A · B) + (A · C), A + (B · C) = (A + B) · (A + C)</li>
-<li><strong>De Morgan’s Laws:</strong> ¬(A + B) = ¬A · ¬B, ¬(A · B) = ¬A + ¬B</li>
-</ul>
-</li>
-<li>
-<p><strong>Boolean Expressions:</strong> Combinations of Boolean variables, operations, and parentheses.</p>
-</li>
-<li>
-<p><strong>Logic Gates:</strong>  Physical circuits that implement Boolean operations.  Basic logic gates include AND, OR, and NOT gates.  More complex gates like NAND, NOR, XOR, and XNOR can be built from these basic gates.</p>
-</li>
-</ul>
-<p><strong>3. Application in Computers</strong></p>
-<p>Boolean algebra and number systems are crucial for:</p>
-<ul>
-<li><strong>Digital Circuit Design:</strong> Building the fundamental components of computers.</li>
-<li><strong>Computer Arithmetic:</strong> Performing arithmetic operations on binary numbers.</li>
-<li><strong>Logic Control:</strong>  Implementing control structures in programs.</li>
-<li><strong>Memory Addressing:</strong>  Accessing specific memory locations.</li>
-</ul>
-<h3 id="module-logic-gates-combinational-and-sequential-circuits"><strong>Module: Logic Gates, Combinational and Sequential Circuits</strong></h3>
-<p>This module builds upon the concepts of Boolean algebra and explores how logic gates are used to create more complex digital circuits.</p>
-<p><strong>1. Logic Gates:</strong></p>
-<p>Logic gates are the building blocks of digital circuits. They implement basic Boolean operations.</p>
-<ul>
-<li>
-<p><strong>Basic Gates:</strong></p>
-<ul>
-<li><strong>AND Gate:</strong> Outputs 1 only if both inputs are 1. Symbol: .</li>
-<li><strong>OR Gate:</strong> Outputs 1 if at least one input is 1. Symbol: +</li>
-<li><strong>NOT Gate (Inverter):</strong> Outputs the opposite of the input. Symbol: ¬ or ’</li>
-</ul>
-</li>
-<li>
-<p><strong>Universal Gates (NAND and NOR):</strong> These gates can be used to implement any other logic function.</p>
-<ul>
-<li><strong>NAND Gate (NOT AND):</strong> Outputs 0 only if both inputs are 1.</li>
-<li><strong>NOR Gate (NOT OR):</strong> Outputs 1 only if both inputs are 0.</li>
-</ul>
-</li>
-<li>
-<p><strong>Other Gates:</strong></p>
-<ul>
-<li><strong>XOR Gate (Exclusive OR):</strong> Outputs 1 if the inputs are different.</li>
-<li><strong>XNOR Gate (Exclusive NOR):</strong> Outputs 1 if the inputs are the same.</li>
-</ul>
-</li>
-</ul>
-<p><strong>2. Combinational Circuits:</strong></p>
-<p>Combinational circuits are circuits whose output depends solely on the current input values.  They have no memory.</p>
-<ul>
-<li>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Adders:</strong> Circuits that perform addition of binary numbers.  A half-adder adds two bits, while a full-adder adds three bits (including a carry-in).</li>
-<li><strong>Multiplexers (MUX):</strong> Select one of several input signals and forward it to a single output line.</li>
-<li><strong>Demultiplexers (DEMUX):</strong> Route a single input signal to one of several output lines.</li>
-<li><strong>Encoders:</strong> Convert a set of active input signals into a coded output.</li>
-<li><strong>Decoders:</strong> Convert a coded input into a set of active output signals.</li>
-</ul>
-</li>
-<li>
-<p><strong>Design Process:</strong></p>
-<ol>
-<li><strong>Truth Table:</strong> Define the desired functionality.</li>
-<li><strong>Boolean Expression:</strong> Derive a Boolean expression from the truth table.</li>
-<li><strong>Logic Diagram:</strong> Implement the Boolean expression using logic gates.</li>
-<li><strong>Simplification (Optional):</strong> Use Boolean algebra laws to minimize the number of gates.</li>
-</ol>
-</li>
-</ul>
-<p><strong>Example: Designing a 2-to-1 Multiplexer:</strong></p>
-<p>A 2-to-1 MUX has two input lines (I0, I1), a select line (S), and an output line (Y). The select line determines which input is passed to the output.</p>
-<ol>
-<li><strong>Truth Table:</strong></li>
-</ol>
+      <table>
+        <thead>
+          <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>A AND B</th>
+            <th>A OR B</th>
+            <th>NOT A</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>
+          <p><strong>Boolean Laws and Identities:</strong> Important rules that govern Boolean algebra (e.g.,
+            commutative, associative, distributive, De Morgan’s laws). These laws are used to simplify Boolean
+            expressions.</p>
+          <ul>
+            <li><strong>Commutative:</strong> A + B = B + A, A · B = B · A</li>
+            <li><strong>Associative:</strong> (A + B) + C = A + (B + C), (A · B) · C = A · (B · C)</li>
+            <li><strong>Distributive:</strong> A · (B + C) = (A · B) + (A · C), A + (B · C) = (A + B) · (A + C)</li>
+            <li><strong>De Morgan’s Laws:</strong> ¬(A + B) = ¬A · ¬B, ¬(A · B) = ¬A + ¬B</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Boolean Expressions:</strong> Combinations of Boolean variables, operations, and parentheses.</p>
+        </li>
+        <li>
+          <p><strong>Logic Gates:</strong> Physical circuits that implement Boolean operations. Basic logic gates
+            include AND, OR, and NOT gates. More complex gates like NAND, NOR, XOR, and XNOR can be built from these
+            basic gates.</p>
+        </li>
+      </ul>
+      <p><strong>3. Application in Computers</strong></p>
+      <p>Boolean algebra and number systems are crucial for:</p>
+      <ul>
+        <li><strong>Digital Circuit Design:</strong> Building the fundamental components of computers.</li>
+        <li><strong>Computer Arithmetic:</strong> Performing arithmetic operations on binary numbers.</li>
+        <li><strong>Logic Control:</strong> Implementing control structures in programs.</li>
+        <li><strong>Memory Addressing:</strong> Accessing specific memory locations.</li>
+      </ul>
+      <h3 id="module-logic-gates-combinational-and-sequential-circuits"><strong>Module: Logic Gates, Combinational and
+          Sequential Circuits</strong></h3>
+      <p>This module builds upon the concepts of Boolean algebra and explores how logic gates are used to create more
+        complex digital circuits.</p>
+      <p><strong>1. Logic Gates:</strong></p>
+      <p>Logic gates are the building blocks of digital circuits. They implement basic Boolean operations.</p>
+      <ul>
+        <li>
+          <p><strong>Basic Gates:</strong></p>
+          <ul>
+            <li><strong>AND Gate:</strong> Outputs 1 only if both inputs are 1. Symbol: .</li>
+            <li><strong>OR Gate:</strong> Outputs 1 if at least one input is 1. Symbol: +</li>
+            <li><strong>NOT Gate (Inverter):</strong> Outputs the opposite of the input. Symbol: ¬ or ’</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Universal Gates (NAND and NOR):</strong> These gates can be used to implement any other logic
+            function.</p>
+          <ul>
+            <li><strong>NAND Gate (NOT AND):</strong> Outputs 0 only if both inputs are 1.</li>
+            <li><strong>NOR Gate (NOT OR):</strong> Outputs 1 only if both inputs are 0.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Other Gates:</strong></p>
+          <ul>
+            <li><strong>XOR Gate (Exclusive OR):</strong> Outputs 1 if the inputs are different.</li>
+            <li><strong>XNOR Gate (Exclusive NOR):</strong> Outputs 1 if the inputs are the same.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>2. Combinational Circuits:</strong></p>
+      <p>Combinational circuits are circuits whose output depends solely on the current input values. They have no
+        memory.</p>
+      <ul>
+        <li>
+          <p><strong>Examples:</strong></p>
+          <ul>
+            <li><strong>Adders:</strong> Circuits that perform addition of binary numbers. A half-adder adds two bits,
+              while a full-adder adds three bits (including a carry-in).</li>
+            <li><strong>Multiplexers (MUX):</strong> Select one of several input signals and forward it to a single
+              output line.</li>
+            <li><strong>Demultiplexers (DEMUX):</strong> Route a single input signal to one of several output lines.
+            </li>
+            <li><strong>Encoders:</strong> Convert a set of active input signals into a coded output.</li>
+            <li><strong>Decoders:</strong> Convert a coded input into a set of active output signals.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Design Process:</strong></p>
+          <ol>
+            <li><strong>Truth Table:</strong> Define the desired functionality.</li>
+            <li><strong>Boolean Expression:</strong> Derive a Boolean expression from the truth table.</li>
+            <li><strong>Logic Diagram:</strong> Implement the Boolean expression using logic gates.</li>
+            <li><strong>Simplification (Optional):</strong> Use Boolean algebra laws to minimize the number of gates.
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <p><strong>Example: Designing a 2-to-1 Multiplexer:</strong></p>
+      <p>A 2-to-1 MUX has two input lines (I0, I1), a select line (S), and an output line (Y). The select line
+        determines which input is passed to the output.</p>
+      <ol>
+        <li><strong>Truth Table:</strong></li>
+      </ol>
 
-<table>
-<thead>
-<tr>
-<th>S</th>
-<th>I0</th>
-<th>I1</th>
-<th>Y</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody>
-</table><ol start="2">
-<li>
-<p><strong>Boolean Expression:</strong> Y = (S’ · I0) + (S · I1)</p>
-</li>
-<li>
-<p><strong>Logic Diagram:</strong>  The diagram would show AND gates for (S’ · I0) and (S · I1), and an OR gate to combine their outputs.  S’ represents the NOT of S.</p>
-</li>
-</ol>
-<p><strong>3. Sequential Circuits:</strong></p>
-<p>Sequential circuits have memory. Their output depends on both the current input and the past history of inputs.</p>
-<ul>
-<li>
-<p><strong>Key Components:</strong></p>
-<ul>
-<li><strong>Flip-Flops:</strong> Basic memory elements that store a single bit. Common types include D flip-flops, JK flip-flops, and T flip-flops.</li>
-<li><strong>Clock Signal:</strong>  Synchronizes the operation of sequential circuits.</li>
-</ul>
-</li>
-<li>
-<p><strong>Examples:</strong></p>
-<ul>
-<li><strong>Counters:</strong>  Sequential circuits that count pulses.</li>
-<li><strong>Registers:</strong>  Store multiple bits of data.</li>
-<li><strong>Finite State Machines (FSMs):</strong>  Model systems with a finite number of states.</li>
-</ul>
-</li>
-</ul>
-<p><strong>Key Differences between Combinational and Sequential Circuits:</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>S</th>
+            <th>I0</th>
+            <th>I1</th>
+            <th>Y</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+      <ol start="2">
+        <li>
+          <p><strong>Boolean Expression:</strong> Y = (S’ · I0) + (S · I1)</p>
+        </li>
+        <li>
+          <p><strong>Logic Diagram:</strong> The diagram would show AND gates for (S’ · I0) and (S · I1), and an OR gate
+            to combine their outputs. S’ represents the NOT of S.</p>
+        </li>
+      </ol>
+      <p><strong>3. Sequential Circuits:</strong></p>
+      <p>Sequential circuits have memory. Their output depends on both the current input and the past history of inputs.
+      </p>
+      <ul>
+        <li>
+          <p><strong>Key Components:</strong></p>
+          <ul>
+            <li><strong>Flip-Flops:</strong> Basic memory elements that store a single bit. Common types include D
+              flip-flops, JK flip-flops, and T flip-flops.</li>
+            <li><strong>Clock Signal:</strong> Synchronizes the operation of sequential circuits.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Examples:</strong></p>
+          <ul>
+            <li><strong>Counters:</strong> Sequential circuits that count pulses.</li>
+            <li><strong>Registers:</strong> Store multiple bits of data.</li>
+            <li><strong>Finite State Machines (FSMs):</strong> Model systems with a finite number of states.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Key Differences between Combinational and Sequential Circuits:</strong></p>
 
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Combinational Circuits</th>
-<th>Sequential Circuits</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Memory</td>
-<td>No memory</td>
-<td>Has memory</td>
-</tr>
-<tr>
-<td>Output</td>
-<td>Depends only on current input</td>
-<td>Depends on current input and past inputs</td>
-</tr>
-<tr>
-<td>Clock</td>
-<td>Not required</td>
-<td>Requires a clock signal</td>
-</tr>
-<tr>
-<td>Feedback</td>
-<td>No feedback</td>
-<td>Has feedback paths</td>
-</tr>
-</tbody>
-</table><h3 id="module-cpu-memory-and-io-organization"><strong>Module: CPU, Memory, and I/O Organization</strong></h3>
-<p>This module explores the core components of a computer system and how they interact.</p>
-<p><strong>1. CPU Organization (Central Processing Unit):</strong></p>
-<p>The CPU is the “brain” of the computer, responsible for executing instructions.</p>
-<ul>
-<li>
-<p><strong>Key Components:</strong></p>
-<ul>
-<li><strong>Control Unit (CU):</strong> Fetches instructions from memory, decodes them, and controls the execution sequence.  Manages the timing and control signals for other components.</li>
-<li><strong>Arithmetic Logic Unit (ALU):</strong> Performs arithmetic and logical operations (addition, subtraction, comparison, etc.).</li>
-<li><strong>Registers:</strong> Small, high-speed storage locations within the CPU.  Hold data, instructions, and addresses.  Examples: Accumulator (ACC), Program Counter (PC), Instruction Register (IR), Memory Address Register (MAR), Memory Data Register (MDR).</li>
-</ul>
-</li>
-<li>
-<p><strong>Instruction Cycle:</strong> The sequence of steps involved in executing an instruction:</p>
-<ol>
-<li><strong>Fetch:</strong> Retrieve the instruction from memory.</li>
-<li><strong>Decode:</strong> Interpret the instruction’s opcode and operands.</li>
-<li><strong>Execute:</strong> Perform the operation specified by the instruction.</li>
-<li><strong>Store:</strong> Store the result back in memory or a register.</li>
-</ol>
-</li>
-<li>
-<p><strong>Instruction Set Architecture (ISA):</strong>  Defines the set of instructions that the CPU can execute.</p>
-</li>
-</ul>
-<p><strong>2. Memory Organization:</strong></p>
-<p>Memory stores instructions and data.</p>
-<ul>
-<li>
-<p><strong>Memory Hierarchy:</strong>  Organized in levels based on speed and cost.</p>
-<ul>
-<li><strong>Registers:</strong> Fastest but smallest capacity.</li>
-<li><strong>Cache Memory:</strong>  Fast, relatively small memory that stores frequently accessed data.  Sits between the CPU and main memory.</li>
-<li><strong>Main Memory (RAM):</strong>  Larger capacity than cache but slower.  Stores currently running programs and data.  Volatile (data is lost when power is off).</li>
-<li><strong>Secondary Storage (Hard Disk, SSD):</strong>  Large capacity, non-volatile storage.  Used for long-term storage of programs and data.</li>
-</ul>
-</li>
-<li>
-<p><strong>Memory Addressing:</strong> Each memory location has a unique address used to access its contents.  Addressing modes specify how to calculate the effective memory address.  Examples: Direct addressing, indirect addressing, register addressing, indexed addressing.</p>
-</li>
-<li>
-<p><strong>Virtual Memory:</strong>  A technique that allows a program to use more memory than is physically available.  Uses a combination of RAM and secondary storage.</p>
-</li>
-</ul>
-<p><strong>3. I/O Organization (Input/Output):</strong></p>
-<p>I/O devices allow the computer to interact with the external world.</p>
-<ul>
-<li>
-<p><strong>I/O Interfaces:</strong>  Specialized hardware components that handle communication between the CPU and I/O devices.</p>
-</li>
-<li>
-<p><strong>I/O Methods:</strong></p>
-<ul>
-<li><strong>Programmed I/O:</strong> The CPU actively polls the I/O device for data.</li>
-<li><strong>Interrupt-Driven I/O:</strong> The I/O device interrupts the CPU when it has data ready.  More efficient than programmed I/O.</li>
-<li><strong>Direct Memory Access (DMA):</strong>  Allows I/O devices to transfer data directly to/from memory without involving the CPU.  Fastest I/O method.</li>
-</ul>
-</li>
-<li>
-<p><strong>I/O Devices:</strong>  Examples: Keyboard, mouse, monitor, printer, storage devices.</p>
-</li>
-</ul>
-<p><strong>Interconnection of Components:</strong></p>
-<p>The CPU, memory, and I/O devices are interconnected by a system bus. The bus consists of:</p>
-<ul>
-<li><strong>Data Bus:</strong>  Carries data between components.</li>
-<li><strong>Address Bus:</strong>  Carries memory addresses.</li>
-<li><strong>Control Bus:</strong>  Carries control signals.</li>
-</ul>
-<h2 id="bca-semester-1---ca-105-t-discrete-mathematics-and-statistics">BCA Semester 1 - CA-105-T: Discrete Mathematics and Statistics</h2>
-<h3 id="module-set-theory-logic-relations-and-functions"><strong>Module: Set Theory, Logic, Relations, and Functions</strong></h3>
-<p>This module covers fundamental concepts in discrete mathematics that are essential for computer science.</p>
-<p><strong>1. Set Theory:</strong></p>
-<p>A set is a well-defined collection of distinct objects.</p>
-<ul>
-<li><strong>Set Notation:</strong>  Sets are usually denoted by capital letters (e.g., A, B, S). Elements are listed within curly braces {}.  Example: A = {1, 2, 3}.</li>
-<li><strong>Set Operations:</strong>
-<ul>
-<li><strong>Union (∪):</strong>  A ∪ B contains all elements in A or B or both.</li>
-<li><strong>Intersection (∩):</strong>  A ∩ B contains elements common to both A and B.</li>
-<li><strong>Difference (-):</strong> A - B contains elements in A but not in B.</li>
-<li><strong>Complement (A’):</strong>  Contains elements not in A (relative to a universal set).</li>
-</ul>
-</li>
-<li><strong>Cardinality (|A|):</strong> The number of elements in set A.</li>
-<li><strong>Subsets (⊆):</strong> A is a subset of B if every element in A is also in B.</li>
-<li><strong>Power Set (P(A)):</strong> The set of all subsets of A.</li>
-<li><strong>Cartesian Product (A x B):</strong> The set of all ordered pairs (a, b) where a ∈ A and b ∈ B.</li>
-</ul>
-<p><strong>2. Logic:</strong></p>
-<p>Logic deals with reasoning and arguments.</p>
-<ul>
-<li><strong>Propositions:</strong> Statements that can be either true or false.</li>
-<li><strong>Logical Connectives:</strong>
-<ul>
-<li><strong>AND (∧):</strong> True only if both propositions are true.</li>
-<li><strong>OR (∨):</strong> True if at least one proposition is true.</li>
-<li><strong>NOT (¬):</strong> Negates the truth value of a proposition.</li>
-<li><strong>Implication (→):</strong>  p → q is false only if p is true and q is false.</li>
-<li><strong>Biconditional (↔):</strong> p ↔ q is true if p and q have the same truth value.</li>
-</ul>
-</li>
-<li><strong>Truth Tables:</strong> Used to evaluate the truth value of compound propositions.</li>
-<li><strong>Logical Equivalence:</strong> Two propositions are logically equivalent if they have the same truth table.</li>
-<li><strong>Predicates:</strong>  Statements that contain variables and become propositions when the variables are assigned values.</li>
-<li><strong>Quantifiers:</strong>
-<ul>
-<li><strong>Universal Quantifier (∀):</strong>  “For all.”</li>
-<li><strong>Existential Quantifier (∃):</strong> “There exists.”</li>
-</ul>
-</li>
-</ul>
-<p><strong>3. Relations:</strong></p>
-<p>A relation between two sets A and B is a subset of the Cartesian product A x B.</p>
-<ul>
-<li><strong>Types of Relations:</strong>  Reflexive, symmetric, transitive, equivalence relation, partial order.</li>
-<li><strong>Representation of Relations:</strong>  Set of ordered pairs, matrix, directed graph.</li>
-</ul>
-<p><strong>4. Functions:</strong></p>
-<p>A function from set A to set B is a relation where each element in A is related to exactly one element in B.</p>
-<ul>
-<li><strong>Notation:</strong> f: A → B</li>
-<li><strong>Domain:</strong> Set A.</li>
-<li><strong>Codomain:</strong> Set B.</li>
-<li><strong>Range:</strong> The set of all values f(x) for x ∈ A.</li>
-<li><strong>Types of Functions:</strong> Injective (one-to-one), surjective (onto), bijective (one-to-one and onto).</li>
-<li><strong>Composition of Functions:</strong> (g ◦ f)(x) = g(f(x)).</li>
-</ul>
-<h3 id="module-counting-and-probability"><strong>Module: Counting and Probability</strong></h3>
-<p>This module introduces fundamental counting techniques and basic concepts of probability, both crucial for analyzing algorithms and understanding data.</p>
-<p><strong>1. Counting Principles:</strong></p>
-<p>Counting principles are used to determine the number of possible outcomes in various situations.</p>
-<ul>
-<li><strong>Multiplication Principle (Product Rule):</strong> If there are <em>m</em> ways to do one thing and <em>n</em> ways to do another, then there are <em>m</em> × <em>n</em> ways to do both.  This extends to multiple tasks.</li>
-<li><strong>Addition Principle (Sum Rule):</strong> If there are <em>m</em> ways to do one thing and <em>n</em> ways to do another, and these two things are mutually exclusive (cannot be done simultaneously), then there are <em>m</em> + <em>n</em> ways to do either one or the other.</li>
-<li><strong>Inclusion-Exclusion Principle:</strong> Used to count the number of elements in the union of two or more sets, correcting for double-counting elements that are in multiple sets.  For two sets: |A ∪ B| = |A| + |B| - |A ∩ B|.</li>
-<li><strong>Permutations:</strong>  An ordered arrangement of objects.  The number of permutations of <em>n</em> distinct objects is <em>n</em>! (n factorial).  The number of permutations of <em>n</em> objects taken <em>r</em> at a time is P(n, r) = n! / (n - r)!.</li>
-<li><strong>Combinations:</strong> An unordered selection of objects.  The number of combinations of <em>n</em> distinct objects taken <em>r</em> at a time is C(n, r) = n! / (r! * (n - r)!).  Also denoted as “n choose r” or  <sup>n</sup>C<sub>r</sub>.</li>
-</ul>
-<p><strong>Example:</strong></p>
-<ul>
-<li><strong>Multiplication Principle:</strong>  If there are 3 shirts and 4 pants, there are 3 × 4 = 12 possible outfits.</li>
-<li><strong>Addition Principle:</strong> If there are 5 red balls and 3 blue balls, there are 5 + 3 = 8 ways to choose either a red or a blue ball.</li>
-<li><strong>Permutations:</strong> The number of ways to arrange the letters ABC is 3! = 3 × 2 × 1 = 6 (ABC, ACB, BAC, BCA, CAB, CBA).</li>
-<li><strong>Combinations:</strong> The number of ways to choose 2 letters from ABC is C(3, 2) = 3! / (2! * 1!) = 3 (AB, AC, BC).</li>
-</ul>
-<p><strong>2. Probability:</strong></p>
-<p>Probability measures the likelihood of an event occurring.</p>
-<ul>
-<li><strong>Sample Space (S):</strong> The set of all possible outcomes of an experiment.</li>
-<li><strong>Event (E):</strong> A subset of the sample space.</li>
-<li><strong>Probability of an Event P(E):</strong>  P(E) = |E| / |S| (number of favorable outcomes divided by the total number of outcomes), assuming all outcomes are equally likely.</li>
-<li><strong>Range of Probability:</strong> 0 ≤ P(E) ≤ 1.  P(E) = 0 means the event is impossible, P(E) = 1 means the event is certain.</li>
-<li><strong>Complementary Event (E’):</strong> The event that E does not occur. P(E’) = 1 - P(E).</li>
-<li><strong>Union of Events:</strong> P(A ∪ B) = P(A) + P(B) - P(A ∩ B).</li>
-<li><strong>Intersection of Events (Joint Probability):</strong> P(A ∩ B) represents the probability of both A and B occurring.</li>
-<li><strong>Conditional Probability (P(A|B)):</strong> The probability of event A occurring given that event B has already occurred.  P(A|B) = P(A ∩ B) / P(B).</li>
-<li><strong>Independent Events:</strong>  Two events are independent if the occurrence of one does not affect the probability of the other.  If A and B are independent, P(A ∩ B) = P(A) * P(B) and P(A|B) = P(A).</li>
-<li><strong>Bayes’ Theorem:</strong> Relates conditional probabilities. P(A|B) = [P(B|A) * P(A)] / P(B).</li>
-</ul>
-<p><strong>Example:</strong></p>
-<ul>
-<li><strong>Probability of rolling a 4 on a fair six-sided die:</strong> P(rolling a 4) = 1/6.</li>
-<li><strong>Probability of rolling an even number:</strong> P(even number) = 3/6 = 1/2.</li>
-</ul>
-<h3 id="module-data-presentation-central-tendency-dispersion-correlation-regression-and-sampling"><strong>Module: Data Presentation, Central Tendency, Dispersion, Correlation, Regression, and Sampling</strong></h3>
-<p>This module covers essential statistical concepts for understanding and analyzing data.</p>
-<p><strong>1. Data Presentation:</strong></p>
-<p>Data can be presented in various ways to facilitate understanding and analysis.</p>
-<ul>
-<li><strong>Tables:</strong> Organize data in rows and columns.</li>
-<li><strong>Graphs:</strong> Visual representations of data. Common types include:
-<ul>
-<li><strong>Bar Graphs:</strong>  Represent categorical data.</li>
-<li><strong>Histograms:</strong> Represent the distribution of numerical data.</li>
-<li><strong>Line Graphs:</strong> Show trends over time.</li>
-<li><strong>Scatter Plots:</strong>  Show the relationship between two variables.</li>
-<li><strong>Pie Charts:</strong> Represent proportions of a whole.</li>
-</ul>
-</li>
-</ul>
-<p><strong>2. Measures of Central Tendency:</strong></p>
-<p>These measures describe the center or average of a dataset.</p>
-<ul>
-<li><strong>Mean:</strong> The sum of all values divided by the number of values.  Sensitive to outliers.</li>
-<li><strong>Median:</strong> The middle value when the data is ordered.  Less sensitive to outliers than the mean.</li>
-<li><strong>Mode:</strong> The most frequent value in the dataset.</li>
-</ul>
-<p><strong>3. Measures of Dispersion:</strong></p>
-<p>These measures describe the spread or variability of a dataset.</p>
-<ul>
-<li><strong>Range:</strong> The difference between the maximum and minimum values.</li>
-<li><strong>Variance:</strong> The average of the squared differences between each value and the mean.</li>
-<li><strong>Standard Deviation:</strong> The square root of the variance.  Provides a measure of spread in the same units as the original data.</li>
-<li><strong>Interquartile Range (IQR):</strong> The difference between the 75th percentile (Q3) and the 25th percentile (Q1).  Less sensitive to outliers than the range.</li>
-</ul>
-<p><strong>4. Correlation:</strong></p>
-<p>Correlation measures the strength and direction of the linear relationship between two variables.</p>
-<ul>
-<li><strong>Correlation Coefficient ®:</strong>  Ranges from -1 to +1.
-<ul>
-<li><strong>r = +1:</strong> Perfect positive correlation.</li>
-<li><strong>r = -1:</strong> Perfect negative correlation.</li>
-<li><strong>r = 0:</strong> No linear correlation.</li>
-</ul>
-</li>
-</ul>
-<p><strong>5. Regression:</strong></p>
-<p>Regression analysis models the relationship between two variables.  Simple linear regression models the relationship with a straight line.</p>
-<ul>
-<li><strong>Regression Equation:</strong> y = mx + c, where y is the dependent variable, x is the independent variable, m is the slope, and c is the y-intercept.</li>
-</ul>
-<p><strong>6. Sampling:</strong></p>
-<p>Sampling involves selecting a subset of a population to make inferences about the entire population.</p>
-<ul>
-<li><strong>Types of Sampling:</strong>
-<ul>
-<li><strong>Random Sampling:</strong> Every member of the population has an equal chance of being selected.</li>
-<li><strong>Stratified Sampling:</strong> The population is divided into strata (groups), and a random sample is taken from each stratum.</li>
-<li><strong>Cluster Sampling:</strong> The population is divided into clusters, and a random sample of clusters is selected. All members of the selected clusters are included in the sample.</li>
-</ul>
-</li>
-<li><strong>Sample Size:</strong>  The number of individuals in the sample. A larger sample size generally leads to more accurate inferences about the population.</li>
-<li><strong>Sampling Bias:</strong>  Occurs when the sample is not representative of the population.</li>
-</ul>
-<h2 id="bca-semester-1---oe-101-introduction-to-data-science-optional">BCA Semester 1 - OE-101: Introduction to Data Science (Optional)</h2>
-<h3 id="module-data-science-introduction-types-of-data-applications-and-lifecycle"><strong>Module: Data Science Introduction, Types of Data, Applications, and Lifecycle</strong></h3>
-<p>This module provides a foundational understanding of data science, its key components, and its applications.</p>
-<p><strong>1. Introduction to Data Science:</strong></p>
-<p>Data science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. It combines elements of statistics, computer science, domain expertise, and data visualization to analyze and interpret complex data.</p>
-<ul>
-<li>
-<p><strong>Key Goals of Data Science:</strong></p>
-<ul>
-<li><strong>Discover hidden patterns and insights:</strong>  Uncover meaningful information from raw data.</li>
-<li><strong>Make data-driven predictions:</strong> Forecast future outcomes based on historical data.</li>
-<li><strong>Build data-driven products and services:</strong>  Develop applications that leverage data to improve user experiences and business outcomes.</li>
-<li><strong>Solve complex business problems:</strong> Use data analysis to address challenges and optimize strategies.</li>
-</ul>
-</li>
-<li>
-<p><strong>Data Science vs. Other Fields:</strong> While related to fields like statistics, machine learning, and data mining, data science encompasses a broader scope, including data collection, cleaning, preparation, visualization, and communication of findings.</p>
-</li>
-</ul>
-<p><strong>2. Types of Data:</strong></p>
-<p>Data can be categorized in various ways:</p>
-<ul>
-<li>
-<p><strong>Structured Data:</strong> Organized in a predefined format, typically stored in relational databases. Examples: tables with rows and columns.</p>
-</li>
-<li>
-<p><strong>Unstructured Data:</strong>  Lacks a predefined format, making it more challenging to analyze directly.  Examples: text, images, audio, video.</p>
-</li>
-<li>
-<p><strong>Semi-structured Data:</strong>  Contains some organizational properties but doesn’t conform to a rigid structure like relational databases. Examples: JSON, XML data.</p>
-</li>
-<li>
-<p><strong>Data Formats:</strong>  CSV, JSON, XML, databases, text files, image files, etc.</p>
-</li>
-</ul>
-<p><strong>3. Applications of Data Science:</strong></p>
-<p>Data science has a wide range of applications across various industries:</p>
-<ul>
-<li><strong>Business Analytics:</strong>  Customer segmentation, market analysis, sales forecasting, risk management, pricing optimization.</li>
-<li><strong>Healthcare:</strong> Disease prediction, drug discovery, personalized medicine, patient monitoring.</li>
-<li><strong>Finance:</strong> Fraud detection, credit scoring, algorithmic trading, risk assessment.</li>
-<li><strong>E-commerce:</strong>  Recommendation systems, personalized marketing, inventory management.</li>
-<li><strong>Social Sciences:</strong> Sentiment analysis, social network analysis, trend prediction.</li>
-<li><strong>Image Recognition and Computer Vision:</strong> Object detection, facial recognition, image classification.</li>
-<li><strong>Natural Language Processing (NLP):</strong> Text analysis, sentiment analysis, machine translation.</li>
-</ul>
-<p><strong>4. Data Science Lifecycle:</strong></p>
-<p>The data science lifecycle typically involves the following stages:</p>
-<ol>
-<li>
-<p><strong>Business Understanding:</strong> Define the problem and objectives. What questions are we trying to answer? What are the desired outcomes?</p>
-</li>
-<li>
-<p><strong>Data Collection:</strong> Gather data from various sources. This might involve databases, APIs, web scraping, or data from sensors.</p>
-</li>
-<li>
-<p><strong>Data Cleaning and Preparation:</strong> Clean the data by handling missing values, removing duplicates, and correcting errors. Transform the data into a suitable format for analysis. This stage often consumes a significant portion of the project time.  Feature engineering (creating new features from existing ones) is also a crucial part of this stage.</p>
-</li>
-<li>
-<p><strong>Exploratory Data Analysis (EDA):</strong>  Analyze the data using descriptive statistics, visualizations, and data mining techniques to gain insights and identify patterns. Formulate hypotheses about the data.</p>
-</li>
-<li>
-<p><strong>Modeling:</strong> Build predictive or descriptive models using statistical modeling, machine learning algorithms, or deep learning techniques.  Choose appropriate algorithms based on the problem and data characteristics.  Train and evaluate the models using appropriate metrics.</p>
-</li>
-<li>
-<p><strong>Model Evaluation and Selection:</strong> Evaluate the performance of different models and select the best one based on various metrics (accuracy, precision, recall, F1-score, AUC-ROC, etc.). Cross-validation and hyperparameter tuning are essential for building robust and generalizable models.</p>
-</li>
-<li>
-<p><strong>Deployment:</strong>  Deploy the chosen model into a production environment. This might involve integrating the model into a web application, a business intelligence dashboard, or an automated decision-making system.</p>
-</li>
-<li>
-<p><strong>Monitoring and Maintenance:</strong> Monitor the model’s performance over time and retrain it as needed to maintain its accuracy and relevance. The data might change over time, requiring model updates.</p>
-</li>
-</ol>
-<p><strong>Tools and Technologies:</strong></p>
-<p>Data scientists use a variety of tools and technologies, including programming languages (Python, R), data manipulation libraries (Pandas, NumPy), machine learning libraries (Scikit-learn, TensorFlow, PyTorch), and visualization tools (Matplotlib, Seaborn).</p>
-<h3 id="module-role-of-data-scientists-statistics-for-data-science-and-data-science-models-and-tasks"><strong>Module: Role of Data Scientists, Statistics for Data Science, and Data Science Models and Tasks</strong></h3>
-<p>This module delves deeper into the role of data scientists, the importance of statistics in data science, and the different types of models and tasks involved.</p>
-<p><strong>1. Role of Data Scientists:</strong></p>
-<p>Data scientists play a crucial role in extracting knowledge and insights from data.  Their responsibilities include:</p>
-<ul>
-<li><strong>Defining business problems:</strong>  Collaborate with stakeholders to understand business challenges and translate them into data-driven questions.</li>
-<li><strong>Collecting and preparing data:</strong> Gather data from various sources, clean and transform it into a suitable format for analysis.  Handle missing values, outliers, and inconsistencies in the data.</li>
-<li><strong>Exploratory data analysis (EDA):</strong> Analyze data using statistical methods and visualization techniques to identify patterns, trends, and anomalies.</li>
-<li><strong>Feature engineering:</strong> Create new features from existing data to improve model performance.</li>
-<li><strong>Model building:</strong> Develop and train predictive or descriptive models using machine learning or statistical techniques.</li>
-<li><strong>Model evaluation and selection:</strong> Evaluate model performance using appropriate metrics and select the best model.</li>
-<li><strong>Deploying and monitoring models:</strong> Deploy models into production environments and monitor their performance over time.</li>
-<li><strong>Communicating findings:</strong>  Present insights and findings to stakeholders in a clear and concise manner, using visualizations and storytelling.</li>
-</ul>
-<p><strong>Essential Skills for Data Scientists:</strong></p>
-<ul>
-<li><strong>Programming:</strong> Proficiency in languages like Python or R.</li>
-<li><strong>Statistics and Mathematics:</strong> Strong foundation in statistical concepts, probability, linear algebra, and calculus.</li>
-<li><strong>Machine Learning:</strong>  Knowledge of various machine learning algorithms and techniques.</li>
-<li><strong>Data Visualization:</strong> Ability to create compelling visualizations to communicate insights.</li>
-<li><strong>Communication and Storytelling:</strong> Effectively convey complex information to both technical and non-technical audiences.</li>
-<li><strong>Domain Expertise:</strong>  Understanding of the specific industry or domain in which they work.</li>
-</ul>
-<p><strong>2. Statistics for Data Science:</strong></p>
-<p>Statistics plays a vital role in data science, providing the tools and techniques for analyzing and interpreting data. Key statistical concepts used in data science include:</p>
-<ul>
-<li><strong>Descriptive Statistics:</strong>  Summarizing and describing data using measures of central tendency (mean, median, mode) and dispersion (variance, standard deviation, range).</li>
-<li><strong>Inferential Statistics:</strong>  Drawing conclusions about a population based on a sample of data.  Hypothesis testing, confidence intervals, and regression analysis are common techniques.</li>
-<li><strong>Probability:</strong>  Understanding probability distributions and concepts like conditional probability and Bayes’ theorem.</li>
-<li><strong>Regression Analysis:</strong>  Modeling the relationship between variables. Linear regression, logistic regression, and other regression techniques are used for prediction and understanding relationships.</li>
-<li><strong>Hypothesis Testing:</strong>  Evaluating evidence to make decisions about hypotheses related to the data.</li>
-<li><strong>Dimensionality Reduction:</strong> Techniques like Principal Component Analysis (PCA) to reduce the number of variables while preserving important information.</li>
-</ul>
-<p><strong>3. Data Science Models and Tasks:</strong></p>
-<p>Data science encompasses various models and tasks, broadly categorized as:</p>
-<ul>
-<li>
-<p><strong>Supervised Learning:</strong>  Building models to predict an outcome variable based on labeled training data.  Common tasks include:</p>
-<ul>
-<li><strong>Classification:</strong> Predicting a categorical outcome (e.g., spam/not spam, fraud/no fraud). Algorithms: Logistic Regression, Support Vector Machines (SVM), Decision Trees, Random Forests.</li>
-<li><strong>Regression:</strong> Predicting a continuous outcome (e.g., house prices, stock prices). Algorithms: Linear Regression, Polynomial Regression, Support Vector Regression.</li>
-</ul>
-</li>
-<li>
-<p><strong>Unsupervised Learning:</strong>  Analyzing unlabeled data to discover patterns, relationships, and structures.  Common tasks include:</p>
-<ul>
-<li><strong>Clustering:</strong> Grouping similar data points together. Algorithms: K-Means, Hierarchical Clustering, DBSCAN.</li>
-<li><strong>Dimensionality Reduction:</strong> Reducing the number of variables while preserving important information.  Algorithm: Principal Component Analysis (PCA).</li>
-<li><strong>Association Rule Mining:</strong>  Discovering relationships between variables in large datasets (e.g., market basket analysis).  Algorithm: Apriori.</li>
-</ul>
-</li>
-<li>
-<p><strong>Reinforcement Learning:</strong> Training agents to make decisions in an environment to maximize a reward.  Used in areas like robotics, game playing, and personalized recommendations.</p>
-</li>
-</ul>
-<h3 id="module-data-quality-pre-processing-and-visualization"><strong>Module: Data Quality, Pre-processing, and Visualization</strong></h3>
-<p>This module focuses on crucial aspects of preparing data for analysis and effectively communicating insights.</p>
-<p><strong>1. Data Quality:</strong></p>
-<p>High-quality data is essential for reliable and meaningful data analysis.  Key dimensions of data quality include:</p>
-<ul>
-<li><strong>Accuracy:</strong> Data should be free from errors and correctly reflect the real-world phenomena it represents.</li>
-<li><strong>Completeness:</strong>  Data should contain all necessary information. Missing values can hinder analysis and lead to biased results.</li>
-<li><strong>Consistency:</strong> Data should be consistent across different sources and within the dataset itself.  Inconsistencies can arise from data entry errors or different data collection methods.</li>
-<li><strong>Timeliness:</strong>  Data should be up-to-date and relevant to the analysis. Outdated data can lead to inaccurate conclusions.</li>
-<li><strong>Validity:</strong> Data should conform to the defined business rules and constraints.  For example, age should be a positive number.</li>
-<li><strong>Uniqueness:</strong>  Data should not contain duplicate records. Duplicate data can skew analysis and lead to incorrect insights.</li>
-</ul>
-<p><strong>2. Data Pre-processing:</strong></p>
-<p>Data pre-processing involves transforming raw data into a format suitable for analysis. Key steps include:</p>
-<ul>
-<li><strong>Data Cleaning:</strong> Handling missing values (imputation or deletion), smoothing noisy data, removing outliers, and resolving inconsistencies.</li>
-<li><strong>Data Transformation:</strong> Converting data into a different format or scale. Common techniques include:
-<ul>
-<li><strong>Normalization:</strong> Scaling data to a specific range (e.g., 0-1).</li>
-<li><strong>Standardization:</strong> Transforming data to have zero mean and unit variance.</li>
-<li><strong>Log Transformation:</strong> Applying a logarithmic function to skewed data.</li>
-</ul>
-</li>
-<li><strong>Data Reduction:</strong> Reducing the size of the dataset by selecting relevant features, aggregating data, or using dimensionality reduction techniques like PCA.</li>
-<li><strong>Data Integration:</strong> Combining data from multiple sources into a unified view.  This might involve merging tables, resolving data conflicts, and ensuring data consistency.</li>
-</ul>
-<p><strong>Techniques for Handling Missing Values:</strong></p>
-<ul>
-<li><strong>Deletion:</strong> Removing rows or columns with missing values.  Can lead to loss of information if a substantial portion of the data is missing.</li>
-<li><strong>Imputation:</strong> Replacing missing values with estimated values. Common imputation methods include:
-<ul>
-<li><strong>Mean/Median/Mode Imputation:</strong> Replacing missing values with the mean, median, or mode of the variable.</li>
-<li><strong>Regression Imputation:</strong> Predicting missing values using a regression model.</li>
-<li><strong>K-Nearest Neighbors Imputation:</strong>  Imputing missing values based on the values of similar data points.</li>
-</ul>
-</li>
-</ul>
-<p><strong>3. Data Visualization:</strong></p>
-<p>Data visualization is the graphical representation of data to facilitate understanding and communication of insights.  Effective visualizations help to:</p>
-<ul>
-<li><strong>Explore data:</strong> Identify patterns, trends, and outliers.</li>
-<li><strong>Communicate findings:</strong>  Present insights to stakeholders in a clear and compelling way.</li>
-<li><strong>Support decision-making:</strong> Provide data-driven evidence for informed decisions.</li>
-</ul>
-<p><strong>Types of Visualizations:</strong></p>
-<ul>
-<li><strong>Bar Charts:</strong> Compare values across different categories.</li>
-<li><strong>Line Charts:</strong> Show trends over time.</li>
-<li><strong>Scatter Plots:</strong> Explore the relationship between two variables.</li>
-<li><strong>Histograms:</strong>  Visualize the distribution of a single variable.</li>
-<li><strong>Box Plots:</strong>  Show the distribution of data and identify outliers.</li>
-<li><strong>Heatmaps:</strong>  Visualize correlations between variables.</li>
-<li><strong>Pie Charts:</strong>  Show proportions of a whole.</li>
-</ul>
-<h2 id="bca-semester-1---vsec-101-html-and-web-page-designing">BCA Semester 1 - VSEC-101: HTML and Web Page Designing</h2>
-<h3 id="module-html-elements-and-tags-css-javascript-and-website-design"><strong>Module: HTML Elements and Tags, CSS, JavaScript, and Website Design</strong></h3>
-<p>This module introduces the fundamental technologies for creating and styling web pages, including HTML for structure, CSS for presentation, and JavaScript for interactivity.  It also touches upon basic website design principles.</p>
-<p><strong>1. HTML (HyperText Markup Language):</strong></p>
-<p>HTML provides the structural foundation of web pages.  It uses tags to define different elements of a page.</p>
-<ul>
-<li>
-<p><strong>Elements and Tags:</strong> HTML elements are represented by tags, which usually come in pairs: an opening tag <code>&lt;tagname&gt;</code> and a closing tag <code>&lt;/tagname&gt;</code>.  The content between the tags is the element’s content.  Some tags are self-closing (e.g., <code>&lt;br/&gt;</code>, <code>&lt;img/&gt;</code>).</p>
-</li>
-<li>
-<p><strong>Basic HTML Structure:</strong></p>
-</li>
-</ul>
-<pre class=" language-html"><code class="prism  language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Combinational Circuits</th>
+            <th>Sequential Circuits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Memory</td>
+            <td>No memory</td>
+            <td>Has memory</td>
+          </tr>
+          <tr>
+            <td>Output</td>
+            <td>Depends only on current input</td>
+            <td>Depends on current input and past inputs</td>
+          </tr>
+          <tr>
+            <td>Clock</td>
+            <td>Not required</td>
+            <td>Requires a clock signal</td>
+          </tr>
+          <tr>
+            <td>Feedback</td>
+            <td>No feedback</td>
+            <td>Has feedback paths</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="module-cpu-memory-and-io-organization"><strong>Module: CPU, Memory, and I/O Organization</strong></h3>
+      <p>This module explores the core components of a computer system and how they interact.</p>
+      <p><strong>1. CPU Organization (Central Processing Unit):</strong></p>
+      <p>The CPU is the “brain” of the computer, responsible for executing instructions.</p>
+      <ul>
+        <li>
+          <p><strong>Key Components:</strong></p>
+          <ul>
+            <li><strong>Control Unit (CU):</strong> Fetches instructions from memory, decodes them, and controls the
+              execution sequence. Manages the timing and control signals for other components.</li>
+            <li><strong>Arithmetic Logic Unit (ALU):</strong> Performs arithmetic and logical operations (addition,
+              subtraction, comparison, etc.).</li>
+            <li><strong>Registers:</strong> Small, high-speed storage locations within the CPU. Hold data, instructions,
+              and addresses. Examples: Accumulator (ACC), Program Counter (PC), Instruction Register (IR), Memory
+              Address Register (MAR), Memory Data Register (MDR).</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Instruction Cycle:</strong> The sequence of steps involved in executing an instruction:</p>
+          <ol>
+            <li><strong>Fetch:</strong> Retrieve the instruction from memory.</li>
+            <li><strong>Decode:</strong> Interpret the instruction’s opcode and operands.</li>
+            <li><strong>Execute:</strong> Perform the operation specified by the instruction.</li>
+            <li><strong>Store:</strong> Store the result back in memory or a register.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Instruction Set Architecture (ISA):</strong> Defines the set of instructions that the CPU can
+            execute.</p>
+        </li>
+      </ul>
+      <p><strong>2. Memory Organization:</strong></p>
+      <p>Memory stores instructions and data.</p>
+      <ul>
+        <li>
+          <p><strong>Memory Hierarchy:</strong> Organized in levels based on speed and cost.</p>
+          <ul>
+            <li><strong>Registers:</strong> Fastest but smallest capacity.</li>
+            <li><strong>Cache Memory:</strong> Fast, relatively small memory that stores frequently accessed data. Sits
+              between the CPU and main memory.</li>
+            <li><strong>Main Memory (RAM):</strong> Larger capacity than cache but slower. Stores currently running
+              programs and data. Volatile (data is lost when power is off).</li>
+            <li><strong>Secondary Storage (Hard Disk, SSD):</strong> Large capacity, non-volatile storage. Used for
+              long-term storage of programs and data.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Memory Addressing:</strong> Each memory location has a unique address used to access its contents.
+            Addressing modes specify how to calculate the effective memory address. Examples: Direct addressing,
+            indirect addressing, register addressing, indexed addressing.</p>
+        </li>
+        <li>
+          <p><strong>Virtual Memory:</strong> A technique that allows a program to use more memory than is physically
+            available. Uses a combination of RAM and secondary storage.</p>
+        </li>
+      </ul>
+      <p><strong>3. I/O Organization (Input/Output):</strong></p>
+      <p>I/O devices allow the computer to interact with the external world.</p>
+      <ul>
+        <li>
+          <p><strong>I/O Interfaces:</strong> Specialized hardware components that handle communication between the CPU
+            and I/O devices.</p>
+        </li>
+        <li>
+          <p><strong>I/O Methods:</strong></p>
+          <ul>
+            <li><strong>Programmed I/O:</strong> The CPU actively polls the I/O device for data.</li>
+            <li><strong>Interrupt-Driven I/O:</strong> The I/O device interrupts the CPU when it has data ready. More
+              efficient than programmed I/O.</li>
+            <li><strong>Direct Memory Access (DMA):</strong> Allows I/O devices to transfer data directly to/from memory
+              without involving the CPU. Fastest I/O method.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>I/O Devices:</strong> Examples: Keyboard, mouse, monitor, printer, storage devices.</p>
+        </li>
+      </ul>
+      <p><strong>Interconnection of Components:</strong></p>
+      <p>The CPU, memory, and I/O devices are interconnected by a system bus. The bus consists of:</p>
+      <ul>
+        <li><strong>Data Bus:</strong> Carries data between components.</li>
+        <li><strong>Address Bus:</strong> Carries memory addresses.</li>
+        <li><strong>Control Bus:</strong> Carries control signals.</li>
+      </ul>
+      <h2 id="bca-semester-1---ca-105-t-discrete-mathematics-and-statistics">BCA Semester 1 - CA-105-T: Discrete
+        Mathematics and Statistics</h2>
+      <h3 id="module-set-theory-logic-relations-and-functions"><strong>Module: Set Theory, Logic, Relations, and
+          Functions</strong></h3>
+      <p>This module covers fundamental concepts in discrete mathematics that are essential for computer science.</p>
+      <p><strong>1. Set Theory:</strong></p>
+      <p>A set is a well-defined collection of distinct objects.</p>
+      <ul>
+        <li><strong>Set Notation:</strong> Sets are usually denoted by capital letters (e.g., A, B, S). Elements are
+          listed within curly braces {}. Example: A = {1, 2, 3}.</li>
+        <li><strong>Set Operations:</strong>
+          <ul>
+            <li><strong>Union (∪):</strong> A ∪ B contains all elements in A or B or both.</li>
+            <li><strong>Intersection (∩):</strong> A ∩ B contains elements common to both A and B.</li>
+            <li><strong>Difference (-):</strong> A - B contains elements in A but not in B.</li>
+            <li><strong>Complement (A’):</strong> Contains elements not in A (relative to a universal set).</li>
+          </ul>
+        </li>
+        <li><strong>Cardinality (|A|):</strong> The number of elements in set A.</li>
+        <li><strong>Subsets (⊆):</strong> A is a subset of B if every element in A is also in B.</li>
+        <li><strong>Power Set (P(A)):</strong> The set of all subsets of A.</li>
+        <li><strong>Cartesian Product (A x B):</strong> The set of all ordered pairs (a, b) where a ∈ A and b ∈ B.</li>
+      </ul>
+      <p><strong>2. Logic:</strong></p>
+      <p>Logic deals with reasoning and arguments.</p>
+      <ul>
+        <li><strong>Propositions:</strong> Statements that can be either true or false.</li>
+        <li><strong>Logical Connectives:</strong>
+          <ul>
+            <li><strong>AND (∧):</strong> True only if both propositions are true.</li>
+            <li><strong>OR (∨):</strong> True if at least one proposition is true.</li>
+            <li><strong>NOT (¬):</strong> Negates the truth value of a proposition.</li>
+            <li><strong>Implication (→):</strong> p → q is false only if p is true and q is false.</li>
+            <li><strong>Biconditional (↔):</strong> p ↔ q is true if p and q have the same truth value.</li>
+          </ul>
+        </li>
+        <li><strong>Truth Tables:</strong> Used to evaluate the truth value of compound propositions.</li>
+        <li><strong>Logical Equivalence:</strong> Two propositions are logically equivalent if they have the same truth
+          table.</li>
+        <li><strong>Predicates:</strong> Statements that contain variables and become propositions when the variables
+          are assigned values.</li>
+        <li><strong>Quantifiers:</strong>
+          <ul>
+            <li><strong>Universal Quantifier (∀):</strong> “For all.”</li>
+            <li><strong>Existential Quantifier (∃):</strong> “There exists.”</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>3. Relations:</strong></p>
+      <p>A relation between two sets A and B is a subset of the Cartesian product A x B.</p>
+      <ul>
+        <li><strong>Types of Relations:</strong> Reflexive, symmetric, transitive, equivalence relation, partial order.
+        </li>
+        <li><strong>Representation of Relations:</strong> Set of ordered pairs, matrix, directed graph.</li>
+      </ul>
+      <p><strong>4. Functions:</strong></p>
+      <p>A function from set A to set B is a relation where each element in A is related to exactly one element in B.
+      </p>
+      <ul>
+        <li><strong>Notation:</strong> f: A → B</li>
+        <li><strong>Domain:</strong> Set A.</li>
+        <li><strong>Codomain:</strong> Set B.</li>
+        <li><strong>Range:</strong> The set of all values f(x) for x ∈ A.</li>
+        <li><strong>Types of Functions:</strong> Injective (one-to-one), surjective (onto), bijective (one-to-one and
+          onto).</li>
+        <li><strong>Composition of Functions:</strong> (g ◦ f)(x) = g(f(x)).</li>
+      </ul>
+      <h3 id="module-counting-and-probability"><strong>Module: Counting and Probability</strong></h3>
+      <p>This module introduces fundamental counting techniques and basic concepts of probability, both crucial for
+        analyzing algorithms and understanding data.</p>
+      <p><strong>1. Counting Principles:</strong></p>
+      <p>Counting principles are used to determine the number of possible outcomes in various situations.</p>
+      <ul>
+        <li><strong>Multiplication Principle (Product Rule):</strong> If there are <em>m</em> ways to do one thing and
+          <em>n</em> ways to do another, then there are <em>m</em> × <em>n</em> ways to do both. This extends to
+          multiple tasks.</li>
+        <li><strong>Addition Principle (Sum Rule):</strong> If there are <em>m</em> ways to do one thing and <em>n</em>
+          ways to do another, and these two things are mutually exclusive (cannot be done simultaneously), then there
+          are <em>m</em> + <em>n</em> ways to do either one or the other.</li>
+        <li><strong>Inclusion-Exclusion Principle:</strong> Used to count the number of elements in the union of two or
+          more sets, correcting for double-counting elements that are in multiple sets. For two sets: |A ∪ B| = |A| +
+          |B| - |A ∩ B|.</li>
+        <li><strong>Permutations:</strong> An ordered arrangement of objects. The number of permutations of <em>n</em>
+          distinct objects is <em>n</em>! (n factorial). The number of permutations of <em>n</em> objects taken
+          <em>r</em> at a time is P(n, r) = n! / (n - r)!.</li>
+        <li><strong>Combinations:</strong> An unordered selection of objects. The number of combinations of <em>n</em>
+          distinct objects taken <em>r</em> at a time is C(n, r) = n! / (r! * (n - r)!). Also denoted as “n choose r” or
+          <sup>n</sup>C<sub>r</sub>.</li>
+      </ul>
+      <p><strong>Example:</strong></p>
+      <ul>
+        <li><strong>Multiplication Principle:</strong> If there are 3 shirts and 4 pants, there are 3 × 4 = 12 possible
+          outfits.</li>
+        <li><strong>Addition Principle:</strong> If there are 5 red balls and 3 blue balls, there are 5 + 3 = 8 ways to
+          choose either a red or a blue ball.</li>
+        <li><strong>Permutations:</strong> The number of ways to arrange the letters ABC is 3! = 3 × 2 × 1 = 6 (ABC,
+          ACB, BAC, BCA, CAB, CBA).</li>
+        <li><strong>Combinations:</strong> The number of ways to choose 2 letters from ABC is C(3, 2) = 3! / (2! * 1!) =
+          3 (AB, AC, BC).</li>
+      </ul>
+      <p><strong>2. Probability:</strong></p>
+      <p>Probability measures the likelihood of an event occurring.</p>
+      <ul>
+        <li><strong>Sample Space (S):</strong> The set of all possible outcomes of an experiment.</li>
+        <li><strong>Event (E):</strong> A subset of the sample space.</li>
+        <li><strong>Probability of an Event P(E):</strong> P(E) = |E| / |S| (number of favorable outcomes divided by the
+          total number of outcomes), assuming all outcomes are equally likely.</li>
+        <li><strong>Range of Probability:</strong> 0 ≤ P(E) ≤ 1. P(E) = 0 means the event is impossible, P(E) = 1 means
+          the event is certain.</li>
+        <li><strong>Complementary Event (E’):</strong> The event that E does not occur. P(E’) = 1 - P(E).</li>
+        <li><strong>Union of Events:</strong> P(A ∪ B) = P(A) + P(B) - P(A ∩ B).</li>
+        <li><strong>Intersection of Events (Joint Probability):</strong> P(A ∩ B) represents the probability of both A
+          and B occurring.</li>
+        <li><strong>Conditional Probability (P(A|B)):</strong> The probability of event A occurring given that event B
+          has already occurred. P(A|B) = P(A ∩ B) / P(B).</li>
+        <li><strong>Independent Events:</strong> Two events are independent if the occurrence of one does not affect the
+          probability of the other. If A and B are independent, P(A ∩ B) = P(A) * P(B) and P(A|B) = P(A).</li>
+        <li><strong>Bayes’ Theorem:</strong> Relates conditional probabilities. P(A|B) = [P(B|A) * P(A)] / P(B).</li>
+      </ul>
+      <p><strong>Example:</strong></p>
+      <ul>
+        <li><strong>Probability of rolling a 4 on a fair six-sided die:</strong> P(rolling a 4) = 1/6.</li>
+        <li><strong>Probability of rolling an even number:</strong> P(even number) = 3/6 = 1/2.</li>
+      </ul>
+      <h3 id="module-data-presentation-central-tendency-dispersion-correlation-regression-and-sampling"><strong>Module:
+          Data Presentation, Central Tendency, Dispersion, Correlation, Regression, and Sampling</strong></h3>
+      <p>This module covers essential statistical concepts for understanding and analyzing data.</p>
+      <p><strong>1. Data Presentation:</strong></p>
+      <p>Data can be presented in various ways to facilitate understanding and analysis.</p>
+      <ul>
+        <li><strong>Tables:</strong> Organize data in rows and columns.</li>
+        <li><strong>Graphs:</strong> Visual representations of data. Common types include:
+          <ul>
+            <li><strong>Bar Graphs:</strong> Represent categorical data.</li>
+            <li><strong>Histograms:</strong> Represent the distribution of numerical data.</li>
+            <li><strong>Line Graphs:</strong> Show trends over time.</li>
+            <li><strong>Scatter Plots:</strong> Show the relationship between two variables.</li>
+            <li><strong>Pie Charts:</strong> Represent proportions of a whole.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>2. Measures of Central Tendency:</strong></p>
+      <p>These measures describe the center or average of a dataset.</p>
+      <ul>
+        <li><strong>Mean:</strong> The sum of all values divided by the number of values. Sensitive to outliers.</li>
+        <li><strong>Median:</strong> The middle value when the data is ordered. Less sensitive to outliers than the
+          mean.</li>
+        <li><strong>Mode:</strong> The most frequent value in the dataset.</li>
+      </ul>
+      <p><strong>3. Measures of Dispersion:</strong></p>
+      <p>These measures describe the spread or variability of a dataset.</p>
+      <ul>
+        <li><strong>Range:</strong> The difference between the maximum and minimum values.</li>
+        <li><strong>Variance:</strong> The average of the squared differences between each value and the mean.</li>
+        <li><strong>Standard Deviation:</strong> The square root of the variance. Provides a measure of spread in the
+          same units as the original data.</li>
+        <li><strong>Interquartile Range (IQR):</strong> The difference between the 75th percentile (Q3) and the 25th
+          percentile (Q1). Less sensitive to outliers than the range.</li>
+      </ul>
+      <p><strong>4. Correlation:</strong></p>
+      <p>Correlation measures the strength and direction of the linear relationship between two variables.</p>
+      <ul>
+        <li><strong>Correlation Coefficient ®:</strong> Ranges from -1 to +1.
+          <ul>
+            <li><strong>r = +1:</strong> Perfect positive correlation.</li>
+            <li><strong>r = -1:</strong> Perfect negative correlation.</li>
+            <li><strong>r = 0:</strong> No linear correlation.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>5. Regression:</strong></p>
+      <p>Regression analysis models the relationship between two variables. Simple linear regression models the
+        relationship with a straight line.</p>
+      <ul>
+        <li><strong>Regression Equation:</strong> y = mx + c, where y is the dependent variable, x is the independent
+          variable, m is the slope, and c is the y-intercept.</li>
+      </ul>
+      <p><strong>6. Sampling:</strong></p>
+      <p>Sampling involves selecting a subset of a population to make inferences about the entire population.</p>
+      <ul>
+        <li><strong>Types of Sampling:</strong>
+          <ul>
+            <li><strong>Random Sampling:</strong> Every member of the population has an equal chance of being selected.
+            </li>
+            <li><strong>Stratified Sampling:</strong> The population is divided into strata (groups), and a random
+              sample is taken from each stratum.</li>
+            <li><strong>Cluster Sampling:</strong> The population is divided into clusters, and a random sample of
+              clusters is selected. All members of the selected clusters are included in the sample.</li>
+          </ul>
+        </li>
+        <li><strong>Sample Size:</strong> The number of individuals in the sample. A larger sample size generally leads
+          to more accurate inferences about the population.</li>
+        <li><strong>Sampling Bias:</strong> Occurs when the sample is not representative of the population.</li>
+      </ul>
+      <h2 id="bca-semester-1---oe-101-introduction-to-data-science-optional">BCA Semester 1 - OE-101: Introduction to
+        Data Science (Optional)</h2>
+      <h3 id="module-data-science-introduction-types-of-data-applications-and-lifecycle"><strong>Module: Data Science
+          Introduction, Types of Data, Applications, and Lifecycle</strong></h3>
+      <p>This module provides a foundational understanding of data science, its key components, and its applications.
+      </p>
+      <p><strong>1. Introduction to Data Science:</strong></p>
+      <p>Data science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to
+        extract knowledge and insights from structured and unstructured data. It combines elements of statistics,
+        computer science, domain expertise, and data visualization to analyze and interpret complex data.</p>
+      <ul>
+        <li>
+          <p><strong>Key Goals of Data Science:</strong></p>
+          <ul>
+            <li><strong>Discover hidden patterns and insights:</strong> Uncover meaningful information from raw data.
+            </li>
+            <li><strong>Make data-driven predictions:</strong> Forecast future outcomes based on historical data.</li>
+            <li><strong>Build data-driven products and services:</strong> Develop applications that leverage data to
+              improve user experiences and business outcomes.</li>
+            <li><strong>Solve complex business problems:</strong> Use data analysis to address challenges and optimize
+              strategies.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Data Science vs. Other Fields:</strong> While related to fields like statistics, machine learning,
+            and data mining, data science encompasses a broader scope, including data collection, cleaning, preparation,
+            visualization, and communication of findings.</p>
+        </li>
+      </ul>
+      <p><strong>2. Types of Data:</strong></p>
+      <p>Data can be categorized in various ways:</p>
+      <ul>
+        <li>
+          <p><strong>Structured Data:</strong> Organized in a predefined format, typically stored in relational
+            databases. Examples: tables with rows and columns.</p>
+        </li>
+        <li>
+          <p><strong>Unstructured Data:</strong> Lacks a predefined format, making it more challenging to analyze
+            directly. Examples: text, images, audio, video.</p>
+        </li>
+        <li>
+          <p><strong>Semi-structured Data:</strong> Contains some organizational properties but doesn’t conform to a
+            rigid structure like relational databases. Examples: JSON, XML data.</p>
+        </li>
+        <li>
+          <p><strong>Data Formats:</strong> CSV, JSON, XML, databases, text files, image files, etc.</p>
+        </li>
+      </ul>
+      <p><strong>3. Applications of Data Science:</strong></p>
+      <p>Data science has a wide range of applications across various industries:</p>
+      <ul>
+        <li><strong>Business Analytics:</strong> Customer segmentation, market analysis, sales forecasting, risk
+          management, pricing optimization.</li>
+        <li><strong>Healthcare:</strong> Disease prediction, drug discovery, personalized medicine, patient monitoring.
+        </li>
+        <li><strong>Finance:</strong> Fraud detection, credit scoring, algorithmic trading, risk assessment.</li>
+        <li><strong>E-commerce:</strong> Recommendation systems, personalized marketing, inventory management.</li>
+        <li><strong>Social Sciences:</strong> Sentiment analysis, social network analysis, trend prediction.</li>
+        <li><strong>Image Recognition and Computer Vision:</strong> Object detection, facial recognition, image
+          classification.</li>
+        <li><strong>Natural Language Processing (NLP):</strong> Text analysis, sentiment analysis, machine translation.
+        </li>
+      </ul>
+      <p><strong>4. Data Science Lifecycle:</strong></p>
+      <p>The data science lifecycle typically involves the following stages:</p>
+      <ol>
+        <li>
+          <p><strong>Business Understanding:</strong> Define the problem and objectives. What questions are we trying to
+            answer? What are the desired outcomes?</p>
+        </li>
+        <li>
+          <p><strong>Data Collection:</strong> Gather data from various sources. This might involve databases, APIs, web
+            scraping, or data from sensors.</p>
+        </li>
+        <li>
+          <p><strong>Data Cleaning and Preparation:</strong> Clean the data by handling missing values, removing
+            duplicates, and correcting errors. Transform the data into a suitable format for analysis. This stage often
+            consumes a significant portion of the project time. Feature engineering (creating new features from existing
+            ones) is also a crucial part of this stage.</p>
+        </li>
+        <li>
+          <p><strong>Exploratory Data Analysis (EDA):</strong> Analyze the data using descriptive statistics,
+            visualizations, and data mining techniques to gain insights and identify patterns. Formulate hypotheses
+            about the data.</p>
+        </li>
+        <li>
+          <p><strong>Modeling:</strong> Build predictive or descriptive models using statistical modeling, machine
+            learning algorithms, or deep learning techniques. Choose appropriate algorithms based on the problem and
+            data characteristics. Train and evaluate the models using appropriate metrics.</p>
+        </li>
+        <li>
+          <p><strong>Model Evaluation and Selection:</strong> Evaluate the performance of different models and select
+            the best one based on various metrics (accuracy, precision, recall, F1-score, AUC-ROC, etc.).
+            Cross-validation and hyperparameter tuning are essential for building robust and generalizable models.</p>
+        </li>
+        <li>
+          <p><strong>Deployment:</strong> Deploy the chosen model into a production environment. This might involve
+            integrating the model into a web application, a business intelligence dashboard, or an automated
+            decision-making system.</p>
+        </li>
+        <li>
+          <p><strong>Monitoring and Maintenance:</strong> Monitor the model’s performance over time and retrain it as
+            needed to maintain its accuracy and relevance. The data might change over time, requiring model updates.</p>
+        </li>
+      </ol>
+      <p><strong>Tools and Technologies:</strong></p>
+      <p>Data scientists use a variety of tools and technologies, including programming languages (Python, R), data
+        manipulation libraries (Pandas, NumPy), machine learning libraries (Scikit-learn, TensorFlow, PyTorch), and
+        visualization tools (Matplotlib, Seaborn).</p>
+      <h3 id="module-role-of-data-scientists-statistics-for-data-science-and-data-science-models-and-tasks">
+        <strong>Module: Role of Data Scientists, Statistics for Data Science, and Data Science Models and Tasks</strong>
+      </h3>
+      <p>This module delves deeper into the role of data scientists, the importance of statistics in data science, and
+        the different types of models and tasks involved.</p>
+      <p><strong>1. Role of Data Scientists:</strong></p>
+      <p>Data scientists play a crucial role in extracting knowledge and insights from data. Their responsibilities
+        include:</p>
+      <ul>
+        <li><strong>Defining business problems:</strong> Collaborate with stakeholders to understand business challenges
+          and translate them into data-driven questions.</li>
+        <li><strong>Collecting and preparing data:</strong> Gather data from various sources, clean and transform it
+          into a suitable format for analysis. Handle missing values, outliers, and inconsistencies in the data.</li>
+        <li><strong>Exploratory data analysis (EDA):</strong> Analyze data using statistical methods and visualization
+          techniques to identify patterns, trends, and anomalies.</li>
+        <li><strong>Feature engineering:</strong> Create new features from existing data to improve model performance.
+        </li>
+        <li><strong>Model building:</strong> Develop and train predictive or descriptive models using machine learning
+          or statistical techniques.</li>
+        <li><strong>Model evaluation and selection:</strong> Evaluate model performance using appropriate metrics and
+          select the best model.</li>
+        <li><strong>Deploying and monitoring models:</strong> Deploy models into production environments and monitor
+          their performance over time.</li>
+        <li><strong>Communicating findings:</strong> Present insights and findings to stakeholders in a clear and
+          concise manner, using visualizations and storytelling.</li>
+      </ul>
+      <p><strong>Essential Skills for Data Scientists:</strong></p>
+      <ul>
+        <li><strong>Programming:</strong> Proficiency in languages like Python or R.</li>
+        <li><strong>Statistics and Mathematics:</strong> Strong foundation in statistical concepts, probability, linear
+          algebra, and calculus.</li>
+        <li><strong>Machine Learning:</strong> Knowledge of various machine learning algorithms and techniques.</li>
+        <li><strong>Data Visualization:</strong> Ability to create compelling visualizations to communicate insights.
+        </li>
+        <li><strong>Communication and Storytelling:</strong> Effectively convey complex information to both technical
+          and non-technical audiences.</li>
+        <li><strong>Domain Expertise:</strong> Understanding of the specific industry or domain in which they work.</li>
+      </ul>
+      <p><strong>2. Statistics for Data Science:</strong></p>
+      <p>Statistics plays a vital role in data science, providing the tools and techniques for analyzing and
+        interpreting data. Key statistical concepts used in data science include:</p>
+      <ul>
+        <li><strong>Descriptive Statistics:</strong> Summarizing and describing data using measures of central tendency
+          (mean, median, mode) and dispersion (variance, standard deviation, range).</li>
+        <li><strong>Inferential Statistics:</strong> Drawing conclusions about a population based on a sample of data.
+          Hypothesis testing, confidence intervals, and regression analysis are common techniques.</li>
+        <li><strong>Probability:</strong> Understanding probability distributions and concepts like conditional
+          probability and Bayes’ theorem.</li>
+        <li><strong>Regression Analysis:</strong> Modeling the relationship between variables. Linear regression,
+          logistic regression, and other regression techniques are used for prediction and understanding relationships.
+        </li>
+        <li><strong>Hypothesis Testing:</strong> Evaluating evidence to make decisions about hypotheses related to the
+          data.</li>
+        <li><strong>Dimensionality Reduction:</strong> Techniques like Principal Component Analysis (PCA) to reduce the
+          number of variables while preserving important information.</li>
+      </ul>
+      <p><strong>3. Data Science Models and Tasks:</strong></p>
+      <p>Data science encompasses various models and tasks, broadly categorized as:</p>
+      <ul>
+        <li>
+          <p><strong>Supervised Learning:</strong> Building models to predict an outcome variable based on labeled
+            training data. Common tasks include:</p>
+          <ul>
+            <li><strong>Classification:</strong> Predicting a categorical outcome (e.g., spam/not spam, fraud/no fraud).
+              Algorithms: Logistic Regression, Support Vector Machines (SVM), Decision Trees, Random Forests.</li>
+            <li><strong>Regression:</strong> Predicting a continuous outcome (e.g., house prices, stock prices).
+              Algorithms: Linear Regression, Polynomial Regression, Support Vector Regression.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Unsupervised Learning:</strong> Analyzing unlabeled data to discover patterns, relationships, and
+            structures. Common tasks include:</p>
+          <ul>
+            <li><strong>Clustering:</strong> Grouping similar data points together. Algorithms: K-Means, Hierarchical
+              Clustering, DBSCAN.</li>
+            <li><strong>Dimensionality Reduction:</strong> Reducing the number of variables while preserving important
+              information. Algorithm: Principal Component Analysis (PCA).</li>
+            <li><strong>Association Rule Mining:</strong> Discovering relationships between variables in large datasets
+              (e.g., market basket analysis). Algorithm: Apriori.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Reinforcement Learning:</strong> Training agents to make decisions in an environment to maximize a
+            reward. Used in areas like robotics, game playing, and personalized recommendations.</p>
+        </li>
+      </ul>
+      <h3 id="module-data-quality-pre-processing-and-visualization"><strong>Module: Data Quality, Pre-processing, and
+          Visualization</strong></h3>
+      <p>This module focuses on crucial aspects of preparing data for analysis and effectively communicating insights.
+      </p>
+      <p><strong>1. Data Quality:</strong></p>
+      <p>High-quality data is essential for reliable and meaningful data analysis. Key dimensions of data quality
+        include:</p>
+      <ul>
+        <li><strong>Accuracy:</strong> Data should be free from errors and correctly reflect the real-world phenomena it
+          represents.</li>
+        <li><strong>Completeness:</strong> Data should contain all necessary information. Missing values can hinder
+          analysis and lead to biased results.</li>
+        <li><strong>Consistency:</strong> Data should be consistent across different sources and within the dataset
+          itself. Inconsistencies can arise from data entry errors or different data collection methods.</li>
+        <li><strong>Timeliness:</strong> Data should be up-to-date and relevant to the analysis. Outdated data can lead
+          to inaccurate conclusions.</li>
+        <li><strong>Validity:</strong> Data should conform to the defined business rules and constraints. For example,
+          age should be a positive number.</li>
+        <li><strong>Uniqueness:</strong> Data should not contain duplicate records. Duplicate data can skew analysis and
+          lead to incorrect insights.</li>
+      </ul>
+      <p><strong>2. Data Pre-processing:</strong></p>
+      <p>Data pre-processing involves transforming raw data into a format suitable for analysis. Key steps include:</p>
+      <ul>
+        <li><strong>Data Cleaning:</strong> Handling missing values (imputation or deletion), smoothing noisy data,
+          removing outliers, and resolving inconsistencies.</li>
+        <li><strong>Data Transformation:</strong> Converting data into a different format or scale. Common techniques
+          include:
+          <ul>
+            <li><strong>Normalization:</strong> Scaling data to a specific range (e.g., 0-1).</li>
+            <li><strong>Standardization:</strong> Transforming data to have zero mean and unit variance.</li>
+            <li><strong>Log Transformation:</strong> Applying a logarithmic function to skewed data.</li>
+          </ul>
+        </li>
+        <li><strong>Data Reduction:</strong> Reducing the size of the dataset by selecting relevant features,
+          aggregating data, or using dimensionality reduction techniques like PCA.</li>
+        <li><strong>Data Integration:</strong> Combining data from multiple sources into a unified view. This might
+          involve merging tables, resolving data conflicts, and ensuring data consistency.</li>
+      </ul>
+      <p><strong>Techniques for Handling Missing Values:</strong></p>
+      <ul>
+        <li><strong>Deletion:</strong> Removing rows or columns with missing values. Can lead to loss of information if
+          a substantial portion of the data is missing.</li>
+        <li><strong>Imputation:</strong> Replacing missing values with estimated values. Common imputation methods
+          include:
+          <ul>
+            <li><strong>Mean/Median/Mode Imputation:</strong> Replacing missing values with the mean, median, or mode of
+              the variable.</li>
+            <li><strong>Regression Imputation:</strong> Predicting missing values using a regression model.</li>
+            <li><strong>K-Nearest Neighbors Imputation:</strong> Imputing missing values based on the values of similar
+              data points.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>3. Data Visualization:</strong></p>
+      <p>Data visualization is the graphical representation of data to facilitate understanding and communication of
+        insights. Effective visualizations help to:</p>
+      <ul>
+        <li><strong>Explore data:</strong> Identify patterns, trends, and outliers.</li>
+        <li><strong>Communicate findings:</strong> Present insights to stakeholders in a clear and compelling way.</li>
+        <li><strong>Support decision-making:</strong> Provide data-driven evidence for informed decisions.</li>
+      </ul>
+      <p><strong>Types of Visualizations:</strong></p>
+      <ul>
+        <li><strong>Bar Charts:</strong> Compare values across different categories.</li>
+        <li><strong>Line Charts:</strong> Show trends over time.</li>
+        <li><strong>Scatter Plots:</strong> Explore the relationship between two variables.</li>
+        <li><strong>Histograms:</strong> Visualize the distribution of a single variable.</li>
+        <li><strong>Box Plots:</strong> Show the distribution of data and identify outliers.</li>
+        <li><strong>Heatmaps:</strong> Visualize correlations between variables.</li>
+        <li><strong>Pie Charts:</strong> Show proportions of a whole.</li>
+      </ul>
+      <h2 id="bca-semester-1---vsec-101-html-and-web-page-designing">BCA Semester 1 - VSEC-101: HTML and Web Page
+        Designing</h2>
+      <h3 id="module-html-elements-and-tags-css-javascript-and-website-design"><strong>Module: HTML Elements and Tags,
+          CSS, JavaScript, and Website Design</strong></h3>
+      <p>This module introduces the fundamental technologies for creating and styling web pages, including HTML for
+        structure, CSS for presentation, and JavaScript for interactivity. It also touches upon basic website design
+        principles.</p>
+      <p><strong>1. HTML (HyperText Markup Language):</strong></p>
+      <p>HTML provides the structural foundation of web pages. It uses tags to define different elements of a page.</p>
+      <ul>
+        <li>
+          <p><strong>Elements and Tags:</strong> HTML elements are represented by tags, which usually come in pairs: an
+            opening tag <code>&lt;tagname&gt;</code> and a closing tag <code>&lt;/tagname&gt;</code>. The content
+            between the tags is the element’s content. Some tags are self-closing (e.g., <code>&lt;br/&gt;</code>,
+            <code>&lt;img/&gt;</code>).</p>
+        </li>
+        <li>
+          <p><strong>Basic HTML Structure:</strong></p>
+        </li>
+      </ul>
+      <pre class=" language-html"><code class="prism  language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
@@ -1181,149 +1411,184 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<ul>
-<li><strong>Common HTML Tags:</strong>
-<ul>
-<li><strong><code>&lt;html&gt;</code>:</strong> The root element of the page.</li>
-<li><strong><code>&lt;head&gt;</code>:</strong> Contains meta-information about the page (title, character set, etc.).</li>
-<li><strong><code>&lt;title&gt;</code>:</strong>  The title that appears in the browser tab.</li>
-<li><strong><code>&lt;body&gt;</code>:</strong>  The visible content of the page.</li>
-<li><strong><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>:</strong> Headings.</li>
-<li><strong><code>&lt;p&gt;</code>:</strong> Paragraph.</li>
-<li><strong><code>&lt;br&gt;</code>:</strong> Line break.</li>
-<li><strong><code>&lt;div&gt;</code>:</strong>  A division or section of the page.</li>
-<li><strong><code>&lt;span&gt;</code>:</strong> An inline container for phrasing content.</li>
-<li><strong><code>&lt;a&gt;</code> (anchor):</strong> Creates hyperlinks.  <code>href</code> attribute specifies the link destination.</li>
-<li><strong><code>&lt;img&gt;</code>:</strong>  Displays an image. <code>src</code> attribute specifies the image source.</li>
-<li><strong><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>:</strong> Unordered lists, ordered lists, and list items.</li>
-<li><strong><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code>:</strong> Tables, table rows, table data cells, and table header cells.</li>
-<li><strong><code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>:</strong>  Creating forms for user input.</li>
-<li><strong><code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>:</strong> Embedding multimedia content.</li>
-</ul>
-</li>
-</ul>
-<p><strong>2. CSS (Cascading Style Sheets):</strong></p>
-<p>CSS is used to style HTML elements, controlling their appearance (colors, fonts, layout, etc.).</p>
-<ul>
-<li>
-<p><strong>Ways to apply CSS:</strong></p>
-<ul>
-<li><strong>Inline:</strong>  Using the <code>style</code> attribute within an HTML tag.  <code>e.g., &lt;p style="color: blue;"&gt;</code></li>
-<li><strong>Internal:</strong> Using a <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section.</li>
-<li><strong>External:</strong>  Linking to a separate CSS file using the <code>&lt;link&gt;</code> tag. This is the preferred method for larger projects.</li>
-</ul>
-</li>
-<li>
-<p><strong>CSS Syntax:</strong></p>
-</li>
-</ul>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector">selector </span><span class="token punctuation">{</span>
+      <ul>
+        <li><strong>Common HTML Tags:</strong>
+          <ul>
+            <li><strong><code>&lt;html&gt;</code>:</strong> The root element of the page.</li>
+            <li><strong><code>&lt;head&gt;</code>:</strong> Contains meta-information about the page (title, character
+              set, etc.).</li>
+            <li><strong><code>&lt;title&gt;</code>:</strong> The title that appears in the browser tab.</li>
+            <li><strong><code>&lt;body&gt;</code>:</strong> The visible content of the page.</li>
+            <li><strong><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>:</strong> Headings.</li>
+            <li><strong><code>&lt;p&gt;</code>:</strong> Paragraph.</li>
+            <li><strong><code>&lt;br&gt;</code>:</strong> Line break.</li>
+            <li><strong><code>&lt;div&gt;</code>:</strong> A division or section of the page.</li>
+            <li><strong><code>&lt;span&gt;</code>:</strong> An inline container for phrasing content.</li>
+            <li><strong><code>&lt;a&gt;</code> (anchor):</strong> Creates hyperlinks. <code>href</code> attribute
+              specifies the link destination.</li>
+            <li><strong><code>&lt;img&gt;</code>:</strong> Displays an image. <code>src</code> attribute specifies the
+              image source.</li>
+            <li><strong><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>:</strong> Unordered
+              lists, ordered lists, and list items.</li>
+            <li><strong><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>,
+                <code>&lt;th&gt;</code>:</strong> Tables, table rows, table data cells, and table header cells.</li>
+            <li><strong><code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>:</strong>
+              Creating forms for user input.</li>
+            <li><strong><code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>:</strong> Embedding multimedia content.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>2. CSS (Cascading Style Sheets):</strong></p>
+      <p>CSS is used to style HTML elements, controlling their appearance (colors, fonts, layout, etc.).</p>
+      <ul>
+        <li>
+          <p><strong>Ways to apply CSS:</strong></p>
+          <ul>
+            <li><strong>Inline:</strong> Using the <code>style</code> attribute within an HTML tag.
+              <code>e.g., &lt;p style="color: blue;"&gt;</code></li>
+            <li><strong>Internal:</strong> Using a <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code>
+              section.</li>
+            <li><strong>External:</strong> Linking to a separate CSS file using the <code>&lt;link&gt;</code> tag. This
+              is the preferred method for larger projects.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>CSS Syntax:</strong></p>
+        </li>
+      </ul>
+      <pre class=" language-css"><code class="prism  language-css"><span class="token selector">selector </span><span class="token punctuation">{</span>
   <span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span>
   <span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span>
   <span class="token comment">/* comments */</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<ul>
-<li><strong>Common CSS Properties:</strong>
-<ul>
-<li><code>color</code>: Text color.</li>
-<li><code>background-color</code>: Background color.</li>
-<li><code>font-size</code>: Font size.</li>
-<li><code>font-family</code>: Font type.</li>
-<li><code>width</code>: Element width.</li>
-<li><code>height</code>: Element height.</li>
-<li><code>margin</code>: Space outside the element.</li>
-<li><code>padding</code>: Space inside the element.</li>
-<li><code>border</code>: Element border.</li>
-<li><code>display</code>: How the element is displayed (block, inline, inline-block, none).</li>
-<li><code>position</code>: Element positioning (static, relative, absolute, fixed).</li>
-<li><code>float</code>:  Allows elements to float left or right.</li>
-</ul>
-</li>
-</ul>
-<p><strong>3. JavaScript:</strong></p>
-<p>JavaScript adds interactivity and dynamic behavior to web pages.</p>
-<ul>
-<li>
-<p><strong>Adding JavaScript:</strong></p>
-<ul>
-<li><strong>Inline:</strong> Using the <code>onclick</code> attribute or other event attributes within HTML tags.</li>
-<li><strong>Internal:</strong> Using a <code>&lt;script&gt;</code> tag within the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> section.</li>
-<li><strong>External:</strong> Linking to a separate JavaScript file using the <code>&lt;script&gt;</code> tag.</li>
-</ul>
-</li>
-<li>
-<p><strong>Basic JavaScript Concepts:</strong></p>
-<ul>
-<li><strong>Variables:</strong>  <code>var</code>, <code>let</code>, <code>const</code>.</li>
-<li><strong>Data Types:</strong>  Number, String, Boolean, Array, Object.</li>
-<li><strong>Operators:</strong> Arithmetic, comparison, logical, assignment.</li>
-<li><strong>Control Structures:</strong> <code>if-else</code>, <code>switch</code>, <code>for</code>, <code>while</code>, <code>do-while</code>.</li>
-<li><strong>Functions:</strong> Reusable blocks of code.</li>
-<li><strong>DOM (Document Object Model):</strong> Allows JavaScript to interact with HTML elements.</li>
-<li><strong>Events:</strong>  Actions that trigger JavaScript code (e.g., clicks, mouseovers, form submissions).</li>
-</ul>
-</li>
-</ul>
-<p><strong>4. Website Design:</strong></p>
-<p>Good website design involves creating visually appealing and user-friendly websites.</p>
-<ul>
-<li>
-<p><strong>Key Principles:</strong></p>
-<ul>
-<li><strong>Usability:</strong> Easy to navigate and use.</li>
-<li><strong>Accessibility:</strong>  Usable by people with disabilities.</li>
-<li><strong>Aesthetics:</strong>  Visually appealing.</li>
-<li><strong>Content:</strong>  High-quality and relevant content.</li>
-<li><strong>SEO (Search Engine Optimization):</strong>  Designing the site to rank well in search engine results.</li>
-</ul>
-</li>
-<li>
-<p><strong>Responsive Design:</strong> Designing websites that adapt to different screen sizes (desktops, tablets, mobiles).</p>
-</li>
-</ul>
-<h2 id="bca-semester-1-conclusion-and-tips-for-success">BCA Semester 1: Conclusion and Tips for Success</h2>
-<p>This concludes the notes for the first semester of your BCA program.  Semester 1 lays the groundwork for future coursework, covering fundamental concepts in programming, computer organization, discrete mathematics, and web development.  Mastering these fundamentals is crucial for your success in subsequent semesters.</p>
-<p><strong>Resources Referred:</strong></p>
-<p>While these notes are comprehensive, further exploration and practice are highly recommended. Here are some valuable online resources you can refer to:</p>
-<ul>
-<li><strong>C Programming:</strong>
-<ul>
-<li><a href="https://www.w3schools.com/c/">w3schools.com/c/</a></li>
-<li><a href="https://www.tutorialspoint.com/cprogramming/index.htm">tutorialspoint.com/cprogramming/index.htm</a></li>
-</ul>
-</li>
-<li><strong>Computer Organization &amp; Architecture:</strong>
-<ul>
-<li><a href="https://www.geeksforgeeks.org/computer-organization-and-architecture-tutorials/">geeksforgeeks.org/computer-organization-and-architecture-tutorials/</a></li>
-</ul>
-</li>
-<li><strong>Discrete Mathematics:</strong>
-<ul>
-<li><a href="https://www.tutorialspoint.com/discrete_mathematics/">tutorialspoint.com/discrete_mathematics/</a></li>
-</ul>
-</li>
-<li><strong>HTML &amp; Web Design:</strong>
-<ul>
-<li><a href="https://www.w3schools.com/html/">w3schools.com/html/</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">mozilla.org/en-US/docs/Web/HTML</a></li>
-</ul>
-</li>
-</ul>
-<p><strong>Tips to Ace Semester 1:</strong></p>
-<ul>
-<li><strong>Consistent Study:</strong>  Don’t cram!  Regularly review the material throughout the semester.</li>
-<li><strong>Practice Coding:</strong>  The more you code, the better you’ll understand programming concepts. Work through examples and try solving coding challenges.</li>
-<li><strong>Hands-on with Logic Gates and Circuits:</strong> Use online simulators or physical breadboards to build and test circuits.  Visualizing logic gates in action significantly aids comprehension.</li>
-<li><strong>Understand Mathematical Concepts Deeply:</strong>  Don’t just memorize formulas; understand the underlying principles.  Practice solving problems and seek help when needed.</li>
-<li><strong>Build Web Pages:</strong>  Create your own web pages to experiment with HTML, CSS, and JavaScript.  Start with simple projects and gradually increase complexity.</li>
-<li><strong>Active Learning:</strong>  Engage actively in class, ask questions, and participate in discussions.</li>
-<li><strong>Group Study:</strong>  Collaborate with classmates to discuss concepts and solve problems together.</li>
-<li><strong>Seek Help When Needed:</strong> Don’t hesitate to ask your professors or teaching assistants for help if you’re struggling with any topic.</li>
-<li><strong>Time Management:</strong>  Create a study schedule and stick to it.  Allocate sufficient time for each subject.</li>
-<li><strong>Stay Organized:</strong>  Keep your notes, assignments, and study materials organized.</li>
-</ul>
-<p>By following these tips and consistently putting in the effort, you can build a strong foundation in the core concepts and set yourself up for success in your BCA program. Good luck!</p>
+      <ul>
+        <li><strong>Common CSS Properties:</strong>
+          <ul>
+            <li><code>color</code>: Text color.</li>
+            <li><code>background-color</code>: Background color.</li>
+            <li><code>font-size</code>: Font size.</li>
+            <li><code>font-family</code>: Font type.</li>
+            <li><code>width</code>: Element width.</li>
+            <li><code>height</code>: Element height.</li>
+            <li><code>margin</code>: Space outside the element.</li>
+            <li><code>padding</code>: Space inside the element.</li>
+            <li><code>border</code>: Element border.</li>
+            <li><code>display</code>: How the element is displayed (block, inline, inline-block, none).</li>
+            <li><code>position</code>: Element positioning (static, relative, absolute, fixed).</li>
+            <li><code>float</code>: Allows elements to float left or right.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>3. JavaScript:</strong></p>
+      <p>JavaScript adds interactivity and dynamic behavior to web pages.</p>
+      <ul>
+        <li>
+          <p><strong>Adding JavaScript:</strong></p>
+          <ul>
+            <li><strong>Inline:</strong> Using the <code>onclick</code> attribute or other event attributes within HTML
+              tags.</li>
+            <li><strong>Internal:</strong> Using a <code>&lt;script&gt;</code> tag within the <code>&lt;head&gt;</code>
+              or <code>&lt;body&gt;</code> section.</li>
+            <li><strong>External:</strong> Linking to a separate JavaScript file using the <code>&lt;script&gt;</code>
+              tag.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Basic JavaScript Concepts:</strong></p>
+          <ul>
+            <li><strong>Variables:</strong> <code>var</code>, <code>let</code>, <code>const</code>.</li>
+            <li><strong>Data Types:</strong> Number, String, Boolean, Array, Object.</li>
+            <li><strong>Operators:</strong> Arithmetic, comparison, logical, assignment.</li>
+            <li><strong>Control Structures:</strong> <code>if-else</code>, <code>switch</code>, <code>for</code>,
+              <code>while</code>, <code>do-while</code>.</li>
+            <li><strong>Functions:</strong> Reusable blocks of code.</li>
+            <li><strong>DOM (Document Object Model):</strong> Allows JavaScript to interact with HTML elements.</li>
+            <li><strong>Events:</strong> Actions that trigger JavaScript code (e.g., clicks, mouseovers, form
+              submissions).</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>4. Website Design:</strong></p>
+      <p>Good website design involves creating visually appealing and user-friendly websites.</p>
+      <ul>
+        <li>
+          <p><strong>Key Principles:</strong></p>
+          <ul>
+            <li><strong>Usability:</strong> Easy to navigate and use.</li>
+            <li><strong>Accessibility:</strong> Usable by people with disabilities.</li>
+            <li><strong>Aesthetics:</strong> Visually appealing.</li>
+            <li><strong>Content:</strong> High-quality and relevant content.</li>
+            <li><strong>SEO (Search Engine Optimization):</strong> Designing the site to rank well in search engine
+              results.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Responsive Design:</strong> Designing websites that adapt to different screen sizes (desktops,
+            tablets, mobiles).</p>
+        </li>
+      </ul>
+      <h2 id="bca-semester-1-conclusion-and-tips-for-success">BCA Semester 1: Conclusion and Tips for Success</h2>
+      <p>This concludes the notes for the first semester of your BCA program. Semester 1 lays the groundwork for future
+        coursework, covering fundamental concepts in programming, computer organization, discrete mathematics, and web
+        development. Mastering these fundamentals is crucial for your success in subsequent semesters.</p>
+      <p><strong>Resources Referred:</strong></p>
+      <p>While these notes are comprehensive, further exploration and practice are highly recommended. Here are some
+        valuable online resources you can refer to:</p>
+      <ul>
+        <li><strong>C Programming:</strong>
+          <ul>
+            <li><a href="https://www.w3schools.com/c/">w3schools.com/c/</a></li>
+            <li><a
+                href="https://www.tutorialspoint.com/cprogramming/index.htm">tutorialspoint.com/cprogramming/index.htm</a>
+            </li>
+          </ul>
+        </li>
+        <li><strong>Computer Organization &amp; Architecture:</strong>
+          <ul>
+            <li><a
+                href="https://www.geeksforgeeks.org/computer-organization-and-architecture-tutorials/">geeksforgeeks.org/computer-organization-and-architecture-tutorials/</a>
+            </li>
+          </ul>
+        </li>
+        <li><strong>Discrete Mathematics:</strong>
+          <ul>
+            <li><a
+                href="https://www.tutorialspoint.com/discrete_mathematics/">tutorialspoint.com/discrete_mathematics/</a>
+            </li>
+          </ul>
+        </li>
+        <li><strong>HTML &amp; Web Design:</strong>
+          <ul>
+            <li><a href="https://www.w3schools.com/html/">w3schools.com/html/</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">mozilla.org/en-US/docs/Web/HTML</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>Tips to Ace Semester 1:</strong></p>
+      <ul>
+        <li><strong>Consistent Study:</strong> Don’t cram! Regularly review the material throughout the semester.</li>
+        <li><strong>Practice Coding:</strong> The more you code, the better you’ll understand programming concepts. Work
+          through examples and try solving coding challenges.</li>
+        <li><strong>Hands-on with Logic Gates and Circuits:</strong> Use online simulators or physical breadboards to
+          build and test circuits. Visualizing logic gates in action significantly aids comprehension.</li>
+        <li><strong>Understand Mathematical Concepts Deeply:</strong> Don’t just memorize formulas; understand the
+          underlying principles. Practice solving problems and seek help when needed.</li>
+        <li><strong>Build Web Pages:</strong> Create your own web pages to experiment with HTML, CSS, and JavaScript.
+          Start with simple projects and gradually increase complexity.</li>
+        <li><strong>Active Learning:</strong> Engage actively in class, ask questions, and participate in discussions.
+        </li>
+        <li><strong>Group Study:</strong> Collaborate with classmates to discuss concepts and solve problems together.
+        </li>
+        <li><strong>Seek Help When Needed:</strong> Don’t hesitate to ask your professors or teaching assistants for
+          help if you’re struggling with any topic.</li>
+        <li><strong>Time Management:</strong> Create a study schedule and stick to it. Allocate sufficient time for each
+          subject.</li>
+        <li><strong>Stay Organized:</strong> Keep your notes, assignments, and study materials organized.</li>
+      </ul>
+      <p>By following these tips and consistently putting in the effort, you can build a strong foundation in the core
+        concepts and set yourself up for success in your BCA program. Good luck!</p>
 
     </div>
   </div>
@@ -1333,18 +1598,18 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
 
       // Optional: Local Storage
       if (document.body.classList.contains('dark-mode')) {
-          localStorage.setItem('darkMode', 'enabled');
+        localStorage.setItem('darkMode', 'enabled');
       } else {
-          localStorage.removeItem('darkMode');
+        localStorage.removeItem('darkMode');
       }
-  }
+    }
 
-  // Check localStorage on load (optional)
-  window.onload = () => {
+    // Check localStorage on load (optional)
+    window.onload = () => {
       if (localStorage.getItem('darkMode') === 'enabled') {
-          document.body.classList.add('dark-mode');
+        document.body.classList.add('dark-mode');
       }
-  };
+    };
   </script>
 </body>
 
