@@ -2,127 +2,78 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semester 3</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-  <style>
-    .stackedit__toc a {
-      text-decoration: none; /* Remove underline */
-    }
-    body {
-      transition: background-color 0.3s ease, color 0.3s ease;
-            /* Smooth dark mode transition */
-    }
-    .dark-mode-button {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 20px;
-      background: linear-gradient(to right, #464646, #181818);
-      color: white;
-      font-weight: 500;
-      cursor: pointer;
-      z-index: 100;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .dark-mode-button:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(to right, #181818, #464646);
-    }
-
-    body.dark-mode {
-      background-color: #000000;
-      color: #ddd;
-    }
-
-
-    .dark-mode .dark-mode-button {
-      background: linear-gradient(to right, #ffffff, #b4b4b4);
-      color: rgb(0, 0, 0);
-    }
-
-    .dark-mode .dark-mode-button:hover {
-      background: linear-gradient(to right, #b4b4b4, #ffffff);
-    }
-
-
-    /* Dark Mode Styles for this specific page */
-    body.dark-mode .stackedit__left {
-      background-color: #222;
-    }
-
-    body.dark-mode pre.language-html {
-      background-color: #333;
-      /* Or any color that provides good contrast */
-    }
-
-    body.dark-mode code.prism.language-html {
-      color: #ccc;
-      /* Light color for code */
-
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 3</title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+    <link rel="stylesheet" href="pagestyle.css" />
 </head>
 
 <body class="stackedit">
     <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
-  <div class="stackedit__left">
-    <div class="stackedit__toc">
-      
-<ul>
-<li>
-<ul>
-<li><a href="#bca-semester-3---ca-201-data-structures">BCA Semester 3 - CA-201: Data Structures</a></li>
-<li><a href="#ca-221-c-programming">CA-221: C++ Programming</a></li>
-<li><a href="#ca-231-fp-field-project">CA-231-FP: Field Project</a></li>
-<li><a href="#ca-241-mn-programming-with-python-minor">CA-241-MN: Programming with Python (Minor)</a></li>
-<li><a href="#oe-201-introduction-to-artificial-intelligence-optional">OE-201: Introduction to Artificial Intelligence (Optional)</a></li>
-<li><a href="#iks-100ca-200-generic-courseindian-knowledge-for-computing-systems">IKS-100/CA-200: Generic Course/Indian Knowledge for Computing Systems</a></li>
-<li><a href="#bca-semester-3-conclusion">BCA Semester 3: Conclusion</a></li>
-</ul>
-</li>
-</ul>
+    <div class="stackedit__left">
+        <div class="stackedit__toc">
 
+            <ul>
+                <li>
+                    <ul>
+                        <li><a href="#bca-semester-3---ca-201-data-structures">BCA Semester 3 - CA-201: Data
+                                Structures</a></li>
+                        <li><a href="#ca-221-c-programming">CA-221: C++ Programming</a></li>
+                        <li><a href="#ca-231-fp-field-project">CA-231-FP: Field Project</a></li>
+                        <li><a href="#ca-241-mn-programming-with-python-minor">CA-241-MN: Programming with Python
+                                (Minor)</a></li>
+                        <li><a href="#oe-201-introduction-to-artificial-intelligence-optional">OE-201: Introduction to
+                                Artificial Intelligence (Optional)</a></li>
+                        <li><a href="#iks-100ca-200-generic-courseindian-knowledge-for-computing-systems">IKS-100/CA-200:
+                                Generic Course/Indian Knowledge for Computing Systems</a></li>
+                        <li><a href="#bca-semester-3-conclusion">BCA Semester 3: Conclusion</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
     </div>
-  </div>
-  <div class="stackedit__right">
-    <div class="stackedit__html">
-      <h2 id="bca-semester-3---ca-201-data-structures">BCA Semester 3 - CA-201: Data Structures</h2>
-<p>This module introduces various data structures, their implementations, and their applications in computer science.  Understanding data structures is crucial for writing efficient and organized programs.</p>
-<h3 id="arrays-review-from-semester-1">1. Arrays: (Review from Semester 1)</h3>
-<ul>
-<li>Contiguous blocks of memory storing elements of the same data type.</li>
-<li>Efficient for accessing elements by index.</li>
-<li>Limitations: Fixed size, insertion and deletion can be inefficient.</li>
-</ul>
-<h3 id="linked-lists">2. Linked Lists:</h3>
-<p>Linked lists are dynamic data structures that provide a flexible way to store and manage collections of data.  Unlike arrays, linked lists do not require contiguous memory allocation, making them efficient for insertion and deletion operations.</p>
-<p><strong>I. Structure of a Linked List:</strong></p>
-<p>A linked list consists of nodes. Each node contains:</p>
-<ul>
-<li><strong>Data:</strong> The value stored in the node.</li>
-<li><strong>Pointer (Next):</strong> A pointer to the next node in the list.</li>
-</ul>
-<p><strong>II. Types of Linked Lists:</strong></p>
-<ul>
-<li><strong>Singly Linked List:</strong> Each node points to the next node.  Traversal is only in one direction.</li>
-<li><strong>Doubly Linked List:</strong> Each node has two pointers: one to the next node and one to the previous node.  Allows traversal in both directions.</li>
-<li><strong>Circular Linked List:</strong> The last node points back to the first node, creating a circular structure.</li>
-</ul>
-<p><strong>III. Basic Operations:</strong></p>
-<ul>
-<li><strong>Insertion:</strong> Adding a new node to the list (at the beginning, end, or a specific position).</li>
-<li><strong>Deletion:</strong> Removing a node from the list.</li>
-<li><strong>Traversal:</strong>  Visiting each node in the list to access or process its data.</li>
-<li><strong>Search:</strong> Finding a specific value within the list.</li>
-</ul>
-<p><strong>IV. Implementation in C (Singly Linked List Example):</strong></p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+    <div class="stackedit__right">
+        <div class="stackedit__html">
+            <h2 id="bca-semester-3---ca-201-data-structures">BCA Semester 3 - CA-201: Data Structures</h2>
+            <p>This module introduces various data structures, their implementations, and their applications in computer
+                science. Understanding data structures is crucial for writing efficient and organized programs.</p>
+            <h3 id="arrays-review-from-semester-1">1. Arrays: (Review from Semester 1)</h3>
+            <ul>
+                <li>Contiguous blocks of memory storing elements of the same data type.</li>
+                <li>Efficient for accessing elements by index.</li>
+                <li>Limitations: Fixed size, insertion and deletion can be inefficient.</li>
+            </ul>
+            <h3 id="linked-lists">2. Linked Lists:</h3>
+            <p>Linked lists are dynamic data structures that provide a flexible way to store and manage collections of
+                data. Unlike arrays, linked lists do not require contiguous memory allocation, making them efficient for
+                insertion and deletion operations.</p>
+            <p><strong>I. Structure of a Linked List:</strong></p>
+            <p>A linked list consists of nodes. Each node contains:</p>
+            <ul>
+                <li><strong>Data:</strong> The value stored in the node.</li>
+                <li><strong>Pointer (Next):</strong> A pointer to the next node in the list.</li>
+            </ul>
+            <p><strong>II. Types of Linked Lists:</strong></p>
+            <ul>
+                <li><strong>Singly Linked List:</strong> Each node points to the next node. Traversal is only in one
+                    direction.</li>
+                <li><strong>Doubly Linked List:</strong> Each node has two pointers: one to the next node and one to the
+                    previous node. Allows traversal in both directions.</li>
+                <li><strong>Circular Linked List:</strong> The last node points back to the first node, creating a
+                    circular structure.</li>
+            </ul>
+            <p><strong>III. Basic Operations:</strong></p>
+            <ul>
+                <li><strong>Insertion:</strong> Adding a new node to the list (at the beginning, end, or a specific
+                    position).</li>
+                <li><strong>Deletion:</strong> Removing a node from the list.</li>
+                <li><strong>Traversal:</strong> Visiting each node in the list to access or process its data.</li>
+                <li><strong>Search:</strong> Finding a specific value within the list.</li>
+            </ul>
+            <p><strong>IV. Implementation in C (Singly Linked List Example):</strong></p>
+            <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
 
 <span class="token keyword">struct</span> Node <span class="token punctuation">{</span>
@@ -171,46 +122,55 @@
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><strong>V. Advantages of Linked Lists:</strong></p>
-<ul>
-<li><strong>Dynamic Size:</strong> Linked lists can grow or shrink as needed during program execution.</li>
-<li><strong>Efficient Insertion and Deletion:</strong> Inserting or deleting a node involves only changing a few pointers.</li>
-</ul>
-<p><strong>VI. Disadvantages of Linked Lists:</strong></p>
-<ul>
-<li><strong>Inefficient Random Access:</strong> Accessing an element at a specific index requires traversing the list from the beginning.</li>
-<li><strong>Extra Memory Overhead:</strong> Each node requires extra memory to store the pointer to the next node.</li>
-</ul>
-<h3 id="stacks">3. Stacks:</h3>
-<p>A stack is a linear data structure that follows the LIFO (Last-In, First-Out) principle.  The last element added to the stack is the first one to be removed. Think of a stack of plates – you add new plates to the top and remove plates from the top as well.</p>
-<p><strong>I. Basic Operations:</strong></p>
-<ul>
-<li><strong>Push:</strong> Adds an element to the top of the stack.</li>
-<li><strong>Pop:</strong> Removes and returns the element from the top of the stack.</li>
-<li><strong>Peek (or Top):</strong> Returns the element at the top of the stack without removing it.</li>
-<li><strong>isEmpty:</strong> Checks if the stack is empty.</li>
-<li><strong>isFull:</strong> Checks if the stack is full (applicable for array-based implementation).</li>
-</ul>
-<p><strong>II. Implementation:</strong></p>
-<p>Stacks can be implemented using arrays or linked lists.</p>
-<ul>
-<li>
-<p><strong>Array Implementation:</strong></p>
-<ul>
-<li>Simple to implement.</li>
-<li>Fixed size (defined at compile time).  Can lead to stack overflow if you try to push more elements than the array can hold.</li>
-</ul>
-</li>
-<li>
-<p><strong>Linked List Implementation:</strong></p>
-<ul>
-<li>Dynamic size (can grow or shrink as needed).</li>
-<li>More complex implementation than arrays.</li>
-</ul>
-</li>
-</ul>
-<p><strong>III. Example Implementation (Array-based Stack in C):</strong></p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+            <p><strong>V. Advantages of Linked Lists:</strong></p>
+            <ul>
+                <li><strong>Dynamic Size:</strong> Linked lists can grow or shrink as needed during program execution.
+                </li>
+                <li><strong>Efficient Insertion and Deletion:</strong> Inserting or deleting a node involves only
+                    changing a few pointers.</li>
+            </ul>
+            <p><strong>VI. Disadvantages of Linked Lists:</strong></p>
+            <ul>
+                <li><strong>Inefficient Random Access:</strong> Accessing an element at a specific index requires
+                    traversing the list from the beginning.</li>
+                <li><strong>Extra Memory Overhead:</strong> Each node requires extra memory to store the pointer to the
+                    next node.</li>
+            </ul>
+            <h3 id="stacks">3. Stacks:</h3>
+            <p>A stack is a linear data structure that follows the LIFO (Last-In, First-Out) principle. The last element
+                added to the stack is the first one to be removed. Think of a stack of plates – you add new plates to
+                the top and remove plates from the top as well.</p>
+            <p><strong>I. Basic Operations:</strong></p>
+            <ul>
+                <li><strong>Push:</strong> Adds an element to the top of the stack.</li>
+                <li><strong>Pop:</strong> Removes and returns the element from the top of the stack.</li>
+                <li><strong>Peek (or Top):</strong> Returns the element at the top of the stack without removing it.
+                </li>
+                <li><strong>isEmpty:</strong> Checks if the stack is empty.</li>
+                <li><strong>isFull:</strong> Checks if the stack is full (applicable for array-based implementation).
+                </li>
+            </ul>
+            <p><strong>II. Implementation:</strong></p>
+            <p>Stacks can be implemented using arrays or linked lists.</p>
+            <ul>
+                <li>
+                    <p><strong>Array Implementation:</strong></p>
+                    <ul>
+                        <li>Simple to implement.</li>
+                        <li>Fixed size (defined at compile time). Can lead to stack overflow if you try to push more
+                            elements than the array can hold.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Linked List Implementation:</strong></p>
+                    <ul>
+                        <li>Dynamic size (can grow or shrink as needed).</li>
+                        <li>More complex implementation than arrays.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>III. Example Implementation (Array-based Stack in C):</strong></p>
+            <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdbool.h&gt;</span></span>
 
 <span class="token macro property">#<span class="token directive keyword">define</span> MAX_SIZE 100</span>
@@ -267,44 +227,54 @@ bool <span class="token function">isFull</span><span class="token punctuation">(
 <span class="token punctuation">}</span>
 
 </code></pre>
-<p><strong>IV. Applications of Stacks:</strong></p>
-<ul>
-<li><strong>Function Call Stack:</strong>  Managing function calls during program execution.</li>
-<li><strong>Expression Evaluation (Infix to Postfix/Prefix Conversion and Evaluation):</strong> Using stacks to convert infix expressions to postfix or prefix notation and then evaluating them.</li>
-<li><strong>Undo/Redo Mechanisms:</strong> Storing previous states or actions to allow for undo and redo functionality.</li>
-<li><strong>Backtracking Algorithms (Depth-First Search):</strong> Keeping track of visited states and backtracking when necessary.</li>
-<li><strong>Memory Management:</strong> Stacks are used for managing memory allocation and deallocation.</li>
-</ul>
-<h3 id="queues">4. Queues:</h3>
-<p>A queue is a linear data structure that follows the FIFO (First-In, First-Out) principle. The first element added to the queue is the first one to be removed.  Think of a queue of people waiting in line – the first person in line is the first person served.</p>
-<p><strong>I. Basic Operations:</strong></p>
-<ul>
-<li><strong>Enqueue:</strong> Adds an element to the rear (end) of the queue.</li>
-<li><strong>Dequeue:</strong> Removes and returns the element from the front (beginning) of the queue.</li>
-<li><strong>Front (or Peek):</strong> Returns the element at the front of the queue without removing it.</li>
-<li><strong>isEmpty:</strong> Checks if the queue is empty.</li>
-<li><strong>isFull:</strong> Checks if the queue is full (applicable for array-based implementation).</li>
-</ul>
-<p><strong>II. Implementation:</strong></p>
-<p>Queues can be implemented using arrays or linked lists.</p>
-<ul>
-<li>
-<p><strong>Array Implementation (Circular Queue):</strong></p>
-<ul>
-<li>Uses a circular array to efficiently manage space.</li>
-<li>Requires careful handling of front and rear indices to avoid issues with wrapping around the array.</li>
-</ul>
-</li>
-<li>
-<p><strong>Linked List Implementation:</strong></p>
-<ul>
-<li>Dynamic size.</li>
-<li>Simpler implementation than the circular queue using arrays.</li>
-</ul>
-</li>
-</ul>
-<p><strong>III. Example Implementation (Array-based Circular Queue in C):</strong></p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+            <p><strong>IV. Applications of Stacks:</strong></p>
+            <ul>
+                <li><strong>Function Call Stack:</strong> Managing function calls during program execution.</li>
+                <li><strong>Expression Evaluation (Infix to Postfix/Prefix Conversion and Evaluation):</strong> Using
+                    stacks to convert infix expressions to postfix or prefix notation and then evaluating them.</li>
+                <li><strong>Undo/Redo Mechanisms:</strong> Storing previous states or actions to allow for undo and redo
+                    functionality.</li>
+                <li><strong>Backtracking Algorithms (Depth-First Search):</strong> Keeping track of visited states and
+                    backtracking when necessary.</li>
+                <li><strong>Memory Management:</strong> Stacks are used for managing memory allocation and deallocation.
+                </li>
+            </ul>
+            <h3 id="queues">4. Queues:</h3>
+            <p>A queue is a linear data structure that follows the FIFO (First-In, First-Out) principle. The first
+                element added to the queue is the first one to be removed. Think of a queue of people waiting in line –
+                the first person in line is the first person served.</p>
+            <p><strong>I. Basic Operations:</strong></p>
+            <ul>
+                <li><strong>Enqueue:</strong> Adds an element to the rear (end) of the queue.</li>
+                <li><strong>Dequeue:</strong> Removes and returns the element from the front (beginning) of the queue.
+                </li>
+                <li><strong>Front (or Peek):</strong> Returns the element at the front of the queue without removing it.
+                </li>
+                <li><strong>isEmpty:</strong> Checks if the queue is empty.</li>
+                <li><strong>isFull:</strong> Checks if the queue is full (applicable for array-based implementation).
+                </li>
+            </ul>
+            <p><strong>II. Implementation:</strong></p>
+            <p>Queues can be implemented using arrays or linked lists.</p>
+            <ul>
+                <li>
+                    <p><strong>Array Implementation (Circular Queue):</strong></p>
+                    <ul>
+                        <li>Uses a circular array to efficiently manage space.</li>
+                        <li>Requires careful handling of front and rear indices to avoid issues with wrapping around the
+                            array.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Linked List Implementation:</strong></p>
+                    <ul>
+                        <li>Dynamic size.</li>
+                        <li>Simpler implementation than the circular queue using arrays.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>III. Example Implementation (Array-based Circular Queue in C):</strong></p>
+            <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdbool.h&gt;</span></span>
 
 <span class="token macro property">#<span class="token directive keyword">define</span> MAX_SIZE 100</span>
@@ -373,41 +343,53 @@ bool <span class="token function">isFull</span><span class="token punctuation">(
 <span class="token punctuation">}</span>
 
 </code></pre>
-<p><strong>IV. Applications of Queues:</strong></p>
-<ul>
-<li><strong>Managing Tasks (Scheduling):</strong>  Operating systems use queues to manage processes waiting for resources.</li>
-<li><strong>Buffering Data Streams:</strong>  Queues can buffer data between a sender and a receiver.</li>
-<li><strong>Handling Requests (e.g., Print Queue):</strong>  Managing print jobs, network requests, etc.</li>
-<li><strong>Breadth-First Search:</strong>  Exploring graphs level by level.</li>
-</ul>
-<h3 id="trees">5. Trees:</h3>
-<p>Trees are hierarchical data structures that consist of nodes connected by edges. They are used to represent hierarchical relationships between data elements.</p>
-<p><strong>I. Terminology:</strong></p>
-<ul>
-<li><strong>Node:</strong> A fundamental unit of a tree, containing data and pointers to its children.</li>
-<li><strong>Root:</strong> The topmost node of the tree.</li>
-<li><strong>Parent:</strong> A node that has one or more children.</li>
-<li><strong>Child:</strong> A node directly connected to another node when moving away from the Root.</li>
-<li><strong>Leaf (or External Node):</strong> A node with no children.</li>
-<li><strong>Internal Node:</strong> A node with at least one child.</li>
-<li><strong>Siblings:</strong> Nodes that share the same parent.</li>
-<li><strong>Edge:</strong> The connection between two nodes.</li>
-<li><strong>Path:</strong> A sequence of nodes and edges connecting a node to its descendant.</li>
-<li><strong>Depth (of a node):</strong> The number of edges from the root to the node.</li>
-<li><strong>Height (of a node):</strong> The number of edges on the longest path from the node to a leaf.</li>
-<li><strong>Height (of a tree):</strong> The height of the root node.</li>
-</ul>
-<p><strong>II. Types of Trees:</strong></p>
-<ul>
-<li><strong>Binary Tree:</strong> Each node has at most two children (left and right child).</li>
-<li><strong>Binary Search Tree (BST):</strong>  An ordered binary tree where the value of each node is greater than or equal to all values in its left subtree and less than or equal to all values in its right subtree.  Efficient for searching.</li>
-<li><strong>AVL Tree:</strong> A self-balancing BST that maintains a height balance factor for each node. Guarantees logarithmic time complexity for operations.</li>
-<li><strong>Red-Black Tree:</strong> Another self-balancing BST with specific properties that ensure balanced structure.</li>
-<li><strong>B-Tree:</strong>  A self-balancing tree often used in database indexing and file systems.</li>
-<li><strong>Trie (Prefix Tree):</strong> Used for efficient string searching and prefix matching.</li>
-</ul>
-<p><strong>III. Binary Tree Representation in C:</strong></p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+            <p><strong>IV. Applications of Queues:</strong></p>
+            <ul>
+                <li><strong>Managing Tasks (Scheduling):</strong> Operating systems use queues to manage processes
+                    waiting for resources.</li>
+                <li><strong>Buffering Data Streams:</strong> Queues can buffer data between a sender and a receiver.
+                </li>
+                <li><strong>Handling Requests (e.g., Print Queue):</strong> Managing print jobs, network requests, etc.
+                </li>
+                <li><strong>Breadth-First Search:</strong> Exploring graphs level by level.</li>
+            </ul>
+            <h3 id="trees">5. Trees:</h3>
+            <p>Trees are hierarchical data structures that consist of nodes connected by edges. They are used to
+                represent hierarchical relationships between data elements.</p>
+            <p><strong>I. Terminology:</strong></p>
+            <ul>
+                <li><strong>Node:</strong> A fundamental unit of a tree, containing data and pointers to its children.
+                </li>
+                <li><strong>Root:</strong> The topmost node of the tree.</li>
+                <li><strong>Parent:</strong> A node that has one or more children.</li>
+                <li><strong>Child:</strong> A node directly connected to another node when moving away from the Root.
+                </li>
+                <li><strong>Leaf (or External Node):</strong> A node with no children.</li>
+                <li><strong>Internal Node:</strong> A node with at least one child.</li>
+                <li><strong>Siblings:</strong> Nodes that share the same parent.</li>
+                <li><strong>Edge:</strong> The connection between two nodes.</li>
+                <li><strong>Path:</strong> A sequence of nodes and edges connecting a node to its descendant.</li>
+                <li><strong>Depth (of a node):</strong> The number of edges from the root to the node.</li>
+                <li><strong>Height (of a node):</strong> The number of edges on the longest path from the node to a
+                    leaf.</li>
+                <li><strong>Height (of a tree):</strong> The height of the root node.</li>
+            </ul>
+            <p><strong>II. Types of Trees:</strong></p>
+            <ul>
+                <li><strong>Binary Tree:</strong> Each node has at most two children (left and right child).</li>
+                <li><strong>Binary Search Tree (BST):</strong> An ordered binary tree where the value of each node is
+                    greater than or equal to all values in its left subtree and less than or equal to all values in its
+                    right subtree. Efficient for searching.</li>
+                <li><strong>AVL Tree:</strong> A self-balancing BST that maintains a height balance factor for each
+                    node. Guarantees logarithmic time complexity for operations.</li>
+                <li><strong>Red-Black Tree:</strong> Another self-balancing BST with specific properties that ensure
+                    balanced structure.</li>
+                <li><strong>B-Tree:</strong> A self-balancing tree often used in database indexing and file systems.
+                </li>
+                <li><strong>Trie (Prefix Tree):</strong> Used for efficient string searching and prefix matching.</li>
+            </ul>
+            <p><strong>III. Binary Tree Representation in C:</strong></p>
+            <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
 
 <span class="token keyword">struct</span> Node <span class="token punctuation">{</span>
@@ -434,43 +416,50 @@ bool <span class="token function">isFull</span><span class="token punctuation">(
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><strong>IV. Tree Traversals (for Binary Trees):</strong></p>
-<ul>
-<li><strong>Inorder:</strong> Left, Root, Right</li>
-<li><strong>Preorder:</strong> Root, Left, Right</li>
-<li><strong>Postorder:</strong> Left, Right, Root</li>
-</ul>
-<p><strong>V. Applications of Trees:</strong></p>
-<ul>
-<li><strong>Binary Search Trees:</strong> Efficient searching, insertion, and deletion of data.</li>
-<li><strong>Heaps:</strong> Priority queues, heapsort algorithm.</li>
-<li><strong>B-Trees:</strong>  Database indexing, file system organization.</li>
-<li><strong>Tries:</strong>  Auto-complete, spell checking.</li>
-<li><strong>Decision Trees:</strong> Machine learning, decision analysis.</li>
-<li><strong>Expression Trees:</strong> Representing mathematical expressions.</li>
-</ul>
-<h3 id="graphs">6. Graphs:</h3>
-<p>Graphs are non-linear data structures that represent relationships between entities.  They consist of nodes (vertices) connected by edges.</p>
-<p><strong>I. Terminology:</strong></p>
-<ul>
-<li><strong>Vertex (or Node):</strong>  Represents an entity or data point.</li>
-<li><strong>Edge:</strong>  Represents a connection or relationship between two vertices.</li>
-<li><strong>Directed Graph (Digraph):</strong> Edges have a direction, indicating a one-way relationship.</li>
-<li><strong>Undirected Graph:</strong> Edges have no direction, indicating a two-way relationship.</li>
-<li><strong>Weighted Graph:</strong> Edges have weights associated with them, representing the cost or strength of the connection.</li>
-<li><strong>Adjacent Vertices:</strong> Two vertices connected by an edge.</li>
-<li><strong>Degree (of a vertex):</strong> The number of edges incident to the vertex.  In a directed graph, in-degree (number of incoming edges) and out-degree (number of outgoing edges) are considered separately.</li>
-<li><strong>Path:</strong> A sequence of vertices connected by edges.</li>
-<li><strong>Cycle:</strong> A path that starts and ends at the same vertex.</li>
-<li><strong>Connected Graph:</strong> There is a path between any two vertices in the graph.</li>
-</ul>
-<p><strong>II. Graph Representation:</strong></p>
-<ul>
-<li><strong>Adjacency Matrix:</strong> A 2D array where A[i][j] = 1 if there’s an edge from vertex i to vertex j, and 0 otherwise.  For weighted graphs, A[i][j] can store the weight of the edge.</li>
-<li><strong>Adjacency List:</strong>  Each vertex has a list of its adjacent vertices.  More space-efficient for sparse graphs (graphs with relatively few edges).</li>
-</ul>
-<p><strong>III. Graph Representation in C (Adjacency List Example):</strong></p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+            <p><strong>IV. Tree Traversals (for Binary Trees):</strong></p>
+            <ul>
+                <li><strong>Inorder:</strong> Left, Root, Right</li>
+                <li><strong>Preorder:</strong> Root, Left, Right</li>
+                <li><strong>Postorder:</strong> Left, Right, Root</li>
+            </ul>
+            <p><strong>V. Applications of Trees:</strong></p>
+            <ul>
+                <li><strong>Binary Search Trees:</strong> Efficient searching, insertion, and deletion of data.</li>
+                <li><strong>Heaps:</strong> Priority queues, heapsort algorithm.</li>
+                <li><strong>B-Trees:</strong> Database indexing, file system organization.</li>
+                <li><strong>Tries:</strong> Auto-complete, spell checking.</li>
+                <li><strong>Decision Trees:</strong> Machine learning, decision analysis.</li>
+                <li><strong>Expression Trees:</strong> Representing mathematical expressions.</li>
+            </ul>
+            <h3 id="graphs">6. Graphs:</h3>
+            <p>Graphs are non-linear data structures that represent relationships between entities. They consist of
+                nodes (vertices) connected by edges.</p>
+            <p><strong>I. Terminology:</strong></p>
+            <ul>
+                <li><strong>Vertex (or Node):</strong> Represents an entity or data point.</li>
+                <li><strong>Edge:</strong> Represents a connection or relationship between two vertices.</li>
+                <li><strong>Directed Graph (Digraph):</strong> Edges have a direction, indicating a one-way
+                    relationship.</li>
+                <li><strong>Undirected Graph:</strong> Edges have no direction, indicating a two-way relationship.</li>
+                <li><strong>Weighted Graph:</strong> Edges have weights associated with them, representing the cost or
+                    strength of the connection.</li>
+                <li><strong>Adjacent Vertices:</strong> Two vertices connected by an edge.</li>
+                <li><strong>Degree (of a vertex):</strong> The number of edges incident to the vertex. In a directed
+                    graph, in-degree (number of incoming edges) and out-degree (number of outgoing edges) are considered
+                    separately.</li>
+                <li><strong>Path:</strong> A sequence of vertices connected by edges.</li>
+                <li><strong>Cycle:</strong> A path that starts and ends at the same vertex.</li>
+                <li><strong>Connected Graph:</strong> There is a path between any two vertices in the graph.</li>
+            </ul>
+            <p><strong>II. Graph Representation:</strong></p>
+            <ul>
+                <li><strong>Adjacency Matrix:</strong> A 2D array where A[i][j] = 1 if there’s an edge from vertex i to
+                    vertex j, and 0 otherwise. For weighted graphs, A[i][j] can store the weight of the edge.</li>
+                <li><strong>Adjacency List:</strong> Each vertex has a list of its adjacent vertices. More
+                    space-efficient for sparse graphs (graphs with relatively few edges).</li>
+            </ul>
+            <p><strong>III. Graph Representation in C (Adjacency List Example):</strong></p>
+            <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
 
 <span class="token keyword">struct</span> Node <span class="token punctuation">{</span>
@@ -545,50 +534,68 @@ bool <span class="token function">isFull</span><span class="token punctuation">(
 <span class="token punctuation">}</span>
 
 </code></pre>
-<p><strong>IV. Graph Traversals:</strong></p>
-<ul>
-<li><strong>Breadth-First Search (BFS):</strong> Explores the graph level by level. Uses a queue.</li>
-<li><strong>Depth-First Search (DFS):</strong>  Explores as far as possible along each branch before backtracking. Uses a stack or recursion.</li>
-</ul>
-<p><strong>V. Applications of Graphs:</strong></p>
-<ul>
-<li><strong>Social Networks:</strong> Representing relationships between people.</li>
-<li><strong>Maps and Navigation:</strong> Finding shortest paths, route planning.</li>
-<li><strong>Network Analysis:</strong> Analyzing network topology, connectivity, and flow.</li>
-<li><strong>Compiler Design:</strong>  Representing program dependencies.</li>
-<li><strong>Machine Learning:</strong>  Graphical models, knowledge representation.</li>
-</ul>
-<h3 id="hash-tables-hash-maps">7. Hash Tables (Hash Maps):</h3>
-<p>Hash tables (or hash maps) are data structures that provide efficient insertion, deletion, and search operations. They achieve this by using a hash function to map keys to indices in an array.</p>
-<p><strong>I. Key Components:</strong></p>
-<ul>
-<li><strong>Hash Function:</strong> A function that takes a key as input and returns an index (hash code) within the hash table’s array.  A good hash function distributes keys uniformly across the array to minimize collisions.</li>
-<li><strong>Array (Hash Table):</strong>  The underlying array where data is stored.</li>
-<li><strong>Buckets:</strong>  Each element of the array can be thought of as a bucket that can store one or more key-value pairs.</li>
-<li><strong>Collision Handling:</strong>  A strategy for handling situations where multiple keys map to the same index (collision).</li>
-</ul>
-<p><strong>II. Collision Handling Techniques:</strong></p>
-<ul>
-<li><strong>Separate Chaining:</strong>  Each bucket stores a linked list of key-value pairs that hash to the same index.</li>
-<li><strong>Open Addressing (Linear Probing, Quadratic Probing, Double Hashing):</strong> If a collision occurs, the hash table is probed sequentially for an empty slot according to a specific probing sequence.</li>
-</ul>
-<p><strong>III. Operations:</strong></p>
-<ul>
-<li><strong>Insertion:</strong>  Compute the hash code for the key and store the key-value pair in the corresponding bucket.</li>
-<li><strong>Deletion:</strong>  Compute the hash code for the key, find the key-value pair in the corresponding bucket, and remove it.</li>
-<li><strong>Search (Lookup):</strong> Compute the hash code for the key and search for the key-value pair in the corresponding bucket.</li>
-</ul>
-<p><strong>IV. Implementation Considerations:</strong></p>
-<ul>
-<li><strong>Hash Function Design:</strong> A good hash function is crucial for performance. It should distribute keys evenly and be computationally efficient.</li>
-<li><strong>Load Factor:</strong> The ratio of the number of elements stored in the hash table to the size of the array.  A high load factor can lead to increased collisions and degraded performance.  Resizing the hash table (rehashing) is often necessary when the load factor exceeds a certain threshold.</li>
-<li><strong>Collision Handling Strategy:</strong>  The choice of collision handling technique affects performance. Separate chaining is generally simpler to implement, while open addressing can be more memory-efficient but requires careful handling of probing sequences.</li>
-</ul>
-<p><strong>V. Example (Conceptual Separate Chaining):</strong></p>
-<p>Assume a hash table of size 5 and a simple hash function: <code>hash(key) = key % 5</code>.</p>
-<p>Key-Value Pairs: (1, “apple”), (6, “banana”), (11, “cherry”), (2, “date”), (7, “grape”)</p>
-<p>Hash Table:</p>
-<pre><code>Index | Bucket (Linked List)
+            <p><strong>IV. Graph Traversals:</strong></p>
+            <ul>
+                <li><strong>Breadth-First Search (BFS):</strong> Explores the graph level by level. Uses a queue.</li>
+                <li><strong>Depth-First Search (DFS):</strong> Explores as far as possible along each branch before
+                    backtracking. Uses a stack or recursion.</li>
+            </ul>
+            <p><strong>V. Applications of Graphs:</strong></p>
+            <ul>
+                <li><strong>Social Networks:</strong> Representing relationships between people.</li>
+                <li><strong>Maps and Navigation:</strong> Finding shortest paths, route planning.</li>
+                <li><strong>Network Analysis:</strong> Analyzing network topology, connectivity, and flow.</li>
+                <li><strong>Compiler Design:</strong> Representing program dependencies.</li>
+                <li><strong>Machine Learning:</strong> Graphical models, knowledge representation.</li>
+            </ul>
+            <h3 id="hash-tables-hash-maps">7. Hash Tables (Hash Maps):</h3>
+            <p>Hash tables (or hash maps) are data structures that provide efficient insertion, deletion, and search
+                operations. They achieve this by using a hash function to map keys to indices in an array.</p>
+            <p><strong>I. Key Components:</strong></p>
+            <ul>
+                <li><strong>Hash Function:</strong> A function that takes a key as input and returns an index (hash
+                    code) within the hash table’s array. A good hash function distributes keys uniformly across the
+                    array to minimize collisions.</li>
+                <li><strong>Array (Hash Table):</strong> The underlying array where data is stored.</li>
+                <li><strong>Buckets:</strong> Each element of the array can be thought of as a bucket that can store one
+                    or more key-value pairs.</li>
+                <li><strong>Collision Handling:</strong> A strategy for handling situations where multiple keys map to
+                    the same index (collision).</li>
+            </ul>
+            <p><strong>II. Collision Handling Techniques:</strong></p>
+            <ul>
+                <li><strong>Separate Chaining:</strong> Each bucket stores a linked list of key-value pairs that hash to
+                    the same index.</li>
+                <li><strong>Open Addressing (Linear Probing, Quadratic Probing, Double Hashing):</strong> If a collision
+                    occurs, the hash table is probed sequentially for an empty slot according to a specific probing
+                    sequence.</li>
+            </ul>
+            <p><strong>III. Operations:</strong></p>
+            <ul>
+                <li><strong>Insertion:</strong> Compute the hash code for the key and store the key-value pair in the
+                    corresponding bucket.</li>
+                <li><strong>Deletion:</strong> Compute the hash code for the key, find the key-value pair in the
+                    corresponding bucket, and remove it.</li>
+                <li><strong>Search (Lookup):</strong> Compute the hash code for the key and search for the key-value
+                    pair in the corresponding bucket.</li>
+            </ul>
+            <p><strong>IV. Implementation Considerations:</strong></p>
+            <ul>
+                <li><strong>Hash Function Design:</strong> A good hash function is crucial for performance. It should
+                    distribute keys evenly and be computationally efficient.</li>
+                <li><strong>Load Factor:</strong> The ratio of the number of elements stored in the hash table to the
+                    size of the array. A high load factor can lead to increased collisions and degraded performance.
+                    Resizing the hash table (rehashing) is often necessary when the load factor exceeds a certain
+                    threshold.</li>
+                <li><strong>Collision Handling Strategy:</strong> The choice of collision handling technique affects
+                    performance. Separate chaining is generally simpler to implement, while open addressing can be more
+                    memory-efficient but requires careful handling of probing sequences.</li>
+            </ul>
+            <p><strong>V. Example (Conceptual Separate Chaining):</strong></p>
+            <p>Assume a hash table of size 5 and a simple hash function: <code>hash(key) = key % 5</code>.</p>
+            <p>Key-Value Pairs: (1, “apple”), (6, “banana”), (11, “cherry”), (2, “date”), (7, “grape”)</p>
+            <p>Hash Table:</p>
+            <pre><code>Index | Bucket (Linked List)
 -------|--------------------
 0     | (11, "cherry")
 1     | (1, "apple") -&gt; (6, "banana")
@@ -597,47 +604,61 @@ bool <span class="token function">isFull</span><span class="token punctuation">(
 4     | 
 
 </code></pre>
-<p><strong>VI. Applications of Hash Tables:</strong></p>
-<ul>
-<li><strong>Dictionaries (Key-Value Stores):</strong>  Efficiently store and retrieve data based on keys.</li>
-<li><strong>Symbol Tables (in Compilers):</strong> Store information about variables and functions.</li>
-<li><strong>Caches:</strong>  Store frequently accessed data for faster retrieval.</li>
-<li><strong>Associative Arrays:</strong>  Arrays where elements can be accessed using keys instead of numerical indices.</li>
-</ul>
-<p><strong>Choosing the Right Data Structure:</strong></p>
-<p>The choice of data structure depends on the specific application and the operations that need to be performed efficiently. Consider factors like:</p>
-<ul>
-<li><strong>Frequency of operations (insertion, deletion, search, retrieval).</strong></li>
-<li><strong>Data size and memory usage.</strong></li>
-<li><strong>Implementation complexity.</strong></li>
-</ul>
-<h2 id="ca-221-c-programming">CA-221: C++ Programming</h2>
-<h3 id="module-c-programming-concepts-brief"><strong>Module: C++ Programming Concepts (Brief)</strong></h3>
-<p>This module introduces the fundamentals of C++, an object-oriented programming language that extends C.</p>
-<p><strong>1. Object-Oriented Programming (OOP) Concepts:</strong></p>
-<ul>
-<li><strong>Classes and Objects:</strong> Classes are blueprints for creating objects, which are instances of a class.</li>
-<li><strong>Encapsulation:</strong> Bundling data (attributes) and methods (functions) that operate on that data within a class.</li>
-<li><strong>Inheritance:</strong> Creating new classes (derived classes) from existing classes (base classes), inheriting their properties and behaviors.</li>
-<li><strong>Polymorphism:</strong>  The ability of objects of different classes to respond to the same method call in different ways.</li>
-</ul>
-<p><strong>2. Key C++ Features:</strong></p>
-<ul>
-<li><strong>Input/Output:</strong> <code>cin</code>, <code>cout</code>, <code>cerr</code>.</li>
-<li><strong>Data Types:</strong> Similar to C, with additions like <code>bool</code> and the <code>string</code> class.</li>
-<li><strong>Operators:</strong> Similar to C, with the addition of operator overloading.</li>
-<li><strong>Control Structures:</strong> Similar to C.</li>
-<li><strong>Functions:</strong> Similar to C, with the addition of function overloading and default arguments.</li>
-<li><strong>Classes and Objects:</strong> <code>class</code> keyword, constructors, destructors, access specifiers (public, private, protected).</li>
-<li><strong>Inheritance:</strong> <code>public</code>, <code>private</code>, and <code>protected</code> inheritance.</li>
-<li><strong>Polymorphism:</strong> Virtual functions, abstract classes.</li>
-<li><strong>Templates:</strong>  Generic programming, writing code that works with different data types without being explicitly written for each type.</li>
-<li><strong>Standard Template Library (STL):</strong>  Provides ready-to-use data structures (vectors, lists, maps) and algorithms.</li>
-<li><strong>Exception Handling:</strong> <code>try</code>, <code>catch</code>, <code>throw</code>.</li>
-<li><strong>Namespaces:</strong> Avoid naming conflicts.</li>
-</ul>
-<p><strong>3. Example (Simple Class):</strong></p>
-<pre class=" language-cpp"><code class="prism  language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            <p><strong>VI. Applications of Hash Tables:</strong></p>
+            <ul>
+                <li><strong>Dictionaries (Key-Value Stores):</strong> Efficiently store and retrieve data based on keys.
+                </li>
+                <li><strong>Symbol Tables (in Compilers):</strong> Store information about variables and functions.</li>
+                <li><strong>Caches:</strong> Store frequently accessed data for faster retrieval.</li>
+                <li><strong>Associative Arrays:</strong> Arrays where elements can be accessed using keys instead of
+                    numerical indices.</li>
+            </ul>
+            <p><strong>Choosing the Right Data Structure:</strong></p>
+            <p>The choice of data structure depends on the specific application and the operations that need to be
+                performed efficiently. Consider factors like:</p>
+            <ul>
+                <li><strong>Frequency of operations (insertion, deletion, search, retrieval).</strong></li>
+                <li><strong>Data size and memory usage.</strong></li>
+                <li><strong>Implementation complexity.</strong></li>
+            </ul>
+            <h2 id="ca-221-c-programming">CA-221: C++ Programming</h2>
+            <h3 id="module-c-programming-concepts-brief"><strong>Module: C++ Programming Concepts (Brief)</strong></h3>
+            <p>This module introduces the fundamentals of C++, an object-oriented programming language that extends C.
+            </p>
+            <p><strong>1. Object-Oriented Programming (OOP) Concepts:</strong></p>
+            <ul>
+                <li><strong>Classes and Objects:</strong> Classes are blueprints for creating objects, which are
+                    instances of a class.</li>
+                <li><strong>Encapsulation:</strong> Bundling data (attributes) and methods (functions) that operate on
+                    that data within a class.</li>
+                <li><strong>Inheritance:</strong> Creating new classes (derived classes) from existing classes (base
+                    classes), inheriting their properties and behaviors.</li>
+                <li><strong>Polymorphism:</strong> The ability of objects of different classes to respond to the same
+                    method call in different ways.</li>
+            </ul>
+            <p><strong>2. Key C++ Features:</strong></p>
+            <ul>
+                <li><strong>Input/Output:</strong> <code>cin</code>, <code>cout</code>, <code>cerr</code>.</li>
+                <li><strong>Data Types:</strong> Similar to C, with additions like <code>bool</code> and the
+                    <code>string</code> class.</li>
+                <li><strong>Operators:</strong> Similar to C, with the addition of operator overloading.</li>
+                <li><strong>Control Structures:</strong> Similar to C.</li>
+                <li><strong>Functions:</strong> Similar to C, with the addition of function overloading and default
+                    arguments.</li>
+                <li><strong>Classes and Objects:</strong> <code>class</code> keyword, constructors, destructors, access
+                    specifiers (public, private, protected).</li>
+                <li><strong>Inheritance:</strong> <code>public</code>, <code>private</code>, and <code>protected</code>
+                    inheritance.</li>
+                <li><strong>Polymorphism:</strong> Virtual functions, abstract classes.</li>
+                <li><strong>Templates:</strong> Generic programming, writing code that works with different data types
+                    without being explicitly written for each type.</li>
+                <li><strong>Standard Template Library (STL):</strong> Provides ready-to-use data structures (vectors,
+                    lists, maps) and algorithms.</li>
+                <li><strong>Exception Handling:</strong> <code>try</code>, <code>catch</code>, <code>throw</code>.</li>
+                <li><strong>Namespaces:</strong> Avoid naming conflicts.</li>
+            </ul>
+            <p><strong>3. Example (Simple Class):</strong></p>
+            <pre class=" language-cpp"><code class="prism  language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
 
 <span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token punctuation">{</span>
@@ -660,100 +681,118 @@ bool <span class="token function">isFull</span><span class="token punctuation">(
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h2 id="ca-231-fp-field-project">CA-231-FP: Field Project</h2>
-<p>The Field Project is a crucial component of your BCA program, providing an opportunity to apply your knowledge and skills to a real-world problem or scenario.  This practical experience allows you to gain valuable insights into the software development lifecycle and professional practices.</p>
-<p><strong>1. Project Selection:</strong></p>
-<ul>
-<li>Identify a project that aligns with your interests and learning objectives.</li>
-<li>Consider projects that allow you to apply the concepts learned in previous semesters (programming, data structures, databases, etc.).</li>
-<li>Consult with your faculty advisor to discuss project ideas and feasibility.</li>
-</ul>
-<p><strong>2. Project Planning:</strong></p>
-<ul>
-<li>Define project scope, objectives, and deliverables.</li>
-<li>Create a project timeline with milestones and deadlines.</li>
-<li>Identify resources required (software, hardware, data).</li>
-<li>Formulate a project plan that outlines the steps involved in completing the project.</li>
-</ul>
-<p><strong>3. Project Execution:</strong></p>
-<ul>
-<li>Follow the project plan and work towards achieving the defined milestones.</li>
-<li>Implement the project using appropriate technologies and methodologies.</li>
-<li>Document your progress, code, and design decisions.</li>
-<li>Regularly test and debug your work.</li>
-</ul>
-<p><strong>4. Project Documentation:</strong></p>
-<ul>
-<li>Prepare a comprehensive project report that documents the project’s objectives, methodology, implementation, results, and conclusions.</li>
-<li>Include relevant diagrams, code snippets, and screenshots.</li>
-<li>Clearly explain your contributions and the challenges you faced during the project.</li>
-</ul>
-<p><strong>5. Project Presentation:</strong></p>
-<ul>
-<li>Present your project to a panel of faculty and peers.</li>
-<li>Clearly explain your project, its significance, and your findings.</li>
-<li>Answer questions about your work.</li>
-</ul>
-<p><strong>Tips for a Successful Field Project:</strong></p>
-<ul>
-<li><strong>Start Early:</strong> Don’t procrastinate. Starting early gives you ample time to plan, execute, and document your project effectively.</li>
-<li><strong>Clearly Define Scope:</strong> Avoid overly ambitious projects.  A well-defined scope ensures that you can complete the project within the given timeframe.</li>
-<li><strong>Regular Communication:</strong>  Maintain regular communication with your faculty advisor to discuss progress, challenges, and get feedback.</li>
-<li><strong>Documentation is Key:</strong>  Document your work throughout the project lifecycle.  This will be invaluable for writing your project report and preparing your presentation.</li>
-<li><strong>Testing and Debugging:</strong>  Thoroughly test your project and address any bugs or issues.</li>
-<li><strong>Practice Your Presentation:</strong> Rehearse your presentation to ensure a smooth and confident delivery.</li>
-</ul>
-<p>The Field Project is an excellent opportunity to gain practical experience and showcase your skills.  Approach it with careful planning, consistent effort, and clear communication to maximize your learning and achieve a successful outcome. This project can also serve as a valuable portfolio piece for future job applications.</p>
-<h2 id="ca-241-mn-programming-with-python-minor">CA-241-MN: Programming with Python (Minor)</h2>
-<p>This module introduces the fundamentals of Python programming, covering basic syntax, data types, control structures, functions, and modules.</p>
-<p>Use <a href="https://www.online-python.com/">Python</a> to run python programs online!</p>
-<p><strong>1. Introduction to Python:</strong></p>
-<ul>
-<li>High-level, interpreted language known for its readability and versatility.</li>
-<li>Used in various domains, including web development, data science, machine learning, and scripting.</li>
-</ul>
-<p><strong>2. Basic Syntax:</strong></p>
-<ul>
-<li>Indentation is crucial for defining code blocks.</li>
-<li>Variables are dynamically typed (no need to declare data types explicitly).</li>
-<li>Comments: <code>#</code> for single-line comments, <code>'''</code> or <code>"""</code> for multi-line comments.</li>
-</ul>
-<p><strong>3. Data Types:</strong></p>
-<ul>
-<li><strong>Numeric:</strong> <code>int</code>, <code>float</code>, <code>complex</code>.</li>
-<li><strong>String:</strong> <code>str</code>.</li>
-<li><strong>Boolean:</strong> <code>bool</code> (<code>True</code>, <code>False</code>).</li>
-<li><strong>Sequence:</strong> <code>list</code>, <code>tuple</code>, <code>range</code>.</li>
-<li><strong>Mapping:</strong> <code>dict</code>.</li>
-<li><strong>Set:</strong> <code>set</code>, <code>frozenset</code>.</li>
-<li><strong>None:</strong> <code>NoneType</code>.</li>
-</ul>
-<p><strong>4. Operators:</strong></p>
-<ul>
-<li>Arithmetic, comparison, logical, assignment, bitwise, membership, identity operators.</li>
-</ul>
-<p><strong>5. Control Flow:</strong></p>
-<ul>
-<li><code>if</code>, <code>elif</code>, <code>else</code>.</li>
-<li><code>for</code> loop (iterate over sequences).</li>
-<li><code>while</code> loop.</li>
-<li><code>break</code>, <code>continue</code>, <code>pass</code>.</li>
-</ul>
-<p><strong>6. Functions:</strong></p>
-<ul>
-<li><code>def</code> keyword to define functions.</li>
-<li>Parameters and return values.</li>
-<li>Lambda functions (anonymous functions).</li>
-</ul>
-<p><strong>7. Modules and Packages:</strong></p>
-<ul>
-<li><strong>Modules:</strong> Files containing Python code.</li>
-<li><strong>Packages:</strong> Collections of modules.</li>
-<li>Importing modules: <code>import module_name</code>, <code>from module_name import function_name</code>.</li>
-<li>Standard library:  A rich set of modules for various tasks (e.g., <code>math</code>, <code>random</code>, <code>os</code>, <code>sys</code>).</li>
-</ul>
-<p><strong>8. Example:</strong></p>
-<pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <h2 id="ca-231-fp-field-project">CA-231-FP: Field Project</h2>
+            <p>The Field Project is a crucial component of your BCA program, providing an opportunity to apply your
+                knowledge and skills to a real-world problem or scenario. This practical experience allows you to gain
+                valuable insights into the software development lifecycle and professional practices.</p>
+            <p><strong>1. Project Selection:</strong></p>
+            <ul>
+                <li>Identify a project that aligns with your interests and learning objectives.</li>
+                <li>Consider projects that allow you to apply the concepts learned in previous semesters (programming,
+                    data structures, databases, etc.).</li>
+                <li>Consult with your faculty advisor to discuss project ideas and feasibility.</li>
+            </ul>
+            <p><strong>2. Project Planning:</strong></p>
+            <ul>
+                <li>Define project scope, objectives, and deliverables.</li>
+                <li>Create a project timeline with milestones and deadlines.</li>
+                <li>Identify resources required (software, hardware, data).</li>
+                <li>Formulate a project plan that outlines the steps involved in completing the project.</li>
+            </ul>
+            <p><strong>3. Project Execution:</strong></p>
+            <ul>
+                <li>Follow the project plan and work towards achieving the defined milestones.</li>
+                <li>Implement the project using appropriate technologies and methodologies.</li>
+                <li>Document your progress, code, and design decisions.</li>
+                <li>Regularly test and debug your work.</li>
+            </ul>
+            <p><strong>4. Project Documentation:</strong></p>
+            <ul>
+                <li>Prepare a comprehensive project report that documents the project’s objectives, methodology,
+                    implementation, results, and conclusions.</li>
+                <li>Include relevant diagrams, code snippets, and screenshots.</li>
+                <li>Clearly explain your contributions and the challenges you faced during the project.</li>
+            </ul>
+            <p><strong>5. Project Presentation:</strong></p>
+            <ul>
+                <li>Present your project to a panel of faculty and peers.</li>
+                <li>Clearly explain your project, its significance, and your findings.</li>
+                <li>Answer questions about your work.</li>
+            </ul>
+            <p><strong>Tips for a Successful Field Project:</strong></p>
+            <ul>
+                <li><strong>Start Early:</strong> Don’t procrastinate. Starting early gives you ample time to plan,
+                    execute, and document your project effectively.</li>
+                <li><strong>Clearly Define Scope:</strong> Avoid overly ambitious projects. A well-defined scope ensures
+                    that you can complete the project within the given timeframe.</li>
+                <li><strong>Regular Communication:</strong> Maintain regular communication with your faculty advisor to
+                    discuss progress, challenges, and get feedback.</li>
+                <li><strong>Documentation is Key:</strong> Document your work throughout the project lifecycle. This
+                    will be invaluable for writing your project report and preparing your presentation.</li>
+                <li><strong>Testing and Debugging:</strong> Thoroughly test your project and address any bugs or issues.
+                </li>
+                <li><strong>Practice Your Presentation:</strong> Rehearse your presentation to ensure a smooth and
+                    confident delivery.</li>
+            </ul>
+            <p>The Field Project is an excellent opportunity to gain practical experience and showcase your skills.
+                Approach it with careful planning, consistent effort, and clear communication to maximize your learning
+                and achieve a successful outcome. This project can also serve as a valuable portfolio piece for future
+                job applications.</p>
+            <h2 id="ca-241-mn-programming-with-python-minor">CA-241-MN: Programming with Python (Minor)</h2>
+            <p>This module introduces the fundamentals of Python programming, covering basic syntax, data types, control
+                structures, functions, and modules.</p>
+            <p>Use <a href="https://www.online-python.com/">Python</a> to run python programs online!</p>
+            <p><strong>1. Introduction to Python:</strong></p>
+            <ul>
+                <li>High-level, interpreted language known for its readability and versatility.</li>
+                <li>Used in various domains, including web development, data science, machine learning, and scripting.
+                </li>
+            </ul>
+            <p><strong>2. Basic Syntax:</strong></p>
+            <ul>
+                <li>Indentation is crucial for defining code blocks.</li>
+                <li>Variables are dynamically typed (no need to declare data types explicitly).</li>
+                <li>Comments: <code>#</code> for single-line comments, <code>'''</code> or <code>"""</code> for
+                    multi-line comments.</li>
+            </ul>
+            <p><strong>3. Data Types:</strong></p>
+            <ul>
+                <li><strong>Numeric:</strong> <code>int</code>, <code>float</code>, <code>complex</code>.</li>
+                <li><strong>String:</strong> <code>str</code>.</li>
+                <li><strong>Boolean:</strong> <code>bool</code> (<code>True</code>, <code>False</code>).</li>
+                <li><strong>Sequence:</strong> <code>list</code>, <code>tuple</code>, <code>range</code>.</li>
+                <li><strong>Mapping:</strong> <code>dict</code>.</li>
+                <li><strong>Set:</strong> <code>set</code>, <code>frozenset</code>.</li>
+                <li><strong>None:</strong> <code>NoneType</code>.</li>
+            </ul>
+            <p><strong>4. Operators:</strong></p>
+            <ul>
+                <li>Arithmetic, comparison, logical, assignment, bitwise, membership, identity operators.</li>
+            </ul>
+            <p><strong>5. Control Flow:</strong></p>
+            <ul>
+                <li><code>if</code>, <code>elif</code>, <code>else</code>.</li>
+                <li><code>for</code> loop (iterate over sequences).</li>
+                <li><code>while</code> loop.</li>
+                <li><code>break</code>, <code>continue</code>, <code>pass</code>.</li>
+            </ul>
+            <p><strong>6. Functions:</strong></p>
+            <ul>
+                <li><code>def</code> keyword to define functions.</li>
+                <li>Parameters and return values.</li>
+                <li>Lambda functions (anonymous functions).</li>
+            </ul>
+            <p><strong>7. Modules and Packages:</strong></p>
+            <ul>
+                <li><strong>Modules:</strong> Files containing Python code.</li>
+                <li><strong>Packages:</strong> Collections of modules.</li>
+                <li>Importing modules: <code>import module_name</code>,
+                    <code>from module_name import function_name</code>.</li>
+                <li>Standard library: A rich set of modules for various tasks (e.g., <code>math</code>,
+                    <code>random</code>, <code>os</code>, <code>sys</code>).</li>
+            </ul>
+            <p><strong>8. Example:</strong></p>
+            <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
   <span class="token triple-quoted-string string">"""This function greets the person passed in as a parameter."""</span>
   <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"Hello, {name}!"</span><span class="token punctuation">)</span>
 
@@ -764,112 +803,129 @@ numbers <span class="token operator">=</span> <span class="token punctuation">[<
 squares <span class="token operator">=</span> <span class="token punctuation">[</span>x<span class="token operator">**</span><span class="token number">2</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> numbers<span class="token punctuation">]</span>  <span class="token comment"># List comprehension</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>squares<span class="token punctuation">)</span>  <span class="token comment"># Output: [1, 4, 9, 16, 25]</span>
 </code></pre>
-<h2 id="oe-201-introduction-to-artificial-intelligence-optional">OE-201: Introduction to Artificial Intelligence (Optional)</h2>
-<p>This module introduces the fundamental concepts of Artificial Intelligence (AI), exploring its goals, branches, and applications.</p>
-<p><strong>1. What is AI?</strong></p>
-<ul>
-<li>Simulating human intelligence in machines.  Creating systems that can perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making.</li>
-</ul>
-<p><strong>2. Goals of AI:</strong></p>
-<ul>
-<li><strong>Creating intelligent agents:</strong>  Systems that can perceive their environment and take actions to maximize their chances of success.</li>
-<li><strong>Understanding human intelligence:</strong> AI research can shed light on how the human brain works.</li>
-<li><strong>Solving complex problems:</strong> AI can be used to address challenging problems in various domains.</li>
-</ul>
-<p><strong>3. Branches of AI:</strong></p>
-<ul>
-<li><strong>Machine Learning:</strong>  Algorithms that allow computers to learn from data without being explicitly programmed.  Supervised learning, unsupervised learning, reinforcement learning.</li>
-<li><strong>Deep Learning:</strong>  A subset of machine learning that uses artificial neural networks with multiple layers to learn complex patterns from data.</li>
-<li><strong>Natural Language Processing (NLP):</strong>  Enabling computers to understand, interpret, and generate human language.</li>
-<li><strong>Computer Vision:</strong>  Enabling computers to “see” and interpret images and videos.</li>
-<li><strong>Robotics:</strong>  Designing, building, and controlling robots.</li>
-<li><strong>Expert Systems:</strong>  Systems that mimic the decision-making ability of human experts.</li>
-</ul>
-<p><strong>4. AI Techniques:</strong></p>
-<ul>
-<li><strong>Search Algorithms:</strong>  Finding solutions to problems by exploring a search space (e.g., breadth-first search, depth-first search, A* search).</li>
-<li><strong>Knowledge Representation and Reasoning:</strong>  Representing knowledge in a way that computers can understand and use for reasoning and inference.</li>
-<li><strong>Planning:</strong>  Creating sequences of actions to achieve a goal.</li>
-<li><strong>Machine Learning Algorithms:</strong>  Decision trees, support vector machines, neural networks.</li>
-</ul>
-<p><strong>5. Applications of AI:</strong></p>
-<ul>
-<li><strong>Virtual Assistants (e.g., Siri, Alexa):</strong>  Understand and respond to voice commands.</li>
-<li><strong>Recommendation Systems (e.g., Netflix, Amazon):</strong>  Suggest products or content based on user preferences.</li>
-<li><strong>Image Recognition:</strong>  Identify objects, faces, and scenes in images.</li>
-<li><strong>Medical Diagnosis:</strong>  Assist doctors in diagnosing diseases.</li>
-<li><strong>Self-Driving Cars:</strong>  Navigate roads and make driving decisions.</li>
-<li><strong>Fraud Detection:</strong>  Identify fraudulent transactions.</li>
-<li><strong>Game Playing:</strong>  AI agents that can play games at a superhuman level.</li>
-</ul>
-<p><strong>6. Ethical Considerations in AI:</strong></p>
-<ul>
-<li><strong>Bias in AI systems:</strong>  AI models can reflect biases present in the data they are trained on.</li>
-<li><strong>Job displacement:</strong> AI-powered automation may lead to job losses in some sectors.</li>
-<li><strong>Privacy concerns:</strong>  Collecting and using data for AI applications raises privacy issues.</li>
-<li><strong>AI safety:</strong> Ensuring that AI systems are safe and reliable.</li>
-</ul>
-<h2 id="iks-100ca-200-generic-courseindian-knowledge-for-computing-systems">IKS-100/CA-200: Generic Course/Indian Knowledge for Computing Systems</h2>
-<p>This course slot allows for flexibility in your curriculum. You’ll choose one course from either the University Basket or opt for the specific course on Indian Knowledge for Computing Systems.</p>
-<p><strong>1. University Basket:</strong></p>
-<p>The University Basket refers to a set of elective courses offered by the university across different disciplines. This allows you to explore subjects outside of your core BCA curriculum, broadening your knowledge and potentially discovering new interests.  The specific courses offered in the University Basket may vary from semester to semester, so consult the university’s course catalog for current options.  Examples of potential University Basket courses might include:</p>
-<ul>
-<li><strong>Languages:</strong>  Foreign languages, English literature, technical writing.</li>
-<li><strong>Humanities and Social Sciences:</strong> History, psychology, sociology, economics.</li>
-<li><strong>Environmental Studies:</strong>  Understanding environmental issues and sustainability.</li>
-<li><strong>Fine Arts:</strong>  Music, visual arts, performing arts.</li>
-</ul>
-<p><strong>2. Indian Knowledge for Computing Systems (IKCS):</strong></p>
-<p>This course explores the intersection of traditional Indian knowledge systems and modern computing.  It might cover topics such as:</p>
-<ul>
-<li><strong>Computational Linguistics (related to Sanskrit or other Indian languages):</strong> Natural language processing, text analysis.</li>
-<li><strong>Ancient Indian Mathematics and Algorithms:</strong> Exploring mathematical concepts and algorithms developed in ancient India.</li>
-<li><strong>Applications of IKCS in areas like image processing, artificial intelligence, and knowledge representation.</strong></li>
-</ul>
-<h2 id="bca-semester-3-conclusion">BCA Semester 3: Conclusion</h2>
-<p>Semester 3 delves deeper into core computer science concepts with Data Structures and C++ programming.  It also offers opportunities for specialization with minor courses like Python programming and exploring broader academic areas through the University Basket or a focused study of Indian Knowledge for Computing Systems.  The Field Project provides crucial practical experience, bridging the gap between theory and real-world application.</p>
-<p><strong>Tips for Success in Semester 3:</strong></p>
-<ul>
-<li><strong>Master Data Structures:</strong>  Implement data structures in C++ and practice applying them to solve problems.  Understanding their strengths and weaknesses is crucial for algorithm design and efficient programming.</li>
-<li><strong>Object-Oriented Programming with C++:</strong>  Embrace the OOP paradigm. Practice writing C++ programs using classes, objects, inheritance, and polymorphism.  Familiarize yourself with the STL.</li>
-<li><strong>Explore your Minor and Electives:</strong>  Engage actively with your chosen minor (like Python) and University Basket/IKCS course.  These expand your skillset and broaden your academic horizons.</li>
-<li><strong>Field Project Focus:</strong>  Dedicate sufficient time and effort to your Field Project.  Start early, plan carefully, and maintain regular communication with your advisor. This project significantly contributes to your practical experience and portfolio.</li>
-</ul>
-<p>Semester 3 marks a significant step in your BCA journey.  By mastering the core concepts, actively engaging with your chosen specializations, and successfully completing your Field Project, you’ll be well-prepared for the challenges and opportunities of the upcoming semesters.</p>
+            <h2 id="oe-201-introduction-to-artificial-intelligence-optional">OE-201: Introduction to Artificial
+                Intelligence (Optional)</h2>
+            <p>This module introduces the fundamental concepts of Artificial Intelligence (AI), exploring its goals,
+                branches, and applications.</p>
+            <p><strong>1. What is AI?</strong></p>
+            <ul>
+                <li>Simulating human intelligence in machines. Creating systems that can perform tasks that typically
+                    require human intelligence, such as learning, problem-solving, and decision-making.</li>
+            </ul>
+            <p><strong>2. Goals of AI:</strong></p>
+            <ul>
+                <li><strong>Creating intelligent agents:</strong> Systems that can perceive their environment and take
+                    actions to maximize their chances of success.</li>
+                <li><strong>Understanding human intelligence:</strong> AI research can shed light on how the human brain
+                    works.</li>
+                <li><strong>Solving complex problems:</strong> AI can be used to address challenging problems in various
+                    domains.</li>
+            </ul>
+            <p><strong>3. Branches of AI:</strong></p>
+            <ul>
+                <li><strong>Machine Learning:</strong> Algorithms that allow computers to learn from data without being
+                    explicitly programmed. Supervised learning, unsupervised learning, reinforcement learning.</li>
+                <li><strong>Deep Learning:</strong> A subset of machine learning that uses artificial neural networks
+                    with multiple layers to learn complex patterns from data.</li>
+                <li><strong>Natural Language Processing (NLP):</strong> Enabling computers to understand, interpret, and
+                    generate human language.</li>
+                <li><strong>Computer Vision:</strong> Enabling computers to “see” and interpret images and videos.</li>
+                <li><strong>Robotics:</strong> Designing, building, and controlling robots.</li>
+                <li><strong>Expert Systems:</strong> Systems that mimic the decision-making ability of human experts.
+                </li>
+            </ul>
+            <p><strong>4. AI Techniques:</strong></p>
+            <ul>
+                <li><strong>Search Algorithms:</strong> Finding solutions to problems by exploring a search space (e.g.,
+                    breadth-first search, depth-first search, A* search).</li>
+                <li><strong>Knowledge Representation and Reasoning:</strong> Representing knowledge in a way that
+                    computers can understand and use for reasoning and inference.</li>
+                <li><strong>Planning:</strong> Creating sequences of actions to achieve a goal.</li>
+                <li><strong>Machine Learning Algorithms:</strong> Decision trees, support vector machines, neural
+                    networks.</li>
+            </ul>
+            <p><strong>5. Applications of AI:</strong></p>
+            <ul>
+                <li><strong>Virtual Assistants (e.g., Siri, Alexa):</strong> Understand and respond to voice commands.
+                </li>
+                <li><strong>Recommendation Systems (e.g., Netflix, Amazon):</strong> Suggest products or content based
+                    on user preferences.</li>
+                <li><strong>Image Recognition:</strong> Identify objects, faces, and scenes in images.</li>
+                <li><strong>Medical Diagnosis:</strong> Assist doctors in diagnosing diseases.</li>
+                <li><strong>Self-Driving Cars:</strong> Navigate roads and make driving decisions.</li>
+                <li><strong>Fraud Detection:</strong> Identify fraudulent transactions.</li>
+                <li><strong>Game Playing:</strong> AI agents that can play games at a superhuman level.</li>
+            </ul>
+            <p><strong>6. Ethical Considerations in AI:</strong></p>
+            <ul>
+                <li><strong>Bias in AI systems:</strong> AI models can reflect biases present in the data they are
+                    trained on.</li>
+                <li><strong>Job displacement:</strong> AI-powered automation may lead to job losses in some sectors.
+                </li>
+                <li><strong>Privacy concerns:</strong> Collecting and using data for AI applications raises privacy
+                    issues.</li>
+                <li><strong>AI safety:</strong> Ensuring that AI systems are safe and reliable.</li>
+            </ul>
+            <h2 id="iks-100ca-200-generic-courseindian-knowledge-for-computing-systems">IKS-100/CA-200: Generic
+                Course/Indian Knowledge for Computing Systems</h2>
+            <p>This course slot allows for flexibility in your curriculum. You’ll choose one course from either the
+                University Basket or opt for the specific course on Indian Knowledge for Computing Systems.</p>
+            <p><strong>1. University Basket:</strong></p>
+            <p>The University Basket refers to a set of elective courses offered by the university across different
+                disciplines. This allows you to explore subjects outside of your core BCA curriculum, broadening your
+                knowledge and potentially discovering new interests. The specific courses offered in the University
+                Basket may vary from semester to semester, so consult the university’s course catalog for current
+                options. Examples of potential University Basket courses might include:</p>
+            <ul>
+                <li><strong>Languages:</strong> Foreign languages, English literature, technical writing.</li>
+                <li><strong>Humanities and Social Sciences:</strong> History, psychology, sociology, economics.</li>
+                <li><strong>Environmental Studies:</strong> Understanding environmental issues and sustainability.</li>
+                <li><strong>Fine Arts:</strong> Music, visual arts, performing arts.</li>
+            </ul>
+            <p><strong>2. Indian Knowledge for Computing Systems (IKCS):</strong></p>
+            <p>This course explores the intersection of traditional Indian knowledge systems and modern computing. It
+                might cover topics such as:</p>
+            <ul>
+                <li><strong>Computational Linguistics (related to Sanskrit or other Indian languages):</strong> Natural
+                    language processing, text analysis.</li>
+                <li><strong>Ancient Indian Mathematics and Algorithms:</strong> Exploring mathematical concepts and
+                    algorithms developed in ancient India.</li>
+                <li><strong>Applications of IKCS in areas like image processing, artificial intelligence, and knowledge
+                        representation.</strong></li>
+            </ul>
+            <h2 id="bca-semester-3-conclusion">BCA Semester 3: Conclusion</h2>
+            <p>Semester 3 delves deeper into core computer science concepts with Data Structures and C++ programming. It
+                also offers opportunities for specialization with minor courses like Python programming and exploring
+                broader academic areas through the University Basket or a focused study of Indian Knowledge for
+                Computing Systems. The Field Project provides crucial practical experience, bridging the gap between
+                theory and real-world application.</p>
+            <p><strong>Tips for Success in Semester 3:</strong></p>
+            <ul>
+                <li><strong>Master Data Structures:</strong> Implement data structures in C++ and practice applying them
+                    to solve problems. Understanding their strengths and weaknesses is crucial for algorithm design and
+                    efficient programming.</li>
+                <li><strong>Object-Oriented Programming with C++:</strong> Embrace the OOP paradigm. Practice writing
+                    C++ programs using classes, objects, inheritance, and polymorphism. Familiarize yourself with the
+                    STL.</li>
+                <li><strong>Explore your Minor and Electives:</strong> Engage actively with your chosen minor (like
+                    Python) and University Basket/IKCS course. These expand your skillset and broaden your academic
+                    horizons.</li>
+                <li><strong>Field Project Focus:</strong> Dedicate sufficient time and effort to your Field Project.
+                    Start early, plan carefully, and maintain regular communication with your advisor. This project
+                    significantly contributes to your practical experience and portfolio.</li>
+            </ul>
+            <p>Semester 3 marks a significant step in your BCA journey. By mastering the core concepts, actively
+                engaging with your chosen specializations, and successfully completing your Field Project, you’ll be
+                well-prepared for the challenges and opportunities of the upcoming semesters.</p>
 
+        </div>
     </div>
-  </div>
-
-<script>
-  const tocLinks = document.querySelectorAll('.stackedit__toc a');
-  tocLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-  function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-
-      // Optional: Local Storage
-      if (document.body.classList.contains('dark-mode')) {
-          localStorage.setItem('darkMode', 'enabled');
-      } else {
-          localStorage.removeItem('darkMode');
-      }
-  }
-
-  // Check localStorage on load (optional)
-  window.onload = () => {
-      if (localStorage.getItem('darkMode') === 'enabled') {
-          document.body.classList.add('dark-mode');
-      }
-  };
-</script>
+    <div id="footer">
+        Notes prepared by <a href="https://instagram.com/simply_aaman" target="_blank"
+            rel="noopener noreferrer">Aman</a>,
+        refined by AI.
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

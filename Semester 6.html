@@ -6,175 +6,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Semester 6</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
-  <style>
-    .stackedit__toc a {
-      text-decoration: none; /* Remove underline */
-    }
-    body {
-      transition: background-color 0.3s ease, color 0.3s ease;
-            /* Smooth dark mode transition */
-    }
-    .dark-mode-button {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 20px;
-      background: linear-gradient(to right, #464646, #181818);
-      color: white;
-      font-weight: 500;
-      cursor: pointer;
-      z-index: 100;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .dark-mode-button:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(to right, #181818, #464646);
-    }
-
-    body.dark-mode {
-      background-color: #000000;
-      color: #ddd;
-    }
-
-
-    .dark-mode .dark-mode-button {
-      background: linear-gradient(to right, #ffffff, #b4b4b4);
-      color: rgb(0, 0, 0);
-    }
-
-    .dark-mode .dark-mode-button:hover {
-      background: linear-gradient(to right, #b4b4b4, #ffffff);
-    }
-
-
-    /* Dark Mode Styles for this specific page */
-    body.dark-mode .stackedit__left {
-      background-color: #222;
-    }
-
-    body.dark-mode pre.language-html {
-      background-color: #333;
-      /* Or any color that provides good contrast */
-    }
-
-    body.dark-mode code.prism.language-html {
-      color: #ccc;
-      /* Light color for code */
-
-    }
-  </style>
+  <link rel="stylesheet" href="pagestyle.css" />
 </head>
 
 <body class="stackedit">
   <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
   <div class="stackedit__left">
     <div class="stackedit__toc">
-      
-<ul>
-<li><a href="#bca-semester-6">BCA Semester 6</a>
-<ul>
-<li><a href="#ca-351-software-project-management">CA-351: Software Project Management</a></li>
-<li><a href="#ca-352-web-programming">CA-352: Web Programming</a></li>
-<li><a href="#ca-354-operating-system-design">CA-354: Operating System Design</a></li>
-<li><a href="#ca-360-prompt--generative-ai">CA-360: Prompt & Generative AI</a></li>
-<li><a href="#ca-362-big-data-and-analytics">CA-362: Big Data and Analytics</a></li>
-<li><a href="#ca-364-mobile-application-development">CA-364: Mobile Application Development</a></li>
-<li><a href="#ca-371-advanced-java-programming">CA-371: Advanced Java Programming</a></li>
-<li><a href="#ca-381-on-the-job-traininginternship">CA-381: On-the-Job Training/Internship</a></li>
-</ul>
-</li>
-<li><a href="#conclusion-of-the-bca-core-program-and-introduction-to-honors">Conclusion of the BCA Core Program and Introduction to Honors</a></li>
-</ul>
+
+      <ul>
+        <li><a href="#bca-semester-6">BCA Semester 6</a>
+          <ul>
+            <li><a href="#ca-351-software-project-management">CA-351: Software Project Management</a></li>
+            <li><a href="#ca-352-web-programming">CA-352: Web Programming</a></li>
+            <li><a href="#ca-354-operating-system-design">CA-354: Operating System Design</a></li>
+            <li><a href="#ca-360-prompt--generative-ai">CA-360: Prompt & Generative AI</a></li>
+            <li><a href="#ca-362-big-data-and-analytics">CA-362: Big Data and Analytics</a></li>
+            <li><a href="#ca-364-mobile-application-development">CA-364: Mobile Application Development</a></li>
+            <li><a href="#ca-371-advanced-java-programming">CA-371: Advanced Java Programming</a></li>
+            <li><a href="#ca-381-on-the-job-traininginternship">CA-381: On-the-Job Training/Internship</a></li>
+          </ul>
+        </li>
+        <li><a href="#conclusion-of-the-bca-core-program-and-introduction-to-honors">Conclusion of the BCA Core Program
+            and Introduction to Honors</a></li>
+      </ul>
 
     </div>
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
       <h1 id="bca-semester-6">BCA Semester 6</h1>
-<h2 id="ca-351-software-project-management">CA-351: Software Project Management</h2>
-<h3 id="module-project-management-principles-applied-to-software"><strong>Module: Project Management Principles Applied to Software</strong></h3>
-<p>This module explores the application of project management principles specifically within the context of software development.  It covers key concepts, methodologies, and best practices for planning, executing, and managing successful software projects.</p>
-<p><strong>1.  Software Project Management Fundamentals:</strong></p>
-<ul>
-<li><strong>Defining Software Project Management:</strong> The process of planning, organizing, leading, and controlling software development projects to achieve specific goals and objectives within defined constraints.</li>
-<li><strong>Unique Challenges of Software Projects:</strong>  Intangible nature of software, rapidly changing technologies, evolving user requirements, difficulty in estimating effort and time.</li>
-<li><strong>Importance of Software Project Management:</strong>  Delivering high-quality software on time and within budget, managing risks effectively, ensuring customer satisfaction.</li>
-</ul>
-<p><strong>2. Project Planning and Scope Management:</strong></p>
-<ul>
-<li><strong>Defining Project Scope:</strong>  Clearly outlining the boundaries of the project, including what is included and excluded.  Managing scope creep.</li>
-<li><strong>Creating a Work Breakdown Structure (WBS):</strong>  Decomposing the project into smaller, manageable tasks.</li>
-<li><strong>Developing a Project Schedule:</strong>  Estimating task durations and creating a timeline using tools like Gantt charts.</li>
-<li><strong>Resource Allocation:</strong>  Identifying and assigning resources (people, tools, budget) to project tasks.</li>
-</ul>
-<p><strong>3. Project Execution and Monitoring:</strong></p>
-<ul>
-<li><strong>Tracking Progress:</strong> Monitoring project activities against the plan and identifying deviations.</li>
-<li><strong>Managing Risks:</strong>  Identifying potential risks and implementing mitigation strategies.</li>
-<li><strong>Communication Management:</strong>  Facilitating effective communication among stakeholders.</li>
-<li><strong>Change Management:</strong>  Managing changes to project scope, requirements, or schedule.</li>
-</ul>
-<p><strong>4. Software Development Methodologies:</strong></p>
-<ul>
-<li><strong>Waterfall:</strong> A linear, sequential approach with distinct phases.</li>
-<li><strong>Agile:</strong>  An iterative and incremental approach emphasizing flexibility and collaboration.  Examples: Scrum, Kanban.</li>
-<li><strong>Choosing the Right Methodology:</strong>  Selecting the most appropriate methodology based on project characteristics and team expertise.</li>
-</ul>
-<p><strong>5. Software Estimation Techniques:</strong></p>
-<ul>
-<li><strong>Function Point Analysis:</strong>  Estimating effort based on the functionality provided by the software.</li>
-<li><strong>COCOMO (Constructive Cost Model):</strong>  Algorithmic models for estimating effort, cost, and schedule.</li>
-<li><strong>Story Points (Agile):</strong>  A relative estimation technique used in Agile development.</li>
-</ul>
-<p><strong>6. Quality Management:</strong></p>
-<ul>
-<li><strong>Software Quality Assurance (SQA):</strong>  A set of activities to ensure the quality of the software throughout the development lifecycle.</li>
-<li><strong>Testing Methodologies:</strong>  Unit testing, integration testing, system testing, user acceptance testing.</li>
-</ul>
-<p><strong>Example (Agile - Scrum):</strong></p>
-<p>In Scrum, the project is divided into short iterations called sprints.  The team works on a prioritized set of user stories during each sprint.  Daily scrum meetings are held to track progress and address any impediments.</p>
-<h2 id="ca-352-web-programming">CA-352: Web Programming</h2>
-<h3 id="module-web-development-concepts"><strong>Module: Web Development Concepts</strong></h3>
-<p>This module introduces the fundamental concepts and technologies involved in developing websites and web applications. It covers front-end and back-end development, essential programming languages, and key principles of web design.</p>
-<p><strong>1. Front-End Development:</strong></p>
-<ul>
-<li><strong>HTML (HyperText Markup Language):</strong> The foundation of web pages, defining the structure and content.  Understanding HTML tags, elements, and attributes.</li>
-<li><strong>CSS (Cascading Style Sheets):</strong>  Styling the visual presentation of web pages, including layout, colors, fonts, and responsiveness.  Working with CSS selectors, properties, and values.</li>
-<li><strong>JavaScript:</strong>  Adding interactivity and dynamic behavior to web pages.  DOM manipulation, event handling, and AJAX.</li>
-<li><strong>Front-end Frameworks/Libraries:</strong>  Streamlining front-end development with tools like React, Angular, and Vue.js.  Component-based architecture, state management, and routing.</li>
-</ul>
-<p><strong>2. Back-End Development:</strong></p>
-<ul>
-<li><strong>Server-Side Programming Languages:</strong>  Languages used to build the server-side logic of web applications, handling data processing, database interactions, and user authentication. Examples: Python, Java, PHP, Node.js.</li>
-<li><strong>Databases:</strong>  Storing and retrieving data for web applications.  Relational databases (e.g., MySQL, PostgreSQL) and NoSQL databases (e.g., MongoDB).</li>
-<li><strong>Server-Side Frameworks:</strong>  Simplifying back-end development with frameworks like Django (Python), Spring (Java), Laravel (PHP), and Express.js (Node.js).  Routing, templating, and database integration.</li>
-<li><strong>APIs (Application Programming Interfaces):</strong>  Enabling communication between different software systems.  RESTful APIs and JSON data exchange.</li>
-</ul>
-<p><strong>3. Web Development Process:</strong></p>
-<ul>
-<li><strong>Planning and Requirements Gathering:</strong>  Defining the purpose, functionality, and target audience of the website or web application.</li>
-<li><strong>Design:</strong>  Creating the visual design and user interface (UI) of the website.</li>
-<li><strong>Development:</strong>  Writing the front-end and back-end code.</li>
-<li><strong>Testing:</strong>  Testing the functionality, performance, and security of the website.</li>
-<li><strong>Deployment:</strong>  Publishing the website to a web server.</li>
-<li><strong>Maintenance:</strong>  Updating content, fixing bugs, and adding new features.</li>
-</ul>
-<p><strong>4. Web Security:</strong></p>
-<ul>
-<li><strong>Common Web Vulnerabilities:</strong>  Cross-site scripting (XSS), SQL injection, cross-site request forgery (CSRF).</li>
-<li><strong>Security Best Practices:</strong>  Input validation, data sanitization, secure authentication, and authorization.</li>
-</ul>
-<p><strong>5.  Web Hosting and Domain Names:</strong></p>
-<ul>
-<li><strong>Web Hosting:</strong>  Storing website files on a server that is accessible over the internet.</li>
-<li><strong>Domain Names:</strong>  Human-readable addresses used to access websites (e.g., <a href="http://www.example.com">www.example.com</a>).</li>
-</ul>
-<p><strong>Example (Simple HTML Structure):</strong></p>
-<pre class=" language-html"><code class="prism  language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+      <h2 id="ca-351-software-project-management">CA-351: Software Project Management</h2>
+      <h3 id="module-project-management-principles-applied-to-software"><strong>Module: Project Management Principles
+          Applied to Software</strong></h3>
+      <p>This module explores the application of project management principles specifically within the context of
+        software development. It covers key concepts, methodologies, and best practices for planning, executing, and
+        managing successful software projects.</p>
+      <p><strong>1. Software Project Management Fundamentals:</strong></p>
+      <ul>
+        <li><strong>Defining Software Project Management:</strong> The process of planning, organizing, leading, and
+          controlling software development projects to achieve specific goals and objectives within defined constraints.
+        </li>
+        <li><strong>Unique Challenges of Software Projects:</strong> Intangible nature of software, rapidly changing
+          technologies, evolving user requirements, difficulty in estimating effort and time.</li>
+        <li><strong>Importance of Software Project Management:</strong> Delivering high-quality software on time and
+          within budget, managing risks effectively, ensuring customer satisfaction.</li>
+      </ul>
+      <p><strong>2. Project Planning and Scope Management:</strong></p>
+      <ul>
+        <li><strong>Defining Project Scope:</strong> Clearly outlining the boundaries of the project, including what is
+          included and excluded. Managing scope creep.</li>
+        <li><strong>Creating a Work Breakdown Structure (WBS):</strong> Decomposing the project into smaller, manageable
+          tasks.</li>
+        <li><strong>Developing a Project Schedule:</strong> Estimating task durations and creating a timeline using
+          tools like Gantt charts.</li>
+        <li><strong>Resource Allocation:</strong> Identifying and assigning resources (people, tools, budget) to project
+          tasks.</li>
+      </ul>
+      <p><strong>3. Project Execution and Monitoring:</strong></p>
+      <ul>
+        <li><strong>Tracking Progress:</strong> Monitoring project activities against the plan and identifying
+          deviations.</li>
+        <li><strong>Managing Risks:</strong> Identifying potential risks and implementing mitigation strategies.</li>
+        <li><strong>Communication Management:</strong> Facilitating effective communication among stakeholders.</li>
+        <li><strong>Change Management:</strong> Managing changes to project scope, requirements, or schedule.</li>
+      </ul>
+      <p><strong>4. Software Development Methodologies:</strong></p>
+      <ul>
+        <li><strong>Waterfall:</strong> A linear, sequential approach with distinct phases.</li>
+        <li><strong>Agile:</strong> An iterative and incremental approach emphasizing flexibility and collaboration.
+          Examples: Scrum, Kanban.</li>
+        <li><strong>Choosing the Right Methodology:</strong> Selecting the most appropriate methodology based on project
+          characteristics and team expertise.</li>
+      </ul>
+      <p><strong>5. Software Estimation Techniques:</strong></p>
+      <ul>
+        <li><strong>Function Point Analysis:</strong> Estimating effort based on the functionality provided by the
+          software.</li>
+        <li><strong>COCOMO (Constructive Cost Model):</strong> Algorithmic models for estimating effort, cost, and
+          schedule.</li>
+        <li><strong>Story Points (Agile):</strong> A relative estimation technique used in Agile development.</li>
+      </ul>
+      <p><strong>6. Quality Management:</strong></p>
+      <ul>
+        <li><strong>Software Quality Assurance (SQA):</strong> A set of activities to ensure the quality of the software
+          throughout the development lifecycle.</li>
+        <li><strong>Testing Methodologies:</strong> Unit testing, integration testing, system testing, user acceptance
+          testing.</li>
+      </ul>
+      <p><strong>Example (Agile - Scrum):</strong></p>
+      <p>In Scrum, the project is divided into short iterations called sprints. The team works on a prioritized set of
+        user stories during each sprint. Daily scrum meetings are held to track progress and address any impediments.
+      </p>
+      <h2 id="ca-352-web-programming">CA-352: Web Programming</h2>
+      <h3 id="module-web-development-concepts"><strong>Module: Web Development Concepts</strong></h3>
+      <p>This module introduces the fundamental concepts and technologies involved in developing websites and web
+        applications. It covers front-end and back-end development, essential programming languages, and key principles
+        of web design.</p>
+      <p><strong>1. Front-End Development:</strong></p>
+      <ul>
+        <li><strong>HTML (HyperText Markup Language):</strong> The foundation of web pages, defining the structure and
+          content. Understanding HTML tags, elements, and attributes.</li>
+        <li><strong>CSS (Cascading Style Sheets):</strong> Styling the visual presentation of web pages, including
+          layout, colors, fonts, and responsiveness. Working with CSS selectors, properties, and values.</li>
+        <li><strong>JavaScript:</strong> Adding interactivity and dynamic behavior to web pages. DOM manipulation, event
+          handling, and AJAX.</li>
+        <li><strong>Front-end Frameworks/Libraries:</strong> Streamlining front-end development with tools like React,
+          Angular, and Vue.js. Component-based architecture, state management, and routing.</li>
+      </ul>
+      <p><strong>2. Back-End Development:</strong></p>
+      <ul>
+        <li><strong>Server-Side Programming Languages:</strong> Languages used to build the server-side logic of web
+          applications, handling data processing, database interactions, and user authentication. Examples: Python,
+          Java, PHP, Node.js.</li>
+        <li><strong>Databases:</strong> Storing and retrieving data for web applications. Relational databases (e.g.,
+          MySQL, PostgreSQL) and NoSQL databases (e.g., MongoDB).</li>
+        <li><strong>Server-Side Frameworks:</strong> Simplifying back-end development with frameworks like Django
+          (Python), Spring (Java), Laravel (PHP), and Express.js (Node.js). Routing, templating, and database
+          integration.</li>
+        <li><strong>APIs (Application Programming Interfaces):</strong> Enabling communication between different
+          software systems. RESTful APIs and JSON data exchange.</li>
+      </ul>
+      <p><strong>3. Web Development Process:</strong></p>
+      <ul>
+        <li><strong>Planning and Requirements Gathering:</strong> Defining the purpose, functionality, and target
+          audience of the website or web application.</li>
+        <li><strong>Design:</strong> Creating the visual design and user interface (UI) of the website.</li>
+        <li><strong>Development:</strong> Writing the front-end and back-end code.</li>
+        <li><strong>Testing:</strong> Testing the functionality, performance, and security of the website.</li>
+        <li><strong>Deployment:</strong> Publishing the website to a web server.</li>
+        <li><strong>Maintenance:</strong> Updating content, fixing bugs, and adding new features.</li>
+      </ul>
+      <p><strong>4. Web Security:</strong></p>
+      <ul>
+        <li><strong>Common Web Vulnerabilities:</strong> Cross-site scripting (XSS), SQL injection, cross-site request
+          forgery (CSRF).</li>
+        <li><strong>Security Best Practices:</strong> Input validation, data sanitization, secure authentication, and
+          authorization.</li>
+      </ul>
+      <p><strong>5. Web Hosting and Domain Names:</strong></p>
+      <ul>
+        <li><strong>Web Hosting:</strong> Storing website files on a server that is accessible over the internet.</li>
+        <li><strong>Domain Names:</strong> Human-readable addresses used to access websites (e.g., <a
+            href="http://www.example.com">www.example.com</a>).</li>
+      </ul>
+      <p><strong>Example (Simple HTML Structure):</strong></p>
+      <pre class=" language-html"><code class="prism  language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>My Web Page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
@@ -185,216 +162,298 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h2 id="ca-354-operating-system-design">CA-354: Operating System Design</h2>
-<h3 id="module-os-design-principles"><strong>Module: OS Design Principles</strong></h3>
-<p>This module explores the fundamental principles and concepts involved in designing and implementing operating systems (OS).  It covers key design considerations, system architecture, process management, memory management, and file systems.</p>
-<p><strong>1. What is an Operating System?</strong></p>
-<ul>
-<li><strong>Defining an OS:</strong> A program that acts as an intermediary between a user of a computer and the computer hardware.  Its primary goal is to manage the computer’s resources and provide a convenient interface for users and applications.</li>
-<li><strong>Key Functions of an OS:</strong> Process management, memory management, file system management, I/O management, security, and networking.</li>
-</ul>
-<p><strong>2. OS Design Principles:</strong></p>
-<ul>
-<li><strong>Modularity:</strong>  Dividing the OS into smaller, manageable modules with well-defined interfaces.  Improves maintainability and reusability.</li>
-<li><strong>Abstraction:</strong> Hiding complex implementation details and presenting a simplified view to users and applications.</li>
-<li><strong>Efficiency:</strong>  Optimizing resource utilization and minimizing overhead.</li>
-<li><strong>Security:</strong>  Protecting system resources and user data from unauthorized access and malicious activities.</li>
-<li><strong>Reliability and Fault Tolerance:</strong>  Designing the OS to handle errors and failures gracefully.</li>
-<li><strong>Portability:</strong>  Making the OS adaptable to different hardware platforms.</li>
-</ul>
-<p><strong>3. OS Architecture:</strong></p>
-<ul>
-<li><strong>Kernel:</strong> The core of the OS, responsible for managing critical system resources.  Monolithic kernel, microkernel, hybrid kernel.</li>
-<li><strong>System Calls:</strong>  The interface through which applications request services from the OS.</li>
-<li><strong>Interrupts:</strong>  Signals that notify the OS of events requiring immediate attention.</li>
-</ul>
-<p><strong>4. Process Management:</strong></p>
-<ul>
-<li><strong>Processes and Threads:</strong> Understanding the difference between processes (independent execution environments) and threads (lightweight units of execution within a process).</li>
-<li><strong>Process Scheduling:</strong>  Determining which process gets to run on the CPU and for how long.  Scheduling algorithms like FIFO, SJF, Round Robin, Priority Scheduling.</li>
-<li><strong>Inter-Process Communication (IPC):</strong>  Mechanisms for processes to exchange data and synchronize their actions.  Shared memory, message passing.</li>
-</ul>
-<p><strong>5. Memory Management:</strong></p>
-<ul>
-<li><strong>Virtual Memory:</strong>  Creating an illusion of a larger memory space for each process.  Paging and segmentation.</li>
-<li><strong>Memory Allocation:</strong>  Allocating memory to processes dynamically.</li>
-<li><strong>Memory Protection:</strong>  Preventing processes from accessing memory that doesn’t belong to them.</li>
-</ul>
-<p><strong>6. File Systems:</strong></p>
-<ul>
-<li><strong>File System Hierarchy:</strong>  Organizing files and directories in a hierarchical structure.</li>
-<li><strong>File Access Methods:</strong>  Sequential access, random access.</li>
-<li><strong>File Permissions:</strong>  Controlling access to files based on user and group permissions.</li>
-</ul>
-<p><strong>Example (Process Scheduling - Round Robin):</strong></p>
-<p>In Round Robin scheduling, each process is given a fixed time slice to run on the CPU.  When the time slice expires, the process is preempted and the next process in the queue is given a chance to run.  This ensures fairness and prevents any single process from monopolizing the CPU.</p>
-<h2 id="ca-360-prompt--generative-ai">CA-360: Prompt &amp; Generative AI</h2>
-<h3 id="module-fundamentals-of-prompt-and-generative-ai"><strong>Module: Fundamentals of Prompt and Generative AI</strong></h3>
-<p>This module explores the core concepts and techniques of prompt engineering and generative AI, focusing on how to effectively interact with and guide AI models to produce desired outputs.</p>
-<p><strong>1. What is Generative AI?</strong></p>
-<ul>
-<li><strong>Definition:</strong> A category of artificial intelligence algorithms that generate various types of content including text, imagery, audio, and synthetic data.</li>
-<li><strong>Key Concepts:</strong>  Understanding the underlying principles of generative models, such as probability distributions, neural networks (especially transformers), and training data.</li>
-<li><strong>Distinguishing Generative AI from other AI:</strong>  Contrasting generative AI with discriminative AI (classification, prediction) and other AI paradigms.</li>
-</ul>
-<p><strong>2.  Prompt Engineering:</strong></p>
-<ul>
-<li><strong>Definition:</strong> The process of crafting and refining input prompts to guide a generative AI model towards producing desired outputs.  This involves understanding the model’s capabilities and limitations and using specific techniques to elicit the desired response.</li>
-<li><strong>Key Principles:</strong> Clarity, specificity, context, constraints, iterative refinement.</li>
-<li><strong>Prompt Elements:</strong> Instructions, context, input data, output indicators.</li>
-</ul>
-<p><strong>3.  Types of Prompts:</strong></p>
-<ul>
-<li><strong>Instruction-based Prompts:</strong>  Directly instructing the model what to do.  (e.g., “Write a short story about a cat who goes to space.”)</li>
-<li><strong>Completion-based Prompts:</strong>  Providing an incomplete text and asking the model to complete it.  (e.g., “The cat looked up at the stars and…”)</li>
-<li><strong>Question-Answering Prompts:</strong>  Asking the model specific questions. (e.g., “What are the benefits of using solar energy?”)</li>
-<li><strong>Comparative Prompts:</strong>  Asking the model to compare different concepts or ideas. (e.g., “Compare and contrast cats and dogs.”)</li>
-</ul>
-<p><strong>4. Working with Different Generative AI Models:</strong></p>
-<ul>
-<li><strong>Text-based Models (e.g., GPT-3, Bard):</strong> Generating different text formats (stories, poems, articles, code).</li>
-<li><strong>Image-based Models (e.g., DALL-E 2, Midjourney):</strong>  Generating images from text descriptions.</li>
-<li><strong>Code-based Models (e.g., Codex):</strong> Generating code in various programming languages.</li>
-<li><strong>Understanding Model Specificities:</strong>  Each model has its own strengths, weaknesses, and preferred prompt formats.</li>
-</ul>
-<p><strong>5. Applications of Prompt and Generative AI:</strong></p>
-<ul>
-<li><strong>Content Creation:</strong>  Generating marketing copy, creative writing, scripts, and other forms of content.</li>
-<li><strong>Code Generation:</strong> Automating coding tasks, creating prototypes, and assisting with software development.</li>
-<li><strong>Design and Art:</strong>  Generating images, logos, and other visual designs.</li>
-<li><strong>Education and Research:</strong>  Assisting with research, generating educational materials, and facilitating learning.</li>
-</ul>
-<p><strong>Example (Prompt Engineering for Image Generation):</strong></p>
-<p>A simple prompt like “a cat” might produce a generic image of a cat.  A more specific prompt like “a fluffy white Persian cat sitting on a red velvet cushion, looking regal, highly detailed, photorealistic” would likely produce a more specific and visually appealing image.</p>
-<h2 id="ca-362-big-data-and-analytics">CA-362: Big Data and Analytics</h2>
-<h3 id="module-big-data-and-analytics-fundamentals"><strong>Module: Big Data and Analytics Fundamentals</strong></h3>
-<p>This module introduces the fundamental concepts and techniques of big data and analytics, exploring how large datasets are processed, analyzed, and used to extract valuable insights.</p>
-<p><strong>1. What is Big Data?</strong></p>
-<ul>
-<li><strong>Defining Big Data:</strong> Extremely large and complex datasets that cannot be easily managed, processed, or analyzed using traditional data processing tools.</li>
-<li><strong>Characteristics of Big Data (The 5 Vs):</strong>
-<ul>
-<li><strong>Volume:</strong>  The sheer size of the data.</li>
-<li><strong>Velocity:</strong>  The speed at which data is generated and processed.</li>
-<li><strong>Variety:</strong>  The different types of data, including structured, semi-structured, and unstructured data.</li>
-<li><strong>Veracity:</strong>  The trustworthiness and quality of the data.</li>
-<li><strong>Value:</strong> The potential insights and business value that can be derived from the data.  (Sometimes considered a 6th V).</li>
-</ul>
-</li>
-</ul>
-<p><strong>2. Big Data Technologies:</strong></p>
-<ul>
-<li><strong>Hadoop:</strong>  A distributed processing framework for handling large datasets.  Components like HDFS (Hadoop Distributed File System) and MapReduce.</li>
-<li><strong>Spark:</strong>  A fast, in-memory data processing engine built on top of Hadoop.</li>
-<li><strong>NoSQL Databases:</strong>  Databases designed to handle large volumes of unstructured and semi-structured data.  Examples: MongoDB, Cassandra.</li>
-<li><strong>Cloud Computing Platforms:</strong>  Cloud-based services for storing, processing, and analyzing big data. Examples: AWS, Azure, GCP.</li>
-</ul>
-<p><strong>3. Big Data Analytics:</strong></p>
-<ul>
-<li><strong>Descriptive Analytics:</strong>  What happened?  Summarizing and describing historical data.</li>
-<li><strong>Predictive Analytics:</strong> What might happen?  Using statistical models and machine learning to predict future outcomes.</li>
-<li><strong>Prescriptive Analytics:</strong> What should we do?  Recommending actions based on data analysis.</li>
-</ul>
-<p><strong>4. Data Mining Techniques:</strong></p>
-<ul>
-<li><strong>Association Rule Mining:</strong>  Discovering relationships between variables in large datasets.  (e.g., Market Basket Analysis).</li>
-<li><strong>Classification:</strong>  Assigning data points to predefined categories.</li>
-<li><strong>Clustering:</strong>  Grouping similar data points together.</li>
-<li><strong>Regression:</strong>  Predicting a continuous value based on other variables.</li>
-</ul>
-<p><strong>5.  Applications of Big Data Analytics:</strong></p>
-<ul>
-<li><strong>Business Intelligence:</strong>  Gaining insights into customer behavior, market trends, and business performance.</li>
-<li><strong>Healthcare:</strong>  Improving patient care, diagnosing diseases, and developing new treatments.</li>
-<li><strong>Finance:</strong>  Detecting fraud, managing risk, and making investment decisions.</li>
-<li><strong>Social Media Analytics:</strong>  Understanding user behavior and trends on social media platforms.</li>
-</ul>
-<p><strong>Example (Big Data in Retail):</strong></p>
-<p>Retail companies collect vast amounts of data from various sources, such as customer transactions, website clicks, and social media interactions.  Analyzing this data can help retailers understand customer preferences, personalize marketing campaigns, optimize pricing strategies, and improve inventory management.</p>
-<h2 id="ca-364-mobile-application-development">CA-364: Mobile Application Development</h2>
-<h3 id="module-mobile-application-development-fundamentals"><strong>Module: Mobile Application Development Fundamentals</strong></h3>
-<p>This module introduces the fundamental concepts and technologies involved in developing mobile applications for various platforms. It covers different mobile development approaches, key programming languages, and essential design considerations.</p>
-<p><strong>1. Mobile Development Platforms:</strong></p>
-<ul>
-<li><strong>iOS:</strong> Apple’s mobile operating system.  Development primarily uses Swift or Objective-C.</li>
-<li><strong>Android:</strong> Google’s mobile operating system.  Development primarily uses Java or Kotlin.</li>
-<li><strong>Cross-Platform Development:</strong> Building apps that run on multiple platforms using frameworks like React Native, Flutter, or Xamarin.</li>
-</ul>
-<p><strong>2. Mobile Development Approaches:</strong></p>
-<ul>
-<li><strong>Native Development:</strong>  Building apps specifically for a single platform using the platform’s native programming languages and tools. Offers the best performance and access to platform-specific features.</li>
-<li><strong>Cross-Platform Development:</strong>  Building apps that can run on multiple platforms using a single codebase.  Faster development time and cost-effective but may compromise performance or access to some platform-specific features.</li>
-<li><strong>Hybrid Development:</strong>  Combining native and web technologies to build mobile apps.  Uses web technologies (HTML, CSS, JavaScript) within a native container.  Easier to develop for web developers but can have performance limitations.</li>
-</ul>
-<p><strong>3. Key Concepts in Mobile Development:</strong></p>
-<ul>
-<li><strong>UI/UX Design:</strong>  Designing user interfaces that are intuitive, user-friendly, and visually appealing.  Adapting designs for different screen sizes and resolutions.</li>
-<li><strong>Mobile App Architecture:</strong>  Structuring the app’s code for maintainability, scalability, and testability.  Model-View-Controller (MVC) and Model-View-ViewModel (MVVM) architectural patterns.</li>
-<li><strong>Data Storage:</strong>  Storing data locally on the device using databases like SQLite or using cloud-based storage solutions.</li>
-<li><strong>Networking:</strong>  Making network requests to fetch data from APIs or communicate with servers.</li>
-<li><strong>Security:</strong>  Protecting user data and ensuring the security of the mobile app.</li>
-</ul>
-<p><strong>4. Mobile Development Tools:</strong></p>
-<ul>
-<li><strong>Integrated Development Environments (IDEs):</strong>  Xcode (iOS), Android Studio (Android), Visual Studio (Cross-Platform).</li>
-<li><strong>Emulators and Simulators:</strong>  Testing apps on virtual devices without needing physical hardware.</li>
-<li><strong>Debugging Tools:</strong>  Identifying and fixing errors in the code.</li>
-</ul>
-<p><strong>5.  Mobile App Deployment:</strong></p>
-<ul>
-<li><strong>App Stores:</strong>  Publishing apps to the Apple App Store and Google Play Store.</li>
-<li><strong>Deployment Process:</strong>  Preparing the app for release, creating app store listings, and managing updates.</li>
-</ul>
-<p><strong>Example (Choosing a Mobile Development Approach):</strong></p>
-<p>If you’re building a game that requires high performance and access to specific device hardware (e.g., camera, GPS), native development would be the preferred approach. If you’re building a simple business app that needs to run on both iOS and Android, cross-platform development might be more suitable.</p>
-<h2 id="ca-371-advanced-java-programming">CA-371: Advanced Java Programming</h2>
-<h3 id="module-advanced-java-topics"><strong>Module: Advanced Java Topics</strong></h3>
-<p>This module builds upon the fundamentals of Java programming, exploring more advanced concepts and techniques to develop robust, scalable, and high-performance applications.</p>
-<p><strong>1. Collections Framework:</strong></p>
-<ul>
-<li><strong>Understanding Collections:</strong>  Working with different data structures like lists, sets, and maps.  Exploring the <code>java.util</code> package.</li>
-<li><strong>List Interface:</strong>  <code>ArrayList</code>, <code>LinkedList</code>, and other implementations.</li>
-<li><strong>Set Interface:</strong>  <code>HashSet</code>, <code>TreeSet</code>, and other implementations.</li>
-<li><strong>Map Interface:</strong>  <code>HashMap</code>, <code>TreeMap</code>, and other implementations.</li>
-<li><strong>Iterators:</strong>  Traversing collections using iterators.</li>
-</ul>
-<p><strong>2. Generics:</strong></p>
-<ul>
-<li><strong>Type Safety:</strong>  Using generics to ensure type safety at compile time.</li>
-<li><strong>Generic Classes and Methods:</strong>  Defining classes and methods that can work with different data types.</li>
-<li><strong>Wildcards:</strong>  Using wildcards to increase flexibility with generics.</li>
-</ul>
-<p><strong>3. Multithreading and Concurrency:</strong></p>
-<ul>
-<li><strong>Threads:</strong> Creating and managing multiple threads of execution.</li>
-<li><strong>Synchronization:</strong>  Controlling access to shared resources to prevent race conditions and deadlocks.  <code>synchronized</code> keyword, locks, and semaphores.</li>
-<li><strong>Concurrency Utilities:</strong>  Exploring the <code>java.util.concurrent</code> package for advanced concurrency control.</li>
-</ul>
-<p><strong>4. Exception Handling:</strong></p>
-<ul>
-<li><strong>Checked and Unchecked Exceptions:</strong> Understanding the difference between checked and unchecked exceptions.</li>
-<li><strong>Custom Exceptions:</strong>  Creating your own exception classes to handle specific error scenarios.</li>
-<li><strong>Try-with-resources:</strong>  Automating resource management in try-catch blocks.</li>
-</ul>
-<p><strong>5. File I/O:</strong></p>
-<ul>
-<li><strong>Reading and Writing Files:</strong>  Working with different file formats (text files, binary files).</li>
-<li><strong>Streams:</strong>  Using streams for efficient file processing.</li>
-<li><strong>Serialization:</strong>  Converting objects to a byte stream for storage or transmission.</li>
-</ul>
-<p><strong>6. Networking:</strong></p>
-<ul>
-<li><strong>Sockets:</strong>  Creating network connections and communicating between client and server applications.</li>
-<li><strong>Client-Server Architecture:</strong>  Understanding the principles of client-server communication.</li>
-</ul>
-<p><strong>7. JDBC (Java Database Connectivity):</strong></p>
-<ul>
-<li><strong>Connecting to Databases:</strong>  Connecting to relational databases using JDBC drivers.</li>
-<li><strong>Executing SQL Queries:</strong>  Retrieving and manipulating data in databases.</li>
-<li><strong>Transactions:</strong>  Managing database transactions to ensure data integrity.</li>
-</ul>
-<p><strong>Example (Using Generics with ArrayList):</strong></p>
-<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>ArrayList<span class="token punctuation">;</span>
+      <h2 id="ca-354-operating-system-design">CA-354: Operating System Design</h2>
+      <h3 id="module-os-design-principles"><strong>Module: OS Design Principles</strong></h3>
+      <p>This module explores the fundamental principles and concepts involved in designing and implementing operating
+        systems (OS). It covers key design considerations, system architecture, process management, memory management,
+        and file systems.</p>
+      <p><strong>1. What is an Operating System?</strong></p>
+      <ul>
+        <li><strong>Defining an OS:</strong> A program that acts as an intermediary between a user of a computer and the
+          computer hardware. Its primary goal is to manage the computer’s resources and provide a convenient interface
+          for users and applications.</li>
+        <li><strong>Key Functions of an OS:</strong> Process management, memory management, file system management, I/O
+          management, security, and networking.</li>
+      </ul>
+      <p><strong>2. OS Design Principles:</strong></p>
+      <ul>
+        <li><strong>Modularity:</strong> Dividing the OS into smaller, manageable modules with well-defined interfaces.
+          Improves maintainability and reusability.</li>
+        <li><strong>Abstraction:</strong> Hiding complex implementation details and presenting a simplified view to
+          users and applications.</li>
+        <li><strong>Efficiency:</strong> Optimizing resource utilization and minimizing overhead.</li>
+        <li><strong>Security:</strong> Protecting system resources and user data from unauthorized access and malicious
+          activities.</li>
+        <li><strong>Reliability and Fault Tolerance:</strong> Designing the OS to handle errors and failures gracefully.
+        </li>
+        <li><strong>Portability:</strong> Making the OS adaptable to different hardware platforms.</li>
+      </ul>
+      <p><strong>3. OS Architecture:</strong></p>
+      <ul>
+        <li><strong>Kernel:</strong> The core of the OS, responsible for managing critical system resources. Monolithic
+          kernel, microkernel, hybrid kernel.</li>
+        <li><strong>System Calls:</strong> The interface through which applications request services from the OS.</li>
+        <li><strong>Interrupts:</strong> Signals that notify the OS of events requiring immediate attention.</li>
+      </ul>
+      <p><strong>4. Process Management:</strong></p>
+      <ul>
+        <li><strong>Processes and Threads:</strong> Understanding the difference between processes (independent
+          execution environments) and threads (lightweight units of execution within a process).</li>
+        <li><strong>Process Scheduling:</strong> Determining which process gets to run on the CPU and for how long.
+          Scheduling algorithms like FIFO, SJF, Round Robin, Priority Scheduling.</li>
+        <li><strong>Inter-Process Communication (IPC):</strong> Mechanisms for processes to exchange data and
+          synchronize their actions. Shared memory, message passing.</li>
+      </ul>
+      <p><strong>5. Memory Management:</strong></p>
+      <ul>
+        <li><strong>Virtual Memory:</strong> Creating an illusion of a larger memory space for each process. Paging and
+          segmentation.</li>
+        <li><strong>Memory Allocation:</strong> Allocating memory to processes dynamically.</li>
+        <li><strong>Memory Protection:</strong> Preventing processes from accessing memory that doesn’t belong to them.
+        </li>
+      </ul>
+      <p><strong>6. File Systems:</strong></p>
+      <ul>
+        <li><strong>File System Hierarchy:</strong> Organizing files and directories in a hierarchical structure.</li>
+        <li><strong>File Access Methods:</strong> Sequential access, random access.</li>
+        <li><strong>File Permissions:</strong> Controlling access to files based on user and group permissions.</li>
+      </ul>
+      <p><strong>Example (Process Scheduling - Round Robin):</strong></p>
+      <p>In Round Robin scheduling, each process is given a fixed time slice to run on the CPU. When the time slice
+        expires, the process is preempted and the next process in the queue is given a chance to run. This ensures
+        fairness and prevents any single process from monopolizing the CPU.</p>
+      <h2 id="ca-360-prompt--generative-ai">CA-360: Prompt &amp; Generative AI</h2>
+      <h3 id="module-fundamentals-of-prompt-and-generative-ai"><strong>Module: Fundamentals of Prompt and Generative
+          AI</strong></h3>
+      <p>This module explores the core concepts and techniques of prompt engineering and generative AI, focusing on how
+        to effectively interact with and guide AI models to produce desired outputs.</p>
+      <p><strong>1. What is Generative AI?</strong></p>
+      <ul>
+        <li><strong>Definition:</strong> A category of artificial intelligence algorithms that generate various types of
+          content including text, imagery, audio, and synthetic data.</li>
+        <li><strong>Key Concepts:</strong> Understanding the underlying principles of generative models, such as
+          probability distributions, neural networks (especially transformers), and training data.</li>
+        <li><strong>Distinguishing Generative AI from other AI:</strong> Contrasting generative AI with discriminative
+          AI (classification, prediction) and other AI paradigms.</li>
+      </ul>
+      <p><strong>2. Prompt Engineering:</strong></p>
+      <ul>
+        <li><strong>Definition:</strong> The process of crafting and refining input prompts to guide a generative AI
+          model towards producing desired outputs. This involves understanding the model’s capabilities and limitations
+          and using specific techniques to elicit the desired response.</li>
+        <li><strong>Key Principles:</strong> Clarity, specificity, context, constraints, iterative refinement.</li>
+        <li><strong>Prompt Elements:</strong> Instructions, context, input data, output indicators.</li>
+      </ul>
+      <p><strong>3. Types of Prompts:</strong></p>
+      <ul>
+        <li><strong>Instruction-based Prompts:</strong> Directly instructing the model what to do. (e.g., “Write a short
+          story about a cat who goes to space.”)</li>
+        <li><strong>Completion-based Prompts:</strong> Providing an incomplete text and asking the model to complete it.
+          (e.g., “The cat looked up at the stars and…”)</li>
+        <li><strong>Question-Answering Prompts:</strong> Asking the model specific questions. (e.g., “What are the
+          benefits of using solar energy?”)</li>
+        <li><strong>Comparative Prompts:</strong> Asking the model to compare different concepts or ideas. (e.g.,
+          “Compare and contrast cats and dogs.”)</li>
+      </ul>
+      <p><strong>4. Working with Different Generative AI Models:</strong></p>
+      <ul>
+        <li><strong>Text-based Models (e.g., GPT-3, Bard):</strong> Generating different text formats (stories, poems,
+          articles, code).</li>
+        <li><strong>Image-based Models (e.g., DALL-E 2, Midjourney):</strong> Generating images from text descriptions.
+        </li>
+        <li><strong>Code-based Models (e.g., Codex):</strong> Generating code in various programming languages.</li>
+        <li><strong>Understanding Model Specificities:</strong> Each model has its own strengths, weaknesses, and
+          preferred prompt formats.</li>
+      </ul>
+      <p><strong>5. Applications of Prompt and Generative AI:</strong></p>
+      <ul>
+        <li><strong>Content Creation:</strong> Generating marketing copy, creative writing, scripts, and other forms of
+          content.</li>
+        <li><strong>Code Generation:</strong> Automating coding tasks, creating prototypes, and assisting with software
+          development.</li>
+        <li><strong>Design and Art:</strong> Generating images, logos, and other visual designs.</li>
+        <li><strong>Education and Research:</strong> Assisting with research, generating educational materials, and
+          facilitating learning.</li>
+      </ul>
+      <p><strong>Example (Prompt Engineering for Image Generation):</strong></p>
+      <p>A simple prompt like “a cat” might produce a generic image of a cat. A more specific prompt like “a fluffy
+        white Persian cat sitting on a red velvet cushion, looking regal, highly detailed, photorealistic” would likely
+        produce a more specific and visually appealing image.</p>
+      <h2 id="ca-362-big-data-and-analytics">CA-362: Big Data and Analytics</h2>
+      <h3 id="module-big-data-and-analytics-fundamentals"><strong>Module: Big Data and Analytics Fundamentals</strong>
+      </h3>
+      <p>This module introduces the fundamental concepts and techniques of big data and analytics, exploring how large
+        datasets are processed, analyzed, and used to extract valuable insights.</p>
+      <p><strong>1. What is Big Data?</strong></p>
+      <ul>
+        <li><strong>Defining Big Data:</strong> Extremely large and complex datasets that cannot be easily managed,
+          processed, or analyzed using traditional data processing tools.</li>
+        <li><strong>Characteristics of Big Data (The 5 Vs):</strong>
+          <ul>
+            <li><strong>Volume:</strong> The sheer size of the data.</li>
+            <li><strong>Velocity:</strong> The speed at which data is generated and processed.</li>
+            <li><strong>Variety:</strong> The different types of data, including structured, semi-structured, and
+              unstructured data.</li>
+            <li><strong>Veracity:</strong> The trustworthiness and quality of the data.</li>
+            <li><strong>Value:</strong> The potential insights and business value that can be derived from the data.
+              (Sometimes considered a 6th V).</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>2. Big Data Technologies:</strong></p>
+      <ul>
+        <li><strong>Hadoop:</strong> A distributed processing framework for handling large datasets. Components like
+          HDFS (Hadoop Distributed File System) and MapReduce.</li>
+        <li><strong>Spark:</strong> A fast, in-memory data processing engine built on top of Hadoop.</li>
+        <li><strong>NoSQL Databases:</strong> Databases designed to handle large volumes of unstructured and
+          semi-structured data. Examples: MongoDB, Cassandra.</li>
+        <li><strong>Cloud Computing Platforms:</strong> Cloud-based services for storing, processing, and analyzing big
+          data. Examples: AWS, Azure, GCP.</li>
+      </ul>
+      <p><strong>3. Big Data Analytics:</strong></p>
+      <ul>
+        <li><strong>Descriptive Analytics:</strong> What happened? Summarizing and describing historical data.</li>
+        <li><strong>Predictive Analytics:</strong> What might happen? Using statistical models and machine learning to
+          predict future outcomes.</li>
+        <li><strong>Prescriptive Analytics:</strong> What should we do? Recommending actions based on data analysis.
+        </li>
+      </ul>
+      <p><strong>4. Data Mining Techniques:</strong></p>
+      <ul>
+        <li><strong>Association Rule Mining:</strong> Discovering relationships between variables in large datasets.
+          (e.g., Market Basket Analysis).</li>
+        <li><strong>Classification:</strong> Assigning data points to predefined categories.</li>
+        <li><strong>Clustering:</strong> Grouping similar data points together.</li>
+        <li><strong>Regression:</strong> Predicting a continuous value based on other variables.</li>
+      </ul>
+      <p><strong>5. Applications of Big Data Analytics:</strong></p>
+      <ul>
+        <li><strong>Business Intelligence:</strong> Gaining insights into customer behavior, market trends, and business
+          performance.</li>
+        <li><strong>Healthcare:</strong> Improving patient care, diagnosing diseases, and developing new treatments.
+        </li>
+        <li><strong>Finance:</strong> Detecting fraud, managing risk, and making investment decisions.</li>
+        <li><strong>Social Media Analytics:</strong> Understanding user behavior and trends on social media platforms.
+        </li>
+      </ul>
+      <p><strong>Example (Big Data in Retail):</strong></p>
+      <p>Retail companies collect vast amounts of data from various sources, such as customer transactions, website
+        clicks, and social media interactions. Analyzing this data can help retailers understand customer preferences,
+        personalize marketing campaigns, optimize pricing strategies, and improve inventory management.</p>
+      <h2 id="ca-364-mobile-application-development">CA-364: Mobile Application Development</h2>
+      <h3 id="module-mobile-application-development-fundamentals"><strong>Module: Mobile Application Development
+          Fundamentals</strong></h3>
+      <p>This module introduces the fundamental concepts and technologies involved in developing mobile applications for
+        various platforms. It covers different mobile development approaches, key programming languages, and essential
+        design considerations.</p>
+      <p><strong>1. Mobile Development Platforms:</strong></p>
+      <ul>
+        <li><strong>iOS:</strong> Apple’s mobile operating system. Development primarily uses Swift or Objective-C.</li>
+        <li><strong>Android:</strong> Google’s mobile operating system. Development primarily uses Java or Kotlin.</li>
+        <li><strong>Cross-Platform Development:</strong> Building apps that run on multiple platforms using frameworks
+          like React Native, Flutter, or Xamarin.</li>
+      </ul>
+      <p><strong>2. Mobile Development Approaches:</strong></p>
+      <ul>
+        <li><strong>Native Development:</strong> Building apps specifically for a single platform using the platform’s
+          native programming languages and tools. Offers the best performance and access to platform-specific features.
+        </li>
+        <li><strong>Cross-Platform Development:</strong> Building apps that can run on multiple platforms using a single
+          codebase. Faster development time and cost-effective but may compromise performance or access to some
+          platform-specific features.</li>
+        <li><strong>Hybrid Development:</strong> Combining native and web technologies to build mobile apps. Uses web
+          technologies (HTML, CSS, JavaScript) within a native container. Easier to develop for web developers but can
+          have performance limitations.</li>
+      </ul>
+      <p><strong>3. Key Concepts in Mobile Development:</strong></p>
+      <ul>
+        <li><strong>UI/UX Design:</strong> Designing user interfaces that are intuitive, user-friendly, and visually
+          appealing. Adapting designs for different screen sizes and resolutions.</li>
+        <li><strong>Mobile App Architecture:</strong> Structuring the app’s code for maintainability, scalability, and
+          testability. Model-View-Controller (MVC) and Model-View-ViewModel (MVVM) architectural patterns.</li>
+        <li><strong>Data Storage:</strong> Storing data locally on the device using databases like SQLite or using
+          cloud-based storage solutions.</li>
+        <li><strong>Networking:</strong> Making network requests to fetch data from APIs or communicate with servers.
+        </li>
+        <li><strong>Security:</strong> Protecting user data and ensuring the security of the mobile app.</li>
+      </ul>
+      <p><strong>4. Mobile Development Tools:</strong></p>
+      <ul>
+        <li><strong>Integrated Development Environments (IDEs):</strong> Xcode (iOS), Android Studio (Android), Visual
+          Studio (Cross-Platform).</li>
+        <li><strong>Emulators and Simulators:</strong> Testing apps on virtual devices without needing physical
+          hardware.</li>
+        <li><strong>Debugging Tools:</strong> Identifying and fixing errors in the code.</li>
+      </ul>
+      <p><strong>5. Mobile App Deployment:</strong></p>
+      <ul>
+        <li><strong>App Stores:</strong> Publishing apps to the Apple App Store and Google Play Store.</li>
+        <li><strong>Deployment Process:</strong> Preparing the app for release, creating app store listings, and
+          managing updates.</li>
+      </ul>
+      <p><strong>Example (Choosing a Mobile Development Approach):</strong></p>
+      <p>If you’re building a game that requires high performance and access to specific device hardware (e.g., camera,
+        GPS), native development would be the preferred approach. If you’re building a simple business app that needs to
+        run on both iOS and Android, cross-platform development might be more suitable.</p>
+      <h2 id="ca-371-advanced-java-programming">CA-371: Advanced Java Programming</h2>
+      <h3 id="module-advanced-java-topics"><strong>Module: Advanced Java Topics</strong></h3>
+      <p>This module builds upon the fundamentals of Java programming, exploring more advanced concepts and techniques
+        to develop robust, scalable, and high-performance applications.</p>
+      <p><strong>1. Collections Framework:</strong></p>
+      <ul>
+        <li><strong>Understanding Collections:</strong> Working with different data structures like lists, sets, and
+          maps. Exploring the <code>java.util</code> package.</li>
+        <li><strong>List Interface:</strong> <code>ArrayList</code>, <code>LinkedList</code>, and other implementations.
+        </li>
+        <li><strong>Set Interface:</strong> <code>HashSet</code>, <code>TreeSet</code>, and other implementations.</li>
+        <li><strong>Map Interface:</strong> <code>HashMap</code>, <code>TreeMap</code>, and other implementations.</li>
+        <li><strong>Iterators:</strong> Traversing collections using iterators.</li>
+      </ul>
+      <p><strong>2. Generics:</strong></p>
+      <ul>
+        <li><strong>Type Safety:</strong> Using generics to ensure type safety at compile time.</li>
+        <li><strong>Generic Classes and Methods:</strong> Defining classes and methods that can work with different data
+          types.</li>
+        <li><strong>Wildcards:</strong> Using wildcards to increase flexibility with generics.</li>
+      </ul>
+      <p><strong>3. Multithreading and Concurrency:</strong></p>
+      <ul>
+        <li><strong>Threads:</strong> Creating and managing multiple threads of execution.</li>
+        <li><strong>Synchronization:</strong> Controlling access to shared resources to prevent race conditions and
+          deadlocks. <code>synchronized</code> keyword, locks, and semaphores.</li>
+        <li><strong>Concurrency Utilities:</strong> Exploring the <code>java.util.concurrent</code> package for advanced
+          concurrency control.</li>
+      </ul>
+      <p><strong>4. Exception Handling:</strong></p>
+      <ul>
+        <li><strong>Checked and Unchecked Exceptions:</strong> Understanding the difference between checked and
+          unchecked exceptions.</li>
+        <li><strong>Custom Exceptions:</strong> Creating your own exception classes to handle specific error scenarios.
+        </li>
+        <li><strong>Try-with-resources:</strong> Automating resource management in try-catch blocks.</li>
+      </ul>
+      <p><strong>5. File I/O:</strong></p>
+      <ul>
+        <li><strong>Reading and Writing Files:</strong> Working with different file formats (text files, binary files).
+        </li>
+        <li><strong>Streams:</strong> Using streams for efficient file processing.</li>
+        <li><strong>Serialization:</strong> Converting objects to a byte stream for storage or transmission.</li>
+      </ul>
+      <p><strong>6. Networking:</strong></p>
+      <ul>
+        <li><strong>Sockets:</strong> Creating network connections and communicating between client and server
+          applications.</li>
+        <li><strong>Client-Server Architecture:</strong> Understanding the principles of client-server communication.
+        </li>
+      </ul>
+      <p><strong>7. JDBC (Java Database Connectivity):</strong></p>
+      <ul>
+        <li><strong>Connecting to Databases:</strong> Connecting to relational databases using JDBC drivers.</li>
+        <li><strong>Executing SQL Queries:</strong> Retrieving and manipulating data in databases.</li>
+        <li><strong>Transactions:</strong> Managing database transactions to ensure data integrity.</li>
+      </ul>
+      <p><strong>Example (Using Generics with ArrayList):</strong></p>
+      <pre class=" language-java"><code class="prism  language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>ArrayList<span class="token punctuation">;</span>
 
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">GenericExample</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -412,101 +471,116 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h2 id="ca-381-on-the-job-traininginternship">CA-381: On-the-Job Training/Internship</h2>
-<h3 id="module-practical-work-experience"><strong>Module: Practical Work Experience</strong></h3>
-<p>This module focuses on gaining practical work experience through on-the-job training or an internship in a relevant industry setting.  The specific focus and learning outcomes will depend on the chosen internship or training program.  These notes provide a general framework for approaching this practical experience and maximizing its benefits.</p>
-<p><strong>1.  Pre-Internship/Training Preparation:</strong></p>
-<ul>
-<li><strong>Identifying Potential Opportunities:</strong> Researching companies and organizations that offer internships or training programs aligned with your career interests.</li>
-<li><strong>Resume and Cover Letter Preparation:</strong> Crafting a compelling resume and cover letter that highlight your skills and qualifications.</li>
-<li><strong>Interview Preparation:</strong> Practicing your interviewing skills and preparing answers to common interview questions.</li>
-</ul>
-<p><strong>2.  On-the-Job Learning:</strong></p>
-<ul>
-<li><strong>Active Engagement:</strong>  Actively participate in assigned tasks and projects, seeking opportunities to learn new skills and contribute to the organization.</li>
-<li><strong>Asking Questions:</strong>  Don’t hesitate to ask questions and seek clarification from supervisors and colleagues.</li>
-<li><strong>Observational Learning:</strong>  Pay attention to how experienced professionals work and learn from their best practices.</li>
-<li><strong>Networking:</strong>  Building professional relationships with colleagues and mentors.</li>
-</ul>
-<p><strong>3.  Documentation and Reflection:</strong></p>
-<ul>
-<li><strong>Maintaining a Work Log:</strong>  Keeping a daily or weekly log of tasks performed, skills learned, and challenges encountered.</li>
-<li><strong>Regular Self-Reflection:</strong>  Reflecting on your experiences, identifying areas for improvement, and setting goals for future development.</li>
-</ul>
-<p><strong>4.  Post-Internship/Training Activities:</strong></p>
-<ul>
-<li><strong>Final Report/Presentation:</strong>  Preparing a final report or presentation summarizing your experiences and key learnings.</li>
-<li><strong>Seeking Feedback:</strong> Requesting feedback from supervisors and mentors to gain insights into your strengths and weaknesses.</li>
-<li><strong>Maintaining Connections:</strong>  Staying in touch with colleagues and mentors to build your professional network.</li>
-</ul>
-<p><strong>Key Learnings (Examples - these will vary greatly depending on the specific internship):</strong></p>
-<ul>
-<li><strong>Technical Skills:</strong>  Proficiency in specific programming languages, software tools, or technologies.</li>
-<li><strong>Soft Skills:</strong>  Communication, teamwork, problem-solving, time management, and adaptability.</li>
-<li><strong>Industry Knowledge:</strong>  Understanding of specific industry practices, trends, and challenges.</li>
-<li><strong>Professional Development:</strong>  Developing a professional work ethic, improving communication skills, and gaining experience in a real-world work environment.</li>
-</ul>
-<p><strong>Example (Web Development Internship):</strong></p>
-<p>During a web development internship, you might gain practical experience in:</p>
-<ul>
-<li><strong>Front-end development:</strong>  Building user interfaces using HTML, CSS, and JavaScript.</li>
-<li><strong>Back-end development:</strong>  Developing server-side logic using a specific programming language and framework.</li>
-<li><strong>Database management:</strong>  Working with databases to store and retrieve data.</li>
-<li><strong>Version control:</strong>  Using Git to manage code changes.</li>
-<li><strong>Project management:</strong>  Participating in agile development sprints and collaborating with a team.</li>
-</ul>
-<h1 id="conclusion-of-the-bca-core-program-and-introduction-to-honors">Conclusion of the BCA Core Program and Introduction to Honors</h1>
-<p>Congratulations on completing the core curriculum of the Bachelor of Computer Applications (BCA) program! These three years have provided a comprehensive foundation in computer science, covering programming, databases, software engineering, networking, and various other essential topics.  You’ve gained the knowledge and skills necessary to pursue a career in the IT industry or continue your education in a specialized area.</p>
-<p>However, your journey in computer applications doesn’t have to end here.  For those seeking to deepen their knowledge and specialize in specific areas, the BCA program offers an optional fourth year – the Honors Program.  This additional year provides an opportunity to delve into advanced topics and gain a competitive edge in the job market or prepare for further academic pursuits.</p>
-<p><strong>BCA Honors Program Options:</strong></p>
-<p>The Honors program offers three distinct pathways, catering to diverse interests and career goals:</p>
-<ul>
-<li>
-<p><strong>Honors with Research and Multidisciplinary Minor:</strong> This option combines advanced coursework in areas like Object-Oriented Modeling and Design, Operations Research, Natural Language Processing, Machine Learning, and Full Stack Development with a research project and a multidisciplinary minor.  This pathway is ideal for students interested in pursuing research or specializing in a specific domain.</p>
-</li>
-<li>
-<p><strong>Honors and Multidisciplinary Minor:</strong> Similar to the previous option, but with a stronger emphasis on the chosen multidisciplinary minor and the possibility of an internship or on-the-job training (OJT). This pathway provides a balance between advanced coursework and practical experience, preparing students for industry roles.</p>
-</li>
-<li>
-<p><strong>Double Minor:</strong> This option allows students to specialize in two minor areas, chosen from a basket of university courses, along with undertaking a research project. This pathway is suitable for students who want to broaden their skillset and explore multiple domains within computer applications.</p>
-</li>
-</ul>
-<p><strong>Looking Ahead:</strong></p>
-<p>The Honors Program offers a valuable opportunity to enhance your expertise and pursue your passions within the field of computer applications. Carefully consider your career aspirations and research interests when choosing the Honors pathway that best aligns with your goals.  The additional year of specialized study and practical experience will equip you with the skills and knowledge to excel in your chosen field.  Whether you choose to enter the workforce directly after the core program or pursue the Honors Program, the BCA degree has provided you with a solid foundation for a successful and fulfilling career in the ever-evolving world of technology. Good luck in your future endeavors!</p>
+      <h2 id="ca-381-on-the-job-traininginternship">CA-381: On-the-Job Training/Internship</h2>
+      <h3 id="module-practical-work-experience"><strong>Module: Practical Work Experience</strong></h3>
+      <p>This module focuses on gaining practical work experience through on-the-job training or an internship in a
+        relevant industry setting. The specific focus and learning outcomes will depend on the chosen internship or
+        training program. These notes provide a general framework for approaching this practical experience and
+        maximizing its benefits.</p>
+      <p><strong>1. Pre-Internship/Training Preparation:</strong></p>
+      <ul>
+        <li><strong>Identifying Potential Opportunities:</strong> Researching companies and organizations that offer
+          internships or training programs aligned with your career interests.</li>
+        <li><strong>Resume and Cover Letter Preparation:</strong> Crafting a compelling resume and cover letter that
+          highlight your skills and qualifications.</li>
+        <li><strong>Interview Preparation:</strong> Practicing your interviewing skills and preparing answers to common
+          interview questions.</li>
+      </ul>
+      <p><strong>2. On-the-Job Learning:</strong></p>
+      <ul>
+        <li><strong>Active Engagement:</strong> Actively participate in assigned tasks and projects, seeking
+          opportunities to learn new skills and contribute to the organization.</li>
+        <li><strong>Asking Questions:</strong> Don’t hesitate to ask questions and seek clarification from supervisors
+          and colleagues.</li>
+        <li><strong>Observational Learning:</strong> Pay attention to how experienced professionals work and learn from
+          their best practices.</li>
+        <li><strong>Networking:</strong> Building professional relationships with colleagues and mentors.</li>
+      </ul>
+      <p><strong>3. Documentation and Reflection:</strong></p>
+      <ul>
+        <li><strong>Maintaining a Work Log:</strong> Keeping a daily or weekly log of tasks performed, skills learned,
+          and challenges encountered.</li>
+        <li><strong>Regular Self-Reflection:</strong> Reflecting on your experiences, identifying areas for improvement,
+          and setting goals for future development.</li>
+      </ul>
+      <p><strong>4. Post-Internship/Training Activities:</strong></p>
+      <ul>
+        <li><strong>Final Report/Presentation:</strong> Preparing a final report or presentation summarizing your
+          experiences and key learnings.</li>
+        <li><strong>Seeking Feedback:</strong> Requesting feedback from supervisors and mentors to gain insights into
+          your strengths and weaknesses.</li>
+        <li><strong>Maintaining Connections:</strong> Staying in touch with colleagues and mentors to build your
+          professional network.</li>
+      </ul>
+      <p><strong>Key Learnings (Examples - these will vary greatly depending on the specific internship):</strong></p>
+      <ul>
+        <li><strong>Technical Skills:</strong> Proficiency in specific programming languages, software tools, or
+          technologies.</li>
+        <li><strong>Soft Skills:</strong> Communication, teamwork, problem-solving, time management, and adaptability.
+        </li>
+        <li><strong>Industry Knowledge:</strong> Understanding of specific industry practices, trends, and challenges.
+        </li>
+        <li><strong>Professional Development:</strong> Developing a professional work ethic, improving communication
+          skills, and gaining experience in a real-world work environment.</li>
+      </ul>
+      <p><strong>Example (Web Development Internship):</strong></p>
+      <p>During a web development internship, you might gain practical experience in:</p>
+      <ul>
+        <li><strong>Front-end development:</strong> Building user interfaces using HTML, CSS, and JavaScript.</li>
+        <li><strong>Back-end development:</strong> Developing server-side logic using a specific programming language
+          and framework.</li>
+        <li><strong>Database management:</strong> Working with databases to store and retrieve data.</li>
+        <li><strong>Version control:</strong> Using Git to manage code changes.</li>
+        <li><strong>Project management:</strong> Participating in agile development sprints and collaborating with a
+          team.</li>
+      </ul>
+      <h1 id="conclusion-of-the-bca-core-program-and-introduction-to-honors">Conclusion of the BCA Core Program and
+        Introduction to Honors</h1>
+      <p>Congratulations on completing the core curriculum of the Bachelor of Computer Applications (BCA) program! These
+        three years have provided a comprehensive foundation in computer science, covering programming, databases,
+        software engineering, networking, and various other essential topics. You’ve gained the knowledge and skills
+        necessary to pursue a career in the IT industry or continue your education in a specialized area.</p>
+      <p>However, your journey in computer applications doesn’t have to end here. For those seeking to deepen their
+        knowledge and specialize in specific areas, the BCA program offers an optional fourth year – the Honors Program.
+        This additional year provides an opportunity to delve into advanced topics and gain a competitive edge in the
+        job market or prepare for further academic pursuits.</p>
+      <p><strong>BCA Honors Program Options:</strong></p>
+      <p>The Honors program offers three distinct pathways, catering to diverse interests and career goals:</p>
+      <ul>
+        <li>
+          <p><strong>Honors with Research and Multidisciplinary Minor:</strong> This option combines advanced coursework
+            in areas like Object-Oriented Modeling and Design, Operations Research, Natural Language Processing, Machine
+            Learning, and Full Stack Development with a research project and a multidisciplinary minor. This pathway is
+            ideal for students interested in pursuing research or specializing in a specific domain.</p>
+        </li>
+        <li>
+          <p><strong>Honors and Multidisciplinary Minor:</strong> Similar to the previous option, but with a stronger
+            emphasis on the chosen multidisciplinary minor and the possibility of an internship or on-the-job training
+            (OJT). This pathway provides a balance between advanced coursework and practical experience, preparing
+            students for industry roles.</p>
+        </li>
+        <li>
+          <p><strong>Double Minor:</strong> This option allows students to specialize in two minor areas, chosen from a
+            basket of university courses, along with undertaking a research project. This pathway is suitable for
+            students who want to broaden their skillset and explore multiple domains within computer applications.</p>
+        </li>
+      </ul>
+      <p><strong>Looking Ahead:</strong></p>
+      <p>The Honors Program offers a valuable opportunity to enhance your expertise and pursue your passions within the
+        field of computer applications. Carefully consider your career aspirations and research interests when choosing
+        the Honors pathway that best aligns with your goals. The additional year of specialized study and practical
+        experience will equip you with the skills and knowledge to excel in your chosen field. Whether you choose to
+        enter the workforce directly after the core program or pursue the Honors Program, the BCA degree has provided
+        you with a solid foundation for a successful and fulfilling career in the ever-evolving world of technology.
+        Good luck in your future endeavors!</p>
 
     </div>
   </div>
-
-<script>
-  const tocLinks = document.querySelectorAll('.stackedit__toc a');
-  tocLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-  function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-
-      // Optional: Local Storage
-      if (document.body.classList.contains('dark-mode')) {
-          localStorage.setItem('darkMode', 'enabled');
-      } else {
-          localStorage.removeItem('darkMode');
-      }
-  }
-
-  // Check localStorage on load (optional)
-  window.onload = () => {
-      if (localStorage.getItem('darkMode') === 'enabled') {
-          document.body.classList.add('dark-mode');
-      }
-  };
-</script>
+  <div id="footer">
+    Notes prepared by <a href="https://instagram.com/simply_aaman" target="_blank" rel="noopener noreferrer">Aman</a>,
+    refined by AI.
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

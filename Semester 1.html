@@ -6,71 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Semester 1</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
-  <style>
-    body {
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .dark-mode-button {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 20px;
-      background: linear-gradient(to right, #464646, #181818);
-      color: white;
-      font-weight: 500;
-      cursor: pointer;
-      z-index: 100;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .dark-mode-button:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(to right, #181818, #464646);
-    }
-
-    body.dark-mode {
-      background-color: #000000;
-      color: #ddd;
-    }
-
-
-    .dark-mode .dark-mode-button {
-      background: linear-gradient(to right, #ffffff, #b4b4b4);
-      color: rgb(0, 0, 0);
-    }
-
-    .dark-mode .dark-mode-button:hover {
-      background: linear-gradient(to right, #b4b4b4, #ffffff);
-    }
-
-
-    /* Dark Mode Styles for this specific page */
-    body.dark-mode .stackedit__left {
-      background-color: #222;
-    }
-
-    body.dark-mode pre.language-html {
-      background-color: #333;
-      /* Or any color that provides good contrast */
-    }
-
-    body.dark-mode code.prism.language-html {
-      color: #ccc;
-      /* Light color for code */
-
-    }
-  </style>
+  <link rel="stylesheet" href="pagestyle.css" />
 </head>
 
 <body class="stackedit">
   <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
   <div class="stackedit__left">
     <div class="stackedit__toc">
-
       <ul>
         <li>
           <ul>
@@ -211,17 +153,21 @@ ENDIF
       <p>Operators perform operations on data.</p>
       <ul>
         <li><strong>Arithmetic Operators:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>,
-          <code>%</code> (modulo - remainder)</li>
+          <code>%</code> (modulo - remainder)
+        </li>
         <li><strong>Relational Operators:</strong> <code>==</code> (equal to), <code>!=</code> (not equal to),
-          <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></li>
+          <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code>
+        </li>
         <li><strong>Logical Operators:</strong> <code>&amp;&amp;</code> (AND), <code>||</code> (OR), <code>!</code>
           (NOT)</li>
         <li><strong>Assignment Operator:</strong> <code>=</code></li>
         <li><strong>Compound Assignment Operators:</strong> <code>+=</code>, <code>-=</code>, <code>*=</code>,
-          <code>/=</code>, <code>%=</code></li>
+          <code>/=</code>, <code>%=</code>
+        </li>
         <li><strong>Increment/Decrement Operators:</strong> <code>++</code>, <code>--</code></li>
         <li><strong>Bitwise Operators:</strong> <code>&amp;</code>, <code>|</code>, <code>^</code>,
-          <code>&lt;&lt;</code>, <code>&gt;&gt;</code>, <code>~</code></li>
+          <code>&lt;&lt;</code>, <code>&gt;&gt;</code>, <code>~</code>
+        </li>
         <li><strong>Conditional Operator (Ternary Operator):</strong> <code>condition ? expression1 : expression2</code>
         </li>
       </ul>
@@ -388,7 +334,8 @@ return_type <span class="token function">function_name</span><span class="token 
           <p><strong>Library functions:</strong> Pre-defined functions provided by the C standard library (e.g.,
             <code>printf()</code>, <code>scanf()</code>, <code>sqrt()</code>, <code>strlen()</code>). Include the
             relevant header file (e.g., <code>stdio.h</code>, <code>math.h</code>, <code>string.h</code>) to use these
-            functions.</p>
+            functions.
+          </p>
         </li>
         <li>
           <p><strong>Recursion:</strong> A function calling itself directly or indirectly. Requires a base case to stop
@@ -992,7 +939,8 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
       <ul>
         <li><strong>Multiplication Principle (Product Rule):</strong> If there are <em>m</em> ways to do one thing and
           <em>n</em> ways to do another, then there are <em>m</em> × <em>n</em> ways to do both. This extends to
-          multiple tasks.</li>
+          multiple tasks.
+        </li>
         <li><strong>Addition Principle (Sum Rule):</strong> If there are <em>m</em> ways to do one thing and <em>n</em>
           ways to do another, and these two things are mutually exclusive (cannot be done simultaneously), then there
           are <em>m</em> + <em>n</em> ways to do either one or the other.</li>
@@ -1001,10 +949,12 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
           |B| - |A ∩ B|.</li>
         <li><strong>Permutations:</strong> An ordered arrangement of objects. The number of permutations of <em>n</em>
           distinct objects is <em>n</em>! (n factorial). The number of permutations of <em>n</em> objects taken
-          <em>r</em> at a time is P(n, r) = n! / (n - r)!.</li>
+          <em>r</em> at a time is P(n, r) = n! / (n - r)!.
+        </li>
         <li><strong>Combinations:</strong> An unordered selection of objects. The number of combinations of <em>n</em>
           distinct objects taken <em>r</em> at a time is C(n, r) = n! / (r! * (n - r)!). Also denoted as “n choose r” or
-          <sup>n</sup>C<sub>r</sub>.</li>
+          <sup>n</sup>C<sub>r</sub>.
+        </li>
       </ul>
       <p><strong>Example:</strong></p>
       <ul>
@@ -1392,7 +1342,8 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
           <p><strong>Elements and Tags:</strong> HTML elements are represented by tags, which usually come in pairs: an
             opening tag <code>&lt;tagname&gt;</code> and a closing tag <code>&lt;/tagname&gt;</code>. The content
             between the tags is the element’s content. Some tags are self-closing (e.g., <code>&lt;br/&gt;</code>,
-            <code>&lt;img/&gt;</code>).</p>
+            <code>&lt;img/&gt;</code>).
+          </p>
         </li>
         <li>
           <p><strong>Basic HTML Structure:</strong></p>
@@ -1446,7 +1397,8 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
           <p><strong>Ways to apply CSS:</strong></p>
           <ul>
             <li><strong>Inline:</strong> Using the <code>style</code> attribute within an HTML tag.
-              <code>e.g., &lt;p style="color: blue;"&gt;</code></li>
+              <code>e.g., &lt;p style="color: blue;"&gt;</code>
+            </li>
             <li><strong>Internal:</strong> Using a <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code>
               section.</li>
             <li><strong>External:</strong> Linking to a separate CSS file using the <code>&lt;link&gt;</code> tag. This
@@ -1502,7 +1454,8 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
             <li><strong>Data Types:</strong> Number, String, Boolean, Array, Object.</li>
             <li><strong>Operators:</strong> Arithmetic, comparison, logical, assignment.</li>
             <li><strong>Control Structures:</strong> <code>if-else</code>, <code>switch</code>, <code>for</code>,
-              <code>while</code>, <code>do-while</code>.</li>
+              <code>while</code>, <code>do-while</code>.
+            </li>
             <li><strong>Functions:</strong> Reusable blocks of code.</li>
             <li><strong>DOM (Document Object Model):</strong> Allows JavaScript to interact with HTML elements.</li>
             <li><strong>Events:</strong> Actions that trigger JavaScript code (e.g., clicks, mouseovers, form
@@ -1592,25 +1545,12 @@ numbers<span class="token punctuation">[</span><span class="token number">0</spa
 
     </div>
   </div>
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
 
-      // Optional: Local Storage
-      if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode', 'enabled');
-      } else {
-        localStorage.removeItem('darkMode');
-      }
-    }
-
-    // Check localStorage on load (optional)
-    window.onload = () => {
-      if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark-mode');
-      }
-    };
-  </script>
+  <div id="footer">
+    Notes prepared by <a href="https://instagram.com/simply_aaman" target="_blank" rel="noopener noreferrer">Aman</a>,
+    refined by AI.
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

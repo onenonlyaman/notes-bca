@@ -6,338 +6,311 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Semester 2</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
-  <style>
-    .stackedit__toc a {
-      text-decoration: none; /* Remove underline */
-    }
-    body {
-      transition: background-color 0.3s ease, color 0.3s ease;
-            /* Smooth dark mode transition */
-    }
-    .dark-mode-button {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 20px;
-      background: linear-gradient(to right, #464646, #181818);
-      color: white;
-      font-weight: 500;
-      cursor: pointer;
-      z-index: 100;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .dark-mode-button:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(to right, #181818, #464646);
-    }
-
-    body.dark-mode {
-      background-color: #000000;
-      color: #ddd;
-    }
-
-
-    .dark-mode .dark-mode-button {
-      background: linear-gradient(to right, #ffffff, #b4b4b4);
-      color: rgb(0, 0, 0);
-    }
-
-    .dark-mode .dark-mode-button:hover {
-      background: linear-gradient(to right, #b4b4b4, #ffffff);
-    }
-
-    /* Dark Mode Styles for this specific page */
-    body.dark-mode .stackedit__left {
-      background-color: #222;
-    }
-
-    body.dark-mode pre.language-html {
-      background-color: #333;
-      /* Or any color that provides good contrast */
-    }
-
-    body.dark-mode code.prism.language-html {
-      color: #ccc;
-      /* Light color for code */
-
-    }
-  </style>
+  <link rel="stylesheet" href="pagestyle.css" />
 </head>
 
 <body class="stackedit">
   <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
   <div class="stackedit__left">
     <div class="stackedit__toc">
-      
-<ul>
-<li><a href="#bca-semester-2">BCA Semester 2</a>
-<ul>
-<li><a href="#ca-151-t-advanced-c-programming">CA-151-T: Advanced C Programming</a></li>
-<li><a href="#ca-153-t-introduction-to-microcontrollers">CA-153-T: Introduction to Microcontrollers</a></li>
-<li><a href="#ca-155-t-linear-algebra">CA-155-T: Linear Algebra</a></li>
-<li><a href="#oe-151-data-science-using-spreadsheet-software-optional">OE-151: Data Science using Spreadsheet Software (Optional)</a></li>
-<li><a href="#vsec-151-software-tools-for-business-communication">VSEC-151: Software Tools for Business Communication</a></li>
-<li><a href="#conclusion-and-tips-for-success">Conclusion and Tips for Success</a></li>
-</ul>
-</li>
-</ul>
+
+      <ul>
+        <li><a href="#bca-semester-2">BCA Semester 2</a>
+          <ul>
+            <li><a href="#ca-151-t-advanced-c-programming">CA-151-T: Advanced C Programming</a></li>
+            <li><a href="#ca-153-t-introduction-to-microcontrollers">CA-153-T: Introduction to Microcontrollers</a></li>
+            <li><a href="#ca-155-t-linear-algebra">CA-155-T: Linear Algebra</a></li>
+            <li><a href="#oe-151-data-science-using-spreadsheet-software-optional">OE-151: Data Science using
+                Spreadsheet Software (Optional)</a></li>
+            <li><a href="#vsec-151-software-tools-for-business-communication">VSEC-151: Software Tools for Business
+                Communication</a></li>
+            <li><a href="#conclusion-and-tips-for-success">Conclusion and Tips for Success</a></li>
+          </ul>
+        </li>
+      </ul>
 
     </div>
   </div>
   <div class="stackedit__right">
     <div class="stackedit__html">
       <h1 id="bca-semester-2">BCA Semester 2</h1>
-<h2 id="ca-151-t-advanced-c-programming">CA-151-T: Advanced C Programming</h2>
-<h3 id="module-advanced-c-features"><strong>Module: Advanced C Features</strong></h3>
-<p>Building upon the fundamentals of C, this semester delves into more advanced features that enable you to write more efficient and powerful programs.</p>
-<p><strong>1. Preprocessor Directives:</strong> (brief below)</p>
-<ul>
-<li>Control the compilation process.</li>
-<li><code>#include</code>: Include header files.</li>
-<li><code>#define</code>: Define macros (symbolic constants and function-like macros).</li>
-<li><code>#ifdef</code>, <code>#ifndef</code>, <code>#endif</code>: Conditional compilation.</li>
-</ul>
-<p><strong>2. Pointers:</strong></p>
-<ul>
-<li>Variables that store memory addresses.</li>
-<li><code>*</code> operator: Declares a pointer and dereferences a pointer (accesses the value at the address).</li>
-<li><code>&amp;</code> operator: Gets the address of a variable.</li>
-<li>Pointer arithmetic:  Performing arithmetic operations on pointers.</li>
-<li>Dynamic memory allocation: <code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code>, <code>free()</code>.  Essential for managing memory at runtime.</li>
-</ul>
-<p><strong>3. Strings:</strong></p>
-<ul>
-<li>Character arrays terminated by a null character (’\0’).</li>
-<li>String manipulation functions: <code>strcpy()</code>, <code>strcat()</code>, <code>strlen()</code>, <code>strcmp()</code>, etc. (found in <code>string.h</code>).</li>
-</ul>
-<p><strong>4. Structures and Unions:</strong></p>
-<ul>
-<li><strong>Structures:</strong> Group variables of different data types under a single name.</li>
-<li><strong>Unions:</strong>  Store different data types in the same memory location.  Only one member can hold a valid value at a time.</li>
-</ul>
-<p><strong>5. File Handling:</strong></p>
-<ul>
-<li>Reading and writing data to files.</li>
-<li>File pointers: <code>FILE *</code>.</li>
-<li>File operations: <code>fopen()</code>, <code>fclose()</code>, <code>fprintf()</code>, <code>fscanf()</code>, <code>fgets()</code>, <code>fputs()</code>.</li>
-</ul>
-<p><strong>6. Command-line Arguments:</strong></p>
-<ul>
-<li>Accessing arguments passed to a program from the command line.</li>
-<li><code>argc</code>, <code>argv</code> in the <code>main()</code> function.</li>
-</ul>
-<p><strong>7. Bitwise Operations:</strong></p>
-<ul>
-<li>Manipulating individual bits of data.</li>
-<li>Operators: <code>&amp;</code> (AND), <code>|</code> (OR), <code>^</code> (XOR), <code>&lt;&lt;</code> (left shift), <code>&gt;&gt;</code> (right shift), <code>~</code> (NOT).</li>
-</ul>
-<h3 id="module-advanced-data-types"><strong>Module: Advanced Data Types</strong></h3>
-<p>This module expands on basic C data types and introduces more advanced concepts related to data representation and manipulation.</p>
-<p><strong>1. Enumerated Types (enums):</strong></p>
-<ul>
-<li>Assign symbolic names to integer constants, improving code readability.</li>
-<li><code>enum</code> keyword.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">enum</span> Weekday <span class="token punctuation">{</span>MON<span class="token punctuation">,</span> TUE<span class="token punctuation">,</span> WED<span class="token punctuation">,</span> THU<span class="token punctuation">,</span> FRI<span class="token punctuation">,</span> SAT<span class="token punctuation">,</span> SUN<span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <h2 id="ca-151-t-advanced-c-programming">CA-151-T: Advanced C Programming</h2>
+      <h3 id="module-advanced-c-features"><strong>Module: Advanced C Features</strong></h3>
+      <p>Building upon the fundamentals of C, this semester delves into more advanced features that enable you to write
+        more efficient and powerful programs.</p>
+      <p><strong>1. Preprocessor Directives:</strong> (brief below)</p>
+      <ul>
+        <li>Control the compilation process.</li>
+        <li><code>#include</code>: Include header files.</li>
+        <li><code>#define</code>: Define macros (symbolic constants and function-like macros).</li>
+        <li><code>#ifdef</code>, <code>#ifndef</code>, <code>#endif</code>: Conditional compilation.</li>
+      </ul>
+      <p><strong>2. Pointers:</strong></p>
+      <ul>
+        <li>Variables that store memory addresses.</li>
+        <li><code>*</code> operator: Declares a pointer and dereferences a pointer (accesses the value at the address).
+        </li>
+        <li><code>&amp;</code> operator: Gets the address of a variable.</li>
+        <li>Pointer arithmetic: Performing arithmetic operations on pointers.</li>
+        <li>Dynamic memory allocation: <code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code>,
+          <code>free()</code>. Essential for managing memory at runtime.</li>
+      </ul>
+      <p><strong>3. Strings:</strong></p>
+      <ul>
+        <li>Character arrays terminated by a null character (’\0’).</li>
+        <li>String manipulation functions: <code>strcpy()</code>, <code>strcat()</code>, <code>strlen()</code>,
+          <code>strcmp()</code>, etc. (found in <code>string.h</code>).</li>
+      </ul>
+      <p><strong>4. Structures and Unions:</strong></p>
+      <ul>
+        <li><strong>Structures:</strong> Group variables of different data types under a single name.</li>
+        <li><strong>Unions:</strong> Store different data types in the same memory location. Only one member can hold a
+          valid value at a time.</li>
+      </ul>
+      <p><strong>5. File Handling:</strong></p>
+      <ul>
+        <li>Reading and writing data to files.</li>
+        <li>File pointers: <code>FILE *</code>.</li>
+        <li>File operations: <code>fopen()</code>, <code>fclose()</code>, <code>fprintf()</code>, <code>fscanf()</code>,
+          <code>fgets()</code>, <code>fputs()</code>.</li>
+      </ul>
+      <p><strong>6. Command-line Arguments:</strong></p>
+      <ul>
+        <li>Accessing arguments passed to a program from the command line.</li>
+        <li><code>argc</code>, <code>argv</code> in the <code>main()</code> function.</li>
+      </ul>
+      <p><strong>7. Bitwise Operations:</strong></p>
+      <ul>
+        <li>Manipulating individual bits of data.</li>
+        <li>Operators: <code>&amp;</code> (AND), <code>|</code> (OR), <code>^</code> (XOR), <code>&lt;&lt;</code> (left
+          shift), <code>&gt;&gt;</code> (right shift), <code>~</code> (NOT).</li>
+      </ul>
+      <h3 id="module-advanced-data-types"><strong>Module: Advanced Data Types</strong></h3>
+      <p>This module expands on basic C data types and introduces more advanced concepts related to data representation
+        and manipulation.</p>
+      <p><strong>1. Enumerated Types (enums):</strong></p>
+      <ul>
+        <li>Assign symbolic names to integer constants, improving code readability.</li>
+        <li><code>enum</code> keyword.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">enum</span> Weekday <span class="token punctuation">{</span>MON<span class="token punctuation">,</span> TUE<span class="token punctuation">,</span> WED<span class="token punctuation">,</span> THU<span class="token punctuation">,</span> FRI<span class="token punctuation">,</span> SAT<span class="token punctuation">,</span> SUN<span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token keyword">enum</span> Weekday today <span class="token operator">=</span> WED<span class="token punctuation">;</span>
 </code></pre>
-<p><strong>2. Typedef:</strong></p>
-<ul>
-<li>Create aliases for existing data types, simplifying complex declarations and improving code maintainability.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">typedef</span> <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">int</span> ulint<span class="token punctuation">;</span>
+      <p><strong>2. Typedef:</strong></p>
+      <ul>
+        <li>Create aliases for existing data types, simplifying complex declarations and improving code maintainability.
+        </li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">typedef</span> <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">int</span> ulint<span class="token punctuation">;</span>
 ulint bigNumber <span class="token operator">=</span> <span class="token number">1234567890UL</span><span class="token punctuation">;</span>
 </code></pre>
-<p><strong>3. Data Type Sizes and Ranges:</strong></p>
-<ul>
-<li><code>sizeof</code> operator: Determines the size (in bytes) of a data type or variable.  Important for memory management and understanding data representation.</li>
-<li>Limits of data types:  Understanding the maximum and minimum values that each data type can hold (e.g., <code>INT_MAX</code>, <code>INT_MIN</code> defined in <code>limits.h</code>).</li>
-</ul>
-<p><strong>4. Type Conversion (Casting):</strong></p>
-<ul>
-<li>Explicitly converting data from one type to another.</li>
-<li>Implicit type conversion (automatic conversion performed by the compiler).</li>
-<li>Be mindful of potential data loss or overflow when converting between different data types.</li>
-</ul>
-<p><strong>5. Storage Classes:</strong></p>
-<ul>
-<li><code>auto</code> (default): Local variables within a function.</li>
-<li><code>static</code>:  Variables that retain their value between function calls.</li>
-<li><code>extern</code>:  Declare a variable that is defined in another file.</li>
-<li><code>register</code>:  Suggest to the compiler that a variable should be stored in a register for faster access (compiler may ignore this suggestion).</li>
-</ul>
-<h3 id="module-preprocessor-directives"><strong>Module: Preprocessor Directives</strong></h3>
-<p>Preprocessor directives are instructions to the C preprocessor, which runs before the actual compilation process.  They are not part of the C language itself but provide powerful tools for controlling compilation and manipulating code.</p>
-<p><strong>1. <code>#include</code>:</strong></p>
-<ul>
-<li>Inserts the contents of a specified file into the source code.</li>
-<li><strong><code>#include &lt;filename&gt;</code>:</strong>  Searches for the file in standard include directories. (Used for standard library header files like <code>stdio.h</code>, <code>stdlib.h</code>).</li>
-<li><strong><code>#include "filename"</code>:</strong> Searches for the file in the current directory first, then in standard include directories. (Used for user-defined header files).</li>
-</ul>
-<p><strong>2. <code>#define</code>:</strong></p>
-<ul>
-<li>Defines macros, which are symbolic constants or function-like replacements.</li>
-<li><strong>Object-like Macros:</strong> Replace a symbolic name with a value.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">define</span> PI 3.14159</span>
+      <p><strong>3. Data Type Sizes and Ranges:</strong></p>
+      <ul>
+        <li><code>sizeof</code> operator: Determines the size (in bytes) of a data type or variable. Important for
+          memory management and understanding data representation.</li>
+        <li>Limits of data types: Understanding the maximum and minimum values that each data type can hold (e.g.,
+          <code>INT_MAX</code>, <code>INT_MIN</code> defined in <code>limits.h</code>).</li>
+      </ul>
+      <p><strong>4. Type Conversion (Casting):</strong></p>
+      <ul>
+        <li>Explicitly converting data from one type to another.</li>
+        <li>Implicit type conversion (automatic conversion performed by the compiler).</li>
+        <li>Be mindful of potential data loss or overflow when converting between different data types.</li>
+      </ul>
+      <p><strong>5. Storage Classes:</strong></p>
+      <ul>
+        <li><code>auto</code> (default): Local variables within a function.</li>
+        <li><code>static</code>: Variables that retain their value between function calls.</li>
+        <li><code>extern</code>: Declare a variable that is defined in another file.</li>
+        <li><code>register</code>: Suggest to the compiler that a variable should be stored in a register for faster
+          access (compiler may ignore this suggestion).</li>
+      </ul>
+      <h3 id="module-preprocessor-directives"><strong>Module: Preprocessor Directives</strong></h3>
+      <p>Preprocessor directives are instructions to the C preprocessor, which runs before the actual compilation
+        process. They are not part of the C language itself but provide powerful tools for controlling compilation and
+        manipulating code.</p>
+      <p><strong>1. <code>#include</code>:</strong></p>
+      <ul>
+        <li>Inserts the contents of a specified file into the source code.</li>
+        <li><strong><code>#include &lt;filename&gt;</code>:</strong> Searches for the file in standard include
+          directories. (Used for standard library header files like <code>stdio.h</code>, <code>stdlib.h</code>).</li>
+        <li><strong><code>#include "filename"</code>:</strong> Searches for the file in the current directory first,
+          then in standard include directories. (Used for user-defined header files).</li>
+      </ul>
+      <p><strong>2. <code>#define</code>:</strong></p>
+      <ul>
+        <li>Defines macros, which are symbolic constants or function-like replacements.</li>
+        <li><strong>Object-like Macros:</strong> Replace a symbolic name with a value.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">define</span> PI 3.14159</span>
 <span class="token keyword">float</span> area <span class="token operator">=</span> PI <span class="token operator">*</span> radius <span class="token operator">*</span> radius<span class="token punctuation">;</span>
 </code></pre>
-<ul>
-<li><strong>Function-like Macros:</strong>  Define macros that take arguments.  Be careful with macro expansion and side effects.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">define</span> SQUARE(x) ((x) * (x))  </span><span class="token comment">// Note the use of parentheses to avoid unexpected behavior</span>
+      <ul>
+        <li><strong>Function-like Macros:</strong> Define macros that take arguments. Be careful with macro expansion
+          and side effects.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">define</span> SQUARE(x) ((x) * (x))  </span><span class="token comment">// Note the use of parentheses to avoid unexpected behavior</span>
 <span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token function">SQUARE</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Expands to ((5 + 2) * (5 + 2))</span>
 </code></pre>
-<p><strong>3. Conditional Compilation:</strong></p>
-<ul>
-<li>Control which parts of the code are compiled based on conditions.</li>
-<li><code>#ifdef</code> (if defined): Compiles code if a macro is defined.</li>
-<li><code>#ifndef</code> (if not defined): Compiles code if a macro is not defined.</li>
-<li><code>#else</code>:  Provides an alternative block of code.</li>
-<li><code>#endif</code>: Marks the end of a conditional compilation block.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">ifdef</span> DEBUG</span>
+      <p><strong>3. Conditional Compilation:</strong></p>
+      <ul>
+        <li>Control which parts of the code are compiled based on conditions.</li>
+        <li><code>#ifdef</code> (if defined): Compiles code if a macro is defined.</li>
+        <li><code>#ifndef</code> (if not defined): Compiles code if a macro is not defined.</li>
+        <li><code>#else</code>: Provides an alternative block of code.</li>
+        <li><code>#endif</code>: Marks the end of a conditional compilation block.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">ifdef</span> DEBUG</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Debug mode enabled.\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token macro property">#<span class="token directive keyword">else</span></span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Release mode enabled.\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token macro property">#<span class="token directive keyword">endif</span></span>
 </code></pre>
-<p><strong>4. Other Preprocessor Directives:</strong></p>
-<ul>
-<li><code>#undef</code>: Undefines a macro.</li>
-<li><code>#error</code>: Generates a compile-time error message.</li>
-<li><code>#pragma</code>:  Provides compiler-specific instructions.</li>
-<li><code>#line</code>: Changes the compiler’s reported line number and filename.  Useful for debugging.</li>
-</ul>
-<p>Preprocessor directives provide a powerful way to control the compilation process, manage code complexity, and enhance code portability. Understanding and effectively using preprocessor directives is crucial for advanced C programming.  Conditional compilation is particularly useful for managing debug code and platform-specific code variations.</p>
-<h3 id="module-pointers-strings-and-structures"><strong>Module: Pointers, Strings, and Structures</strong></h3>
-<p>This module covers crucial concepts for managing data in C, including pointers for dynamic memory management, strings for text manipulation, and structures for organizing complex data.</p>
-<p><strong>1. Pointers:</strong></p>
-<ul>
-<li><strong>Declaration:</strong> <code>data_type *pointer_name;</code></li>
-<li><strong>Initialization:</strong>
-<ul>
-<li><code>int *ptr = &amp;variable;</code> (pointing to a variable’s address)</li>
-<li><code>int *ptr = (int *) malloc(sizeof(int));</code> (dynamic allocation)</li>
-</ul>
-</li>
-<li><strong>Dereferencing:</strong> <code>*ptr</code> (accesses the value at the pointed-to address)</li>
-<li><strong>Pointer Arithmetic:</strong>  Incrementing/decrementing pointers moves them through memory based on the data type size.</li>
-<li><strong>Null Pointer:</strong> <code>int *ptr = NULL;</code>  A pointer that doesn’t point to any valid memory location.  Important for error checking.</li>
-<li><strong>Void Pointers:</strong> <code>void *ptr;</code> Can point to any data type but requires casting before dereferencing.</li>
-<li><strong>Function Pointers:</strong>  Pointers that can store the address of a function. Enables dynamic function calls and callbacks.</li>
-</ul>
-<p><strong>2. Strings:</strong></p>
-<ul>
-<li><strong>Character Arrays:</strong>  Strings are null-terminated character arrays. <code>char str[20] = "Hello";</code></li>
-<li><strong>String Manipulation Functions (string.h):</strong>
-<ul>
-<li><code>strcpy(dest, src)</code>: Copies a string.</li>
-<li><code>strcat(dest, src)</code>: Concatenates strings.</li>
-<li><code>strlen(str)</code>:  Returns the length of a string.</li>
-<li><code>strcmp(str1, str2)</code>: Compares strings.</li>
-<li><code>strstr(haystack, needle)</code>: Searches for a substring.</li>
-</ul>
-</li>
-</ul>
-<p><strong>3. Structures:</strong></p>
-<ul>
-<li><strong>Declaration:</strong></li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">struct</span> struct_name <span class="token punctuation">{</span>
+      <p><strong>4. Other Preprocessor Directives:</strong></p>
+      <ul>
+        <li><code>#undef</code>: Undefines a macro.</li>
+        <li><code>#error</code>: Generates a compile-time error message.</li>
+        <li><code>#pragma</code>: Provides compiler-specific instructions.</li>
+        <li><code>#line</code>: Changes the compiler’s reported line number and filename. Useful for debugging.</li>
+      </ul>
+      <p>Preprocessor directives provide a powerful way to control the compilation process, manage code complexity, and
+        enhance code portability. Understanding and effectively using preprocessor directives is crucial for advanced C
+        programming. Conditional compilation is particularly useful for managing debug code and platform-specific code
+        variations.</p>
+      <h3 id="module-pointers-strings-and-structures"><strong>Module: Pointers, Strings, and Structures</strong></h3>
+      <p>This module covers crucial concepts for managing data in C, including pointers for dynamic memory management,
+        strings for text manipulation, and structures for organizing complex data.</p>
+      <p><strong>1. Pointers:</strong></p>
+      <ul>
+        <li><strong>Declaration:</strong> <code>data_type *pointer_name;</code></li>
+        <li><strong>Initialization:</strong>
+          <ul>
+            <li><code>int *ptr = &amp;variable;</code> (pointing to a variable’s address)</li>
+            <li><code>int *ptr = (int *) malloc(sizeof(int));</code> (dynamic allocation)</li>
+          </ul>
+        </li>
+        <li><strong>Dereferencing:</strong> <code>*ptr</code> (accesses the value at the pointed-to address)</li>
+        <li><strong>Pointer Arithmetic:</strong> Incrementing/decrementing pointers moves them through memory based on
+          the data type size.</li>
+        <li><strong>Null Pointer:</strong> <code>int *ptr = NULL;</code> A pointer that doesn’t point to any valid
+          memory location. Important for error checking.</li>
+        <li><strong>Void Pointers:</strong> <code>void *ptr;</code> Can point to any data type but requires casting
+          before dereferencing.</li>
+        <li><strong>Function Pointers:</strong> Pointers that can store the address of a function. Enables dynamic
+          function calls and callbacks.</li>
+      </ul>
+      <p><strong>2. Strings:</strong></p>
+      <ul>
+        <li><strong>Character Arrays:</strong> Strings are null-terminated character arrays.
+          <code>char str[20] = "Hello";</code></li>
+        <li><strong>String Manipulation Functions (string.h):</strong>
+          <ul>
+            <li><code>strcpy(dest, src)</code>: Copies a string.</li>
+            <li><code>strcat(dest, src)</code>: Concatenates strings.</li>
+            <li><code>strlen(str)</code>: Returns the length of a string.</li>
+            <li><code>strcmp(str1, str2)</code>: Compares strings.</li>
+            <li><code>strstr(haystack, needle)</code>: Searches for a substring.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>3. Structures:</strong></p>
+      <ul>
+        <li><strong>Declaration:</strong></li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">struct</span> struct_name <span class="token punctuation">{</span>
     data_type member1<span class="token punctuation">;</span>
     data_type member2<span class="token punctuation">;</span>
     <span class="token comment">// ...</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<ul>
-<li><strong>Initialization:</strong></li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">struct</span> Point <span class="token punctuation">{</span>
+      <ul>
+        <li><strong>Initialization:</strong></li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">struct</span> Point <span class="token punctuation">{</span>
     <span class="token keyword">int</span> x<span class="token punctuation">;</span>
     <span class="token keyword">int</span> y<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token keyword">struct</span> Point p <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<ul>
-<li><strong>Accessing Members:</strong>  <code>.</code> operator (e.g., <code>p.x</code>, <code>p.y</code>).</li>
-<li><strong>Structures and Pointers:</strong>
-<ul>
-<li><code>struct Point *ptr = &amp;p;</code></li>
-<li>Accessing members using a pointer: <code>ptr-&gt;x</code>, <code>ptr-&gt;y</code> (arrow operator).</li>
-</ul>
-</li>
-<li><strong>Nested Structures:</strong> Structures within structures.</li>
-<li><strong>Passing Structures to Functions:</strong> By value or by reference (using pointers).]</li>
-</ul>
-<h3 id="module-file-handling-detailed"><strong>Module: File Handling (Detailed)</strong></h3>
-<p>File handling in C allows you to interact with files, enabling you to read data from files, write data to files, and perform various file operations.</p>
-<p><strong>1. File Pointers:</strong></p>
-<ul>
-<li>A file pointer is a pointer to a <code>FILE</code> object, which represents a file.</li>
-<li>Declared as: <code>FILE *file_pointer;</code></li>
-</ul>
-<p><strong>2. Opening a File (<code>fopen()</code>):</strong></p>
-<ul>
-<li><code>fopen()</code> opens a file and returns a file pointer.</li>
-<li>Syntax: <code>FILE *fopen(const char *filename, const char *mode);</code></li>
-<li><code>filename</code>: The name of the file to open.</li>
-<li><code>mode</code>:  Specifies how the file will be accessed (e.g., “r” for reading, “w” for writing, “a” for appending, “r+” for reading and writing).</li>
-<li>Returns <code>NULL</code> if the file cannot be opened.  Always check the return value for errors.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c">FILE <span class="token operator">*</span>fp <span class="token operator">=</span> <span class="token function">fopen</span><span class="token punctuation">(</span><span class="token string">"my_file.txt"</span><span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <ul>
+        <li><strong>Accessing Members:</strong> <code>.</code> operator (e.g., <code>p.x</code>, <code>p.y</code>).</li>
+        <li><strong>Structures and Pointers:</strong>
+          <ul>
+            <li><code>struct Point *ptr = &amp;p;</code></li>
+            <li>Accessing members using a pointer: <code>ptr-&gt;x</code>, <code>ptr-&gt;y</code> (arrow operator).</li>
+          </ul>
+        </li>
+        <li><strong>Nested Structures:</strong> Structures within structures.</li>
+        <li><strong>Passing Structures to Functions:</strong> By value or by reference (using pointers).]</li>
+      </ul>
+      <h3 id="module-file-handling-detailed"><strong>Module: File Handling (Detailed)</strong></h3>
+      <p>File handling in C allows you to interact with files, enabling you to read data from files, write data to
+        files, and perform various file operations.</p>
+      <p><strong>1. File Pointers:</strong></p>
+      <ul>
+        <li>A file pointer is a pointer to a <code>FILE</code> object, which represents a file.</li>
+        <li>Declared as: <code>FILE *file_pointer;</code></li>
+      </ul>
+      <p><strong>2. Opening a File (<code>fopen()</code>):</strong></p>
+      <ul>
+        <li><code>fopen()</code> opens a file and returns a file pointer.</li>
+        <li>Syntax: <code>FILE *fopen(const char *filename, const char *mode);</code></li>
+        <li><code>filename</code>: The name of the file to open.</li>
+        <li><code>mode</code>: Specifies how the file will be accessed (e.g., “r” for reading, “w” for writing, “a” for
+          appending, “r+” for reading and writing).</li>
+        <li>Returns <code>NULL</code> if the file cannot be opened. Always check the return value for errors.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c">FILE <span class="token operator">*</span>fp <span class="token operator">=</span> <span class="token function">fopen</span><span class="token punctuation">(</span><span class="token string">"my_file.txt"</span><span class="token punctuation">,</span> <span class="token string">"r"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">if</span> <span class="token punctuation">(</span>fp <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token function">perror</span><span class="token punctuation">(</span><span class="token string">"Error opening file"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// Indicate an error</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p><strong>3. Closing a File (<code>fclose()</code>):</strong></p>
-<ul>
-<li><code>fclose()</code> closes a file, releasing any resources associated with it.</li>
-<li>Syntax: <code>int fclose(FILE *fp);</code></li>
-<li>Returns 0 on success, EOF on error.</li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token function">fclose</span><span class="token punctuation">(</span>fp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <p><strong>3. Closing a File (<code>fclose()</code>):</strong></p>
+      <ul>
+        <li><code>fclose()</code> closes a file, releasing any resources associated with it.</li>
+        <li>Syntax: <code>int fclose(FILE *fp);</code></li>
+        <li>Returns 0 on success, EOF on error.</li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token function">fclose</span><span class="token punctuation">(</span>fp<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><strong>4. Reading from a File:</strong></p>
-<ul>
-<li><strong><code>fscanf()</code>:</strong>  Reads formatted input from a file, similar to <code>scanf()</code>.</li>
-<li>Syntax: <code>int fscanf(FILE *fp, const char *format, ...);</code></li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> num<span class="token punctuation">;</span>
+      <p><strong>4. Reading from a File:</strong></p>
+      <ul>
+        <li><strong><code>fscanf()</code>:</strong> Reads formatted input from a file, similar to <code>scanf()</code>.
+        </li>
+        <li>Syntax: <code>int fscanf(FILE *fp, const char *format, ...);</code></li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token keyword">int</span> num<span class="token punctuation">;</span>
 <span class="token function">fscanf</span><span class="token punctuation">(</span>fp<span class="token punctuation">,</span> <span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<ul>
-<li><strong><code>fgets()</code>:</strong> Reads a line of text from a file.</li>
-<li>Syntax: <code>char *fgets(char *str, int n, FILE *fp);</code></li>
-<li><code>str</code>: The buffer to store the read line.</li>
-<li><code>n</code>: The maximum number of characters to read (including the null terminator).</li>
-<li><code>fp</code>: The file pointer.</li>
-</ul>
-<p><strong>5. Writing to a File:</strong></p>
-<ul>
-<li><strong><code>fprintf()</code>:</strong> Writes formatted output to a file, similar to <code>printf()</code>.</li>
-<li>Syntax: <code>int fprintf(FILE *fp, const char *format, ...);</code></li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token function">fprintf</span><span class="token punctuation">(</span>fp<span class="token punctuation">,</span> <span class="token string">"The number is: %d\n"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <ul>
+        <li><strong><code>fgets()</code>:</strong> Reads a line of text from a file.</li>
+        <li>Syntax: <code>char *fgets(char *str, int n, FILE *fp);</code></li>
+        <li><code>str</code>: The buffer to store the read line.</li>
+        <li><code>n</code>: The maximum number of characters to read (including the null terminator).</li>
+        <li><code>fp</code>: The file pointer.</li>
+      </ul>
+      <p><strong>5. Writing to a File:</strong></p>
+      <ul>
+        <li><strong><code>fprintf()</code>:</strong> Writes formatted output to a file, similar to
+          <code>printf()</code>.</li>
+        <li>Syntax: <code>int fprintf(FILE *fp, const char *format, ...);</code></li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token function">fprintf</span><span class="token punctuation">(</span>fp<span class="token punctuation">,</span> <span class="token string">"The number is: %d\n"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<ul>
-<li><strong><code>fputs()</code>:</strong> Writes a string to a file.</li>
-<li>Syntax: <code>int fputs(const char *str, FILE *fp);</code></li>
-</ul>
-<p><strong>6. Error Handling:</strong></p>
-<ul>
-<li>Always check the return values of file functions for errors.</li>
-<li><code>perror()</code> can be used to print error messages.</li>
-<li><code>feof()</code> checks for end-of-file.</li>
-<li><code>ferror()</code> checks for file errors.</li>
-</ul>
-<p><strong>7. Example: Reading and Writing to a File:</strong></p>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+      <ul>
+        <li><strong><code>fputs()</code>:</strong> Writes a string to a file.</li>
+        <li>Syntax: <code>int fputs(const char *str, FILE *fp);</code></li>
+      </ul>
+      <p><strong>6. Error Handling:</strong></p>
+      <ul>
+        <li>Always check the return values of file functions for errors.</li>
+        <li><code>perror()</code> can be used to print error messages.</li>
+        <li><code>feof()</code> checks for end-of-file.</li>
+        <li><code>ferror()</code> checks for file errors.</li>
+      </ul>
+      <p><strong>7. Example: Reading and Writing to a File:</strong></p>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     FILE <span class="token operator">*</span>fp<span class="token punctuation">;</span>
@@ -367,97 +340,112 @@ ulint bigNumber <span class="token operator">=</span> <span class="token number"
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h2 id="ca-153-t-introduction-to-microcontrollers">CA-153-T: Introduction to Microcontrollers</h2>
-<h3 id="module-microcontroller-basics"><strong>Module: Microcontroller Basics</strong></h3>
-<p>This module introduces the fundamental concepts of microcontrollers, their architecture, and their applications.</p>
-<p><strong>1. What is a Microcontroller?</strong></p>
-<ul>
-<li>A single-chip integrated circuit (IC) that contains a processor core, memory (RAM and ROM/Flash), and peripherals (timers, input/output ports, serial communication interfaces).</li>
-<li>Designed for embedded systems, controlling specific functions within a larger system.</li>
-<li><strong>Microcontroller vs. Microprocessor:</strong> Microprocessors require external memory and peripherals, while microcontrollers integrate these components on a single chip.  This makes microcontrollers smaller, more cost-effective, and power-efficient for embedded applications.</li>
-</ul>
-<p><strong>2. Microcontroller Architecture:</strong></p>
-<ul>
-<li><strong>CPU:</strong>  The central processing unit fetches and executes instructions.</li>
-<li><strong>Memory:</strong>
-<ul>
-<li><strong>RAM (Random Access Memory):</strong>  Stores data and program variables during execution. Volatile (data is lost when power is off).</li>
-<li><strong>ROM/Flash Memory:</strong> Stores the program code. Non-volatile (data is retained even when power is off).</li>
-</ul>
-</li>
-<li><strong>Peripherals:</strong>  Specialized hardware components for interacting with the external world. Examples:
-<ul>
-<li><strong>Timers:</strong> Generate precise timing signals.</li>
-<li><strong>Input/Output (I/O) Ports:</strong>  Read input signals and control output devices.</li>
-<li><strong>Serial Communication Interfaces (UART, SPI, I2C):</strong>  Communicate with other devices.</li>
-<li><strong>Analog-to-Digital Converters (ADC):</strong>  Convert analog signals to digital values.</li>
-<li><strong>Digital-to-Analog Converters (DAC):</strong> Convert digital values to analog signals.</li>
-</ul>
-</li>
-</ul>
-<p><strong>3. Microcontroller Programming:</strong></p>
-<ul>
-<li>Typically programmed using assembly language or high-level languages like C.</li>
-<li><strong>Integrated Development Environments (IDEs):</strong>  Provide tools for writing, compiling, and debugging microcontroller code.</li>
-<li><strong>Burning/Flashing:</strong>  The process of transferring the compiled program code into the microcontroller’s flash memory.</li>
-</ul>
-<p><strong>4. Applications of Microcontrollers:</strong></p>
-<p>Microcontrollers are used in a vast range of embedded systems applications:</p>
-<ul>
-<li><strong>Consumer Electronics:</strong> Appliances, remote controls, toys.</li>
-<li><strong>Automotive:</strong> Engine control units, anti-lock braking systems.</li>
-<li><strong>Industrial Automation:</strong>  Robotics, process control.</li>
-<li><strong>Medical Devices:</strong>  Pacemakers, insulin pumps.</li>
-<li><strong>Communication Systems:</strong>  Modems, routers.</li>
-<li><strong>IoT (Internet of Things):</strong>  Smart home devices, wearable sensors.</li>
-</ul>
-<p><strong>5. Key Considerations:</strong></p>
-<ul>
-<li><strong>Power Consumption:</strong>  Important for battery-powered devices.</li>
-<li><strong>Cost:</strong>  A factor in high-volume applications.</li>
-<li><strong>Processing Power:</strong> Choose a microcontroller with sufficient processing power for the application.</li>
-<li><strong>Memory Capacity:</strong> Select a microcontroller with enough memory to store the program code and data.</li>
-<li><strong>Peripherals:</strong> Ensure the microcontroller has the necessary peripherals for the application.</li>
-</ul>
-<h3 id="module-8051-architecture-and-programming"><strong>Module: 8051 Architecture and Programming</strong></h3>
-<p>The 8051 is a classic and widely used microcontroller architecture, making it a good starting point for learning microcontroller programming.</p>
-<p><strong>1. 8051 Architecture:</strong></p>
-<ul>
-<li><strong>CPU (Central Processing Unit):</strong> 8-bit processor.</li>
-<li><strong>Memory:</strong>
-<ul>
-<li><strong>4KB Internal ROM (Program Memory):</strong>  Can be extended externally.</li>
-<li><strong>128 Bytes Internal RAM (Data Memory):</strong> Organized into:
-<ul>
-<li><strong>0-7Fh:</strong>  General-purpose registers (R0-R7).</li>
-<li><strong>80h-FFh:</strong> Special function registers (SFRs) for controlling peripherals and the microcontroller itself.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>Peripherals:</strong>
-<ul>
-<li><strong>Timers/Counters:</strong> Two 16-bit timers.</li>
-<li><strong>Serial Port:</strong>  For serial communication.</li>
-<li><strong>Interrupts:</strong>  Handle external events.</li>
-<li><strong>I/O Ports:</strong> Four 8-bit I/O ports (P0-P3).</li>
-</ul>
-</li>
-</ul>
-<p><strong>2. 8051 Programming (Assembly Language):</strong></p>
-<ul>
-<li><strong>Instructions:</strong>  Mnemonic codes representing specific operations (e.g., <code>MOV</code>, <code>ADD</code>, <code>JMP</code>).</li>
-<li><strong>Addressing Modes:</strong>  Ways to access data:
-<ul>
-<li><strong>Register Addressing:</strong> <code>MOV A, R0</code></li>
-<li><strong>Direct Addressing:</strong> <code>MOV A, 40h</code></li>
-<li><strong>Indirect Addressing:</strong> <code>MOV A, @R0</code></li>
-<li><strong>Immediate Addressing:</strong> <code>MOV A, #25h</code></li>
-</ul>
-</li>
-<li><strong>Example Program (blinking an LED connected to P1.0):</strong></li>
-</ul>
-<pre class=" language-assembly"><code class="prism  language-assembly">ORG 0000h  ; Start address
+      <h2 id="ca-153-t-introduction-to-microcontrollers">CA-153-T: Introduction to Microcontrollers</h2>
+      <h3 id="module-microcontroller-basics"><strong>Module: Microcontroller Basics</strong></h3>
+      <p>This module introduces the fundamental concepts of microcontrollers, their architecture, and their
+        applications.</p>
+      <p><strong>1. What is a Microcontroller?</strong></p>
+      <ul>
+        <li>A single-chip integrated circuit (IC) that contains a processor core, memory (RAM and ROM/Flash), and
+          peripherals (timers, input/output ports, serial communication interfaces).</li>
+        <li>Designed for embedded systems, controlling specific functions within a larger system.</li>
+        <li><strong>Microcontroller vs. Microprocessor:</strong> Microprocessors require external memory and
+          peripherals, while microcontrollers integrate these components on a single chip. This makes microcontrollers
+          smaller, more cost-effective, and power-efficient for embedded applications.</li>
+      </ul>
+      <p><strong>2. Microcontroller Architecture:</strong></p>
+      <ul>
+        <li><strong>CPU:</strong> The central processing unit fetches and executes instructions.</li>
+        <li><strong>Memory:</strong>
+          <ul>
+            <li><strong>RAM (Random Access Memory):</strong> Stores data and program variables during execution.
+              Volatile (data is lost when power is off).</li>
+            <li><strong>ROM/Flash Memory:</strong> Stores the program code. Non-volatile (data is retained even when
+              power is off).</li>
+          </ul>
+        </li>
+        <li><strong>Peripherals:</strong> Specialized hardware components for interacting with the external world.
+          Examples:
+          <ul>
+            <li><strong>Timers:</strong> Generate precise timing signals.</li>
+            <li><strong>Input/Output (I/O) Ports:</strong> Read input signals and control output devices.</li>
+            <li><strong>Serial Communication Interfaces (UART, SPI, I2C):</strong> Communicate with other devices.</li>
+            <li><strong>Analog-to-Digital Converters (ADC):</strong> Convert analog signals to digital values.</li>
+            <li><strong>Digital-to-Analog Converters (DAC):</strong> Convert digital values to analog signals.</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>3. Microcontroller Programming:</strong></p>
+      <ul>
+        <li>Typically programmed using assembly language or high-level languages like C.</li>
+        <li><strong>Integrated Development Environments (IDEs):</strong> Provide tools for writing, compiling, and
+          debugging microcontroller code.</li>
+        <li><strong>Burning/Flashing:</strong> The process of transferring the compiled program code into the
+          microcontroller’s flash memory.</li>
+      </ul>
+      <p><strong>4. Applications of Microcontrollers:</strong></p>
+      <p>Microcontrollers are used in a vast range of embedded systems applications:</p>
+      <ul>
+        <li><strong>Consumer Electronics:</strong> Appliances, remote controls, toys.</li>
+        <li><strong>Automotive:</strong> Engine control units, anti-lock braking systems.</li>
+        <li><strong>Industrial Automation:</strong> Robotics, process control.</li>
+        <li><strong>Medical Devices:</strong> Pacemakers, insulin pumps.</li>
+        <li><strong>Communication Systems:</strong> Modems, routers.</li>
+        <li><strong>IoT (Internet of Things):</strong> Smart home devices, wearable sensors.</li>
+      </ul>
+      <p><strong>5. Key Considerations:</strong></p>
+      <ul>
+        <li><strong>Power Consumption:</strong> Important for battery-powered devices.</li>
+        <li><strong>Cost:</strong> A factor in high-volume applications.</li>
+        <li><strong>Processing Power:</strong> Choose a microcontroller with sufficient processing power for the
+          application.</li>
+        <li><strong>Memory Capacity:</strong> Select a microcontroller with enough memory to store the program code and
+          data.</li>
+        <li><strong>Peripherals:</strong> Ensure the microcontroller has the necessary peripherals for the application.
+        </li>
+      </ul>
+      <h3 id="module-8051-architecture-and-programming"><strong>Module: 8051 Architecture and Programming</strong></h3>
+      <p>The 8051 is a classic and widely used microcontroller architecture, making it a good starting point for
+        learning microcontroller programming.</p>
+      <p><strong>1. 8051 Architecture:</strong></p>
+      <ul>
+        <li><strong>CPU (Central Processing Unit):</strong> 8-bit processor.</li>
+        <li><strong>Memory:</strong>
+          <ul>
+            <li><strong>4KB Internal ROM (Program Memory):</strong> Can be extended externally.</li>
+            <li><strong>128 Bytes Internal RAM (Data Memory):</strong> Organized into:
+              <ul>
+                <li><strong>0-7Fh:</strong> General-purpose registers (R0-R7).</li>
+                <li><strong>80h-FFh:</strong> Special function registers (SFRs) for controlling peripherals and the
+                  microcontroller itself.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><strong>Peripherals:</strong>
+          <ul>
+            <li><strong>Timers/Counters:</strong> Two 16-bit timers.</li>
+            <li><strong>Serial Port:</strong> For serial communication.</li>
+            <li><strong>Interrupts:</strong> Handle external events.</li>
+            <li><strong>I/O Ports:</strong> Four 8-bit I/O ports (P0-P3).</li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>2. 8051 Programming (Assembly Language):</strong></p>
+      <ul>
+        <li><strong>Instructions:</strong> Mnemonic codes representing specific operations (e.g., <code>MOV</code>,
+          <code>ADD</code>, <code>JMP</code>).</li>
+        <li><strong>Addressing Modes:</strong> Ways to access data:
+          <ul>
+            <li><strong>Register Addressing:</strong> <code>MOV A, R0</code></li>
+            <li><strong>Direct Addressing:</strong> <code>MOV A, 40h</code></li>
+            <li><strong>Indirect Addressing:</strong> <code>MOV A, @R0</code></li>
+            <li><strong>Immediate Addressing:</strong> <code>MOV A, #25h</code></li>
+          </ul>
+        </li>
+        <li><strong>Example Program (blinking an LED connected to P1.0):</strong></li>
+      </ul>
+      <pre class=" language-assembly"><code class="prism  language-assembly">ORG 0000h  ; Start address
 
 MAIN:
     MOV P1.0, #00h ; Turn on LED
@@ -470,13 +458,14 @@ DELAY:
     ; Delay subroutine (implementation omitted for brevity)
     RET
 </code></pre>
-<p><strong>3. 8051 Programming (C Language):</strong></p>
-<ul>
-<li><strong>Advantages of C:</strong>  Higher-level language, easier to write and maintain than assembly.</li>
-<li><strong>Special Function Register (SFR) Access:</strong>  Using C syntax to access SFRs (e.g., <code>P1 = 0x00;</code> to turn on the LED).</li>
-<li><strong>Example Program (blinking an LED):</strong></li>
-</ul>
-<pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;reg51.h&gt;</span></span>
+      <p><strong>3. 8051 Programming (C Language):</strong></p>
+      <ul>
+        <li><strong>Advantages of C:</strong> Higher-level language, easier to write and maintain than assembly.</li>
+        <li><strong>Special Function Register (SFR) Access:</strong> Using C syntax to access SFRs (e.g.,
+          <code>P1 = 0x00;</code> to turn on the LED).</li>
+        <li><strong>Example Program (blinking an LED):</strong></li>
+      </ul>
+      <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;reg51.h&gt;</span></span>
 
 <span class="token keyword">void</span> <span class="token function">delay</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment">// Delay function (implementation omitted)</span>
@@ -492,725 +481,897 @@ DELAY:
 <span class="token punctuation">}</span>
 
 </code></pre>
-<p><strong>4. Key Concepts:</strong></p>
-<ul>
-<li><strong>Interrupts:</strong> Handle external events asynchronously.</li>
-<li><strong>Timers/Counters:</strong> Generate precise timing for various tasks.</li>
-<li><strong>Serial Communication:</strong>  Transfer data serially using protocols like UART.</li>
-</ul>
-<h3 id="module-8051-interfacing-techniques-and-applications"><strong>Module: 8051 Interfacing Techniques and Applications</strong></h3>
-<p>This module explores how to connect the 8051 microcontroller to various external devices and its real-world applications.</p>
-<p><strong>1. Interfacing Techniques:</strong></p>
-<ul>
-<li><strong>Memory Interfacing:</strong> Expanding memory beyond the built-in capacity by connecting external RAM and ROM chips.  Address decoding is crucial for selecting the correct memory chip.</li>
-<li><strong>I/O Port Interfacing:</strong>
-<ul>
-<li><strong>LEDs:</strong>  Connecting LEDs to output ports and controlling their on/off state.  Current-limiting resistors are necessary to protect the LED and the microcontroller.</li>
-<li><strong>Switches:</strong>  Reading switch states from input ports.  Pull-up or pull-down resistors are often used to ensure a stable input signal.</li>
-<li><strong>Keypads:</strong>  Interfacing with keypads to get user input.  Scanning techniques are used to detect key presses.</li>
-<li><strong>Seven-Segment Displays:</strong>  Displaying numbers and characters on seven-segment displays.  Multiplexing is often used to control multiple displays with fewer I/O pins.</li>
-<li><strong>LCDs (Liquid Crystal Displays):</strong>  Interfacing with LCDs to display text and graphics.  Specialized LCD controller ICs simplify the interfacing process.</li>
-</ul>
-</li>
-<li><strong>Sensor Interfacing:</strong>
-<ul>
-<li><strong>Temperature Sensors:</strong> Reading temperature data from sensors like LM35.  ADC (Analog-to-Digital Converter) is used to convert the analog sensor output to a digital value.</li>
-<li><strong>Light Sensors (LDRs):</strong>  Measuring light intensity.</li>
-<li><strong>Other Sensors:</strong>  Proximity sensors, pressure sensors, humidity sensors, etc.</li>
-</ul>
-</li>
-<li><strong>Actuator Interfacing:</strong>
-<ul>
-<li><strong>Motors (DC Motors, Stepper Motors):</strong> Controlling motor speed and direction using motor driver ICs like L293D.</li>
-<li><strong>Relays:</strong> Switching high-voltage devices using relays controlled by the microcontroller.</li>
-</ul>
-</li>
-</ul>
-<p><strong>2. 8051 Applications:</strong></p>
-<ul>
-<li><strong>Consumer Electronics:</strong>
-<ul>
-<li><strong>Washing Machines:</strong>  Controlling wash cycles, water levels, and motor speed.</li>
-<li><strong>Microwave Ovens:</strong>  Managing cooking time, power levels, and user interface.</li>
-<li><strong>Remote Controls:</strong>  Sending control signals to appliances.</li>
-</ul>
-</li>
-<li><strong>Automotive:</strong>
-<ul>
-<li><strong>Engine Control Units (ECUs):</strong>  Managing fuel injection, ignition timing, and other engine parameters.</li>
-<li><strong>Anti-lock Braking Systems (ABS):</strong>  Preventing wheel lockup during braking.</li>
-</ul>
-</li>
-<li><strong>Industrial Automation:</strong>
-<ul>
-<li><strong>Robotics:</strong>  Controlling robot arm movement and other functions.</li>
-<li><strong>Process Control:</strong>  Monitoring and controlling industrial processes like temperature, pressure, and flow rate.</li>
-</ul>
-</li>
-<li><strong>Medical Devices:</strong>
-<ul>
-<li><strong>Heart Rate Monitors:</strong> Measuring and displaying heart rate.</li>
-<li><strong>Glucose Meters:</strong> Measuring blood glucose levels.</li>
-</ul>
-</li>
-<li><strong>Data Acquisition Systems:</strong>  Collecting data from various sensors and storing or transmitting it.</li>
-</ul>
-<p><strong>Example: Interfacing an LED to P1.0:</strong></p>
-<ol>
-<li>Connect the positive leg of the LED to P1.0 through a current-limiting resistor (e.g., 220 ohms).</li>
-<li>Connect the negative leg of the LED to ground.</li>
-<li>Write code to set P1.0 as an output and control its state (0 for on, 1 for off).</li>
-</ol>
-<h2 id="ca-155-t-linear-algebra">CA-155-T: Linear Algebra</h2>
-<h3 id="module-systems-of-linear-equations"><strong>Module: Systems of Linear Equations</strong></h3>
-<p>This module introduces systems of linear equations, their representation, and methods for solving them.</p>
-<p><strong>1. What are Linear Equations?</strong></p>
-<ul>
-<li>Equations of the form a<sub>1</sub>x<sub>1</sub> + a<sub>2</sub>x<sub>2</sub> + … + a<sub>n</sub>x<sub>n</sub> = b, where a<sub>i</sub> and b are constants, and x<sub>i</sub> are variables.</li>
-<li>No exponents or other non-linear functions of the variables.</li>
-</ul>
-<p><strong>2. Systems of Linear Equations:</strong></p>
-<ul>
-<li>A collection of two or more linear equations involving the same set of variables.</li>
-<li><strong>Solution:</strong>  A set of values for the variables that satisfies all equations in the system.</li>
-</ul>
-<p><strong>3. Representing Systems of Linear Equations:</strong></p>
-<ul>
-<li><strong>Standard Form:</strong>  Writing all equations with variables on the left side and constants on the right side.</li>
-<li><strong>Augmented Matrix:</strong>  A matrix that represents the system by combining the coefficient matrix and the constant vector.</li>
-</ul>
-<p><strong>Example:</strong></p>
-<p>System of equations:</p>
-<pre><code>2x + y = 5
+      <p><strong>4. Key Concepts:</strong></p>
+      <ul>
+        <li><strong>Interrupts:</strong> Handle external events asynchronously.</li>
+        <li><strong>Timers/Counters:</strong> Generate precise timing for various tasks.</li>
+        <li><strong>Serial Communication:</strong> Transfer data serially using protocols like UART.</li>
+      </ul>
+      <h3 id="module-8051-interfacing-techniques-and-applications"><strong>Module: 8051 Interfacing Techniques and
+          Applications</strong></h3>
+      <p>This module explores how to connect the 8051 microcontroller to various external devices and its real-world
+        applications.</p>
+      <p><strong>1. Interfacing Techniques:</strong></p>
+      <ul>
+        <li><strong>Memory Interfacing:</strong> Expanding memory beyond the built-in capacity by connecting external
+          RAM and ROM chips. Address decoding is crucial for selecting the correct memory chip.</li>
+        <li><strong>I/O Port Interfacing:</strong>
+          <ul>
+            <li><strong>LEDs:</strong> Connecting LEDs to output ports and controlling their on/off state.
+              Current-limiting resistors are necessary to protect the LED and the microcontroller.</li>
+            <li><strong>Switches:</strong> Reading switch states from input ports. Pull-up or pull-down resistors are
+              often used to ensure a stable input signal.</li>
+            <li><strong>Keypads:</strong> Interfacing with keypads to get user input. Scanning techniques are used to
+              detect key presses.</li>
+            <li><strong>Seven-Segment Displays:</strong> Displaying numbers and characters on seven-segment displays.
+              Multiplexing is often used to control multiple displays with fewer I/O pins.</li>
+            <li><strong>LCDs (Liquid Crystal Displays):</strong> Interfacing with LCDs to display text and graphics.
+              Specialized LCD controller ICs simplify the interfacing process.</li>
+          </ul>
+        </li>
+        <li><strong>Sensor Interfacing:</strong>
+          <ul>
+            <li><strong>Temperature Sensors:</strong> Reading temperature data from sensors like LM35. ADC
+              (Analog-to-Digital Converter) is used to convert the analog sensor output to a digital value.</li>
+            <li><strong>Light Sensors (LDRs):</strong> Measuring light intensity.</li>
+            <li><strong>Other Sensors:</strong> Proximity sensors, pressure sensors, humidity sensors, etc.</li>
+          </ul>
+        </li>
+        <li><strong>Actuator Interfacing:</strong>
+          <ul>
+            <li><strong>Motors (DC Motors, Stepper Motors):</strong> Controlling motor speed and direction using motor
+              driver ICs like L293D.</li>
+            <li><strong>Relays:</strong> Switching high-voltage devices using relays controlled by the microcontroller.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p><strong>2. 8051 Applications:</strong></p>
+      <ul>
+        <li><strong>Consumer Electronics:</strong>
+          <ul>
+            <li><strong>Washing Machines:</strong> Controlling wash cycles, water levels, and motor speed.</li>
+            <li><strong>Microwave Ovens:</strong> Managing cooking time, power levels, and user interface.</li>
+            <li><strong>Remote Controls:</strong> Sending control signals to appliances.</li>
+          </ul>
+        </li>
+        <li><strong>Automotive:</strong>
+          <ul>
+            <li><strong>Engine Control Units (ECUs):</strong> Managing fuel injection, ignition timing, and other engine
+              parameters.</li>
+            <li><strong>Anti-lock Braking Systems (ABS):</strong> Preventing wheel lockup during braking.</li>
+          </ul>
+        </li>
+        <li><strong>Industrial Automation:</strong>
+          <ul>
+            <li><strong>Robotics:</strong> Controlling robot arm movement and other functions.</li>
+            <li><strong>Process Control:</strong> Monitoring and controlling industrial processes like temperature,
+              pressure, and flow rate.</li>
+          </ul>
+        </li>
+        <li><strong>Medical Devices:</strong>
+          <ul>
+            <li><strong>Heart Rate Monitors:</strong> Measuring and displaying heart rate.</li>
+            <li><strong>Glucose Meters:</strong> Measuring blood glucose levels.</li>
+          </ul>
+        </li>
+        <li><strong>Data Acquisition Systems:</strong> Collecting data from various sensors and storing or transmitting
+          it.</li>
+      </ul>
+      <p><strong>Example: Interfacing an LED to P1.0:</strong></p>
+      <ol>
+        <li>Connect the positive leg of the LED to P1.0 through a current-limiting resistor (e.g., 220 ohms).</li>
+        <li>Connect the negative leg of the LED to ground.</li>
+        <li>Write code to set P1.0 as an output and control its state (0 for on, 1 for off).</li>
+      </ol>
+      <h2 id="ca-155-t-linear-algebra">CA-155-T: Linear Algebra</h2>
+      <h3 id="module-systems-of-linear-equations"><strong>Module: Systems of Linear Equations</strong></h3>
+      <p>This module introduces systems of linear equations, their representation, and methods for solving them.</p>
+      <p><strong>1. What are Linear Equations?</strong></p>
+      <ul>
+        <li>Equations of the form a<sub>1</sub>x<sub>1</sub> + a<sub>2</sub>x<sub>2</sub> + … +
+          a<sub>n</sub>x<sub>n</sub> = b, where a<sub>i</sub> and b are constants, and x<sub>i</sub> are variables.</li>
+        <li>No exponents or other non-linear functions of the variables.</li>
+      </ul>
+      <p><strong>2. Systems of Linear Equations:</strong></p>
+      <ul>
+        <li>A collection of two or more linear equations involving the same set of variables.</li>
+        <li><strong>Solution:</strong> A set of values for the variables that satisfies all equations in the system.
+        </li>
+      </ul>
+      <p><strong>3. Representing Systems of Linear Equations:</strong></p>
+      <ul>
+        <li><strong>Standard Form:</strong> Writing all equations with variables on the left side and constants on the
+          right side.</li>
+        <li><strong>Augmented Matrix:</strong> A matrix that represents the system by combining the coefficient matrix
+          and the constant vector.</li>
+      </ul>
+      <p><strong>Example:</strong></p>
+      <p>System of equations:</p>
+      <pre><code>2x + y = 5
 x - y = 1
 </code></pre>
-<p>Augmented matrix:</p>
-<pre><code>[ 2  1 | 5 ]
+      <p>Augmented matrix:</p>
+      <pre><code>[ 2  1 | 5 ]
 [ 1 -1 | 1 ]
 </code></pre>
-<p><strong>4. Methods for Solving Systems of Linear Equations:</strong></p>
-<ul>
-<li><strong>Gaussian Elimination (Row Reduction):</strong>  Transforming the augmented matrix into row-echelon form or reduced row-echelon form to find the solution.  Elementary row operations are used:
-<ul>
-<li>Swapping two rows.</li>
-<li>Multiplying a row by a non-zero scalar.</li>
-<li>Adding a multiple of one row to another row.</li>
-</ul>
-</li>
-<li><strong>Cramer’s Rule (for systems with a unique solution):</strong>  Using determinants to find the solution.  Computationally expensive for larger systems.</li>
-<li><strong>Matrix Inversion (for systems with a unique solution):</strong>  If Ax = b, then x = A<sup>-1</sup>b, where A<sup>-1</sup> is the inverse of the coefficient matrix A.</li>
-</ul>
-<p><strong>5. Types of Solutions:</strong></p>
-<ul>
-<li><strong>Unique Solution:</strong>  Exactly one set of values satisfies all equations.</li>
-<li><strong>No Solution:</strong> The system is inconsistent (e.g., parallel lines).</li>
-<li><strong>Infinitely Many Solutions:</strong> The system is dependent (e.g., overlapping lines).  The solution can be expressed in terms of free variables.</li>
-</ul>
-<p><strong>6. Applications:</strong></p>
-<p>Systems of linear equations have numerous applications in various fields, including:</p>
-<ul>
-<li><strong>Engineering:</strong> Solving circuit analysis problems, structural analysis.</li>
-<li><strong>Computer Science:</strong>  Graphics, image processing, optimization.</li>
-<li><strong>Economics:</strong>  Equilibrium analysis, input-output models.</li>
-<li><strong>Physics:</strong>  Solving systems of forces, motion analysis.</li>
-</ul>
-<h3 id="module-matrices"><strong>Module: Matrices</strong></h3>
-<p>Matrices are fundamental objects in linear algebra, providing a powerful way to represent and manipulate data and linear transformations.</p>
-<p><strong>1. What is a Matrix?</strong></p>
-<ul>
-<li>A rectangular array of numbers arranged in rows and columns.</li>
-<li>Dimensions: m x n (m rows, n columns).</li>
-</ul>
-<p><strong>Example:</strong></p>
-<pre><code>A = [ 1  2  3 ]
+      <p><strong>4. Methods for Solving Systems of Linear Equations:</strong></p>
+      <ul>
+        <li><strong>Gaussian Elimination (Row Reduction):</strong> Transforming the augmented matrix into row-echelon
+          form or reduced row-echelon form to find the solution. Elementary row operations are used:
+          <ul>
+            <li>Swapping two rows.</li>
+            <li>Multiplying a row by a non-zero scalar.</li>
+            <li>Adding a multiple of one row to another row.</li>
+          </ul>
+        </li>
+        <li><strong>Cramer’s Rule (for systems with a unique solution):</strong> Using determinants to find the
+          solution. Computationally expensive for larger systems.</li>
+        <li><strong>Matrix Inversion (for systems with a unique solution):</strong> If Ax = b, then x = A<sup>-1</sup>b,
+          where A<sup>-1</sup> is the inverse of the coefficient matrix A.</li>
+      </ul>
+      <p><strong>5. Types of Solutions:</strong></p>
+      <ul>
+        <li><strong>Unique Solution:</strong> Exactly one set of values satisfies all equations.</li>
+        <li><strong>No Solution:</strong> The system is inconsistent (e.g., parallel lines).</li>
+        <li><strong>Infinitely Many Solutions:</strong> The system is dependent (e.g., overlapping lines). The solution
+          can be expressed in terms of free variables.</li>
+      </ul>
+      <p><strong>6. Applications:</strong></p>
+      <p>Systems of linear equations have numerous applications in various fields, including:</p>
+      <ul>
+        <li><strong>Engineering:</strong> Solving circuit analysis problems, structural analysis.</li>
+        <li><strong>Computer Science:</strong> Graphics, image processing, optimization.</li>
+        <li><strong>Economics:</strong> Equilibrium analysis, input-output models.</li>
+        <li><strong>Physics:</strong> Solving systems of forces, motion analysis.</li>
+      </ul>
+      <h3 id="module-matrices"><strong>Module: Matrices</strong></h3>
+      <p>Matrices are fundamental objects in linear algebra, providing a powerful way to represent and manipulate data
+        and linear transformations.</p>
+      <p><strong>1. What is a Matrix?</strong></p>
+      <ul>
+        <li>A rectangular array of numbers arranged in rows and columns.</li>
+        <li>Dimensions: m x n (m rows, n columns).</li>
+      </ul>
+      <p><strong>Example:</strong></p>
+      <pre><code>A = [ 1  2  3 ]
     [ 4  5  6 ]  (2x3 matrix)
 </code></pre>
-<p><strong>2. Types of Matrices:</strong></p>
-<ul>
-<li><strong>Square Matrix:</strong> m = n (same number of rows and columns).</li>
-<li><strong>Row Matrix:</strong>  A matrix with only one row.</li>
-<li><strong>Column Matrix:</strong> A matrix with only one column.</li>
-<li><strong>Zero Matrix:</strong>  All elements are zero.</li>
-<li><strong>Identity Matrix (I):</strong> A square matrix with ones along the main diagonal and zeros elsewhere.</li>
-<li><strong>Diagonal Matrix:</strong> A square matrix with non-zero elements only along the main diagonal.</li>
-<li><strong>Triangular Matrix (Upper/Lower):</strong> Elements above/below the main diagonal are zero.</li>
-</ul>
-<p><strong>3. Matrix Operations:</strong></p>
-<ul>
-<li><strong>Addition/Subtraction:</strong>  Element-wise addition/subtraction (matrices must have the same dimensions).</li>
-<li><strong>Scalar Multiplication:</strong> Multiplying each element of a matrix by a scalar.</li>
-<li><strong>Matrix Multiplication:</strong>  The product of an m x n matrix and an n x p matrix is an m x p matrix. The number of columns in the first matrix must equal the number of rows in the second matrix.</li>
-<li><strong>Transpose (A<sup>T</sup>):</strong>  Interchanging rows and columns.</li>
-</ul>
-<p><strong>4. Matrix Properties:</strong></p>
-<ul>
-<li><strong>Associativity:</strong> (AB)C = A(BC)</li>
-<li><strong>Distributivity:</strong> A(B+C) = AB + AC</li>
-<li><strong>Non-Commutativity:</strong> AB ≠ BA (in general)</li>
-</ul>
-<p><strong>5. Determinant (for square matrices):</strong></p>
-<ul>
-<li>A scalar value calculated from the elements of a square matrix.</li>
-<li>Denoted as det(A) or |A|.</li>
-<li>Used to determine if a matrix is invertible.</li>
-</ul>
-<p><strong>6. Inverse (for square matrices):</strong></p>
-<ul>
-<li>A<sup>-1</sup> (if it exists) is the inverse of A such that AA<sup>-1</sup> = A<sup>-1</sup>A = I.</li>
-<li>A matrix is invertible if and only if its determinant is non-zero.</li>
-</ul>
-<p><strong>7. Applications of Matrices:</strong></p>
-<ul>
-<li><strong>Solving Systems of Linear Equations:</strong>  Representing and solving systems of equations using matrices.</li>
-<li><strong>Computer Graphics and Image Processing:</strong> Transformations, image representation.</li>
-<li><strong>Data Analysis and Machine Learning:</strong>  Data representation, dimensionality reduction.</li>
-<li><strong>Physics and Engineering:</strong>  Solving systems of forces, representing physical quantities.</li>
-</ul>
-<h3 id="module-vector-spaces"><strong>Module: Vector Spaces</strong></h3>
-<p>Vector spaces are fundamental structures in linear algebra that provide a framework for working with vectors and their properties.</p>
-<p><strong>1. What is a Vector Space?</strong></p>
-<p>A vector space V over a field F (usually real numbers or complex numbers) is a set of objects (vectors) along with two operations, addition and scalar multiplication, that satisfy the following axioms:</p>
-<ul>
-<li><strong>Closure under addition:</strong>  If <strong>u</strong> and <strong>v</strong> are in V, then <strong>u</strong> + <strong>v</strong> is also in V.</li>
-<li><strong>Commutativity of addition:</strong> <strong>u</strong> + <strong>v</strong> = <strong>v</strong> + <strong>u</strong></li>
-<li><strong>Associativity of addition:</strong> (<strong>u</strong> + <strong>v</strong>) + <strong>w</strong> = <strong>u</strong> + (<strong>v</strong> + <strong>w</strong>)</li>
-<li><strong>Existence of a zero vector:</strong> There exists a vector <strong>0</strong> in V such that <strong>u</strong> + <strong>0</strong> = <strong>u</strong> for all <strong>u</strong> in V.</li>
-<li><strong>Existence of additive inverses:</strong> For every <strong>u</strong> in V, there exists a vector -<strong>u</strong> in V such that <strong>u</strong> + (-<strong>u</strong>) = <strong>0</strong>.</li>
-<li><strong>Closure under scalar multiplication:</strong> If <strong>u</strong> is in V and c is in F, then c<strong>u</strong> is in V.</li>
-<li><strong>Associativity of scalar multiplication:</strong> c(d<strong>u</strong>) = (cd)<strong>u</strong></li>
-<li><strong>Distributivity of scalar multiplication over vector addition:</strong> c(<strong>u</strong> + <strong>v</strong>) = c<strong>u</strong> + c<strong>v</strong></li>
-<li><strong>Distributivity of scalar multiplication over scalar addition:</strong> (c + d)<strong>u</strong> = c<strong>u</strong> + d<strong>u</strong></li>
-<li><strong>Scalar multiplication identity:</strong> 1<strong>u</strong> = <strong>u</strong></li>
-</ul>
-<p><strong>2. Examples of Vector Spaces:</strong></p>
-<ul>
-<li><strong>R<sup>n</sup> (n-dimensional real coordinate space):</strong>  The set of all n-tuples of real numbers.</li>
-<li><strong>The set of all polynomials with real coefficients.</strong></li>
-<li><strong>The set of all 2x2 matrices with real entries.</strong></li>
-</ul>
-<p><strong>3. Subspaces:</strong></p>
-<ul>
-<li>A subset W of a vector space V that is itself a vector space under the same operations as V.</li>
-<li>Must satisfy closure under addition and scalar multiplication.</li>
-</ul>
-<p><strong>4. Linear Combinations:</strong></p>
-<ul>
-<li>A linear combination of vectors <strong>v<sub>1</sub>, v<sub>2</sub>, …, v<sub>n</sub></strong> is a vector of the form c<sub>1</sub><strong>v<sub>1</sub></strong> + c<sub>2</sub><strong>v<sub>2</sub></strong> + … + c<sub>n</sub><strong>v<sub>n</sub></strong>, where c<sub>i</sub> are scalars.</li>
-</ul>
-<p><strong>5. Span:</strong></p>
-<ul>
-<li>The set of all possible linear combinations of a set of vectors.</li>
-</ul>
-<p><strong>6. Linear Independence:</strong></p>
-<ul>
-<li>A set of vectors is linearly independent if no vector in the set can be expressed as a linear combination of the other vectors.</li>
-</ul>
-<p><strong>7. Basis and Dimension:</strong></p>
-<ul>
-<li><strong>Basis:</strong> A linearly independent set of vectors that spans the entire vector space.</li>
-<li><strong>Dimension:</strong> The number of vectors in a basis for the vector space.</li>
-</ul>
-<p><strong>8. Linear Transformations:</strong></p>
-<ul>
-<li>A function T: V → W between two vector spaces that preserves vector addition and scalar multiplication.</li>
-<li>T(<strong>u</strong> + <strong>v</strong>) = T(<strong>u</strong>) + T(<strong>v</strong>)</li>
-<li>T(c<strong>u</strong>) = cT(<strong>u</strong>)</li>
-</ul>
-<h3 id="module-dimensions-of-vector-spaces"><strong>Module: Dimensions of Vector Spaces</strong></h3>
-<p>The dimension of a vector space is a fundamental concept that quantifies the “size” or “degrees of freedom” of the space.</p>
-<p><strong>1. Basis:</strong></p>
-<ul>
-<li>A basis for a vector space V is a set of linearly independent vectors that spans V.  In other words, every vector in V can be expressed as a unique linear combination of the basis vectors.</li>
-</ul>
-<p><strong>2. Dimension:</strong></p>
-<ul>
-<li>The dimension of a vector space V is the number of vectors in any basis for V.</li>
-<li>Denoted as dim(V).</li>
-<li>If a vector space has a basis consisting of n vectors, it is said to be n-dimensional.</li>
-</ul>
-<p><strong>3. Properties of Dimension:</strong></p>
-<ul>
-<li><strong>Zero Vector Space:</strong> The vector space containing only the zero vector has dimension 0.</li>
-<li><strong>Finite-Dimensional Vector Space:</strong> A vector space with a finite basis.</li>
-<li><strong>Infinite-Dimensional Vector Space:</strong> A vector space that does not have a finite basis (e.g., the space of all polynomials).</li>
-<li><strong>Subspaces:</strong> The dimension of a subspace W of V is less than or equal to the dimension of V (dim(W) ≤ dim(V)).</li>
-</ul>
-<p><strong>4. Examples:</strong></p>
-<ul>
-<li><strong>R<sup>2</sup> (2-dimensional real coordinate space):</strong>  A standard basis is {(1, 0), (0, 1)}.  Therefore, dim(R<sup>2</sup>) = 2.</li>
-<li><strong>R<sup>3</sup> (3-dimensional real coordinate space):</strong> A standard basis is {(1, 0, 0), (0, 1, 0), (0, 0, 1)}.  Therefore, dim(R<sup>3</sup>) = 3.</li>
-<li><strong>The vector space of all 2x2 matrices with real entries:</strong>  A basis is:</li>
-</ul>
-<pre><code>{ [1 0]  [0 1]  [0 0]  [0 0] }
+      <p><strong>2. Types of Matrices:</strong></p>
+      <ul>
+        <li><strong>Square Matrix:</strong> m = n (same number of rows and columns).</li>
+        <li><strong>Row Matrix:</strong> A matrix with only one row.</li>
+        <li><strong>Column Matrix:</strong> A matrix with only one column.</li>
+        <li><strong>Zero Matrix:</strong> All elements are zero.</li>
+        <li><strong>Identity Matrix (I):</strong> A square matrix with ones along the main diagonal and zeros elsewhere.
+        </li>
+        <li><strong>Diagonal Matrix:</strong> A square matrix with non-zero elements only along the main diagonal.</li>
+        <li><strong>Triangular Matrix (Upper/Lower):</strong> Elements above/below the main diagonal are zero.</li>
+      </ul>
+      <p><strong>3. Matrix Operations:</strong></p>
+      <ul>
+        <li><strong>Addition/Subtraction:</strong> Element-wise addition/subtraction (matrices must have the same
+          dimensions).</li>
+        <li><strong>Scalar Multiplication:</strong> Multiplying each element of a matrix by a scalar.</li>
+        <li><strong>Matrix Multiplication:</strong> The product of an m x n matrix and an n x p matrix is an m x p
+          matrix. The number of columns in the first matrix must equal the number of rows in the second matrix.</li>
+        <li><strong>Transpose (A<sup>T</sup>):</strong> Interchanging rows and columns.</li>
+      </ul>
+      <p><strong>4. Matrix Properties:</strong></p>
+      <ul>
+        <li><strong>Associativity:</strong> (AB)C = A(BC)</li>
+        <li><strong>Distributivity:</strong> A(B+C) = AB + AC</li>
+        <li><strong>Non-Commutativity:</strong> AB ≠ BA (in general)</li>
+      </ul>
+      <p><strong>5. Determinant (for square matrices):</strong></p>
+      <ul>
+        <li>A scalar value calculated from the elements of a square matrix.</li>
+        <li>Denoted as det(A) or |A|.</li>
+        <li>Used to determine if a matrix is invertible.</li>
+      </ul>
+      <p><strong>6. Inverse (for square matrices):</strong></p>
+      <ul>
+        <li>A<sup>-1</sup> (if it exists) is the inverse of A such that AA<sup>-1</sup> = A<sup>-1</sup>A = I.</li>
+        <li>A matrix is invertible if and only if its determinant is non-zero.</li>
+      </ul>
+      <p><strong>7. Applications of Matrices:</strong></p>
+      <ul>
+        <li><strong>Solving Systems of Linear Equations:</strong> Representing and solving systems of equations using
+          matrices.</li>
+        <li><strong>Computer Graphics and Image Processing:</strong> Transformations, image representation.</li>
+        <li><strong>Data Analysis and Machine Learning:</strong> Data representation, dimensionality reduction.</li>
+        <li><strong>Physics and Engineering:</strong> Solving systems of forces, representing physical quantities.</li>
+      </ul>
+      <h3 id="module-vector-spaces"><strong>Module: Vector Spaces</strong></h3>
+      <p>Vector spaces are fundamental structures in linear algebra that provide a framework for working with vectors
+        and their properties.</p>
+      <p><strong>1. What is a Vector Space?</strong></p>
+      <p>A vector space V over a field F (usually real numbers or complex numbers) is a set of objects (vectors) along
+        with two operations, addition and scalar multiplication, that satisfy the following axioms:</p>
+      <ul>
+        <li><strong>Closure under addition:</strong> If <strong>u</strong> and <strong>v</strong> are in V, then
+          <strong>u</strong> + <strong>v</strong> is also in V.</li>
+        <li><strong>Commutativity of addition:</strong> <strong>u</strong> + <strong>v</strong> = <strong>v</strong> +
+          <strong>u</strong></li>
+        <li><strong>Associativity of addition:</strong> (<strong>u</strong> + <strong>v</strong>) + <strong>w</strong> =
+          <strong>u</strong> + (<strong>v</strong> + <strong>w</strong>)</li>
+        <li><strong>Existence of a zero vector:</strong> There exists a vector <strong>0</strong> in V such that
+          <strong>u</strong> + <strong>0</strong> = <strong>u</strong> for all <strong>u</strong> in V.</li>
+        <li><strong>Existence of additive inverses:</strong> For every <strong>u</strong> in V, there exists a vector
+          -<strong>u</strong> in V such that <strong>u</strong> + (-<strong>u</strong>) = <strong>0</strong>.</li>
+        <li><strong>Closure under scalar multiplication:</strong> If <strong>u</strong> is in V and c is in F, then
+          c<strong>u</strong> is in V.</li>
+        <li><strong>Associativity of scalar multiplication:</strong> c(d<strong>u</strong>) = (cd)<strong>u</strong>
+        </li>
+        <li><strong>Distributivity of scalar multiplication over vector addition:</strong> c(<strong>u</strong> +
+          <strong>v</strong>) = c<strong>u</strong> + c<strong>v</strong></li>
+        <li><strong>Distributivity of scalar multiplication over scalar addition:</strong> (c + d)<strong>u</strong> =
+          c<strong>u</strong> + d<strong>u</strong></li>
+        <li><strong>Scalar multiplication identity:</strong> 1<strong>u</strong> = <strong>u</strong></li>
+      </ul>
+      <p><strong>2. Examples of Vector Spaces:</strong></p>
+      <ul>
+        <li><strong>R<sup>n</sup> (n-dimensional real coordinate space):</strong> The set of all n-tuples of real
+          numbers.</li>
+        <li><strong>The set of all polynomials with real coefficients.</strong></li>
+        <li><strong>The set of all 2x2 matrices with real entries.</strong></li>
+      </ul>
+      <p><strong>3. Subspaces:</strong></p>
+      <ul>
+        <li>A subset W of a vector space V that is itself a vector space under the same operations as V.</li>
+        <li>Must satisfy closure under addition and scalar multiplication.</li>
+      </ul>
+      <p><strong>4. Linear Combinations:</strong></p>
+      <ul>
+        <li>A linear combination of vectors <strong>v<sub>1</sub>, v<sub>2</sub>, …, v<sub>n</sub></strong> is a vector
+          of the form c<sub>1</sub><strong>v<sub>1</sub></strong> + c<sub>2</sub><strong>v<sub>2</sub></strong> + … +
+          c<sub>n</sub><strong>v<sub>n</sub></strong>, where c<sub>i</sub> are scalars.</li>
+      </ul>
+      <p><strong>5. Span:</strong></p>
+      <ul>
+        <li>The set of all possible linear combinations of a set of vectors.</li>
+      </ul>
+      <p><strong>6. Linear Independence:</strong></p>
+      <ul>
+        <li>A set of vectors is linearly independent if no vector in the set can be expressed as a linear combination of
+          the other vectors.</li>
+      </ul>
+      <p><strong>7. Basis and Dimension:</strong></p>
+      <ul>
+        <li><strong>Basis:</strong> A linearly independent set of vectors that spans the entire vector space.</li>
+        <li><strong>Dimension:</strong> The number of vectors in a basis for the vector space.</li>
+      </ul>
+      <p><strong>8. Linear Transformations:</strong></p>
+      <ul>
+        <li>A function T: V → W between two vector spaces that preserves vector addition and scalar multiplication.</li>
+        <li>T(<strong>u</strong> + <strong>v</strong>) = T(<strong>u</strong>) + T(<strong>v</strong>)</li>
+        <li>T(c<strong>u</strong>) = cT(<strong>u</strong>)</li>
+      </ul>
+      <h3 id="module-dimensions-of-vector-spaces"><strong>Module: Dimensions of Vector Spaces</strong></h3>
+      <p>The dimension of a vector space is a fundamental concept that quantifies the “size” or “degrees of freedom” of
+        the space.</p>
+      <p><strong>1. Basis:</strong></p>
+      <ul>
+        <li>A basis for a vector space V is a set of linearly independent vectors that spans V. In other words, every
+          vector in V can be expressed as a unique linear combination of the basis vectors.</li>
+      </ul>
+      <p><strong>2. Dimension:</strong></p>
+      <ul>
+        <li>The dimension of a vector space V is the number of vectors in any basis for V.</li>
+        <li>Denoted as dim(V).</li>
+        <li>If a vector space has a basis consisting of n vectors, it is said to be n-dimensional.</li>
+      </ul>
+      <p><strong>3. Properties of Dimension:</strong></p>
+      <ul>
+        <li><strong>Zero Vector Space:</strong> The vector space containing only the zero vector has dimension 0.</li>
+        <li><strong>Finite-Dimensional Vector Space:</strong> A vector space with a finite basis.</li>
+        <li><strong>Infinite-Dimensional Vector Space:</strong> A vector space that does not have a finite basis (e.g.,
+          the space of all polynomials).</li>
+        <li><strong>Subspaces:</strong> The dimension of a subspace W of V is less than or equal to the dimension of V
+          (dim(W) ≤ dim(V)).</li>
+      </ul>
+      <p><strong>4. Examples:</strong></p>
+      <ul>
+        <li><strong>R<sup>2</sup> (2-dimensional real coordinate space):</strong> A standard basis is {(1, 0), (0, 1)}.
+          Therefore, dim(R<sup>2</sup>) = 2.</li>
+        <li><strong>R<sup>3</sup> (3-dimensional real coordinate space):</strong> A standard basis is {(1, 0, 0), (0, 1,
+          0), (0, 0, 1)}. Therefore, dim(R<sup>3</sup>) = 3.</li>
+        <li><strong>The vector space of all 2x2 matrices with real entries:</strong> A basis is:</li>
+      </ul>
+      <pre><code>{ [1 0]  [0 1]  [0 0]  [0 0] }
   [0 0], [0 0], [1 0], [0 1]
 </code></pre>
-<p>Therefore, the dimension is 4.</p>
-<p><strong>5. Importance of Dimension:</strong></p>
-<ul>
-<li><strong>Understanding the structure of vector spaces:</strong> Dimension provides a fundamental characteristic of a vector space.</li>
-<li><strong>Classifying vector spaces:</strong> Vector spaces with the same dimension are isomorphic (have the same structure).</li>
-<li><strong>Solving systems of linear equations:</strong>  The dimension of the solution space tells us about the number of solutions.</li>
-<li><strong>Other applications:</strong> Dimension is a crucial concept in many areas of linear algebra, including linear transformations, matrices, and eigenvectors.</li>
-</ul>
-<h3 id="module-rank-of-a-matrix"><strong>Module: Rank of a Matrix</strong></h3>
-<p>The rank of a matrix is a fundamental concept that provides information about the linear independence of its rows and columns.</p>
-<p><strong>1. Column Rank:</strong></p>
-<ul>
-<li>The column rank of a matrix A is the maximum number of linearly independent columns of A.</li>
-</ul>
-<p><strong>2. Row Rank:</strong></p>
-<ul>
-<li>The row rank of a matrix A is the maximum number of linearly independent rows of A.</li>
-</ul>
-<p><strong>3. Rank:</strong></p>
-<ul>
-<li>A fundamental theorem in linear algebra states that the column rank and the row rank of a matrix are always equal.  This common value is simply called the rank of the matrix.</li>
-<li>Denoted as rank(A).</li>
-</ul>
-<p><strong>4. Methods to determine Rank:</strong></p>
-<ul>
-<li><strong>Gaussian Elimination (Row Reduction):</strong>  Transform the matrix into row-echelon form.  The rank of the matrix is equal to the number of non-zero rows (rows with at least one non-zero element) in the row-echelon form.</li>
-<li><strong>Determinant (for square matrices):</strong>  The rank of a square matrix is equal to the size of the largest non-zero submatrix (a matrix formed by deleting some rows and columns). If the determinant of the matrix is non-zero, the rank is equal to the size of the matrix.</li>
-</ul>
-<p><strong>5. Properties of Rank:</strong></p>
-<ul>
-<li><strong>0 ≤ rank(A) ≤ min(m, n),</strong> where A is an m x n matrix. The rank is always less than or equal to the smaller of the number of rows and the number of columns.</li>
-<li><strong>rank(A) = rank(A<sup>T</sup>):</strong>  The rank of a matrix is equal to the rank of its transpose.</li>
-<li><strong>Full Rank:</strong>  A matrix has full rank if its rank is equal to the smaller of its dimensions.</li>
-<li><strong>Rank and Invertibility (for square matrices):</strong> A square matrix is invertible if and only if it has full rank (i.e., its rank is equal to its size).</li>
-</ul>
-<p><strong>6. Example:</strong></p>
-<p>Consider the matrix:</p>
-<pre><code>A = [ 1  2  3 ]
+      <p>Therefore, the dimension is 4.</p>
+      <p><strong>5. Importance of Dimension:</strong></p>
+      <ul>
+        <li><strong>Understanding the structure of vector spaces:</strong> Dimension provides a fundamental
+          characteristic of a vector space.</li>
+        <li><strong>Classifying vector spaces:</strong> Vector spaces with the same dimension are isomorphic (have the
+          same structure).</li>
+        <li><strong>Solving systems of linear equations:</strong> The dimension of the solution space tells us about the
+          number of solutions.</li>
+        <li><strong>Other applications:</strong> Dimension is a crucial concept in many areas of linear algebra,
+          including linear transformations, matrices, and eigenvectors.</li>
+      </ul>
+      <h3 id="module-rank-of-a-matrix"><strong>Module: Rank of a Matrix</strong></h3>
+      <p>The rank of a matrix is a fundamental concept that provides information about the linear independence of its
+        rows and columns.</p>
+      <p><strong>1. Column Rank:</strong></p>
+      <ul>
+        <li>The column rank of a matrix A is the maximum number of linearly independent columns of A.</li>
+      </ul>
+      <p><strong>2. Row Rank:</strong></p>
+      <ul>
+        <li>The row rank of a matrix A is the maximum number of linearly independent rows of A.</li>
+      </ul>
+      <p><strong>3. Rank:</strong></p>
+      <ul>
+        <li>A fundamental theorem in linear algebra states that the column rank and the row rank of a matrix are always
+          equal. This common value is simply called the rank of the matrix.</li>
+        <li>Denoted as rank(A).</li>
+      </ul>
+      <p><strong>4. Methods to determine Rank:</strong></p>
+      <ul>
+        <li><strong>Gaussian Elimination (Row Reduction):</strong> Transform the matrix into row-echelon form. The rank
+          of the matrix is equal to the number of non-zero rows (rows with at least one non-zero element) in the
+          row-echelon form.</li>
+        <li><strong>Determinant (for square matrices):</strong> The rank of a square matrix is equal to the size of the
+          largest non-zero submatrix (a matrix formed by deleting some rows and columns). If the determinant of the
+          matrix is non-zero, the rank is equal to the size of the matrix.</li>
+      </ul>
+      <p><strong>5. Properties of Rank:</strong></p>
+      <ul>
+        <li><strong>0 ≤ rank(A) ≤ min(m, n),</strong> where A is an m x n matrix. The rank is always less than or equal
+          to the smaller of the number of rows and the number of columns.</li>
+        <li><strong>rank(A) = rank(A<sup>T</sup>):</strong> The rank of a matrix is equal to the rank of its transpose.
+        </li>
+        <li><strong>Full Rank:</strong> A matrix has full rank if its rank is equal to the smaller of its dimensions.
+        </li>
+        <li><strong>Rank and Invertibility (for square matrices):</strong> A square matrix is invertible if and only if
+          it has full rank (i.e., its rank is equal to its size).</li>
+      </ul>
+      <p><strong>6. Example:</strong></p>
+      <p>Consider the matrix:</p>
+      <pre><code>A = [ 1  2  3 ]
     [ 2  4  6 ]
     [ 1  2  3 ]
 </code></pre>
-<p>Using Gaussian elimination, we can reduce A to row-echelon form:</p>
-<pre><code>A' = [ 1  2  3 ]
+      <p>Using Gaussian elimination, we can reduce A to row-echelon form:</p>
+      <pre><code>A' = [ 1  2  3 ]
      [ 0  0  0 ]
      [ 0  0  0 ]
 </code></pre>
-<p>The number of non-zero rows in A’ is 1.  Therefore, rank(A) = 1.</p>
-<p><strong>7. Applications of Rank:</strong></p>
-<ul>
-<li><strong>Solving systems of linear equations:</strong> The rank of the augmented matrix of a system of linear equations helps determine the number of solutions.</li>
-<li><strong>Linear independence of vectors:</strong> The rank of a matrix whose columns (or rows) are the given vectors tells us whether the vectors are linearly independent.</li>
-<li><strong>Dimension of vector spaces:</strong> The rank of a matrix is related to the dimension of its column space and row space.</li>
-<li><strong>Other applications:</strong> Rank is used in various areas of linear algebra, including linear transformations and least squares problems.</li>
-</ul>
-<h3 id="module-nullity-of-a-matrix"><strong>Module: Nullity of a Matrix</strong></h3>
-<p>The nullity of a matrix is a measure of the “dimension” of the solution space of the homogeneous system of linear equations represented by the matrix.</p>
-<p><strong>1. Null Space (Kernel):</strong></p>
-<ul>
-<li>The null space (or kernel) of an m x n matrix A, denoted as null(A) or ker(A), is the set of all vectors <strong>x</strong> in R<sup>n</sup> such that A<strong>x</strong> = <strong>0</strong> (the zero vector).  In other words, the null space contains all solutions to the homogeneous system of equations Ax = 0.</li>
-</ul>
-<p><strong>2. Nullity:</strong></p>
-<ul>
-<li>The nullity of a matrix A, denoted as nullity(A), is the dimension of the null space of A.  It represents the number of free variables in the solution to the homogeneous system Ax = 0.</li>
-</ul>
-<p><strong>3. Rank-Nullity Theorem:</strong> ⭐</p>
-<ul>
-<li>For an m x n matrix A,  rank(A) + nullity(A) = n.  This theorem connects the rank of a matrix (related to the dimension of the column space) to the nullity (related to the dimension of the null space). The sum of these dimensions equals the number of columns in the matrix.</li>
-</ul>
-<p><strong>4. How to find Nullity:</strong></p>
-<ol>
-<li><strong>Solve the homogeneous system Ax = 0:</strong> Use Gaussian elimination (row reduction) to find the general solution to the homogeneous system.</li>
-<li><strong>Identify the free variables:</strong>  Free variables are those that can take any value.</li>
-<li><strong>The number of free variables is the nullity:</strong> nullity(A) = number of free variables.</li>
-</ol>
-<p><strong>5. Example:</strong></p>
-<p>Consider the matrix:</p>
-<pre><code>A = [ 1  2  3 ]
+      <p>The number of non-zero rows in A’ is 1. Therefore, rank(A) = 1.</p>
+      <p><strong>7. Applications of Rank:</strong></p>
+      <ul>
+        <li><strong>Solving systems of linear equations:</strong> The rank of the augmented matrix of a system of linear
+          equations helps determine the number of solutions.</li>
+        <li><strong>Linear independence of vectors:</strong> The rank of a matrix whose columns (or rows) are the given
+          vectors tells us whether the vectors are linearly independent.</li>
+        <li><strong>Dimension of vector spaces:</strong> The rank of a matrix is related to the dimension of its column
+          space and row space.</li>
+        <li><strong>Other applications:</strong> Rank is used in various areas of linear algebra, including linear
+          transformations and least squares problems.</li>
+      </ul>
+      <h3 id="module-nullity-of-a-matrix"><strong>Module: Nullity of a Matrix</strong></h3>
+      <p>The nullity of a matrix is a measure of the “dimension” of the solution space of the homogeneous system of
+        linear equations represented by the matrix.</p>
+      <p><strong>1. Null Space (Kernel):</strong></p>
+      <ul>
+        <li>The null space (or kernel) of an m x n matrix A, denoted as null(A) or ker(A), is the set of all vectors
+          <strong>x</strong> in R<sup>n</sup> such that A<strong>x</strong> = <strong>0</strong> (the zero vector). In
+          other words, the null space contains all solutions to the homogeneous system of equations Ax = 0.</li>
+      </ul>
+      <p><strong>2. Nullity:</strong></p>
+      <ul>
+        <li>The nullity of a matrix A, denoted as nullity(A), is the dimension of the null space of A. It represents the
+          number of free variables in the solution to the homogeneous system Ax = 0.</li>
+      </ul>
+      <p><strong>3. Rank-Nullity Theorem:</strong> ⭐</p>
+      <ul>
+        <li>For an m x n matrix A, rank(A) + nullity(A) = n. This theorem connects the rank of a matrix (related to the
+          dimension of the column space) to the nullity (related to the dimension of the null space). The sum of these
+          dimensions equals the number of columns in the matrix.</li>
+      </ul>
+      <p><strong>4. How to find Nullity:</strong></p>
+      <ol>
+        <li><strong>Solve the homogeneous system Ax = 0:</strong> Use Gaussian elimination (row reduction) to find the
+          general solution to the homogeneous system.</li>
+        <li><strong>Identify the free variables:</strong> Free variables are those that can take any value.</li>
+        <li><strong>The number of free variables is the nullity:</strong> nullity(A) = number of free variables.</li>
+      </ol>
+      <p><strong>5. Example:</strong></p>
+      <p>Consider the matrix:</p>
+      <pre><code>A = [ 1  2  3 ]
     [ 2  4  6 ]
 </code></pre>
-<p>Solving the homogeneous system Ax = 0, we get:</p>
-<pre><code>x + 2y + 3z = 0
+      <p>Solving the homogeneous system Ax = 0, we get:</p>
+      <pre><code>x + 2y + 3z = 0
 2x + 4y + 6z = 0
 </code></pre>
-<p>This system reduces to x + 2y + 3z = 0.  We can express x in terms of y and z: x = -2y - 3z. Here, y and z are free variables.  Since there are two free variables, the nullity of A is 2 (nullity(A) = 2).  The rank of A is 1 (as seen in the previous example on rank).  The rank-nullity theorem holds: rank(A) + nullity(A) = 1 + 2 = 3, which is the number of columns in A.</p>
-<p><strong>6. Applications of Nullity:</strong></p>
-<ul>
-<li><strong>Understanding the solution space of homogeneous systems:</strong>  Nullity tells us about the “size” of the solution space.  A nullity of 0 means only the trivial solution (x = 0), while a non-zero nullity indicates infinitely many solutions.</li>
-<li><strong>Analyzing linear transformations:</strong> The nullity of a matrix representing a linear transformation gives information about the kernel (null space) of the transformation.</li>
-<li><strong>Other applications:</strong> Nullity is used in various areas of linear algebra, including solving systems of equations and studying vector spaces.</li>
-</ul>
-<h3 id="module-eigenvalues-and-eigenvectors"><strong>Module: Eigenvalues and Eigenvectors</strong></h3>
-<p>Eigenvalues and eigenvectors are fundamental concepts in linear algebra that provide insights into the behavior of linear transformations and matrices.  They have significant applications in various fields, including computer science, physics, and engineering.</p>
-<p><strong>1. Definitions:</strong></p>
-<p>Let A be a square n x n matrix.</p>
-<ul>
-<li><strong>Eigenvector:</strong> A non-zero vector <strong>v</strong> in R<sup>n</sup> is an eigenvector of A if there exists a scalar λ such that A<strong>v</strong> = λ<strong>v</strong>.  In other words, multiplying the eigenvector <strong>v</strong> by the matrix A results in a scaled version of the same vector.</li>
-<li><strong>Eigenvalue:</strong> The scalar λ associated with an eigenvector <strong>v</strong> is called the eigenvalue of A corresponding to <strong>v</strong>.</li>
-</ul>
-<p><strong>2. How to find Eigenvalues and Eigenvectors:</strong></p>
-<ol>
-<li><strong>Characteristic Equation:</strong>  The eigenvalues are the solutions to the characteristic equation det(A - λI) = 0, where I is the identity matrix.</li>
-<li><strong>Eigenvectors:</strong> For each eigenvalue λ, solve the system of equations (A - λI)<strong>v</strong> = <strong>0</strong> to find the corresponding eigenvectors.</li>
-</ol>
-<p><strong>3. Properties of Eigenvalues and Eigenvectors:</strong></p>
-<ul>
-<li><strong>Eigenvectors corresponding to distinct eigenvalues are linearly independent.</strong></li>
-<li><strong>The sum of the eigenvalues of a matrix is equal to its trace (the sum of the diagonal elements).</strong></li>
-<li><strong>The product of the eigenvalues of a matrix is equal to its determinant.</strong></li>
-<li><strong>A matrix is invertible if and only if all its eigenvalues are non-zero.</strong></li>
-</ul>
-<p><strong>4. Example:</strong></p>
-<p>Consider the matrix:</p>
-<pre><code>A = [ 2  1 ]
+      <p>This system reduces to x + 2y + 3z = 0. We can express x in terms of y and z: x = -2y - 3z. Here, y and z are
+        free variables. Since there are two free variables, the nullity of A is 2 (nullity(A) = 2). The rank of A is 1
+        (as seen in the previous example on rank). The rank-nullity theorem holds: rank(A) + nullity(A) = 1 + 2 = 3,
+        which is the number of columns in A.</p>
+      <p><strong>6. Applications of Nullity:</strong></p>
+      <ul>
+        <li><strong>Understanding the solution space of homogeneous systems:</strong> Nullity tells us about the “size”
+          of the solution space. A nullity of 0 means only the trivial solution (x = 0), while a non-zero nullity
+          indicates infinitely many solutions.</li>
+        <li><strong>Analyzing linear transformations:</strong> The nullity of a matrix representing a linear
+          transformation gives information about the kernel (null space) of the transformation.</li>
+        <li><strong>Other applications:</strong> Nullity is used in various areas of linear algebra, including solving
+          systems of equations and studying vector spaces.</li>
+      </ul>
+      <h3 id="module-eigenvalues-and-eigenvectors"><strong>Module: Eigenvalues and Eigenvectors</strong></h3>
+      <p>Eigenvalues and eigenvectors are fundamental concepts in linear algebra that provide insights into the behavior
+        of linear transformations and matrices. They have significant applications in various fields, including computer
+        science, physics, and engineering.</p>
+      <p><strong>1. Definitions:</strong></p>
+      <p>Let A be a square n x n matrix.</p>
+      <ul>
+        <li><strong>Eigenvector:</strong> A non-zero vector <strong>v</strong> in R<sup>n</sup> is an eigenvector of A
+          if there exists a scalar λ such that A<strong>v</strong> = λ<strong>v</strong>. In other words, multiplying
+          the eigenvector <strong>v</strong> by the matrix A results in a scaled version of the same vector.</li>
+        <li><strong>Eigenvalue:</strong> The scalar λ associated with an eigenvector <strong>v</strong> is called the
+          eigenvalue of A corresponding to <strong>v</strong>.</li>
+      </ul>
+      <p><strong>2. How to find Eigenvalues and Eigenvectors:</strong></p>
+      <ol>
+        <li><strong>Characteristic Equation:</strong> The eigenvalues are the solutions to the characteristic equation
+          det(A - λI) = 0, where I is the identity matrix.</li>
+        <li><strong>Eigenvectors:</strong> For each eigenvalue λ, solve the system of equations (A -
+          λI)<strong>v</strong> = <strong>0</strong> to find the corresponding eigenvectors.</li>
+      </ol>
+      <p><strong>3. Properties of Eigenvalues and Eigenvectors:</strong></p>
+      <ul>
+        <li><strong>Eigenvectors corresponding to distinct eigenvalues are linearly independent.</strong></li>
+        <li><strong>The sum of the eigenvalues of a matrix is equal to its trace (the sum of the diagonal
+            elements).</strong></li>
+        <li><strong>The product of the eigenvalues of a matrix is equal to its determinant.</strong></li>
+        <li><strong>A matrix is invertible if and only if all its eigenvalues are non-zero.</strong></li>
+      </ul>
+      <p><strong>4. Example:</strong></p>
+      <p>Consider the matrix:</p>
+      <pre><code>A = [ 2  1 ]
     [ 1  2 ]
 </code></pre>
-<ol>
-<li>
-<p><strong>Characteristic Equation:</strong> det(A - λI) = (2-λ)<sup>2</sup> - 1 = λ<sup>2</sup> - 4λ + 3 = 0.</p>
-</li>
-<li>
-<p><strong>Eigenvalues:</strong> Solving the characteristic equation gives λ<sub>1</sub> = 1 and λ<sub>2</sub> = 3.</p>
-</li>
-<li>
-<p><strong>Eigenvectors for λ<sub>1</sub> = 1:</strong> (A - I)<strong>v</strong> = <strong>0</strong> gives:</p>
-</li>
-</ol>
-<pre><code>[ 1  1 ][ v1 ] = [ 0 ]
+      <ol>
+        <li>
+          <p><strong>Characteristic Equation:</strong> det(A - λI) = (2-λ)<sup>2</sup> - 1 = λ<sup>2</sup> - 4λ + 3 = 0.
+          </p>
+        </li>
+        <li>
+          <p><strong>Eigenvalues:</strong> Solving the characteristic equation gives λ<sub>1</sub> = 1 and λ<sub>2</sub>
+            = 3.</p>
+        </li>
+        <li>
+          <p><strong>Eigenvectors for λ<sub>1</sub> = 1:</strong> (A - I)<strong>v</strong> = <strong>0</strong> gives:
+          </p>
+        </li>
+      </ol>
+      <pre><code>[ 1  1 ][ v1 ] = [ 0 ]
 [ 1  1 ][ v2 ] = [ 0 ]
 </code></pre>
-<p>A solution is <strong>v<sub>1</sub></strong> = [ -1, 1 ].</p>
-<ol start="4">
-<li><strong>Eigenvectors for λ<sub>2</sub> = 3:</strong> (A - 3I)<strong>v</strong> = <strong>0</strong> gives:</li>
-</ol>
-<pre><code>[ -1  1 ][ v1 ] = [ 0 ]
+      <p>A solution is <strong>v<sub>1</sub></strong> = [ -1, 1 ].</p>
+      <ol start="4">
+        <li><strong>Eigenvectors for λ<sub>2</sub> = 3:</strong> (A - 3I)<strong>v</strong> = <strong>0</strong> gives:
+        </li>
+      </ol>
+      <pre><code>[ -1  1 ][ v1 ] = [ 0 ]
 [ 1 -1 ][ v2 ] = [ 0 ]
 </code></pre>
-<p>A solution is <strong>v<sub>2</sub></strong> = [ 1, 1 ].</p>
-<p><strong>5. Applications of Eigenvalues and Eigenvectors:</strong></p>
-<ul>
-<li><strong>Matrix Diagonalization:</strong>  If a matrix has n linearly independent eigenvectors, it can be diagonalized, simplifying computations.</li>
-<li><strong>Principal Component Analysis (PCA):</strong>  Used in data analysis and dimensionality reduction.</li>
-<li><strong>Image Processing:</strong>  Image compression, facial recognition.</li>
-<li><strong>Physics:</strong>  Solving systems of differential equations, quantum mechanics.</li>
-<li><strong>Stability Analysis:</strong>  Determining the stability of dynamical systems.</li>
-<li><strong>PageRank Algorithm:</strong> Used by Google to rank web pages.</li>
-</ul>
-<h3 id="module-linear-transformations"><strong>Module: Linear Transformations</strong></h3>
-<p>Linear transformations are fundamental concepts in linear algebra that describe mappings between vector spaces while preserving the operations of vector addition and scalar multiplication. They are widely used in various fields, including computer graphics, image processing, and data analysis.</p>
-<p><strong>1. Definition:</strong></p>
-<p>A linear transformation T: V → W between two vector spaces V and W over the same field F is a function that satisfies the following properties for all vectors <strong>u</strong>, <strong>v</strong> in V and scalar c in F:</p>
-<ul>
-<li><strong>Additivity:</strong> T(<strong>u</strong> + <strong>v</strong>) = T(<strong>u</strong>) + T(<strong>v</strong>)</li>
-<li><strong>Homogeneity:</strong> T(c<strong>u</strong>) = cT(<strong>u</strong>)</li>
-</ul>
-<p>These properties can be combined into a single condition:</p>
-<ul>
-<li><strong>Linearity:</strong> T(c<strong>u</strong> + d<strong>v</strong>) = cT(<strong>u</strong>) + dT(<strong>v</strong>) for all <strong>u</strong>, <strong>v</strong> in V and scalars c, d in F.</li>
-</ul>
-<p><strong>2. Examples of Linear Transformations:</strong></p>
-<ul>
-<li><strong>Identity Transformation (I):</strong> I(<strong>v</strong>) = <strong>v</strong> for all <strong>v</strong> in V (maps every vector to itself).</li>
-<li><strong>Zero Transformation:</strong> T(<strong>v</strong>) = <strong>0</strong> for all <strong>v</strong> in V (maps every vector to the zero vector).</li>
-<li><strong>Scaling:</strong> T(<strong>v</strong>) = k<strong>v</strong> for some scalar k (scales every vector by a constant factor).</li>
-<li><strong>Rotation in R<sup>2</sup>:</strong> Rotates every vector in the plane by a fixed angle around the origin.</li>
-<li><strong>Reflection in R<sup>2</sup>:</strong> Reflects every vector across a line through the origin.</li>
-<li><strong>Projection onto a Subspace:</strong> Projects every vector onto a fixed subspace.</li>
-</ul>
-<p><strong>3. Matrix Representation of Linear Transformations:</strong></p>
-<ul>
-<li>Every linear transformation T: R<sup>n</sup> → R<sup>m</sup> can be represented by an m x n matrix.</li>
-<li>The columns of the matrix are the images of the standard basis vectors of R<sup>n</sup> under the transformation T.</li>
-</ul>
-<p><strong>4. Properties of Linear Transformations:</strong></p>
-<ul>
-<li><strong>The composition of linear transformations is a linear transformation.</strong></li>
-<li><strong>If a linear transformation is invertible, its inverse is also a linear transformation.</strong></li>
-<li><strong>The kernel (null space) and range (image) of a linear transformation are subspaces.</strong></li>
-</ul>
-<p><strong>5. Applications of Linear Transformations:</strong></p>
-<ul>
-<li><strong>Computer Graphics:</strong> Transformations (translation, rotation, scaling, shearing) are used to manipulate graphical objects.</li>
-<li><strong>Image Processing:</strong>  Image transformations (filtering, edge detection) can be modeled as linear transformations.</li>
-<li><strong>Data Analysis:</strong> Dimensionality reduction techniques like PCA use linear transformations.</li>
-<li><strong>Machine Learning:</strong>  Feature transformations and data preprocessing often involve linear transformations.</li>
-</ul>
-<h2 id="oe-151-data-science-using-spreadsheet-software-optional">OE-151: Data Science using Spreadsheet Software (Optional)</h2>
-<h3 id="module-spreadsheet-concepts">Module: Spreadsheet Concepts</h3>
-<p>Spreadsheets are powerful tools for data analysis, providing an intuitive interface for organizing, manipulating, and visualizing data. This module covers fundamental spreadsheet concepts relevant to data science.</p>
-<p><strong>1. Spreadsheet Basics:</strong></p>
-<ul>
-<li><strong>Worksheet:</strong> A grid of cells organized into rows and columns.</li>
-<li><strong>Cell:</strong>  The intersection of a row and a column. A cell can contain data (numbers, text, dates), formulas, or functions.</li>
-<li><strong>Cell Address:</strong> The unique identifier of a cell (e.g., A1, B5, C10).</li>
-<li><strong>Ranges:</strong> A group of contiguous cells (e.g., A1:A10, B2:D5).</li>
-<li><strong>Worksheets and Workbooks:</strong>  A workbook can contain multiple worksheets, allowing you to organize related data.</li>
-</ul>
-<p><strong>2. Data Types:</strong></p>
-<p>Spreadsheets support various data types:</p>
-<ul>
-<li><strong>Numbers:</strong> Used for calculations.</li>
-<li><strong>Text:</strong>  Labels and descriptive information.</li>
-<li><strong>Dates:</strong> Represent points in time.</li>
-<li><strong>Boolean Values:</strong>  TRUE or FALSE.</li>
-<li><strong>Formulas:</strong> Instructions that perform calculations on cell values. Formulas always begin with an equal sign (=) (e.g., <code>=A1+B1</code>, <code>=SUM(A1:A10)</code>).</li>
-<li><strong>Functions:</strong> Predefined formulas that perform specific tasks (e.g., <code>SUM()</code>, <code>AVERAGE()</code>, <code>COUNT()</code>, <code>IF()</code>, <code>VLOOKUP()</code>).</li>
-</ul>
-<p><strong>3. Data Organization:</strong></p>
-<ul>
-<li><strong>Rows and Columns:</strong>  Organize data in a tabular format.</li>
-<li><strong>Headers:</strong> The first row or column typically contains headers that describe the data in each column or row.</li>
-<li><strong>Data Validation:</strong>  Ensures data accuracy by restricting input to specific values or ranges.</li>
-</ul>
-<p><strong>4. Data Manipulation:</strong></p>
-<ul>
-<li><strong>Sorting:</strong>  Arrange data in ascending or descending order.</li>
-<li><strong>Filtering:</strong> Display only rows that meet specific criteria.</li>
-<li><strong>Data Cleaning:</strong>  Handling missing values, removing duplicates, correcting errors.</li>
-<li><strong>Text Functions:</strong> Manipulating text strings (e.g., <code>LEFT()</code>, <code>RIGHT()</code>, <code>MID()</code>, <code>CONCATENATE()</code>).</li>
-</ul>
-<p><strong>5. Data Visualization:</strong></p>
-<ul>
-<li><strong>Charts:</strong> Graphical representations of data.  Common chart types include bar charts, line charts, pie charts, scatter plots, and histograms.</li>
-<li><strong>Formatting Options:</strong>  Customize chart appearance (colors, labels, legends) to improve readability and convey insights effectively.</li>
-</ul>
-<p><strong>6. Collaboration and Sharing:</strong></p>
-<ul>
-<li><strong>Multiple Users:</strong>  Spreadsheets can be shared with others for collaborative editing.</li>
-<li><strong>Version Control:</strong> Track changes and revert to previous versions.</li>
-<li><strong>Cloud Storage:</strong>  Store and access spreadsheets online.</li>
-</ul>
-<h3 id="module-spreadsheet-functions-and-formulas"><strong>Module: Spreadsheet Functions and Formulas</strong></h3>
-<p>Functions and formulas are essential elements of spreadsheet software, enabling you to perform calculations, manipulate data, and automate tasks. This module covers common functions and formula creation.</p>
-<p><strong>1. Formulas:</strong></p>
-<ul>
-<li>Formulas are expressions that perform calculations on cell values.</li>
-<li>They begin with an equal sign <code>=</code>.</li>
-<li>Operators: <code>+</code> (addition), <code>-</code> (subtraction), <code>*</code> (multiplication), <code>/</code> (division), <code>^</code> (exponentiation).</li>
-<li>Example:  <code>=A1+B1</code> (adds the values in cells A1 and B1).</li>
-</ul>
-<p><strong>2. Functions:</strong></p>
-<ul>
-<li>Functions are predefined formulas that perform specific tasks.</li>
-<li>They consist of a function name followed by arguments enclosed in parentheses.</li>
-<li>Example: <code>=SUM(A1:A10)</code> (calculates the sum of values in cells A1 through A10).</li>
-</ul>
-<p><strong>3. Common Function Categories:</strong></p>
-<ul>
-<li><strong>Mathematical and Trigonometric:</strong> <code>SUM()</code>, <code>AVERAGE()</code>, <code>MAX()</code>, <code>MIN()</code>, <code>ROUND()</code>, <code>SIN()</code>, <code>COS()</code>, <code>TAN()</code>, etc.</li>
-<li><strong>Statistical:</strong> <code>COUNT()</code>, <code>COUNTIF()</code>, <code>SUMIF()</code>, <code>AVERAGEIF()</code>, <code>STDEV()</code>, <code>MEDIAN()</code>, <code>MODE()</code>, etc.</li>
-<li><strong>Text:</strong> <code>LEFT()</code>, <code>RIGHT()</code>, <code>MID()</code>, <code>LEN()</code>, <code>CONCATENATE()</code>, <code>UPPER()</code>, <code>LOWER()</code>, etc.</li>
-<li><strong>Logical:</strong> <code>IF()</code>, <code>AND()</code>, <code>OR()</code>, <code>NOT()</code>.</li>
-<li><strong>Date and Time:</strong> <code>TODAY()</code>, <code>NOW()</code>, <code>DATE()</code>, <code>TIME()</code>, <code>DAY()</code>, <code>MONTH()</code>, <code>YEAR()</code>, etc.</li>
-<li><strong>Lookup and Reference:</strong> <code>VLOOKUP()</code>, <code>HLOOKUP()</code>, <code>INDEX()</code>, <code>MATCH()</code>.</li>
-<li><strong>Financial:</strong> <code>PMT()</code>, <code>FV()</code>, <code>PV()</code>, etc.</li>
-</ul>
-<p><strong>4. Nested Functions:</strong></p>
-<ul>
-<li>You can nest functions within each other to perform more complex calculations.</li>
-<li>Example: <code>=IF(SUM(A1:A5)&gt;100, "Over Budget", "Within Budget")</code></li>
-</ul>
-<p><strong>5. Cell References:</strong></p>
-<ul>
-<li><strong>Relative References:</strong> Cell addresses adjust when the formula is copied to other cells (e.g., A1).</li>
-<li><strong>Absolute References:</strong>  Cell addresses remain fixed when the formula is copied. Use dollar signs (<code>$</code>) before the column and/or row (e.g., $A$1, $A1, A$1).</li>
-<li><strong>Mixed References:</strong> Use a dollar sign before either the column or row to fix one while allowing the other to adjust.</li>
-</ul>
-<p><strong>6. Array Formulas:</strong></p>
-<ul>
-<li>Perform calculations on arrays of data.</li>
-<li>Often entered using <code>Ctrl+Shift+Enter</code> (or <code>Cmd+Shift+Enter</code> on Mac).</li>
-<li>Example: <code>={SUM(A1:A5*B1:B5)}</code> (calculates the sum of the products of corresponding elements in the two arrays).</li>
-</ul>
-<p><strong>7. Error Handling:</strong></p>
-<ul>
-<li>Spreadsheet software provides error values (e.g., <code>#DIV/0!</code>, <code>#N/A</code>, <code>#VALUE!</code>) to indicate formula errors.</li>
-<li>Use error-handling functions like <code>IFERROR()</code> to trap errors and display alternative values or messages.]</li>
-</ul>
-<h3 id="module-spreadsheet-charts-and-graphics"><strong>Module: Spreadsheet Charts and Graphics</strong></h3>
-<p>Data visualization is essential for understanding and communicating insights from data. Spreadsheet software offers a range of chart and graphic tools to represent data visually.</p>
-<p><strong>1. Chart Types:</strong></p>
-<p>Choosing the right chart type depends on your data and the message you want to convey.</p>
-<ul>
-<li><strong>Bar Charts:</strong> Compare categories using rectangular bars.  Suitable for categorical data.
-<ul>
-<li><strong>Clustered Bar Chart:</strong> Compares multiple subcategories within each category.</li>
-<li><strong>Stacked Bar Chart:</strong>  Shows the total value of each category and the contribution of subcategories.</li>
-</ul>
-</li>
-<li><strong>Column Charts:</strong>  Similar to bar charts but with vertical bars.</li>
-<li><strong>Line Charts:</strong> Show trends over time or continuous data.  Suitable for time-series data.</li>
-<li><strong>Area Charts:</strong> Similar to line charts but with the area under the line filled.</li>
-<li><strong>Pie Charts:</strong> Show proportions of a whole.  Use sparingly and avoid using for comparisons.</li>
-<li><strong>Scatter Plots (XY Charts):</strong> Show the relationship between two numerical variables.  Useful for identifying correlations.</li>
-<li><strong>Histograms:</strong> Show the distribution of a single numerical variable.</li>
-<li><strong>Box and Whisker Plots:</strong>  Display the distribution of data, including quartiles, median, and outliers.</li>
-<li><strong>Combo Charts:</strong> Combine two or more chart types for a more informative visualization.</li>
-</ul>
-<p><strong>2. Creating Charts:</strong></p>
-<ul>
-<li><strong>Select Data:</strong> Select the data range you want to visualize.</li>
-<li><strong>Insert Chart:</strong>  Use the chart insertion tool in your spreadsheet software.</li>
-<li><strong>Choose Chart Type:</strong> Select the appropriate chart type from the available options.</li>
-</ul>
-<p><strong>3. Chart Elements and Customization:</strong></p>
-<ul>
-<li><strong>Chart Title:</strong>  Clearly describe the chart’s purpose.</li>
-<li><strong>Axis Labels:</strong>  Label the axes to provide context.</li>
-<li><strong>Legend:</strong>  Explain the data being represented (especially for multiple data series).</li>
-<li><strong>Data Labels:</strong>  Display values directly on chart elements for easier interpretation.</li>
-<li><strong>Gridlines:</strong> Help with data readability.</li>
-<li><strong>Color Palette:</strong>  Choose colors that enhance clarity and avoid distractions.</li>
-<li><strong>Formatting Options:</strong> Customize chart elements (fonts, sizes, colors) for a professional and visually appealing presentation.</li>
-</ul>
-<p><strong>4. Other Graphic Elements:</strong></p>
-<ul>
-<li><strong>Sparklines:</strong> Tiny charts within cells that show trends in a small space.</li>
-<li><strong>Data Bars/Color Scales/Icon Sets:</strong> Conditional formatting options to visually highlight data patterns within cells.</li>
-<li><strong>Shapes and Icons:</strong>  Enhance visuals and draw attention to specific data points.</li>
-</ul>
-<p><strong>5. Best Practices:</strong></p>
-<ul>
-<li><strong>Keep it Simple:</strong> Avoid clutter and unnecessary complexity.</li>
-<li><strong>Choose the Right Chart Type:</strong> Match the chart type to your data and message.</li>
-<li><strong>Label Clearly:</strong> Provide context and avoid ambiguity.</li>
-<li><strong>Use Color Effectively:</strong>  Enhance clarity and avoid misleading color choices.</li>
-<li><strong>Focus on the Story:</strong>  Your visualization should tell a clear story about the data.</li>
-</ul>
-<h3 id="module-spreadsheet-filters-sorting-and-data-analysis"><strong>Module: Spreadsheet Filters, Sorting, and Data Analysis</strong></h3>
-<p>This module covers essential data manipulation and analysis techniques using spreadsheet software.</p>
-<p><strong>1. Filtering:</strong></p>
-<p>Filtering allows you to display only the rows that meet specific criteria, making it easier to analyze subsets of your data.</p>
-<ul>
-<li><strong>AutoFilter:</strong>  Provides dropdown menus in the header row to filter data based on values, text patterns, or conditions (e.g., greater than, less than, contains).</li>
-<li><strong>Advanced Filter:</strong>  Allows you to create more complex filtering criteria using a separate criteria range.</li>
-<li><strong>Filtering by color or icon:</strong> Useful for visually identifying and filtering data based on conditional formatting.</li>
-</ul>
-<p><strong>2. Sorting:</strong></p>
-<p>Sorting arranges data in ascending or descending order based on the values in one or more columns.</p>
-<ul>
-<li><strong>Sort by one column:</strong> Select a column and choose the sort order (ascending or descending).</li>
-<li><strong>Sort by multiple columns:</strong>  Specify the sort order for multiple columns to create hierarchical sorting.</li>
-<li><strong>Custom sorting:</strong> Sort data based on custom lists (e.g., days of the week, months of the year).</li>
-</ul>
-<p><strong>3. Data Analysis Tools:</strong></p>
-<p>Spreadsheet software provides various built-in tools for data analysis:</p>
-<ul>
-<li><strong>Descriptive Statistics:</strong> Calculate summary statistics like mean, median, mode, standard deviation, variance, range, etc.  Often accessed through a “Data Analysis” or “Statistical Functions” menu.</li>
-<li><strong>PivotTables:</strong> Create dynamic summary tables that allow you to analyze data from different perspectives.  Drag and drop fields to create custom reports and explore relationships within your data.</li>
-<li><strong>What-If Analysis:</strong> Explore the impact of changing input values on calculated results.  Tools like Goal Seek and Data Tables help with sensitivity analysis and scenario planning.</li>
-<li><strong>Solver:</strong> Find optimal solutions to problems by adjusting multiple variables within specified constraints.  Useful for optimization tasks.</li>
-</ul>
-<p><strong>4. Data Cleaning Techniques:</strong></p>
-<ul>
-<li><strong>Handling Missing Values:</strong>
-<ul>
-<li><strong>Deletion:</strong>  Remove rows with missing data (can lead to information loss).</li>
-<li><strong>Imputation:</strong> Replace missing values with estimated values (mean, median, mode, or more sophisticated imputation techniques).</li>
-</ul>
-</li>
-<li><strong>Removing Duplicates:</strong> Identify and remove duplicate rows.</li>
-<li><strong>Data Validation:</strong>  Restrict input to specific values or ranges to prevent data entry errors.</li>
-<li><strong>Text Functions:</strong> Clean and transform text data (e.g., removing extra spaces, converting case, extracting substrings).</li>
-</ul>
-<p><strong>5. Combining Filters and Sorting:</strong></p>
-<p>Use filters and sorting in combination to analyze specific subsets of your data.  For example, filter data based on a certain criteria, then sort the filtered data based on another column.</p>
-<p>By effectively using filters, sorting, and data analysis tools in spreadsheet software, you can gain insights from your data more efficiently.</p>
-<h2 id="vsec-151-software-tools-for-business-communication">VSEC-151: Software Tools for Business Communication</h2>
-<p>This module covers essential software tools for effective business communication, focusing on word processing, spreadsheets, presentations, electronic communication, and G-Suite.</p>
-<p><strong>1. Word Processing:</strong></p>
-<ul>
-<li><strong>Creating and Formatting Documents:</strong>  Mastering features like styles, formatting options (fonts, paragraphs, lists), tables, and inserting images and objects.</li>
-<li><strong>Collaboration and Review:</strong>  Using track changes, comments, and version history for collaborative document editing and review.</li>
-<li><strong>Mail Merge:</strong>  Automating the creation of personalized documents (letters, labels).</li>
-</ul>
-<p><strong>2. Spreadsheets:</strong> (See previous detailed notes on spreadsheet concepts, functions, charts, and data analysis).</p>
-<p><strong>3. Presentations:</strong></p>
-<ul>
-<li><strong>Creating Engaging Slides:</strong>  Using layouts, design templates, and multimedia elements (images, videos, animations) to create visually appealing and informative presentations.</li>
-<li><strong>Presenting Effectively:</strong>  Practicing presentation delivery, using speaker notes, and managing transitions and animations.</li>
-<li><strong>Data Visualization in Presentations:</strong> Integrating charts and graphs from spreadsheet software to present data effectively.</li>
-</ul>
-<p><strong>4. Electronic Communication Tools:</strong></p>
-<ul>
-<li><strong>Email:</strong>  Professional email etiquette, managing inboxes, using email features (attachments, signatures, calendar integration).</li>
-<li><strong>Instant Messaging:</strong>  Real-time communication for quick updates and collaboration.</li>
-<li><strong>Video Conferencing:</strong>  Conducting online meetings and presentations.</li>
-</ul>
-<p><strong>5. G-Suite (Google Workspace):</strong></p>
-<ul>
-<li><strong>Google Docs:</strong>  Cloud-based word processing. Collaboration, real-time editing, and version history.</li>
-<li><strong>Google Sheets:</strong> Cloud-based spreadsheet software. Similar functionality to other spreadsheet applications with added collaboration features.</li>
-<li><strong>Google Slides:</strong>  Cloud-based presentation software. Collaborative slide creation and presentation delivery.</li>
-<li><strong>Google Drive:</strong> Cloud storage for files and documents. Sharing and access control.</li>
-<li><strong>Other G-Suite Tools:</strong>  Google Calendar, Google Meet, Google Forms, Google Keep.</li>
-</ul>
-<p><strong>Key Considerations for Business Communication:</strong></p>
-<ul>
-<li><strong>Audience:</strong> Tailor your communication to the specific audience.</li>
-<li><strong>Purpose:</strong>  Clearly define the purpose of your communication.</li>
-<li><strong>Clarity and Conciseness:</strong>  Use clear and concise language, avoiding jargon and technical terms when appropriate.</li>
-<li><strong>Professionalism:</strong> Maintain a professional tone and format.</li>
-<li><strong>Visual Appeal:</strong> Use visuals effectively to enhance communication.</li>
-</ul>
-<p>Effective communication is crucial for success in any business environment.</p>
-<h2 id="conclusion-and-tips-for-success">Conclusion and Tips for Success</h2>
-<p>Semester 2 builds upon the foundation laid in Semester 1, introducing more advanced concepts in programming, microcontrollers, linear algebra, and business software tools.  This semester focuses on practical application and developing proficiency in using these tools and techniques.</p>
-<p><strong>Key Learnings:</strong></p>
-<ul>
-<li><strong>Advanced C Programming:</strong>  Preprocessor directives, pointers, dynamic memory allocation, strings, structures, and file handling.</li>
-<li><strong>Microcontrollers:</strong>  8051 architecture, programming, interfacing techniques, and applications.</li>
-<li><strong>Linear Algebra:</strong> Systems of linear equations, matrices, vector spaces, linear transformations, eigenvalues, and eigenvectors.</li>
-<li><strong>Data Science with Spreadsheets:</strong>  Spreadsheet functions, formulas, charts, data analysis tools, filtering, and sorting.</li>
-<li><strong>Software Tools for Business Communication:</strong>  Word processing, presentations, electronic communication, and G-Suite applications.</li>
-</ul>
-<p><strong>Resources:</strong></p>
-<p>Refer to the resources mentioned in the Semester 1 conclusion, as many of them also cover the advanced topics of Semester 2.  Additionally, explore microcontroller datasheets, linear algebra textbooks, and online tutorials for specific software tools (e.g., Google Workspace learning resources).</p>
-<p><strong>Tips to Ace Semester 2:</strong></p>
-<ul>
-<li><strong>Coding Practice (C and Microcontrollers):</strong>  Regular coding practice is essential for mastering programming and microcontroller concepts.  Work through examples, experiment with different code structures, and undertake small projects to apply your knowledge.</li>
-<li><strong>Hands-on Microcontroller Experience:</strong>  If possible, get access to an 8051 development board and experiment with interfacing different components.  This practical experience significantly reinforces learning.</li>
-<li><strong>Linear Algebra Problem Solving:</strong> Practice solving problems involving matrices, vector spaces, linear transformations, and eigenvalues/eigenvectors.  Focus on understanding the concepts and applying the appropriate techniques.</li>
-<li><strong>Spreadsheet Mastery:</strong>  Develop proficiency in using spreadsheet software for data analysis.  Practice using functions, creating charts, and utilizing data analysis tools. Consider working on data analysis projects using real-world datasets.</li>
-<li><strong>Effective Communication Practice:</strong>  Practice creating professional documents, presentations, and electronic communications.  Focus on clear and concise writing, effective visual communication, and professional etiquette.</li>
-</ul>
-<p><strong>"Cheat Sheets" (Quick Reference Guides):</strong></p>
-<p>Creating concise summaries of key concepts, formulas, and syntax can be helpful for quick review:</p>
-<ul>
-<li><strong>C Programming:</strong>  Pointer operations, string functions, file handling functions, preprocessor directives.</li>
-<li><strong>8051 Microcontroller:</strong>  SFR addresses, instruction set summary, interfacing diagrams for common components.</li>
-<li><strong>Linear Algebra:</strong> Matrix operations, properties of determinants, steps for Gaussian elimination, formulas for eigenvalues/eigenvectors.</li>
-<li><strong>Spreadsheet Software:</strong>  Common functions by category (mathematical, statistical, text, logical, lookup), charting shortcuts.</li>
-</ul>
-<p>Remember, “cheat sheets” are for quick reference and should supplement, not replace, thorough understanding.  Focus on understanding the underlying concepts and applying them effectively.</p>
+      <p>A solution is <strong>v<sub>2</sub></strong> = [ 1, 1 ].</p>
+      <p><strong>5. Applications of Eigenvalues and Eigenvectors:</strong></p>
+      <ul>
+        <li><strong>Matrix Diagonalization:</strong> If a matrix has n linearly independent eigenvectors, it can be
+          diagonalized, simplifying computations.</li>
+        <li><strong>Principal Component Analysis (PCA):</strong> Used in data analysis and dimensionality reduction.
+        </li>
+        <li><strong>Image Processing:</strong> Image compression, facial recognition.</li>
+        <li><strong>Physics:</strong> Solving systems of differential equations, quantum mechanics.</li>
+        <li><strong>Stability Analysis:</strong> Determining the stability of dynamical systems.</li>
+        <li><strong>PageRank Algorithm:</strong> Used by Google to rank web pages.</li>
+      </ul>
+      <h3 id="module-linear-transformations"><strong>Module: Linear Transformations</strong></h3>
+      <p>Linear transformations are fundamental concepts in linear algebra that describe mappings between vector spaces
+        while preserving the operations of vector addition and scalar multiplication. They are widely used in various
+        fields, including computer graphics, image processing, and data analysis.</p>
+      <p><strong>1. Definition:</strong></p>
+      <p>A linear transformation T: V → W between two vector spaces V and W over the same field F is a function that
+        satisfies the following properties for all vectors <strong>u</strong>, <strong>v</strong> in V and scalar c in
+        F:</p>
+      <ul>
+        <li><strong>Additivity:</strong> T(<strong>u</strong> + <strong>v</strong>) = T(<strong>u</strong>) +
+          T(<strong>v</strong>)</li>
+        <li><strong>Homogeneity:</strong> T(c<strong>u</strong>) = cT(<strong>u</strong>)</li>
+      </ul>
+      <p>These properties can be combined into a single condition:</p>
+      <ul>
+        <li><strong>Linearity:</strong> T(c<strong>u</strong> + d<strong>v</strong>) = cT(<strong>u</strong>) +
+          dT(<strong>v</strong>) for all <strong>u</strong>, <strong>v</strong> in V and scalars c, d in F.</li>
+      </ul>
+      <p><strong>2. Examples of Linear Transformations:</strong></p>
+      <ul>
+        <li><strong>Identity Transformation (I):</strong> I(<strong>v</strong>) = <strong>v</strong> for all
+          <strong>v</strong> in V (maps every vector to itself).</li>
+        <li><strong>Zero Transformation:</strong> T(<strong>v</strong>) = <strong>0</strong> for all <strong>v</strong>
+          in V (maps every vector to the zero vector).</li>
+        <li><strong>Scaling:</strong> T(<strong>v</strong>) = k<strong>v</strong> for some scalar k (scales every vector
+          by a constant factor).</li>
+        <li><strong>Rotation in R<sup>2</sup>:</strong> Rotates every vector in the plane by a fixed angle around the
+          origin.</li>
+        <li><strong>Reflection in R<sup>2</sup>:</strong> Reflects every vector across a line through the origin.</li>
+        <li><strong>Projection onto a Subspace:</strong> Projects every vector onto a fixed subspace.</li>
+      </ul>
+      <p><strong>3. Matrix Representation of Linear Transformations:</strong></p>
+      <ul>
+        <li>Every linear transformation T: R<sup>n</sup> → R<sup>m</sup> can be represented by an m x n matrix.</li>
+        <li>The columns of the matrix are the images of the standard basis vectors of R<sup>n</sup> under the
+          transformation T.</li>
+      </ul>
+      <p><strong>4. Properties of Linear Transformations:</strong></p>
+      <ul>
+        <li><strong>The composition of linear transformations is a linear transformation.</strong></li>
+        <li><strong>If a linear transformation is invertible, its inverse is also a linear transformation.</strong></li>
+        <li><strong>The kernel (null space) and range (image) of a linear transformation are subspaces.</strong></li>
+      </ul>
+      <p><strong>5. Applications of Linear Transformations:</strong></p>
+      <ul>
+        <li><strong>Computer Graphics:</strong> Transformations (translation, rotation, scaling, shearing) are used to
+          manipulate graphical objects.</li>
+        <li><strong>Image Processing:</strong> Image transformations (filtering, edge detection) can be modeled as
+          linear transformations.</li>
+        <li><strong>Data Analysis:</strong> Dimensionality reduction techniques like PCA use linear transformations.
+        </li>
+        <li><strong>Machine Learning:</strong> Feature transformations and data preprocessing often involve linear
+          transformations.</li>
+      </ul>
+      <h2 id="oe-151-data-science-using-spreadsheet-software-optional">OE-151: Data Science using Spreadsheet Software
+        (Optional)</h2>
+      <h3 id="module-spreadsheet-concepts">Module: Spreadsheet Concepts</h3>
+      <p>Spreadsheets are powerful tools for data analysis, providing an intuitive interface for organizing,
+        manipulating, and visualizing data. This module covers fundamental spreadsheet concepts relevant to data
+        science.</p>
+      <p><strong>1. Spreadsheet Basics:</strong></p>
+      <ul>
+        <li><strong>Worksheet:</strong> A grid of cells organized into rows and columns.</li>
+        <li><strong>Cell:</strong> The intersection of a row and a column. A cell can contain data (numbers, text,
+          dates), formulas, or functions.</li>
+        <li><strong>Cell Address:</strong> The unique identifier of a cell (e.g., A1, B5, C10).</li>
+        <li><strong>Ranges:</strong> A group of contiguous cells (e.g., A1:A10, B2:D5).</li>
+        <li><strong>Worksheets and Workbooks:</strong> A workbook can contain multiple worksheets, allowing you to
+          organize related data.</li>
+      </ul>
+      <p><strong>2. Data Types:</strong></p>
+      <p>Spreadsheets support various data types:</p>
+      <ul>
+        <li><strong>Numbers:</strong> Used for calculations.</li>
+        <li><strong>Text:</strong> Labels and descriptive information.</li>
+        <li><strong>Dates:</strong> Represent points in time.</li>
+        <li><strong>Boolean Values:</strong> TRUE or FALSE.</li>
+        <li><strong>Formulas:</strong> Instructions that perform calculations on cell values. Formulas always begin with
+          an equal sign (=) (e.g., <code>=A1+B1</code>, <code>=SUM(A1:A10)</code>).</li>
+        <li><strong>Functions:</strong> Predefined formulas that perform specific tasks (e.g., <code>SUM()</code>,
+          <code>AVERAGE()</code>, <code>COUNT()</code>, <code>IF()</code>, <code>VLOOKUP()</code>).</li>
+      </ul>
+      <p><strong>3. Data Organization:</strong></p>
+      <ul>
+        <li><strong>Rows and Columns:</strong> Organize data in a tabular format.</li>
+        <li><strong>Headers:</strong> The first row or column typically contains headers that describe the data in each
+          column or row.</li>
+        <li><strong>Data Validation:</strong> Ensures data accuracy by restricting input to specific values or ranges.
+        </li>
+      </ul>
+      <p><strong>4. Data Manipulation:</strong></p>
+      <ul>
+        <li><strong>Sorting:</strong> Arrange data in ascending or descending order.</li>
+        <li><strong>Filtering:</strong> Display only rows that meet specific criteria.</li>
+        <li><strong>Data Cleaning:</strong> Handling missing values, removing duplicates, correcting errors.</li>
+        <li><strong>Text Functions:</strong> Manipulating text strings (e.g., <code>LEFT()</code>, <code>RIGHT()</code>,
+          <code>MID()</code>, <code>CONCATENATE()</code>).</li>
+      </ul>
+      <p><strong>5. Data Visualization:</strong></p>
+      <ul>
+        <li><strong>Charts:</strong> Graphical representations of data. Common chart types include bar charts, line
+          charts, pie charts, scatter plots, and histograms.</li>
+        <li><strong>Formatting Options:</strong> Customize chart appearance (colors, labels, legends) to improve
+          readability and convey insights effectively.</li>
+      </ul>
+      <p><strong>6. Collaboration and Sharing:</strong></p>
+      <ul>
+        <li><strong>Multiple Users:</strong> Spreadsheets can be shared with others for collaborative editing.</li>
+        <li><strong>Version Control:</strong> Track changes and revert to previous versions.</li>
+        <li><strong>Cloud Storage:</strong> Store and access spreadsheets online.</li>
+      </ul>
+      <h3 id="module-spreadsheet-functions-and-formulas"><strong>Module: Spreadsheet Functions and Formulas</strong>
+      </h3>
+      <p>Functions and formulas are essential elements of spreadsheet software, enabling you to perform calculations,
+        manipulate data, and automate tasks. This module covers common functions and formula creation.</p>
+      <p><strong>1. Formulas:</strong></p>
+      <ul>
+        <li>Formulas are expressions that perform calculations on cell values.</li>
+        <li>They begin with an equal sign <code>=</code>.</li>
+        <li>Operators: <code>+</code> (addition), <code>-</code> (subtraction), <code>*</code> (multiplication),
+          <code>/</code> (division), <code>^</code> (exponentiation).</li>
+        <li>Example: <code>=A1+B1</code> (adds the values in cells A1 and B1).</li>
+      </ul>
+      <p><strong>2. Functions:</strong></p>
+      <ul>
+        <li>Functions are predefined formulas that perform specific tasks.</li>
+        <li>They consist of a function name followed by arguments enclosed in parentheses.</li>
+        <li>Example: <code>=SUM(A1:A10)</code> (calculates the sum of values in cells A1 through A10).</li>
+      </ul>
+      <p><strong>3. Common Function Categories:</strong></p>
+      <ul>
+        <li><strong>Mathematical and Trigonometric:</strong> <code>SUM()</code>, <code>AVERAGE()</code>,
+          <code>MAX()</code>, <code>MIN()</code>, <code>ROUND()</code>, <code>SIN()</code>, <code>COS()</code>,
+          <code>TAN()</code>, etc.</li>
+        <li><strong>Statistical:</strong> <code>COUNT()</code>, <code>COUNTIF()</code>, <code>SUMIF()</code>,
+          <code>AVERAGEIF()</code>, <code>STDEV()</code>, <code>MEDIAN()</code>, <code>MODE()</code>, etc.</li>
+        <li><strong>Text:</strong> <code>LEFT()</code>, <code>RIGHT()</code>, <code>MID()</code>, <code>LEN()</code>,
+          <code>CONCATENATE()</code>, <code>UPPER()</code>, <code>LOWER()</code>, etc.</li>
+        <li><strong>Logical:</strong> <code>IF()</code>, <code>AND()</code>, <code>OR()</code>, <code>NOT()</code>.</li>
+        <li><strong>Date and Time:</strong> <code>TODAY()</code>, <code>NOW()</code>, <code>DATE()</code>,
+          <code>TIME()</code>, <code>DAY()</code>, <code>MONTH()</code>, <code>YEAR()</code>, etc.</li>
+        <li><strong>Lookup and Reference:</strong> <code>VLOOKUP()</code>, <code>HLOOKUP()</code>, <code>INDEX()</code>,
+          <code>MATCH()</code>.</li>
+        <li><strong>Financial:</strong> <code>PMT()</code>, <code>FV()</code>, <code>PV()</code>, etc.</li>
+      </ul>
+      <p><strong>4. Nested Functions:</strong></p>
+      <ul>
+        <li>You can nest functions within each other to perform more complex calculations.</li>
+        <li>Example: <code>=IF(SUM(A1:A5)&gt;100, "Over Budget", "Within Budget")</code></li>
+      </ul>
+      <p><strong>5. Cell References:</strong></p>
+      <ul>
+        <li><strong>Relative References:</strong> Cell addresses adjust when the formula is copied to other cells (e.g.,
+          A1).</li>
+        <li><strong>Absolute References:</strong> Cell addresses remain fixed when the formula is copied. Use dollar
+          signs (<code>$</code>) before the column and/or row (e.g., $A$1, $A1, A$1).</li>
+        <li><strong>Mixed References:</strong> Use a dollar sign before either the column or row to fix one while
+          allowing the other to adjust.</li>
+      </ul>
+      <p><strong>6. Array Formulas:</strong></p>
+      <ul>
+        <li>Perform calculations on arrays of data.</li>
+        <li>Often entered using <code>Ctrl+Shift+Enter</code> (or <code>Cmd+Shift+Enter</code> on Mac).</li>
+        <li>Example: <code>={SUM(A1:A5*B1:B5)}</code> (calculates the sum of the products of corresponding elements in
+          the two arrays).</li>
+      </ul>
+      <p><strong>7. Error Handling:</strong></p>
+      <ul>
+        <li>Spreadsheet software provides error values (e.g., <code>#DIV/0!</code>, <code>#N/A</code>,
+          <code>#VALUE!</code>) to indicate formula errors.</li>
+        <li>Use error-handling functions like <code>IFERROR()</code> to trap errors and display alternative values or
+          messages.]</li>
+      </ul>
+      <h3 id="module-spreadsheet-charts-and-graphics"><strong>Module: Spreadsheet Charts and Graphics</strong></h3>
+      <p>Data visualization is essential for understanding and communicating insights from data. Spreadsheet software
+        offers a range of chart and graphic tools to represent data visually.</p>
+      <p><strong>1. Chart Types:</strong></p>
+      <p>Choosing the right chart type depends on your data and the message you want to convey.</p>
+      <ul>
+        <li><strong>Bar Charts:</strong> Compare categories using rectangular bars. Suitable for categorical data.
+          <ul>
+            <li><strong>Clustered Bar Chart:</strong> Compares multiple subcategories within each category.</li>
+            <li><strong>Stacked Bar Chart:</strong> Shows the total value of each category and the contribution of
+              subcategories.</li>
+          </ul>
+        </li>
+        <li><strong>Column Charts:</strong> Similar to bar charts but with vertical bars.</li>
+        <li><strong>Line Charts:</strong> Show trends over time or continuous data. Suitable for time-series data.</li>
+        <li><strong>Area Charts:</strong> Similar to line charts but with the area under the line filled.</li>
+        <li><strong>Pie Charts:</strong> Show proportions of a whole. Use sparingly and avoid using for comparisons.
+        </li>
+        <li><strong>Scatter Plots (XY Charts):</strong> Show the relationship between two numerical variables. Useful
+          for identifying correlations.</li>
+        <li><strong>Histograms:</strong> Show the distribution of a single numerical variable.</li>
+        <li><strong>Box and Whisker Plots:</strong> Display the distribution of data, including quartiles, median, and
+          outliers.</li>
+        <li><strong>Combo Charts:</strong> Combine two or more chart types for a more informative visualization.</li>
+      </ul>
+      <p><strong>2. Creating Charts:</strong></p>
+      <ul>
+        <li><strong>Select Data:</strong> Select the data range you want to visualize.</li>
+        <li><strong>Insert Chart:</strong> Use the chart insertion tool in your spreadsheet software.</li>
+        <li><strong>Choose Chart Type:</strong> Select the appropriate chart type from the available options.</li>
+      </ul>
+      <p><strong>3. Chart Elements and Customization:</strong></p>
+      <ul>
+        <li><strong>Chart Title:</strong> Clearly describe the chart’s purpose.</li>
+        <li><strong>Axis Labels:</strong> Label the axes to provide context.</li>
+        <li><strong>Legend:</strong> Explain the data being represented (especially for multiple data series).</li>
+        <li><strong>Data Labels:</strong> Display values directly on chart elements for easier interpretation.</li>
+        <li><strong>Gridlines:</strong> Help with data readability.</li>
+        <li><strong>Color Palette:</strong> Choose colors that enhance clarity and avoid distractions.</li>
+        <li><strong>Formatting Options:</strong> Customize chart elements (fonts, sizes, colors) for a professional and
+          visually appealing presentation.</li>
+      </ul>
+      <p><strong>4. Other Graphic Elements:</strong></p>
+      <ul>
+        <li><strong>Sparklines:</strong> Tiny charts within cells that show trends in a small space.</li>
+        <li><strong>Data Bars/Color Scales/Icon Sets:</strong> Conditional formatting options to visually highlight data
+          patterns within cells.</li>
+        <li><strong>Shapes and Icons:</strong> Enhance visuals and draw attention to specific data points.</li>
+      </ul>
+      <p><strong>5. Best Practices:</strong></p>
+      <ul>
+        <li><strong>Keep it Simple:</strong> Avoid clutter and unnecessary complexity.</li>
+        <li><strong>Choose the Right Chart Type:</strong> Match the chart type to your data and message.</li>
+        <li><strong>Label Clearly:</strong> Provide context and avoid ambiguity.</li>
+        <li><strong>Use Color Effectively:</strong> Enhance clarity and avoid misleading color choices.</li>
+        <li><strong>Focus on the Story:</strong> Your visualization should tell a clear story about the data.</li>
+      </ul>
+      <h3 id="module-spreadsheet-filters-sorting-and-data-analysis"><strong>Module: Spreadsheet Filters, Sorting, and
+          Data Analysis</strong></h3>
+      <p>This module covers essential data manipulation and analysis techniques using spreadsheet software.</p>
+      <p><strong>1. Filtering:</strong></p>
+      <p>Filtering allows you to display only the rows that meet specific criteria, making it easier to analyze subsets
+        of your data.</p>
+      <ul>
+        <li><strong>AutoFilter:</strong> Provides dropdown menus in the header row to filter data based on values, text
+          patterns, or conditions (e.g., greater than, less than, contains).</li>
+        <li><strong>Advanced Filter:</strong> Allows you to create more complex filtering criteria using a separate
+          criteria range.</li>
+        <li><strong>Filtering by color or icon:</strong> Useful for visually identifying and filtering data based on
+          conditional formatting.</li>
+      </ul>
+      <p><strong>2. Sorting:</strong></p>
+      <p>Sorting arranges data in ascending or descending order based on the values in one or more columns.</p>
+      <ul>
+        <li><strong>Sort by one column:</strong> Select a column and choose the sort order (ascending or descending).
+        </li>
+        <li><strong>Sort by multiple columns:</strong> Specify the sort order for multiple columns to create
+          hierarchical sorting.</li>
+        <li><strong>Custom sorting:</strong> Sort data based on custom lists (e.g., days of the week, months of the
+          year).</li>
+      </ul>
+      <p><strong>3. Data Analysis Tools:</strong></p>
+      <p>Spreadsheet software provides various built-in tools for data analysis:</p>
+      <ul>
+        <li><strong>Descriptive Statistics:</strong> Calculate summary statistics like mean, median, mode, standard
+          deviation, variance, range, etc. Often accessed through a “Data Analysis” or “Statistical Functions” menu.
+        </li>
+        <li><strong>PivotTables:</strong> Create dynamic summary tables that allow you to analyze data from different
+          perspectives. Drag and drop fields to create custom reports and explore relationships within your data.</li>
+        <li><strong>What-If Analysis:</strong> Explore the impact of changing input values on calculated results. Tools
+          like Goal Seek and Data Tables help with sensitivity analysis and scenario planning.</li>
+        <li><strong>Solver:</strong> Find optimal solutions to problems by adjusting multiple variables within specified
+          constraints. Useful for optimization tasks.</li>
+      </ul>
+      <p><strong>4. Data Cleaning Techniques:</strong></p>
+      <ul>
+        <li><strong>Handling Missing Values:</strong>
+          <ul>
+            <li><strong>Deletion:</strong> Remove rows with missing data (can lead to information loss).</li>
+            <li><strong>Imputation:</strong> Replace missing values with estimated values (mean, median, mode, or more
+              sophisticated imputation techniques).</li>
+          </ul>
+        </li>
+        <li><strong>Removing Duplicates:</strong> Identify and remove duplicate rows.</li>
+        <li><strong>Data Validation:</strong> Restrict input to specific values or ranges to prevent data entry errors.
+        </li>
+        <li><strong>Text Functions:</strong> Clean and transform text data (e.g., removing extra spaces, converting
+          case, extracting substrings).</li>
+      </ul>
+      <p><strong>5. Combining Filters and Sorting:</strong></p>
+      <p>Use filters and sorting in combination to analyze specific subsets of your data. For example, filter data based
+        on a certain criteria, then sort the filtered data based on another column.</p>
+      <p>By effectively using filters, sorting, and data analysis tools in spreadsheet software, you can gain insights
+        from your data more efficiently.</p>
+      <h2 id="vsec-151-software-tools-for-business-communication">VSEC-151: Software Tools for Business Communication
+      </h2>
+      <p>This module covers essential software tools for effective business communication, focusing on word processing,
+        spreadsheets, presentations, electronic communication, and G-Suite.</p>
+      <p><strong>1. Word Processing:</strong></p>
+      <ul>
+        <li><strong>Creating and Formatting Documents:</strong> Mastering features like styles, formatting options
+          (fonts, paragraphs, lists), tables, and inserting images and objects.</li>
+        <li><strong>Collaboration and Review:</strong> Using track changes, comments, and version history for
+          collaborative document editing and review.</li>
+        <li><strong>Mail Merge:</strong> Automating the creation of personalized documents (letters, labels).</li>
+      </ul>
+      <p><strong>2. Spreadsheets:</strong> (See previous detailed notes on spreadsheet concepts, functions, charts, and
+        data analysis).</p>
+      <p><strong>3. Presentations:</strong></p>
+      <ul>
+        <li><strong>Creating Engaging Slides:</strong> Using layouts, design templates, and multimedia elements (images,
+          videos, animations) to create visually appealing and informative presentations.</li>
+        <li><strong>Presenting Effectively:</strong> Practicing presentation delivery, using speaker notes, and managing
+          transitions and animations.</li>
+        <li><strong>Data Visualization in Presentations:</strong> Integrating charts and graphs from spreadsheet
+          software to present data effectively.</li>
+      </ul>
+      <p><strong>4. Electronic Communication Tools:</strong></p>
+      <ul>
+        <li><strong>Email:</strong> Professional email etiquette, managing inboxes, using email features (attachments,
+          signatures, calendar integration).</li>
+        <li><strong>Instant Messaging:</strong> Real-time communication for quick updates and collaboration.</li>
+        <li><strong>Video Conferencing:</strong> Conducting online meetings and presentations.</li>
+      </ul>
+      <p><strong>5. G-Suite (Google Workspace):</strong></p>
+      <ul>
+        <li><strong>Google Docs:</strong> Cloud-based word processing. Collaboration, real-time editing, and version
+          history.</li>
+        <li><strong>Google Sheets:</strong> Cloud-based spreadsheet software. Similar functionality to other spreadsheet
+          applications with added collaboration features.</li>
+        <li><strong>Google Slides:</strong> Cloud-based presentation software. Collaborative slide creation and
+          presentation delivery.</li>
+        <li><strong>Google Drive:</strong> Cloud storage for files and documents. Sharing and access control.</li>
+        <li><strong>Other G-Suite Tools:</strong> Google Calendar, Google Meet, Google Forms, Google Keep.</li>
+      </ul>
+      <p><strong>Key Considerations for Business Communication:</strong></p>
+      <ul>
+        <li><strong>Audience:</strong> Tailor your communication to the specific audience.</li>
+        <li><strong>Purpose:</strong> Clearly define the purpose of your communication.</li>
+        <li><strong>Clarity and Conciseness:</strong> Use clear and concise language, avoiding jargon and technical
+          terms when appropriate.</li>
+        <li><strong>Professionalism:</strong> Maintain a professional tone and format.</li>
+        <li><strong>Visual Appeal:</strong> Use visuals effectively to enhance communication.</li>
+      </ul>
+      <p>Effective communication is crucial for success in any business environment.</p>
+      <h2 id="conclusion-and-tips-for-success">Conclusion and Tips for Success</h2>
+      <p>Semester 2 builds upon the foundation laid in Semester 1, introducing more advanced concepts in programming,
+        microcontrollers, linear algebra, and business software tools. This semester focuses on practical application
+        and developing proficiency in using these tools and techniques.</p>
+      <p><strong>Key Learnings:</strong></p>
+      <ul>
+        <li><strong>Advanced C Programming:</strong> Preprocessor directives, pointers, dynamic memory allocation,
+          strings, structures, and file handling.</li>
+        <li><strong>Microcontrollers:</strong> 8051 architecture, programming, interfacing techniques, and applications.
+        </li>
+        <li><strong>Linear Algebra:</strong> Systems of linear equations, matrices, vector spaces, linear
+          transformations, eigenvalues, and eigenvectors.</li>
+        <li><strong>Data Science with Spreadsheets:</strong> Spreadsheet functions, formulas, charts, data analysis
+          tools, filtering, and sorting.</li>
+        <li><strong>Software Tools for Business Communication:</strong> Word processing, presentations, electronic
+          communication, and G-Suite applications.</li>
+      </ul>
+      <p><strong>Resources:</strong></p>
+      <p>Refer to the resources mentioned in the Semester 1 conclusion, as many of them also cover the advanced topics
+        of Semester 2. Additionally, explore microcontroller datasheets, linear algebra textbooks, and online tutorials
+        for specific software tools (e.g., Google Workspace learning resources).</p>
+      <p><strong>Tips to Ace Semester 2:</strong></p>
+      <ul>
+        <li><strong>Coding Practice (C and Microcontrollers):</strong> Regular coding practice is essential for
+          mastering programming and microcontroller concepts. Work through examples, experiment with different code
+          structures, and undertake small projects to apply your knowledge.</li>
+        <li><strong>Hands-on Microcontroller Experience:</strong> If possible, get access to an 8051 development board
+          and experiment with interfacing different components. This practical experience significantly reinforces
+          learning.</li>
+        <li><strong>Linear Algebra Problem Solving:</strong> Practice solving problems involving matrices, vector
+          spaces, linear transformations, and eigenvalues/eigenvectors. Focus on understanding the concepts and applying
+          the appropriate techniques.</li>
+        <li><strong>Spreadsheet Mastery:</strong> Develop proficiency in using spreadsheet software for data analysis.
+          Practice using functions, creating charts, and utilizing data analysis tools. Consider working on data
+          analysis projects using real-world datasets.</li>
+        <li><strong>Effective Communication Practice:</strong> Practice creating professional documents, presentations,
+          and electronic communications. Focus on clear and concise writing, effective visual communication, and
+          professional etiquette.</li>
+      </ul>
+      <p><strong>"Cheat Sheets" (Quick Reference Guides):</strong></p>
+      <p>Creating concise summaries of key concepts, formulas, and syntax can be helpful for quick review:</p>
+      <ul>
+        <li><strong>C Programming:</strong> Pointer operations, string functions, file handling functions, preprocessor
+          directives.</li>
+        <li><strong>8051 Microcontroller:</strong> SFR addresses, instruction set summary, interfacing diagrams for
+          common components.</li>
+        <li><strong>Linear Algebra:</strong> Matrix operations, properties of determinants, steps for Gaussian
+          elimination, formulas for eigenvalues/eigenvectors.</li>
+        <li><strong>Spreadsheet Software:</strong> Common functions by category (mathematical, statistical, text,
+          logical, lookup), charting shortcuts.</li>
+      </ul>
+      <p>Remember, “cheat sheets” are for quick reference and should supplement, not replace, thorough understanding.
+        Focus on understanding the underlying concepts and applying them effectively.</p>
 
     </div>
   </div>
-
-<script>
-  const tocLinks = document.querySelectorAll('.stackedit__toc a');
-  tocLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-  function toggleDarkMode() {
-      document.body.classList.toggle("dark-mode");
-
-      // Optional: Local Storage
-      if (document.body.classList.contains('dark-mode')) {
-          localStorage.setItem('darkMode', 'enabled');
-      } else {
-          localStorage.removeItem('darkMode');
-      }
-  }
-
-  // Check localStorage on load (optional)
-  window.onload = () => {
-      if (localStorage.getItem('darkMode') === 'enabled') {
-          document.body.classList.add('dark-mode');
-      }
-  };
-</script>
+  <div id="footer">
+    Notes prepared by <a href="https://instagram.com/simply_aaman" target="_blank" rel="noopener noreferrer">Aman</a>,
+    refined by AI.
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
