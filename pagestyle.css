@@ -1,1 +1,103 @@
-body{transition:background-color .3s ease,color .3s ease}.stackedit__toc a{text-decoration:none}.dark-mode-button{position:fixed;top:20px;right:20px;padding:10px 20px;border:none;border-radius:20px;background:linear-gradient(to right,#464646,#181818);color:#fff;font-weight:500;cursor:pointer;z-index:100;box-shadow:0 2px 5px rgba(0,0,0,0.2);transition:background .3s ease,transform .2s ease}.dark-mode-button:hover{transform:translateY(-2px);background:linear-gradient(to right,#181818,#464646)}body.dark-mode{background-color:#000;color:#ddd}.dark-mode .dark-mode-button{background:linear-gradient(to right,#fff,#b4b4b4);color:#000}.dark-mode .dark-mode-button:hover{background:linear-gradient(to right,#b4b4b4,#fff)}body.dark-mode .stackedit__left{background-color:#222}body.dark-mode pre.language-html{background-color:#333}body.dark-mode code.prism.language-html{color:#ccc}#footer{position:fixed;bottom:0;left:0;width:100%;background-color:#fff;padding:5px 0;text-align:center;font-size:small;z-index:99;transition:background-color .3s ease,color .3s ease}@media print{#footer{display:none}}body.dark-mode #footer{background-color:#222;color:#ccc}
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.stackedit__toc a {
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.dark-mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #464646, #181818);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dark-mode-button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to right, #181818, #464646);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #ddd;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.dark-mode .dark-mode-button {
+    background: linear-gradient(to right, #ffffff, #b4b4b4);
+    color: rgb(0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.dark-mode .dark-mode-button:hover {
+    background: linear-gradient(to right, #b4b4b4, #ffffff);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Dark Mode Styles for this specific page */
+body.dark-mode .stackedit__left {
+    background-color: #222;
+}
+
+body.dark-mode pre.language-html {
+    background-color: #333;
+    /* Or any color that provides good contrast */
+}
+
+body.dark-mode code.prism.language-html {
+    color: #ccc;
+    /* Light color for code */
+
+}
+
+/* Sticky Footer */
+#footer {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    /* Light gray background */
+    padding: 5px 0;
+    /* Small padding */
+    text-align: center;
+    font-size: small;
+    z-index: 99;
+    /* Ensure it's above other content but below the button */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+@media print {
+    #footer {
+        display: none;
+    }
+}
+
+body.dark-mode #footer {
+    /* Dark mode footer styling */
+    background-color: #222222;
+    color: #ccc;
+}
