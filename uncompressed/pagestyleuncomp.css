@@ -21,26 +21,36 @@ body {
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .dark-mode-button:hover {
     transform: translateY(-2px);
     background: linear-gradient(to right, #181818, #464646);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body.dark-mode {
     background-color: #000000;
     color: #ddd;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 
 .dark-mode .dark-mode-button {
     background: linear-gradient(to right, #ffffff, #b4b4b4);
     color: rgb(0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .dark-mode .dark-mode-button:hover {
     background: linear-gradient(to right, #b4b4b4, #ffffff);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -62,6 +72,8 @@ body.dark-mode code.prism.language-html {
 
 /* Sticky Footer */
 #footer {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     position: fixed;
     bottom: 0;
     left: 0;
