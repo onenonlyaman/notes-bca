@@ -7,16 +7,45 @@ body {
     /* Remove underline */
 }
 
+.goBack{
+    border-radius: 15px;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.goBack:hover{
+    transform: translateX(-3px);
+    transition: all ease .5s;
+}
+
+.dark-mode .goBack{
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
 .dark-mode-button {
     position: fixed;
     top: 20px;
     right: 20px;
-    padding: 10px 20px;
+    width: 100px;
+    height: 30px;
     border: none;
     border-radius: 20px;
-    background: linear-gradient(to right, #464646, #181818);
+    background-color: #333;
     color: white;
-    font-weight: 500;
     cursor: pointer;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -27,9 +56,9 @@ body {
 
 .dark-mode-button:hover {
     transform: translateY(-2px);
-    background: linear-gradient(to right, #181818, #464646);
-    -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #666;
+    box-shadow: 1px 1px 1px 1px #000000;
+    font-weight: 500;
 }
 
 body.dark-mode {
@@ -41,14 +70,17 @@ body.dark-mode {
 
 
 .dark-mode .dark-mode-button {
-    background: linear-gradient(to right, #ffffff, #b4b4b4);
-    color: rgb(0, 0, 0);
+    background-color: #fffefe;
+    color: #000000;
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .dark-mode .dark-mode-button:hover {
-    background: linear-gradient(to right, #b4b4b4, #ffffff);
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 1px 1px 1px 1px #ffffff91;
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
