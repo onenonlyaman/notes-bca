@@ -191,7 +191,6 @@ body.dark-mode {
     box-shadow: 1px 1px 1px 1px #ffffff91;
 }
 /* new background */
-
 .context {
     width: 100%;
     position: absolute;
@@ -330,3 +329,7 @@ body.dark-mode {
         border-radius: 50%;
     }
 }
+.dark-mode-icon {
+    display: inline-block;
+}
+

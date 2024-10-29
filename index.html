@@ -9,8 +9,7 @@
 </head>
 
 <body>
-    <button class="dark-mode-button" onclick="toggleDarkMode()">
-        <i class="fas fa-moon"></i> <span>Dark Mode</span></button>
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
 
     <div class="container">
         <h1>Bachelor of Computer Applications</h1>
@@ -63,7 +62,10 @@
             Notes prepared by <a href="https://instagram.com/simply_aaman" target="_blank"
                 rel="noopener noreferrer">Aman</a> & <a href="https://instagram.com/d.gaurang_">Gaurang</a>, refined by
             AI. <br>
-            Live Visitor Counter:<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1254228/t/5" id="daid"></script></div>
+            Live Visitor Counter:
+            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1254228/t/5"
+                id="daid"></script>
+        </div>
     </div>
 
 
@@ -82,23 +84,31 @@
 
 
     <script>
+        const darkModeButton = document.querySelector('.dark-mode-button');
+        const tocLinks = document.querySelectorAll(".stackedit__toc a");
+
         function toggleDarkMode() {
             document.body.classList.toggle("dark-mode");
 
-            // Optional: Save user preference to localStorage
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('darkMode', 'enabled');
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+                darkModeButton.textContent = "Light Mode";
             } else {
-                localStorage.removeItem('darkMode');
+                localStorage.removeItem("darkMode");
+                darkModeButton.textContent = "Dark Mode";
             }
         }
 
-        // Check localStorage on page load (optional)
-        window.onload = () => {
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                document.body.classList.add('dark-mode');
-            }
-        };
+        tocLinks.forEach(e => {
+            e.addEventListener("click", function (e) {
+                e.preventDefault();
+                let t = this.getAttribute("href"),
+                    o = document.querySelector(t);
+                o && o.scrollIntoView({ behavior: "smooth" })
+            })
+        }), window.onload = () => {
+            "enabled" === localStorage.getItem("darkMode") && document.body.classList.add("dark-mode");
+        }; Mode  
     </script>
 </body>
 
