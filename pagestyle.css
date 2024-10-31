@@ -8,14 +8,14 @@ body {
 }
 
 .goBack{
-    border-radius: 15px;
+    fill: #000;
     position: fixed;
-    top: 60px;
+    top: 70px;
     right: 20px;
-    width: 100px;
-    height: 30px;
     border: none;
-    background-color: #333;
+    padding: 9px 10px;
+    border-radius: 50%;
+    background-color: #dbdbdb;
     color: white;
     cursor: pointer;
     z-index: 100;
@@ -31,6 +31,7 @@ body {
 }
 
 .dark-mode .goBack{
+    fill: #fff;
     background-color: #fffefe;
     color: rgb(0, 0, 0);
     box-shadow: 1px 1px 1px 1px #000000;
@@ -40,11 +41,10 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 100px;
-    height: 30px;
     border: none;
-    border-radius: 20px;
-    background-color: #333;
+    padding: 9px 10px;
+    border-radius: 50%;
+    background-color: #dbdbdb;
     color: white;
     cursor: pointer;
     z-index: 100;
@@ -53,6 +53,7 @@ body {
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 
 .dark-mode-button:hover {
     transform: translateY(-2px);
@@ -132,4 +133,41 @@ body.dark-mode #footer {
     /* Dark mode footer styling */
     background-color: #222222;
     color: #ccc;
+}
+
+.downloadBtn img{
+    width: 15px;
+}
+.downloadBtn{
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    border: none;
+    border-width: 50%;
+    padding: 9px 10px;
+    border-radius: 20px;
+    background-color: #dbdbdb;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.downloadBtn:hover{
+    transform: translateY(2px);
+    background-color: #666;
+    box-shadow: 1px 1px 1px 1px #000000;
+    font-weight: 500;
+}
+
+.dark-mode .downloadBtn{
+    background-color: #fffefe;
+    color: #000000;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+::-webkit-scrollbar{
+    background-color: #000000;
 }
