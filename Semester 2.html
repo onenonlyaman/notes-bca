@@ -10,8 +10,10 @@
 </head>
 
 <body class="stackedit">
-  <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
-  <button class="goBack" onclick="history.back()">Go Back &larr;</button>
+  <img class="dark-mode-button" onclick="toggleDarkMode()" src="resources/dm.svg" id="icon">
+  <img class="goBack" onclick="history.back()" src="resources/larr_black.svg" id="arr">
+  <a href="./pdfs/sem2.pdf" download /><img class="downloadBtn" src="./resources/dbtn_black.svg" alt="download.svg"
+    id="dbtn"></a>
   <div class="stackedit__left">
     <div class="stackedit__toc">
 
@@ -54,13 +56,15 @@
         <li><code>&amp;</code> operator: Gets the address of a variable.</li>
         <li>Pointer arithmetic: Performing arithmetic operations on pointers.</li>
         <li>Dynamic memory allocation: <code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code>,
-          <code>free()</code>. Essential for managing memory at runtime.</li>
+          <code>free()</code>. Essential for managing memory at runtime.
+        </li>
       </ul>
       <p><strong>3. Strings:</strong></p>
       <ul>
         <li>Character arrays terminated by a null character (’\0’).</li>
         <li>String manipulation functions: <code>strcpy()</code>, <code>strcat()</code>, <code>strlen()</code>,
-          <code>strcmp()</code>, etc. (found in <code>string.h</code>).</li>
+          <code>strcmp()</code>, etc. (found in <code>string.h</code>).
+        </li>
       </ul>
       <p><strong>4. Structures and Unions:</strong></p>
       <ul>
@@ -73,7 +77,8 @@
         <li>Reading and writing data to files.</li>
         <li>File pointers: <code>FILE *</code>.</li>
         <li>File operations: <code>fopen()</code>, <code>fclose()</code>, <code>fprintf()</code>, <code>fscanf()</code>,
-          <code>fgets()</code>, <code>fputs()</code>.</li>
+          <code>fgets()</code>, <code>fputs()</code>.
+        </li>
       </ul>
       <p><strong>6. Command-line Arguments:</strong></p>
       <ul>
@@ -110,7 +115,8 @@ ulint bigNumber <span class="token operator">=</span> <span class="token number"
         <li><code>sizeof</code> operator: Determines the size (in bytes) of a data type or variable. Important for
           memory management and understanding data representation.</li>
         <li>Limits of data types: Understanding the maximum and minimum values that each data type can hold (e.g.,
-          <code>INT_MAX</code>, <code>INT_MIN</code> defined in <code>limits.h</code>).</li>
+          <code>INT_MAX</code>, <code>INT_MIN</code> defined in <code>limits.h</code>).
+        </li>
       </ul>
       <p><strong>4. Type Conversion (Casting):</strong></p>
       <ul>
@@ -203,7 +209,8 @@ ulint bigNumber <span class="token operator">=</span> <span class="token number"
       <p><strong>2. Strings:</strong></p>
       <ul>
         <li><strong>Character Arrays:</strong> Strings are null-terminated character arrays.
-          <code>char str[20] = "Hello";</code></li>
+          <code>char str[20] = "Hello";</code>
+        </li>
         <li><strong>String Manipulation Functions (string.h):</strong>
           <ul>
             <li><code>strcpy(dest, src)</code>: Copies a string.</li>
@@ -294,7 +301,8 @@ ulint bigNumber <span class="token operator">=</span> <span class="token number"
       <p><strong>5. Writing to a File:</strong></p>
       <ul>
         <li><strong><code>fprintf()</code>:</strong> Writes formatted output to a file, similar to
-          <code>printf()</code>.</li>
+          <code>printf()</code>.
+        </li>
         <li>Syntax: <code>int fprintf(FILE *fp, const char *format, ...);</code></li>
       </ul>
       <pre class=" language-c"><code class="prism  language-c"><span class="token function">fprintf</span><span class="token punctuation">(</span>fp<span class="token punctuation">,</span> <span class="token string">"The number is: %d\n"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -435,7 +443,8 @@ ulint bigNumber <span class="token operator">=</span> <span class="token number"
       <p><strong>2. 8051 Programming (Assembly Language):</strong></p>
       <ul>
         <li><strong>Instructions:</strong> Mnemonic codes representing specific operations (e.g., <code>MOV</code>,
-          <code>ADD</code>, <code>JMP</code>).</li>
+          <code>ADD</code>, <code>JMP</code>).
+        </li>
         <li><strong>Addressing Modes:</strong> Ways to access data:
           <ul>
             <li><strong>Register Addressing:</strong> <code>MOV A, R0</code></li>
@@ -463,7 +472,8 @@ DELAY:
       <ul>
         <li><strong>Advantages of C:</strong> Higher-level language, easier to write and maintain than assembly.</li>
         <li><strong>Special Function Register (SFR) Access:</strong> Using C syntax to access SFRs (e.g.,
-          <code>P1 = 0x00;</code> to turn on the LED).</li>
+          <code>P1 = 0x00;</code> to turn on the LED).
+        </li>
         <li><strong>Example Program (blinking an LED):</strong></li>
       </ul>
       <pre class=" language-c"><code class="prism  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;reg51.h&gt;</span></span>
@@ -691,13 +701,17 @@ x - y = 1
         with two operations, addition and scalar multiplication, that satisfy the following axioms:</p>
       <ul>
         <li><strong>Closure under addition:</strong> If <strong>u</strong> and <strong>v</strong> are in V, then
-          <strong>u</strong> + <strong>v</strong> is also in V.</li>
+          <strong>u</strong> + <strong>v</strong> is also in V.
+        </li>
         <li><strong>Commutativity of addition:</strong> <strong>u</strong> + <strong>v</strong> = <strong>v</strong> +
-          <strong>u</strong></li>
+          <strong>u</strong>
+        </li>
         <li><strong>Associativity of addition:</strong> (<strong>u</strong> + <strong>v</strong>) + <strong>w</strong> =
-          <strong>u</strong> + (<strong>v</strong> + <strong>w</strong>)</li>
+          <strong>u</strong> + (<strong>v</strong> + <strong>w</strong>)
+        </li>
         <li><strong>Existence of a zero vector:</strong> There exists a vector <strong>0</strong> in V such that
-          <strong>u</strong> + <strong>0</strong> = <strong>u</strong> for all <strong>u</strong> in V.</li>
+          <strong>u</strong> + <strong>0</strong> = <strong>u</strong> for all <strong>u</strong> in V.
+        </li>
         <li><strong>Existence of additive inverses:</strong> For every <strong>u</strong> in V, there exists a vector
           -<strong>u</strong> in V such that <strong>u</strong> + (-<strong>u</strong>) = <strong>0</strong>.</li>
         <li><strong>Closure under scalar multiplication:</strong> If <strong>u</strong> is in V and c is in F, then
@@ -705,7 +719,8 @@ x - y = 1
         <li><strong>Associativity of scalar multiplication:</strong> c(d<strong>u</strong>) = (cd)<strong>u</strong>
         </li>
         <li><strong>Distributivity of scalar multiplication over vector addition:</strong> c(<strong>u</strong> +
-          <strong>v</strong>) = c<strong>u</strong> + c<strong>v</strong></li>
+          <strong>v</strong>) = c<strong>u</strong> + c<strong>v</strong>
+        </li>
         <li><strong>Distributivity of scalar multiplication over scalar addition:</strong> (c + d)<strong>u</strong> =
           c<strong>u</strong> + d<strong>u</strong></li>
         <li><strong>Scalar multiplication identity:</strong> 1<strong>u</strong> = <strong>u</strong></li>
@@ -861,7 +876,8 @@ x - y = 1
       <ul>
         <li>The null space (or kernel) of an m x n matrix A, denoted as null(A) or ker(A), is the set of all vectors
           <strong>x</strong> in R<sup>n</sup> such that A<strong>x</strong> = <strong>0</strong> (the zero vector). In
-          other words, the null space contains all solutions to the homogeneous system of equations Ax = 0.</li>
+          other words, the null space contains all solutions to the homogeneous system of equations Ax = 0.
+        </li>
       </ul>
       <p><strong>2. Nullity:</strong></p>
       <ul>
@@ -995,7 +1011,8 @@ x - y = 1
       <p><strong>2. Examples of Linear Transformations:</strong></p>
       <ul>
         <li><strong>Identity Transformation (I):</strong> I(<strong>v</strong>) = <strong>v</strong> for all
-          <strong>v</strong> in V (maps every vector to itself).</li>
+          <strong>v</strong> in V (maps every vector to itself).
+        </li>
         <li><strong>Zero Transformation:</strong> T(<strong>v</strong>) = <strong>0</strong> for all <strong>v</strong>
           in V (maps every vector to the zero vector).</li>
         <li><strong>Scaling:</strong> T(<strong>v</strong>) = k<strong>v</strong> for some scalar k (scales every vector
@@ -1054,7 +1071,8 @@ x - y = 1
         <li><strong>Formulas:</strong> Instructions that perform calculations on cell values. Formulas always begin with
           an equal sign (=) (e.g., <code>=A1+B1</code>, <code>=SUM(A1:A10)</code>).</li>
         <li><strong>Functions:</strong> Predefined formulas that perform specific tasks (e.g., <code>SUM()</code>,
-          <code>AVERAGE()</code>, <code>COUNT()</code>, <code>IF()</code>, <code>VLOOKUP()</code>).</li>
+          <code>AVERAGE()</code>, <code>COUNT()</code>, <code>IF()</code>, <code>VLOOKUP()</code>).
+        </li>
       </ul>
       <p><strong>3. Data Organization:</strong></p>
       <ul>
@@ -1070,7 +1088,8 @@ x - y = 1
         <li><strong>Filtering:</strong> Display only rows that meet specific criteria.</li>
         <li><strong>Data Cleaning:</strong> Handling missing values, removing duplicates, correcting errors.</li>
         <li><strong>Text Functions:</strong> Manipulating text strings (e.g., <code>LEFT()</code>, <code>RIGHT()</code>,
-          <code>MID()</code>, <code>CONCATENATE()</code>).</li>
+          <code>MID()</code>, <code>CONCATENATE()</code>).
+        </li>
       </ul>
       <p><strong>5. Data Visualization:</strong></p>
       <ul>
@@ -1094,7 +1113,8 @@ x - y = 1
         <li>Formulas are expressions that perform calculations on cell values.</li>
         <li>They begin with an equal sign <code>=</code>.</li>
         <li>Operators: <code>+</code> (addition), <code>-</code> (subtraction), <code>*</code> (multiplication),
-          <code>/</code> (division), <code>^</code> (exponentiation).</li>
+          <code>/</code> (division), <code>^</code> (exponentiation).
+        </li>
         <li>Example: <code>=A1+B1</code> (adds the values in cells A1 and B1).</li>
       </ul>
       <p><strong>2. Functions:</strong></p>
@@ -1107,16 +1127,21 @@ x - y = 1
       <ul>
         <li><strong>Mathematical and Trigonometric:</strong> <code>SUM()</code>, <code>AVERAGE()</code>,
           <code>MAX()</code>, <code>MIN()</code>, <code>ROUND()</code>, <code>SIN()</code>, <code>COS()</code>,
-          <code>TAN()</code>, etc.</li>
+          <code>TAN()</code>, etc.
+        </li>
         <li><strong>Statistical:</strong> <code>COUNT()</code>, <code>COUNTIF()</code>, <code>SUMIF()</code>,
-          <code>AVERAGEIF()</code>, <code>STDEV()</code>, <code>MEDIAN()</code>, <code>MODE()</code>, etc.</li>
+          <code>AVERAGEIF()</code>, <code>STDEV()</code>, <code>MEDIAN()</code>, <code>MODE()</code>, etc.
+        </li>
         <li><strong>Text:</strong> <code>LEFT()</code>, <code>RIGHT()</code>, <code>MID()</code>, <code>LEN()</code>,
-          <code>CONCATENATE()</code>, <code>UPPER()</code>, <code>LOWER()</code>, etc.</li>
+          <code>CONCATENATE()</code>, <code>UPPER()</code>, <code>LOWER()</code>, etc.
+        </li>
         <li><strong>Logical:</strong> <code>IF()</code>, <code>AND()</code>, <code>OR()</code>, <code>NOT()</code>.</li>
         <li><strong>Date and Time:</strong> <code>TODAY()</code>, <code>NOW()</code>, <code>DATE()</code>,
-          <code>TIME()</code>, <code>DAY()</code>, <code>MONTH()</code>, <code>YEAR()</code>, etc.</li>
+          <code>TIME()</code>, <code>DAY()</code>, <code>MONTH()</code>, <code>YEAR()</code>, etc.
+        </li>
         <li><strong>Lookup and Reference:</strong> <code>VLOOKUP()</code>, <code>HLOOKUP()</code>, <code>INDEX()</code>,
-          <code>MATCH()</code>.</li>
+          <code>MATCH()</code>.
+        </li>
         <li><strong>Financial:</strong> <code>PMT()</code>, <code>FV()</code>, <code>PV()</code>, etc.</li>
       </ul>
       <p><strong>4. Nested Functions:</strong></p>
@@ -1143,7 +1168,8 @@ x - y = 1
       <p><strong>7. Error Handling:</strong></p>
       <ul>
         <li>Spreadsheet software provides error values (e.g., <code>#DIV/0!</code>, <code>#N/A</code>,
-          <code>#VALUE!</code>) to indicate formula errors.</li>
+          <code>#VALUE!</code>) to indicate formula errors.
+        </li>
         <li>Use error-handling functions like <code>IFERROR()</code> to trap errors and display alternative values or
           messages.]</li>
       </ul>
@@ -1369,7 +1395,8 @@ x - y = 1
     </div>
   </div>
   <div id="footer">
-    Notes prepared by <a href="https://instagram.com/simply_aaman" target="_blank" rel="noopener noreferrer">Aman</a> & <a href="https://instagram.com/d.gaurang_">Gaurang</a>,
+    Notes prepared by <a href="https://instagram.com/simply_aaman" target="_blank" rel="noopener noreferrer">Aman</a> &
+    <a href="https://instagram.com/d.gaurang_">Gaurang</a>,
     refined by AI.
   </div>
   <script src="script.js"></script>

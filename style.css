@@ -158,12 +158,11 @@ body.dark-mode {
     position: fixed;
     top: 20px;
     right: 20px;
-    padding: 10px 20px;
     border: none;
-    border-radius: 20px;
-    background-color: #333;
+    padding: 9px 10px;
+    border-radius: 50%;
+    background-color: #dbdbdb;
     color: white;
-    font-weight: 500;
     cursor: pointer;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -171,6 +170,7 @@ body.dark-mode {
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 
 .dark-mode-button:hover {
     transform: translateY(-2px);
@@ -191,7 +191,6 @@ body.dark-mode {
     box-shadow: 1px 1px 1px 1px #ffffff91;
 }
 /* new background */
-
 .context {
     width: 100%;
     position: absolute;
@@ -330,3 +329,7 @@ body.dark-mode {
         border-radius: 50%;
     }
 }
+.dark-mode-icon {
+    display: inline-block;
+}
+
