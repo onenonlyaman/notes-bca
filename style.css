@@ -26,6 +26,16 @@ h2 {
     /* GitHub header color */
 }
 
+h6 {
+    color: #24292e;
+    opacity: 0.5;
+}
+
+.dark-mode h6 {
+    color: #eee;
+    opacity: 0.5;
+}
+
 .intro {
     margin-bottom: 20px;
 }
@@ -117,7 +127,8 @@ body.dark-mode {
     background-color: #3d3d3d;
     /* Darker note box background */
 }
-.dark-mode .note-box:hover{
+
+.dark-mode .note-box:hover {
     background-color: #0366d6;
 }
 
@@ -179,17 +190,18 @@ body.dark-mode {
     font-weight: 500;
 }
 
-.dark-mode .dark-mode-button{
+.dark-mode .dark-mode-button {
     background-color: #ddd;
     color: #000000;
 }
 
-.dark-mode .dark-mode-button:hover{
+.dark-mode .dark-mode-button:hover {
     font-weight: 500;
     background-color: #ffffff;
     color: #000000;
     box-shadow: 1px 1px 1px 1px #ffffff91;
 }
+
 /* new background */
 .context {
     width: 100%;
@@ -232,8 +244,6 @@ body.dark-mode {
     /* Start from the bottom */
     transform: translate(0, -100%);
     /* Move them off-screen initially */
-    /* <- THIS is important! */
-
 }
 
 .circles li:nth-child(1) {
@@ -319,17 +329,17 @@ body.dark-mode {
         transform: translateY(0) rotate(0deg);
         /* Start at the bottom */
         opacity: 1;
-        border-radius: 0;
+        border-radius: 19%;
     }
 
     100% {
         transform: translateY(-150vh) rotate(720deg);
         /* Move off-screen beyond viewport */
         opacity: 0;
-        border-radius: 50%;
+        border-radius: 19%;
     }
 }
+
 .dark-mode-icon {
     display: inline-block;
 }
-
