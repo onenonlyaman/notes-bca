@@ -2,18 +2,18 @@ body {
     font-family: sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-color: #f4f4f4;
+    background: rgb(255, 255, 255);
     color: #333;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
     /* Smooth dark mode transition */
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff96;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 5;
     -webkit-tap-highlight-color: transparent;
@@ -49,11 +49,12 @@ h6 {
 }
 
 .note-box {
-    border: 1px solid rgba(0, 0, 0, 0.055);
+    border-top: 1px solid rgba(0, 0, 0, 0.055);
+    border-left: 1px solid rgba(0, 0, 0, 0.055);
     background-color: #f6f8fa;
     /* GitHub sidebar gray */
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s;
     text-align: center;
@@ -105,10 +106,11 @@ h6 {
 body.dark-mode {
     background-color: #000000;
     color: #ddd;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .dark-mode .container {
-    background-color: #080808;
+    background-color: #ffffff0a;
     /* Darker container background */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     /* More prominent shadow in dark mode */
@@ -124,12 +126,15 @@ body.dark-mode {
 
 .dark-mode .note-box {
     border: 1px solid rgba(255, 255, 255, 0.185);
-    background-color: #3d3d3d;
+    background-color: #3d3d3d21;
     /* Darker note box background */
+    backdrop-filter: blur(10px);
+    transition: all ease .4s;
 }
-
-.dark-mode .note-box:hover {
-    background-color: #0366d6;
+.dark-mode .note-box:hover{
+    background-color: #0365d63d;
+    backdrop-filter: blur(20px);
+    transition: all ease .4s;
 }
 
 .dark-mode .note-box a {
@@ -172,7 +177,7 @@ body.dark-mode {
     border: none;
     padding: 9px 10px;
     border-radius: 50%;
-    background-color: #dbdbdb;
+    background-color: #dbdbdb3a;
     color: white;
     cursor: pointer;
     z-index: 100;
@@ -186,7 +191,7 @@ body.dark-mode {
 .dark-mode-button:hover {
     transform: translateY(-2px);
     background-color: #666;
-    box-shadow: 1px 1px 1px 1px #000000;
+    box-shadow: 1px 1px 1px 1px #0000008e;
     font-weight: 500;
 }
 
@@ -226,7 +231,7 @@ body.dark-mode {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 5;
+    z-index: 1;
     /* Keeps the circles behind the content */
     pointer-events: none;
     /* Makes the circles not clickable so they don't interfere with links below them */
@@ -244,6 +249,9 @@ body.dark-mode {
     /* Start from the bottom */
     transform: translate(0, -100%);
     /* Move them off-screen initially */
+    /* <- THIS is important! */
+    border-radius: 30px;
+
 }
 
 .circles li:nth-child(1) {
@@ -329,14 +337,14 @@ body.dark-mode {
         transform: translateY(0) rotate(0deg);
         /* Start at the bottom */
         opacity: 1;
-        border-radius: 19%;
+        border-radius: 0;
     }
 
     100% {
         transform: translateY(-150vh) rotate(720deg);
         /* Move off-screen beyond viewport */
         opacity: 0;
-        border-radius: 19%;
+        border-radius: 50%;
     }
 }
 

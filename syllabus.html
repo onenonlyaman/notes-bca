@@ -7,15 +7,50 @@
     <title>Syllabus</title>
     <link rel="stylesheet" href="https://stackedit.io/style.css" />
     <link rel="stylesheet" href="pagestyle.css" />
+    <!-- changes -->
+    <style>
+        .button-group {
+            position: fixed; /* Keep it on the right even when scrolling */
+            top: 20px; /* Adjust top position as needed */
+            right: 20px;
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+        }
+
+        .button-group.collapsed {
+            height: 40px; /* Height of the toggle button */
+            overflow: hidden; /* Hide buttons when collapsed */
+            transition: height 0.3s ease-in-out; /* Smooth animation */
+        }
+
+        .button-group.expanded {
+            height: auto;
+            overflow: visible;
+            transition: height 0.3s ease-in-out;
+        }
+
+        .button-group-toggle {
+            width: 40px;
+            height: 40px; /* Adjust size as needed */
+            /* Other styling for the toggle button */
+        }
+        .dark-mode-button, .goBack, .downloadBtn {
+            margin-bottom: 5px; /* Space between buttons */
+        }
+    </style>
 </head>
 
 
 
 <body class="stackedit">
-    <img class="dark-mode-button" onclick="toggleDarkMode()" src="resources/dm.svg" id="icon">
-    <img class="goBack" onclick="history.back()" src="resources/larr_black.svg" id="arr">
-    <a href="./pdfs/sem1.pdf" download /><img class="downloadBtn" src="./resources/dbtn_black.svg" alt="download.svg"
-        id="dbtn"></a>
+
+    <div class="button-group collapsed" id="buttonGroup">
+        <button class="button-group-toggle" onclick="toggleButtonGroup()">☰</button>
+        <img class="dark-mode-button" onclick="toggleDarkMode()" src="resources/dm.svg" id="icon">
+        <img class="goBack" onclick="history.back()" src="resources/larr_black.svg" id="arr">
+        <a href="./pdfs/sem1.pdf" download /><img class="downloadBtn" src="./resources/dbtn_black.svg" alt="download.svg"
+            id="dbtn"></a>
+    </div>
 
     <div class="stackedit__left">
         <div class="stackedit__toc">
@@ -136,6 +171,16 @@
     </div>
 
     <script src="script.js"></script>
+    <!-- changes-->
+    <script>
+        function toggleButtonGroup() {
+            const buttonGroup = document.getElementById('buttonGroup');
+            buttonGroup.classList.toggle('collapsed');
+            buttonGroup.classList.toggle('expanded');
+        }
+
+        
+    </script>
 </body>
 
 </html>
