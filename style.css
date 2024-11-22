@@ -170,7 +170,7 @@ body.dark-mode {
     animation-delay: 0.3s;
 }
 
-.dark-mode-button {
+#dark-mode-button {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -178,7 +178,7 @@ body.dark-mode {
     padding: 9px 10px;
     border-radius: 50%;
     background-color: #dbdbdb3a;
-    color: white;
+    color: #000;
     cursor: pointer;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -188,19 +188,20 @@ body.dark-mode {
 }
 
 
-.dark-mode-button:hover {
+#dark-mode-button:hover {
     transform: translateY(-2px);
     background-color: #666;
+    color: #eee;
     box-shadow: 1px 1px 1px 1px #0000008e;
     font-weight: 500;
 }
 
-.dark-mode .dark-mode-button {
+.dark-mode #dark-mode-button {
     background-color: #ddd;
     color: #000000;
 }
 
-.dark-mode .dark-mode-button:hover {
+.dark-mode #dark-mode-button:hover {
     font-weight: 500;
     background-color: #ffffff;
     color: #000000;

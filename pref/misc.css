@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 7%;
+    padding-left: 30%;
+    padding-right: 30%;
+    --dark-color: #333;
+    --light-color: #fff;
+}
+
+::selection {
+    color: var(--light-color);
+    background: var(--dark-color);
+}
+
+::-moz-selection {
+    color: var(--light-color);
+    background: var(--dark-color);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+li {
+    list-style: none;
+}
+
+.text {
+    margin-right: 15px;
+    color: var(--dark-color);
+}
+.text a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#backBtn {
+    color: var(--dark-color);
+    font-size: 2em;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+
+#backBtn:hover {
+    transform: translateX(-5px);
+}
+
+#title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--dark-color);
+    font-size: 2.5em;
+}
+
+.code {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.nameBox {
+    max-width: 190px;
+    padding: 0.275rem;
+    border: 1.5px solid var(--dark-color);
+    border-radius: 0.5rem;
+    box-shadow: 1.5px 3px 0 var(--dark-color);
+    outline: none;
+    transition: ease 0.25s;
+}
+
+.nameBox:focus {
+    box-shadow: 5.5px 7px 0 var(--dark-color);
+}
+
+.input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--dark-color);
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--dark-color);
+    border-radius: 2px;
+    opacity: 0;
+    transition: ease 0.25s;
+}
+
+.input[type="checkbox"]:checked+.custom-checkbox::after {
+    opacity: 1;
+}
+
+/* dark mode styling */
+
+.dark-mode ::selection {
+    color: var(--dark-color);
+    background: var(--light-color);
+}
+
+.dark-mode ::-moz-selection {
+    color: var(--dark-color);
+    background: var(--light-color);
+}
+
+.dark-mode {
+    background-color: var(--dark-color); 
+    color: var(--light-color); 
+}
+
+.dark-mode .text,
+.dark-mode .text a,
+.dark-mode #title,
+.dark-mode #backBtn {
+    color: var(--light-color); 
+}
+
+.dark-mode .nameBox {
+    border-color: var(--light-color); 
+    box-shadow: 1.5px 3px 0 #141414; 
+}
+
+.dark-mode .nameBox:focus {
+    box-shadow: 5.5px 7px 0 #141414; 
+}
+
+.dark-mode .custom-checkbox {
+    border-color: var(--light-color); 
+}
+
+.dark-mode .custom-checkbox::after {
+    background-color: var(--light-color); 
+}

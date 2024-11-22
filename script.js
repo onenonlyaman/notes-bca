@@ -13,6 +13,10 @@ function toggleDarkMode() {
     }
 }
 
+function getUserName(){
+    return localStorage.getItem('userName') || "Guest" //Return "Guest" if no name stored
+}
+
 tocLinks.forEach(e => {
     e.addEventListener("click", function(e) {
         e.preventDefault();

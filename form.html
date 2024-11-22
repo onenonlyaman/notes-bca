@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <link rel="stylesheet" href="./pref/style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <li><i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true" onclick="history.back()" style="cursor: pointer" id="backBtn"></i></li>
+    <div class="container">
+        <span class="text" id="title">feedback.</span>
+        <form action="https://formbold.com/s/98EN4" method="post">
+            <input type="text" placeholder="your name?" name="name" class="nameBox">
+            <br>
+            <input type="email" placeholder="email id please" name="email" class="nameBox">
+            <br>
+            <input type="radio" id="aDiv" name="division" value="Division A" class="radioBtn">
+            <label for="aDiv"><span class="text">Division A</span></label>
+            <br>
+            <input type="radio" id="bDiv" name="division" value="Division B" class="radioBtn">
+            <label for="bDiv"><span class="text">Division B</span></label>
+            <br>
+            <input type="number" placeholder="your roll number?" name="roll" class="nameBox">
+            <br>
+            <textarea name="feedback" placeholder="enter your feedback here" class="textBox"></textarea>
+            <br>
+            <button type="submit" class="submitBtn">send!</button>
+        </form>
+    </div>
+</body>
+</html>

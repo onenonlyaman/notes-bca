@@ -4,20 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="prefStyle.css">
-    <title>Preferences</title>
+    <link rel="stylesheet" href="./pref/style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>preferences</title>
 </head>
 
 <body>
     <div class="container">
         <ul>
-            <li><span class="title">preferences</span></li>
-            <li><span class="text">enter your name</span><input placeholder="Name" class="nameBox" name="text" type="name" /></li>
-            <li><span class="text">toggle Dark Mode</span><label><input type="checkbox" class="input"><span class="custom-checkbox"></span></label></li>
-            <li><span class="text"><a href="#">credits</a></span></li>
-            <li><span class="text"><a href="#">about</a></span></li>
+            <li><i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true" onclick="history.back()" style="cursor: pointer" id="backBtn"></i></li> 
+            <li><span class="text" id="title">preferences.</span></li>
+            <li><span class="text">enter your name</span>
+                <input placeholder="name (dosent work right now)" class="nameBox" name="text" type="text">
+                <span class="saved-indicator">tick</span></li>
+            <li><span class="text">toggle dark mode</span><label><input type="checkbox" class="input"><span class="custom-checkbox"></span></label></li>
+            <li><span class="text"><a href="form.html">feedback</a></span></li>
+            <li><span class="text"><a href="credits.html">credits</a></span></li>
+            <li><span class="text"><a href="about.html">about</a></span></li>
         </ul>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

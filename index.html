@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCA Notes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <img class="dark-mode-button" onclick="toggleDarkMode()" src="resources/dm.svg" id="icon">
+    <a href="preferences.html"><i class="fa fa-cog fa-2x" aria-hidden="true" id="dark-mode-button"></i></a>
 
     <div class="container">
         <h1>Bachelor of Computer Applications</h1>
         <div class="intro">
-            <p>Welcome to the collection of notes for the Bachelor of Computer Applications course. These notes cover a
+            <p><!--Hello, <span id="userName"></span>! -->Welcome to the collection of notes for the Bachelor of Computer Applications course. These notes cover a
                 wide range of topics and are designed to be concise and easy to understand. They're a great resource for
                 studying and reviewing key concepts. Feel free to explore!</p>
         </div>
@@ -57,9 +58,14 @@
             </div>
             <div class="note-box">
                 <a href="https://bcahw.netlify.app/">
-                    <h3>Get Daily Notes Here!</h3>
+                    <h3>Daily Notes</h3>
                 </a>
             </div>
+            <div class="note-box">
+                <a href="form.html">
+                    <h3>Feedback</h3>
+                </a>
+            </div>  
         </div>
 
 
@@ -86,7 +92,10 @@
         <li></li>
         <li></li>
     </ul>
-
+    <script>
+        const userNameSpan = document.getElementById('userName');
+        userNameSpan.textContent = getUserName();
+    </script>
     <script src="script.js"></script>
 </body>
 
