@@ -27,3 +27,10 @@ tocLinks.forEach(e => {
 }), window.onload = () => {
     "enabled" === localStorage.getItem("darkMode") && document.body.classList.add("dark-mode");
 };
+
+window.onload = function() {
+    const greetingElement = document.getElementById('greeting');
+    const userName = window.getUserName(); // Access getUserName from main.js
+
+    greetingElement.textContent = `Hello, ${userName}! `;
+};

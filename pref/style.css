@@ -17,9 +17,16 @@ body {
 
 .saved-indicator {
     display: none; /* Initially hidden */
-    margin-left: 0.5rem; /* Adjust spacing */
-    color: green;     /* Example color */
+    margin-left: 5px;
+    color: green;
 }
+
+#userNameDisplay {
+    margin-left: 10px;
+    font-style: italic;
+    color: grey;
+}
+
 
 .container {
     display: grid;
