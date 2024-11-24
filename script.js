@@ -24,9 +24,7 @@ tocLinks.forEach(e => {
             o = document.querySelector(t);
         o && o.scrollIntoView({ behavior: "smooth" })
     })
-}), window.onload = () => {
-    "enabled" === localStorage.getItem("darkMode") && document.body.classList.add("dark-mode");
-};
+});
 
 window.onload = function() {
     const greetingElement = document.getElementById('greeting');
