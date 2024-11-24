@@ -148,6 +148,7 @@ a {
 }
 
 footer {
+    background-color: #666;
     text-align: center;
     color: #000;
     position: fixed;
