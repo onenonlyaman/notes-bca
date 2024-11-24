@@ -158,7 +158,8 @@ body.dark-mode #footer {
     box-shadow: 1px 1px 1px 1px #000000;
 }
 
-.dark-mode pre>code {
+.dark-mode pre>code,
+.dark-mode code {
     background-color: #242424;
 }
 

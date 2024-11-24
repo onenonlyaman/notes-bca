@@ -1204,7 +1204,7 @@ blockquote{
     border-left-color:hsla(0,0%,100%,.1)
 }
 code{
-    background-color:rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.075);
     border-radius:3px;
     padding:2px 4px
 }
