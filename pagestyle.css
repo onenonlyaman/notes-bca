@@ -4,7 +4,6 @@ body {
 
 .stackedit__toc a {
     text-decoration: none;
-    /* Remove underline */
 }
 
 .goBack{
@@ -86,21 +85,16 @@ body.dark-mode {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
-/* Dark Mode Styles for this specific page */
 body.dark-mode .stackedit__left {
     background-color: #222;
 }
 
 body.dark-mode pre.language-html {
     background-color: #333;
-    /* Or any color that provides good contrast */
 }
 
 body.dark-mode code.prism.language-html {
     color: #ccc;
-    /* Light color for code */
-
 }
 
 /* Sticky Footer */
@@ -112,13 +106,10 @@ body.dark-mode code.prism.language-html {
     left: 0;
     width: 100%;
     background-color: #ffffff;
-    /* Light gray background */
     padding: 5px 0;
-    /* Small padding */
     text-align: center;
     font-size: small;
     z-index: 99;
-    /* Ensure it's above other content but below the button */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -130,7 +121,6 @@ body.dark-mode code.prism.language-html {
 }
 
 body.dark-mode #footer {
-    /* Dark mode footer styling */
     background-color: #222222;
     color: #ccc;
 }
@@ -166,6 +156,10 @@ body.dark-mode #footer {
     background-color: #fffefe;
     color: #000000;
     box-shadow: 1px 1px 1px 1px #000000;
+}
+
+.dark-mode pre>code {
+    background-color: #242424;
 }
 
 ::-webkit-scrollbar{
