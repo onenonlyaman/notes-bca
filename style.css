@@ -100,7 +100,7 @@ body.dark-mode {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-.dark-mode .container {
+.dark-mode .container { 
     background-color: #ffffff0a;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -151,6 +151,16 @@ body.dark-mode {
 
 .note-box:nth-child(even) {
     animation-delay: 0.3s;
+}
+
+#thereID{
+    margin-right: -217%;
+}
+
+@media screen and (max-width: 400px) {
+    #thereID{
+    margin-right: -1%;
+    }
 }
 
 #dark-mode-button {
