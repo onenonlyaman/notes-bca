@@ -148,6 +148,7 @@ a {
 }
 
 footer {
+    height: 20px;
     background-color: #666;
     text-align: center;
     color: #000;
