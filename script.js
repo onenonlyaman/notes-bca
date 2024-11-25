@@ -32,3 +32,9 @@ window.onload = function() {
     "enabled" === localStorage.getItem("darkMode") && document.body.classList.add("dark-mode");
     greetingElement.textContent = `Hello, ${userName}! `;
 };
+
+if ("serviceWorker" in navigator) {
+    // register service worker
+    navigator.serviceWorker.register("service-worker.js");
+  }
+  
