@@ -153,3 +153,42 @@ form{
     transform: translate(3px, 3px);
   }
   
+input{
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:hover{
+    border: 1px solid #333;
+}
+
+.dark-theme input{
+    border: 1px solid #333;
+    color: #ffffff;
+}
+
+.dark-theme select{
+    border: 1px solid #333;
+    color: #000;
+}
+
+select:hover{
+    border: 1px solid #333;
+}
+
+select{
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+}
+
+.dark-theme p{
+    color: #ffffff;
+}

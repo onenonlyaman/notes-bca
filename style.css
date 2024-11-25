@@ -60,7 +60,7 @@ h6 {
 }
 
 .note-box:hover {
-    background-color: #03cfd69c;
+    background-color: #0365d63d;
     transform: translateY(-10px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     -webkit-tap-highlight-color: transparent;
@@ -71,7 +71,7 @@ h6 {
 
 .note-box a {
     text-decoration: none;
-    color: #0366d6;
+    color: #0365d63e;
     display: block;
     height: 100%;
     display: flex;
@@ -118,6 +118,12 @@ body.dark-mode {
     backdrop-filter: blur(10px);
     transition: all ease .4s;
 }
+.note-box {
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    background-color: #3d3d3d21;
+    backdrop-filter: blur(10px);
+    transition: all ease .4s;
+}
 .dark-mode .note-box:hover{
     background-color: #0365d63d;
     backdrop-filter: blur(20px);
@@ -158,6 +164,26 @@ body.dark-mode {
 }
 
 @media screen and (max-width: 400px) {
+    #thereID{
+    margin-right: -1%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #thereID{
+    margin-right: -1%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #thereID{
+    margin-right: -1%;
+    }
+}
+@media screen and (max-width: 700px) {
+    #thereID{
+    margin-right: -1%;
+    }
+}
+@media screen and (max-width: 800px) {
     #thereID{
     margin-right: -1%;
     }
@@ -233,7 +259,19 @@ body.dark-mode {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: 0;
+    transform: translate(0, -100%);
+    border-radius: 30px;
+}
+.dark-mode .circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(182, 182, 182, 0.2);
     animation: animate 25s linear infinite;
     bottom: 0;
     transform: translate(0, -100%);
