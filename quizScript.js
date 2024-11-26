@@ -23,3 +23,8 @@ themeToggleBtn.addEventListener('click', () => {
   const currentTheme = body.classList.contains('dark-theme') ? 'light' : 'dark';
   setTheme(currentTheme);
 });
+
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("service-worker.js");
+}

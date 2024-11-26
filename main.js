@@ -48,3 +48,8 @@ window.getUserName = function(){
 
 
 darkModeCheckbox.addEventListener('change', toggleDarkMode);
+
+if ("serviceWorker" in navigator) {
+    // register service worker
+    navigator.serviceWorker.register("service-worker.js");
+}

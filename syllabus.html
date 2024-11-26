@@ -14,49 +14,24 @@
     <meta name="apple-mobile-web-app-title" content="BCA Notes" />
     <link rel="manifest" href="/resources/site.webmanifest" />
     <!-- changes -->
-    <style>
-        .button-group {
-            position: fixed; /* Keep it on the right even when scrolling */
-            top: 20px; /* Adjust top position as needed */
-            right: 20px;
-            display: flex;
-            flex-direction: column; /* Stack buttons vertically */
-        }
-
-        .button-group.collapsed {
-            height: 40px; /* Height of the toggle button */
-            overflow: hidden; /* Hide buttons when collapsed */
-            transition: height 0.3s ease-in-out; /* Smooth animation */
-        }
-
-        .button-group.expanded {
-            height: auto;
-            overflow: visible;
-            transition: height 0.3s ease-in-out;
-        }
-
-        .button-group-toggle {
-            width: 40px;
-            height: 40px; /* Adjust size as needed */
-            /* Other styling for the toggle button */
-        }
-        .dark-mode-button, .goBack, .downloadBtn {
-            margin-bottom: 5px; /* Space between buttons */
-        }
-    </style>
+    
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DR2VPR3VY8"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DR2VPR3VY8');
+</script>
 
 
 
 <body class="stackedit">
-
-    <div class="button-group collapsed" id="buttonGroup">
-        <button class="button-group-toggle" onclick="toggleButtonGroup()">☰</button>
-        <img class="dark-mode-button" onclick="toggleDarkMode()" src="resources/dm.svg" id="icon">
-        <img class="goBack" onclick="history.back()" src="resources/larr_black.svg" id="arr">
-        <a href="./pdfs/sem1.pdf" download /><img class="downloadBtn" src="./resources/dbtn_black.svg" alt="download.svg"
-            id="dbtn"></a>
-    </div>
+    <img class="dark-mode-button" onclick="toggleDarkMode()" src="resources/dm.svg" id="icon">
+    <img class="goBack" onclick="history.back()" src="resources/larr_black.svg" id="arr">
+    
 
     <div class="stackedit__left">
         <div class="stackedit__toc">

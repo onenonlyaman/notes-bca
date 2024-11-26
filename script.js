@@ -13,12 +13,12 @@ function toggleDarkMode() {
     }
 }
 
-function getUserName(){
+function getUserName() {
     return localStorage.getItem('userName') || "Guest" //Return "Guest" if no name stored
 }
 
 tocLinks.forEach(e => {
-    e.addEventListener("click", function(e) {
+    e.addEventListener("click", function (e) {
         e.preventDefault();
         let t = this.getAttribute("href"),
             o = document.querySelector(t);
@@ -26,7 +26,7 @@ tocLinks.forEach(e => {
     })
 });
 
-window.onload = function() {
+window.onload = function () {
     const greetingElement = document.getElementById('greeting');
     const userName = window.getUserName(); // Access getUserName from main.js
     "enabled" === localStorage.getItem("darkMode") && document.body.classList.add("dark-mode");
@@ -36,5 +36,4 @@ window.onload = function() {
 if ("serviceWorker" in navigator) {
     // register service worker
     navigator.serviceWorker.register("service-worker.js");
-  }
-  
+}
