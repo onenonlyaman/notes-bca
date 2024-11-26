@@ -7,6 +7,11 @@ body {
     --light-color: #fff;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 ::selection {
     color: var(--light-color);
     background: var(--dark-color);
