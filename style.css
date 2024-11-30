@@ -159,7 +159,7 @@ body.dark-mode {
     animation-delay: 0.3s;
 }
 
-#thereID{
+/* #thereID{
     margin-right: -217%;
 }
 
@@ -187,9 +187,10 @@ body.dark-mode {
     #thereID{
     margin-right: -1%;
     }
-}
+} */
 
-#dark-mode-button {
+#dark-mode-button,
+#back-button {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -206,8 +207,13 @@ body.dark-mode {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+#back-button {
+    top: 100px;
+}
 
-#dark-mode-button:hover {
+
+#dark-mode-button:hover,
+#back-button:hover {
     transform: translateY(-2px);
     background-color: #666;
     color: #eee;
@@ -215,12 +221,14 @@ body.dark-mode {
     font-weight: 500;
 }
 
-.dark-mode #dark-mode-button {
+.dark-mode #dark-mode-button
+.dark-mode #back-button {
     background-color: #ddd;
     color: #000000;
 }
 
-.dark-mode #dark-mode-button:hover {
+.dark-mode #dark-mode-button:hover,
+.dark-mode #back-button:hover {
     font-weight: 500;
     background-color: #ffffff;
     color: #000000;

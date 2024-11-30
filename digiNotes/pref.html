@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pref/style.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>preferences</title>
+    <link rel="icon" type="image/png" href="../resources/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../resources/favicon.svg" />
+    <link rel="shortcut icon" href="../resources/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="BCA Notes" />
+    <link rel="manifest" href="../resources/site.webmanifest" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DR2VPR3VY8"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DR2VPR3VY8');
+</script>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="digiNotes.html"><i class="fa fa-arrow-circle-left fa-2x" onclick="location.reload();" aria-hidden="true" style="cursor: pointer" id="backBtn"></i></a></li> 
+            <li><span class="text" id="title">preferences.</span></li>
+            <li><span class="text">enter your name</span>
+                <input placeholder="name" class="nameBox" name="text" type="text">
+                <span class="saved-indicator">✔</span>
+                <span id="userNameDisplay"></span> </li>
+            <li><span class="text">toggle dark mode</span><label><input type="checkbox" class="input"><span class="custom-checkbox"></span></label></li>
+            <li><span class="text"><a href="../form.html">feedback</a></span></li>
+            <li><span class="text"><a href="../credits.html">credits</a></span></li>
+            <li><span class="text"><a href="../about.html">about</a></span></li>
+        </ul>
+    </div>
+    <script src="../main.js"></script>
+</body>
+
+</html>

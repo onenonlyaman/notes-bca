@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: Dosis, sans-serif;
+    background-color: #f8f8f8;
+    color: #212121;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    font-family: Quicksand, sans-serif;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    font-size: 3em;
+}
+
+/* Homework Item Styles */
+.homework-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.homework-item:hover {
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.homework-item h2 {
+    color: #212121;
+    margin-top: 0;
+    font-weight: bold;
+    flex-grow: 1;
+    transition: color 0.3s ease;
+}
+
+.homework-item p {
+    margin: 0 20px;
+    color: #424242;
+    flex-shrink: 1;
+    transition: color 0.3s ease;
+}
+
+.homework-item a {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: 30px;
+    background-color: #dbdbdb;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.homework-item a:hover {
+    background-color: #424242;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #000000;
+    color: #ddd;
+}
+
+.dark-mode h1 {
+    color: #ddd;
+}
+
+.dark-mode .homework-item {
+    background-color: #252525;
+    color: #ddd;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .homework-item:hover {
+    box-shadow: 0 0px 30px rgb(68, 68, 68);
+    transform: translateY(-2px);
+}
+
+.dark-mode .homework-item h2 {
+    color: #ddd;
+}
+
+.dark-mode .homework-item p {
+    color: #ddd;
+}
+
+.dark-mode .homework-item a {
+    background-color: #ddd;
+    color: #000000;
+}
+
+.dark-mode .homework-item a:hover {
+    background-color: #ffffff;
+}
+
+.dark-mode-button,
+.daSvgWithId,
+.hideBtn {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    border: none;
+    padding: 9px 10px;
+    border-radius: 50%;
+    background-color: #dbdbdb;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.hideBtn {
+    top: 20px;
+}
+
+.daSvgWithId {
+    top: 120px; 
+}
+
+
+/* hover properties for all buttons */
+.dark-mode-button:hover,
+.daSvgWithId:hover,
+.hideBtn:hover {
+    transform: translateY(-2px);
+    background-color: #666;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+/* hover properties for dark mode buttons and normal properties for the same */
+
+.dark-mode .dark-mode-button,
+.dark-mode .daSvgWithId,
+.dark-mode .hideBtn {
+    background-color: #ddd;
+    color: #000000;
+}
+
+.dark-mode .dark-mode-button:hover,
+.dark-mode .daSvgWithId:hover,
+.dark-mode .hideBtn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 1px 1px 1px 1px #ffffff91;
+}
+
+/* footer */
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.dark-mode .footer {
+    color: #999;
+}
+
+#loadingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255); /* Semi-transparent white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+    transition: opacity 0.5s ease; /* Smooth fade-out */
+    opacity: 1; /* Initially visible */
+}
+
+#loadingOverlay.hidden {
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction while fading */
+}
+
+#loadingOverlay p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Dark mode styling (optional) */
+body.dark-mode #loadingOverlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #eee;
+}
+
+
+/* mobile friendliness */
+@media (max-width: 800px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .homework-item {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .homework-item h2 {
+        margin-bottom: 5px;
+    }
+
+    .homework-item p {
+        margin: 5px 0;
+    }
+
+    .homework-item a {
+        margin-top: 10px;
+        padding: 5px;
+        justify-content: center;
+        width: 100%; 
+    }
+
+    .dark-mode-button,
+    .daSvgWithId,
+    .hideBtn {
+        padding: 5px 5px;
+        margin-bottom: 10px; 
+    }
+
+    .footer {
+        margin-top: 15px;
+    }
+}
