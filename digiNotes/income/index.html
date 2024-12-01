@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Notes</title>
+  <link rel="stylesheet" href="../resources/style.css"><link rel="icon" type="image/png" href="../resources/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../resources/favicon.svg" />
+  <link rel="shortcut icon" href="../resources/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../resources/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="BCA Notes" />
+  <link rel="manifest" href="../resources/site.webmanifest" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DR2VPR3VY8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-DR2VPR3VY8');
+</script>
+
+<body>
+
+  <div id="loadingOverlay">
+    <p>Loading...</p>
+  </div>
+
+  <img src="../resources/hide.svg" class="hideBtn" onclick="toggleButtons()" alt="">
+  <img class="dark-mode-button" onclick="toggleDarkMode()" src="../resources/dm.svg" id="icon">
+  <a href="../digiNotes.html"><img src="../resources/home.svg" alt="" class="daSvgWithId"></a>
+  <h1 style="text-align: center;">Daily Notes</h1>
+
+  <div id="homework-container">
+    <div class="homework-item">
+        <h2>Chapter 1</h2>
+        <p>Introduction of Basics of Income Tax</p>
+        <p>Semester 1</p><a href="files/incomechapter1.pdf"><img src="../resources/download.svg"></a>
+    </div>
+  </div>
+
+  <div id="bottomScroll"></div>
+
+  <div class="footer">
+    Notes written & website designed by <a href="https://justaman.netlify.app">Aman</a>.<br>
+    Live Visitor Counter:
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1254228/t/5"
+      id="daid"></script>
+  </div>
+
+  
+
+  <script src="../resources/script.js"></script>
+</body>
+
+</html>
+
