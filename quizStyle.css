@@ -145,18 +145,18 @@ a {
 
 #theA {
     color: blue;
+    transition: all ease .5s;
+}
+#theA:hover{
+    color: rgb(93, 93, 186);
+    text-decoration:double;
 }
 
+
+
 footer {
-    height: 20px;
-    background-color: #666;
-    text-align: center;
-    color: #000;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9;
+margin-top: 50px;
+text-align: center;
 }
 
 .dark-theme footer {
