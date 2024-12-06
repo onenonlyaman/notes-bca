@@ -97,7 +97,7 @@ h6 {
 body.dark-mode {
     background-color: #000000;
     color: #ddd;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.1s ease, color 0.1s ease;
 }
 
 .dark-mode .container { 
