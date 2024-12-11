@@ -6,7 +6,7 @@ body {
     text-decoration: none;
 }
 
-.goBack{
+.goBack {
     fill: #000;
     position: fixed;
     top: 70px;
@@ -24,12 +24,12 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.goBack:hover{
+.goBack:hover {
     transform: translateX(-3px);
     transition: all ease .5s;
 }
 
-.dark-mode .goBack{
+.dark-mode .goBack {
     fill: #fff;
     background-color: #fffefe;
     color: rgb(0, 0, 0);
@@ -86,7 +86,12 @@ body.dark-mode {
 }
 
 body.dark-mode .stackedit__left {
-    background-color: #222;
+    background-color: #141414;
+}
+
+body.darkmode .stackedit__toc a:active,.stackedit__toc a:focus,.stackedit__toc a:hover{
+    background-color:rgb(168, 168, 168);
+    color: #000000;
 }
 
 body.dark-mode pre.language-html {
@@ -94,7 +99,7 @@ body.dark-mode pre.language-html {
 }
 
 body.dark-mode code.prism.language-html {
-    color: #ccc;
+    color: #ffffff;
 }
 
 /* Sticky Footer */
@@ -125,10 +130,11 @@ body.dark-mode #footer {
     color: #ccc;
 }
 
-.downloadBtn img{
+.downloadBtn img {
     width: 15px;
 }
-.downloadBtn{
+
+.downloadBtn {
     position: fixed;
     top: 120px;
     right: 20px;
@@ -145,14 +151,15 @@ body.dark-mode #footer {
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.downloadBtn:hover{
+
+.downloadBtn:hover {
     transform: translateY(2px);
     background-color: #666;
     box-shadow: 1px 1px 1px 1px #000000;
     font-weight: 500;
 }
 
-.dark-mode .downloadBtn{
+.dark-mode .downloadBtn {
     background-color: #fffefe;
     color: #000000;
     box-shadow: 1px 1px 1px 1px #000000;
@@ -163,6 +170,38 @@ body.dark-mode #footer {
     background-color: #242424;
 }
 
-::-webkit-scrollbar{
-    background-color: #000000;
+::-webkit-scrollbar {
+    display: none;
 }
+
+.toc-toggle {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .stackedit__toc ul {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+  
+    .stackedit__toc.expanded ul {
+        
+        max-height: 500px; /* Adjust as needed */
+    }
+  
+    .toc-toggle {
+      display: block;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  
+    .stackedit__toc ul { /* Hide the default TOC on small screens */
+      display: none;
+    }
+    .stackedit__toc.expanded ul {
+      display: block;
+    }
+  }
+
+    
