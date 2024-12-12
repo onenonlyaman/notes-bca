@@ -13,6 +13,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="BCA Notes" />
     <link rel="manifest" href="/resources/site.webmanifest" />
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>    
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DR2VPR3VY8"></script>
@@ -25,7 +27,7 @@
 </script>
 
 <body>
-    <a href="preferences.html"><i class="fa fa-cog fa-2x" aria-hidden="true" id="dark-mode-button"></i></a>
+    <a href="preferences.html" id="pref"><i class="fa fa-cog fa-2x" aria-hidden="true" id="dark-mode-button"></i></a>
 
     <div class="container">
         <h1>Bachelor of Computer Applications</h1>
@@ -36,7 +38,7 @@
                 studying and reviewing key concepts. Feel free to explore!</p>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container" id="thisIsID">
             <div class="note-box">
                 <a href="Semester 1.html">
                     <h3>Semester I</h3>
@@ -120,7 +122,31 @@
         <li></li>
     </ul>
     <script src="script.js"></script>
-
+    <script>
+        const driver = new Driver();
+      
+        const steps = [
+          {
+            element: '#pref',
+            popover: {
+              title: 'Preference Button!',
+              description: 'This is the Preference button',
+              position: 'top'
+            }
+          },
+          {
+            element: '#element2',
+            popover: {
+              title: 'Second Step',
+              description: 'Here\'s the second step.',
+              position: 'bottom'
+            }
+          }
+        ];
+      
+        driver.defineSteps(steps);
+        driver.start();
+      </script>
 </body>
 
 </html>
