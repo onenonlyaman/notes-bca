@@ -37,3 +37,11 @@ if ("serviceWorker" in navigator) {
     // register service worker
     navigator.serviceWorker.register("service-worker.js");
 }
+
+// function toggleTOC() {
+//   const toc = document.querySelector('.stackedit__toc');
+//   toc.classList.toggle('expanded');
+// }
+
+// const toggleButton = document.querySelector('.toc-toggle');
+// toggleButton.addEventListener('click', toggleTOC);

@@ -1314,7 +1314,7 @@ img{
 }
 .stackedit__toc a:active,.stackedit__toc a:focus,.stackedit__toc a:hover{
     background-color:rgba(0,0,0,.075);
-    border-radius:3px
+    border-radius:10px
 }
 .stackedit__left{
     position:fixed;
