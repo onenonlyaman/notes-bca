@@ -25,13 +25,16 @@
 </script>
 
 <body class="stackedit">
-  <img class="dark-mode-button" onclick="toggleDarkMode()" src="resources/dm.svg" id="icon">
-  <img class="goBack" onclick="history.back()" src="resources/larr_black.svg" id="arr">
-  <a href="./pdfs/sem1.pdf" download /><img class="downloadBtn" src="./resources/dbtn_black.svg" alt="download.svg"
-    id="dbtn"></a>
+  <script src="https://kit.fontawesome.com/c334dafde5.js" crossorigin="anonymous"></script>
+  <button id="menuToggle" class="menuToggle"><i class="fa-solid fa-bars"></i> Menu</button>
+  <nav>
+    <ul>
+      <li><span class="homeBtn" onclick="history.back();"><i class="fa-solid fa-house"></i></i> Home</span></li>
+      <li><span class="menuItem" onclick="toggleDarkMode()"><i class="fa-solid fa-toggle-on dark-mode-toggle"></i> Toggle Mode</span></li>
+      <li><span class="downBtn" onclick="window.location.href='./pdfs/sem1.pdf'"><i class="fa-solid fa-download"></i> Download</span></li>
+    </ul>
+  </nav>
   
-
-
   <div class="stackedit__left">
     <div class="stackedit__toc">
       <ul>

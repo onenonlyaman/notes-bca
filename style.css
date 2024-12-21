@@ -159,80 +159,41 @@ body.dark-mode {
     animation-delay: 0.3s;
 }
 
-/* #thereID{
-    margin-right: -217%;
-}
-
-@media screen and (max-width: 400px) {
-    #thereID{
-    margin-right: -1%;
-    }
-}
-@media screen and (max-width: 500px) {
-    #thereID{
-    margin-right: -1%;
-    }
-}
-@media screen and (max-width: 600px) {
-    #thereID{
-    margin-right: -1%;
-    }
-}
-@media screen and (max-width: 700px) {
-    #thereID{
-    margin-right: -1%;
-    }
-}
-@media screen and (max-width: 800px) {
-    #thereID{
-    margin-right: -1%;
-    }
-} */
-
-#dark-mode-button,
-#back-button {
+#dark-mode-button {
     position: fixed;
     top: 20px;
     right: 20px;
     border: none;
-    padding: 9px 10px;
-    border-radius: 50%;
+    padding: 10px 10px;
+    border-radius: 100%;
     background-color: #dbdbdb3a;
     color: #000;
     cursor: pointer;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, transform 0.2s ease;
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#back-button {
-    top: 100px;
-}
-
-
-#dark-mode-button:hover,
-#back-button:hover {
+#dark-mode-button:hover {
     transform: translateY(-2px);
     background-color: #666;
     color: #eee;
-    box-shadow: 1px 1px 1px 1px #0000008e;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
     font-weight: 500;
 }
 
-.dark-mode #dark-mode-button
-.dark-mode #back-button {
+.dark-mode #dark-mode-button {
     background-color: #ddd;
     color: #000000;
 }
 
-.dark-mode #dark-mode-button:hover,
-.dark-mode #back-button:hover {
+.dark-mode #dark-mode-button:hover {
     font-weight: 500;
     background-color: #ffffff;
     color: #000000;
-    box-shadow: 1px 1px 1px 1px #ffffff91;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* new background */
@@ -273,6 +234,7 @@ body.dark-mode {
     transform: translate(0, -100%);
     border-radius: 30px;
 }
+
 .dark-mode .circles li {
     position: absolute;
     display: block;
@@ -376,8 +338,4 @@ body.dark-mode {
         opacity: 0;
         border-radius: 50%;
     }
-}
-
-.dark-mode-icon {
-    display: inline-block;
 }
