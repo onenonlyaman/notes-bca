@@ -61,3 +61,12 @@ window.onload = () => {
     const userName = getUserName();
     greetingElement.textContent = `Hello, ${userName}! `;
 };
+setTimeout(function() {
+    const splashScreen = document.querySelector('.splash-screen');
+    splashScreen.style.opacity = '0'; // Trigger fade-out
+
+    setTimeout(function() {
+        splashScreen.style.display = 'none';
+        document.querySelector('.content').style.display = 'block';
+    }, 1000); // Delay to ensure fade-out completes
+}, 3000);
