@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap');
 
 /* html {
   background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
@@ -15,7 +16,7 @@
 
 body {
   color: #E8E8E8;
-  font-family: cursive;
+  font-family:'Walter Turncoat';
   display: block;
   width: 80%;
   height: 80%;
@@ -189,7 +190,12 @@ body.dark-mode {
 
 }
 
-.dark-mode .footer {
+footer{
+    color: white;
+    font-weight: bold;
+}
+
+.dark-mode footer {
     color: #999;
 }
 
